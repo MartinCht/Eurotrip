@@ -50,12 +50,16 @@ Read and follow `.agents/FOR_AGENTS.md` for complete instructions.
 
 ## 🗓️ Your Trip Timeline
 
+**🌍 Full Journey:** Buenos Aires → Barcelona → Paris → Bruges → Amsterdam → Berlin → Prague → Vienna → Italy → Madrid → Buenos Aires  
+**📅 Duration:** October 14 - November 12, 2026 (30 days)  
+**🏠 Return Flight:** Madrid to Buenos Aires on November 12, 2026
+
 ### Confirmed Destinations
 
 | # | City | Country | Dates | Nights | Status |
 |---|------|---------|-------|--------|--------|
 | 1 | **Barcelona** | Spain 🇪🇸 | Oct 14-17, 2026 | 3 | ✅ Complete |
-| 2 | **Paris** | France 🇫🇷 | Oct 17-21, 2026 | 4 | 🚧 In Progress |
+| 2 | **Paris** | France 🇫🇷 | Oct 17-21, 2026 | 4 | ✅ Complete |
 | 3 | **Bruges** | Belgium 🇧🇪 | Oct 21-22, 2026 | 1 | ✅ Complete |
 
 ### Planned Destinations (Dates TBD)
@@ -67,15 +71,17 @@ Read and follow `.agents/FOR_AGENTS.md` for complete instructions.
 | 6 | **Prague** | Czech Republic 🇨🇿 | ⏳ Planning |
 | 7 | **Vienna** | Austria 🇦🇹 | ⏳ Planning |
 | 8 | **Italy** | Italy 🇮🇹 | ⏳ Planning (cities TBD) |
-| 9 | **Madrid** | Spain 🇪🇸 | ⏳ Planning |
+| 9 | **Madrid** | Spain 🇪🇸 | ⏳ Planning (until Nov 12) |
 
 ### Trip Flow
 
 ```
+Buenos Aires (Departure)
+    ↓ Flight
 Barcelona (Oct 14-17)
     ↓ Flight
 Paris (Oct 17-21)
-    ↓ Bus/Train
+    ↓ Bus
 Bruges (Oct 21-22)
     ↓ TBD
 Amsterdam (TBD)
@@ -88,7 +94,9 @@ Vienna (TBD)
     ↓ TBD
 Italy (TBD - cities TBD)
     ↓ TBD
-Madrid (TBD)
+Madrid (TBD - Nov 12)
+    ↓ Flight (Nov 12)
+Buenos Aires (Return Home)
 ```
 
 ---
@@ -278,18 +286,19 @@ Each destination gets a JSON file with:
 
 ### Confirmed Transport
 
-1. **Barcelona → Paris**: Vueling flight, Oct 17, 08:45 to Paris Orly (ORY)
-2. **Paris → Bruges**: FlixBus, Oct 21, 11:10 arrival at Bruges Station
+1. **Buenos Aires → Barcelona**: LEVEL LL2602, Oct 14, 05:25 arrival at BCN
+2. **Barcelona → Paris**: Vueling flight, Oct 17, 08:45 to Paris Orly (ORY)
+3. **Paris → Bruges**: FlixBus, Oct 21, 11:10 arrival at Bruges Station
+4. **Madrid → Buenos Aires**: Nov 12, 2026 (return flight home)
 
 ### To Be Booked
 
-3. Bruges → Amsterdam
-4. Amsterdam → Berlin
-5. Berlin → Prague
-6. Prague → Vienna
-7. Vienna → Italy
-8. Italy → Madrid
-9. Madrid → Home
+4. Bruges → Amsterdam
+5. Amsterdam → Berlin
+6. Berlin → Prague
+7. Prague → Vienna
+8. Vienna → Italy
+9. Italy → Madrid
 
 ---
 
