@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris 5-Day Guide & Itinerary - Eurotrip 2026</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        :root {
+            --primary: #1e3a5f;
+            --primary-dark: #112237;
+            --accent: #c43d32;
+            --accent-gold: #d4af37;
+            --accent-soft: #f4e8d8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #24292f;
+            --text-muted: #57606a;
+            --border-color: #e2e8f0;
+            --highlight-bg: #f0f7ff;
+            --tag-bg: #eef2f6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.65;
+            margin: 0;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 48px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0,0,0,0.03);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 24px;
+            margin-bottom: 36px;
+        }
+
+        .badge-trip {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin: 0 0 8px 0;
+            line-height: 1.25;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin: 0;
+        }
+
+        .summary-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin: 20px 0 0 0;
+            padding: 16px;
+            background: var(--bg-color);
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+        }
+
+        .summary-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .summary-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .summary-val {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        h4 {
+            color: var(--accent);
+            font-size: 1.02rem;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin: 10px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .day-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--primary);
+            padding: 24px;
+            margin: 24px 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .day-card:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 12px;
+        }
+
+        .day-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .day-subtitle {
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .timeline-slot {
+            margin-bottom: 14px;
+        }
+
+        .timeline-tag {
+            font-weight: 700;
+            color: var(--primary);
+            display: inline-block;
+            min-width: 95px;
+        }
+
+        .must-visit {
+            background: #fef2f2;
+            color: var(--accent);
+            border: 1px solid #fecaca;
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+
+        .art-box {
+            background: #fcfbf9;
+            border: 1px solid #eae5db;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            font-size: 0.92rem;
+        }
+
+        .art-box h5 {
+            margin: 0 0 8px 0;
+            color: var(--primary-dark);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .art-item {
+            background: #ffffff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        .art-item strong {
+            color: var(--primary);
+        }
+
+        .map-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 14px;
+            background: var(--primary);
+            color: #ffffff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.92rem;
+            box-shadow: 0 2px 5px rgba(30, 58, 95, 0.2);
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        .map-btn:hover {
+            background: #142842;
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .map-btn-secondary {
+            background: #475569;
+        }
+
+        .map-btn-secondary:hover {
+            background: #334155;
+        }
+
+        .info-box {
+            background: var(--highlight-bg);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+
+        .warning-box {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+
+        .emergency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .emergency-card {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            padding: 14px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .emergency-number {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+        }
+
+        .emergency-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .food-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 16px 0;
+        }
+
+        .food-item {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            padding: 12px 16px;
+            border-radius: 8px;
+        }
+
+        .food-name {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .food-desc {
+            color: var(--text-color);
+            margin-top: 4px;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            margin-top: 56px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            .day-card {
+                padding: 16px;
+            }
+            .timeline-tag {
+                min-width: 100%;
+                margin-bottom: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="badge-trip">Eurotrip 2026 • Companion Guide</span>
+        <h1>Paris 5-Day Guide & Itinerary</h1>
+        <p class="subtitle">Complete day-by-day plan, cultural landmarks, art masterworks, culinary traditions, and mobility guide.</p>
+        
+        <div class="summary-bar">
+            <div class="summary-item">
+                <span class="summary-label">Base Accommodation</span>
+                <span class="summary-val">St Christopher's Inn Paris Canal</span>
+            </div>
+            <div class="summary-item">
+                <span class="summary-label">Duration</span>
+                <span class="summary-val">5 Days (Full Itinerary)</span>
+            </div>
+            <div class="summary-item">
+                <span class="summary-label">Key Passes</span>
+                <span class="summary-val">Paris Museum Pass (€85)</span>
+            </div>
+            <div class="summary-item">
+                <span class="summary-label">Next Destination</span>
+                <span class="summary-val">Brussels & Bruges (Train)</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: ITINERARY -->
+    <h2>1. 5-Day Paris Itinerary (Round-Trip Routes)</h2>
+
+    <!-- Day 1 -->
+    <div class="day-card">
+        <div class="day-header">
+            <h3 class="day-title">Day 1: Arrival, Museum Pass & Canal Saint-Martin</h3>
+            <span class="day-subtitle">Acclimatization & Evening Stroll</span>
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Evening (18:00):</span>
+            Arrival in Paris. Check in at <strong>St Christopher's Inn Paris Canal</strong> (Quai de la Seine, 19th arr.) and pick up / purchase your physical <strong>Paris Museum Pass</strong> (covers 50+ museums and monuments including the Louvre, Arc de Triomphe, and Sainte-Chapelle).
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Dinner / Apéro:</span>
+            Unwind along the canal with an informal evening <em>apéritif</em> (a glass of <em>vin rouge</em> or craft beer accompanied by a *planche de charcuterie et fromages*) near the waterside.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Night Stroll:</span>
+            Walk along the romantic banks of <strong>Canal Saint-Martin</strong> and <strong>Bassin de la Villette</strong>, soaking in the Parisian evening atmosphere and easing into the local rhythm.
+        </div>
+        <a class="map-btn" href="https://www.google.com/maps/dir/St+Christopher's+Inn+Paris+Canal,+Quai+de+la+Seine,+Paris/Canal+Saint-Martin,+Paris/Bassin+de+la+Villette,+Paris/St+Christopher's+Inn+Paris+Canal,+Quai+de+la+Seine,+Paris" target="_blank">🗺️ Open Day 1 Round-Trip Route in Google Maps</a>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day-card">
+        <div class="day-header">
+            <h3 class="day-title">Day 2: Royal Gardens, Grand Bridges & The Eiffel Tower</h3>
+            <span class="day-subtitle">Tuileries, Invalides, Champ de Mars & Arc de Triomphe</span>
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Morning:</span>
+            Start at the lush <strong>Jardin des Tuileries</strong>, strolling past fountains and sculptures toward Place de la Concorde. Visit the newly restored 18th-century gem <strong>Hôtel de la Marine</strong>, then cross the ornate, gilded <strong>Pont Alexandre III</strong> toward the Left Bank.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Lunch:</span>
+            Explore the lively pedestrian foodie street <strong>Rue Cler</strong> or <strong>Rue de l'Université</strong>. Sit at a neighborhood bistro for a classic <em>formule midi</em> featuring a fresh <em>croque-monsieur</em> or *steak frites*.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Afternoon:</span>
+            Explore the golden dome of <strong>Les Invalides</strong> (and Musée de l'Armée). Continue to the expansive lawns of <strong>Champ de Mars</strong> for a leisure break under the iconic <strong>Tour Eiffel</strong> <span class="must-visit">Must See</span>. Cross Pont d'Iéna to <strong>Trocadéro</strong> for world-famous panoramic photo angles.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Evening:</span>
+            Ascend the majestic <strong>Arc de Triomphe</strong> (covered by your Museum Pass) at the top of Avenue des Champs-Élysées for an unforgettable sunset view over the 12 radiating grand avenues.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Night (Optional):</span>
+            If energy permits, visit <strong>Musée d'Orsay</strong> (open late on Thursdays) or witness the sparkling illumination of the Eiffel Tower from Pont de Bir-Hakeim.
+        </div>
+        <a class="map-btn" href="https://www.google.com/maps/dir/St+Christopher's+Inn+Paris+Canal,+Quai+de+la+Seine,+Paris/Jardin+des+Tuileries,+Paris/Hotel+de+la+Marine,+Paris/Pont+Alexandre+III,+Paris/Les+Invalides,+Paris/Champ+de+Mars,+Paris/Eiffel+Tower,+Paris/Trocadero,+Paris/Arc+de+Triomphe,+Paris/St+Christopher's+Inn+Paris+Canal,+Quai+de+la+Seine,+Paris" target="_blank">🗺️ Open Day 2 Round-Trip Route in Google Maps</a>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day-card">
+        <div class="day-header">
+            <h3 class="day-title">Day 3: Louvre Masterpieces, Île de la Cité & Le Marais</h3>
+            <span class="day-subtitle">Full-Day Art, Historic Islands & Vintage Quarters</span>
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Morning:</span>
+            Dedicated morning at the <strong>Musée du Louvre</strong> <span class="must-visit">Priority</span> (enter via <em>Carrousel du Louvre</em> to bypass the main pyramid queue).
+            
+            <div class="art-box">
+                <h5>🎨 Louvre Priority Checklist by Wing & Floor</h5>
+                <div class="art-grid">
+                    <div class="art-item">
+                        <strong>Ala Denon (1st Floor & Grand Staircase):</strong><br>
+                        • <em>Mona Lisa (La Joconde)</em> - Leonardo da Vinci<br>
+                        • <em>The Wedding at Cana</em> - Paolo Veronese<br>
+                        • <em>Winged Victory of Samothrace</em> (Escalier Daru)<br>
+                        • <em>Liberty Leading the People</em> - Eugène Delacroix<br>
+                        • <em>The Coronation of Napoleon</em> - Jacques-Louis David<br>
+                        • <em>Saint John the Baptist</em> & <em>Death of the Virgin</em>
+                    </div>
+                    <div class="art-item">
+                        <strong>Ala Sully (Ground & Lower Ground):</strong><br>
+                        • <em>Venus de Milo</em> (Ancient Greece)<br>
+                        • <em>The Great Sphinx of Tanis</em><br>
+                        • <em>Psyché Revived by Cupid's Kiss</em> - Canova<br>
+                        • <em>The Lamassu</em> of Khorsabad<br>
+                        • <em>Mummy of Pacheri</em> (Egyptian Antiquities crypt)
+                    </div>
+                    <div class="art-item">
+                        <strong>Ala Richelieu (Floors 1 & 2):</strong><br>
+                        • <em>Galerie d'Apollon</em> (Crown Jewels)<br>
+                        • <em>Appartements Napoléon III</em> (Gilded State Rooms)<br>
+                        • <em>Galerie Médicis</em> (Peter Paul Rubens Cycle)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Lunch:</span>
+            Cross over to <strong>Île de la Cité</strong> for a quick artisan <em>jambon-beurre</em> baguette or savory buckwheat <em>galette</em> near Place Dauphine.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Afternoon:</span>
+            Visit <strong>Cathédrale Notre-Dame de Paris</strong> (reopened with time-slot reservation) and admire the breathtaking stained glass of <strong>Sainte-Chapelle</strong>. Continue to the Latin Quarter: <strong>Musée de Cluny</strong> (National Museum of the Middle Ages), <strong>Panthéon</strong>, and the exquisite church of <strong>Saint-Étienne-du-Mont</strong>.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Evening:</span>
+            Cross to the Right Bank to wander <strong>Le Marais</strong> without a rigid schedule:
+            <ul>
+                <li>Vintage & thrift hunting along Rue de la Verrerie (<strong>Kilo Shop</strong>, <strong>Free'P'Star</strong>).</li>
+                <li>Gaze at the high-tech architecture of <strong>Centre Pompidou</strong> from the plaza.</li>
+                <li>Stroll Rue des Archives, Rue Vieille-du-Temple, and Rue des Rosiers (grab world-famous falafel at <em>L'As du Fallafel</em>).</li>
+                <li>Relax in the symmetrical arcades of <strong>Place des Vosges</strong> and visit <strong>Maison de Victor Hugo</strong>.</li>
+            </ul>
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Night (Optional):</span>
+            Climb the Notre-Dame towers or enjoy an artisan cocktail in a cozy speakeasy in Le Marais.
+        </div>
+        <a class="map-btn" href="https://www.google.com/maps/dir/St+Christopher's+Inn+Paris+Canal,+Quai+de+la+Seine,+Paris/Louvre+Museum,+Paris/Cathedrale+Notre-Dame+de+Paris/Sainte-Chapelle,+Paris/Pantheon,+Paris/Place+des+Vosges,+Paris/Centre+Pompidou,+Paris/St+Christopher's+Inn+Paris+Canal,+Quai+de+la+Seine,+Paris" target="_blank">🗺️ Open Day 3 Round-Trip Route in Google Maps</a>
+    </div>
+
+    <!-- Day 4 -->
+    <div class="day-card">
+        <div class="day-header">
+            <h3 class="day-title">Day 4: Belle Époque Splendor, Montmartre & Cinema Heritage</h3>
+            <span class="day-subtitle">Opéra Garnier, Passages Couverts & Bohemian Hilltop</span>
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Morning:</span>
+            Tour the opulent <strong>Palais Garnier (Opéra Garnier)</strong> with its Chagall ceiling and grand marble staircase. Walk through the historic glass-roofed 19th-century arcade <strong>Passage des Panoramas</strong>, then visit the free public galleries and courtyard café at <strong>Petit Palais</strong>.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Lunch:</span>
+            Head toward Montmartre and pick up fresh warm baguettes, cheeses, and pastries, or sit for a traditional <em>bœuf bourguignon</em> at a local hilltop bistro on Rue Durantin.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Afternoon:</span>
+            Explore bohemian <strong>Montmartre</strong> wandering freely without a strict map:
+            <ul>
+                <li>Follow picturesque cobblestone streets: <strong>Rue des Abbesses</strong>, <strong>Rue Durantin</strong>, and <strong>Rue Cortot</strong>.</li>
+                <li>Pass the legendary art-house cinema <strong>Studio 28</strong>.</li>
+                <li>Discover the hidden English-style private cul-de-sac <strong>Villa Léandre</strong>.</li>
+                <li>Photograph the bust at <strong>Place Dalida</strong> and walk down the curving, iconic <strong>Rue de l'Abreuvoir</strong>.</li>
+                <li>Visit the majestic hilltop <strong>Basilique du Sacré-Cœur</strong> and watch painters at <strong>Place du Tertre</strong>.</li>
+            </ul>
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Evening & Film Spots:</span>
+            Take the metro to eastern Paris to visit the evocative cemetery of <strong>Père-Lachaise</strong> (resting place of Oscar Wilde, Jim Morrison, Édith Piaf, and Chopin). Afterwards, stop at <strong>Le Pure Café</strong> (the famous café featured in Richard Linklater's <em>Before Sunset</em>) and see Celine's apartment courtyard at <strong>Cour de l'Étoile-d'Or</strong>.
+        </div>
+        <a class="map-btn" href="https://www.google.com/maps/dir/St+Christopher's+Inn+Paris+Canal,+Quai+de+la+Seine,+Paris/Palais+Garnier,+Paris/Passage+des+Panoramas,+Paris/Petit+Palais,+Paris/Rue+des+Abbesses,+Paris/Basilique+du+Sacre-Coeur+de+Montmartre/Place+du+Tertre,+Paris/Pere+Lachaise+Cemetery,+Paris/Le+Pure+Cafe,+Paris/St+Christopher's+Inn+Paris+Canal,+Quai+de+la+Seine,+Paris" target="_blank">🗺️ Open Day 4 Round-Trip Route in Google Maps</a>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day-card">
+        <div class="day-header">
+            <h3 class="day-title">Day 5: Literary Paris, Saint-Germain, Latin Quarter & Departure</h3>
+            <span class="day-subtitle">Shakespeare & Co, Luxembourg Gardens & Train to Belgium</span>
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Morning:</span>
+            Visit legendary English-language bookshop <strong>Shakespeare and Company</strong> (grab a classic book or tote bag), then explore the surrounding medieval streets: <strong>Rue Saint-Julien-le-Pauvre</strong>, <strong>Rue Galande</strong>, and the bustling <strong>Rue de la Huchette</strong> leading to Place Saint-Michel.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Lunch:</span>
+            Stroll through <strong>Saint-Germain-des-Prés</strong> via <strong>Rue Saint-André des Arts</strong>. Sit on a terrace near Boulevard Saint-Germain for a light <em>salade niçoise</em> or <em>quiche lorraine</em> and an espresso.
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Afternoon:</span>
+            Relax among the fountains and green metal chairs in <strong>Jardin du Luxembourg</strong>. Walk through the student hub of <strong>Rue Mouffetard</strong> and vibrant <strong>Place de la Contrescarpe</strong>. <em>Optional:</em> Visit the newly renovated <strong>Musée Carnavalet</strong> (Museum of the History of Paris).
+        </div>
+        <div class="timeline-slot">
+            <span class="timeline-tag">Evening Departure:</span>
+            Return to the hostel to collect luggage, take public transport / RER to <strong>Gare du Nord</strong>, and board your high-speed Eurostar train to <strong>Brussels</strong> and connection to <strong>Bruges</strong> (check-in at <em>Hostel St. Christopher's Bauhaus</em>).
+        </div>
+        <a class="map-btn" href="https://www.google.com/maps/dir/St+Christopher's+Inn+Paris+Canal,+Quai+de+la+Seine,+Paris/Shakespeare+and+Company,+Rue+de+la+Bucherie,+Paris/Saint-Germain-des-Pres,+Paris/Jardin+du+Luxembourg,+Paris/Rue+Mouffetard,+Paris/Musee+Carnavalet,+Paris/Gare+du+Nord,+Paris" target="_blank">🗺️ Open Day 5 Route in Google Maps</a>
+    </div>
+
+    <!-- SECTION 2: FOOD RECOMMENDATIONS & DINING CULTURE -->
+    <h2>2. Food Recommendations & Dining Culture</h2>
+
+    <h3>Must-Try Traditional Dishes & Bakery Specialties</h3>
+    <div class="food-grid">
+        <div class="food-item">
+            <span class="food-name">Croissant / Butter Croissant:</span>
+            <div class="food-desc">Flaky, golden-layered viennoiserie made with pure French butter (always ask for <em>croissant au beurre</em>).</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Pain au Chocolat / Chocolate Croissant:</span>
+            <div class="food-desc">Layered yeast pastry dough wrapped around dark chocolate batons.</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Baguette Tradition / Traditional French Baguette:</span>
+            <div class="food-desc">Artisanal naturally fermented crusty bread made without additives; the standard of French daily life.</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Jambon-Beurre / Ham & Butter Baguette Sandwich:</span>
+            <div class="food-desc">Crisp baguette sliced and generously layered with salted French butter and Paris ham.</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Croque-Monsieur / Toasted Ham & Cheese with Béchamel:</span>
+            <div class="food-desc">Toasted sandwich with ham, Gruyère or Emmental cheese, and creamy béchamel sauce (topped with an egg, it becomes a <em>Croque-Madame</em>).</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Soupe à l'oignon / French Onion Soup:</span>
+            <div class="food-desc">Slow-caramelized onion soup in rich beef broth, gratinated with crusty bread and melted Comté/Gruyère.</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Bœuf Bourguignon / Beef Burgundy Stew:</span>
+            <div class="food-desc">Tender braised beef simmered in red wine broth with carrots, pearl onions, lardons, and button mushrooms.</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Confit de Canard / Crispy Duck Confit:</span>
+            <div class="food-desc">Duck leg slow-cooked in its own rendered fat until melt-in-the-mouth tender, served with roasted garlic potatoes (<em>pommes sarladaises</em>).</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Steak Frites / Seared Steak with French Fries:</span>
+            <div class="food-desc">Classic Parisian bistro steak served with crisp golden fries and herb butter or pepper sauce.</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Galette de Sarrasin / Savory Buckwheat Crepe:</span>
+            <div class="food-desc">Crisp Breton-style buckwheat pancake traditionally filled with ham, egg, and cheese (<em>galette complète</em>).</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Macarons / French Almond Meringue Sandwich Cookies:</span>
+            <div class="food-desc">Delicate meringue cookies filled with ganache, buttercream, or fruit curd.</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Éclair / Choux Pastry filled with Cream:</span>
+            <div class="food-desc">Oblong choux pastry filled with rich chocolate or coffee pastry cream and glossy icing.</div>
+        </div>
+        <div class="food-item">
+            <span class="food-name">Tarte Tatin / Caramelized Upside-Down Apple Tart:</span>
+            <div class="food-desc">Pastry baked over slow-caramelized apples and served warm with thick crème fraîche.</div>
+        </div>
+    </div>
+
+    <h3>Drinks & Parisian Cafe Rituals</h3>
+    <ul>
+        <li><strong>L'Apéro / The Evening Aperitif:</strong> Pre-dinner social drink (18:00–20:00) with a glass of <em>vin rouge</em> (Côtes du Rhône, Bordeaux, Pinot Noir), <em>Kir</em> (white wine with blackcurrant cassis liqueur), or pastis, accompanied by olives, nuts, or a *planche apéro*.</li>
+        <li><strong>Café au comptoir / Coffee at the Counter:</strong> Drinking your morning espresso (<em>un café</em>) standing at the zinc bar is traditionally half the price of sitting on the terrace.</li>
+        <li><strong>Carafe d'eau / Free Tap Water:</strong> You can always ask for a <em>carafe d'eau</em> (free tap water) and bread (<em>du pain</em>) at any sit-down restaurant—it is legally mandatory and completely normal.</li>
+    </ul>
+
+    <h3>The Lunch Formula (Formule Déjeuner / Menu du Jour)</h3>
+    <p>Between 12:00 and 14:30 on weekdays, most authentic bistros offer a <strong>formule midi</strong> (entree + plat or plat + dessert) usually priced between <strong>€16 and €24</strong>. This offers exceptional value and high gastronomic quality compared to ordering à la carte at dinner.</p>
+
+    <h3>What to Avoid (Tourist Dining Traps)</h3>
+    <div class="warning-box">
+        <strong>⚠️ Anti-Trap Advice:</strong>
+        <ul>
+            <li>Avoid restaurants immediately surrounding major monuments (Notre-Dame, Eiffel Tower, Sacré-Cœur square) displaying giant laminated menus translated into 6+ languages with faded photographs.</li>
+            <li>Look for the official label <strong>"Fait Maison"</strong> (House-Made) on menus to ensure dishes are cooked fresh from raw ingredients on-site rather than reheated industrial food.</li>
+            <li>Avoid eating at large branded terrace chains on the Champs-Élysées where prices are heavily inflated for basic drinks.</li>
+        </ul>
+    </div>
+
+    <!-- SECTION 3: LOGISTICS & ESSENTIAL INFO -->
+    <h2>3. Logistics & Essential Info</h2>
+
+    <h3>Airport to City Center Transit</h3>
+    <ul>
+        <li><strong>Paris Charles de Gaulle (CDG) to City Center:</strong>
+            <ul>
+                <li><strong>RER B Train:</strong> €11.80, ~30–35 minutes directly to Gare du Nord, Châtelet-Les Halles, or Saint-Michel. Frequent departures every 10–15 mins.</li>
+                <li><strong>Official Taxi:</strong> Flat fixed rates (€56 to Right Bank / €65 to Left Bank). Only take taxis from official taxi ranks—never follow solicitations in terminal halls.</li>
+                <li><strong>RoissyBus:</strong> ~€16.60 directly to Opéra Garnier (60–75 mins depending on traffic).</li>
+            </ul>
+        </li>
+        <li><strong>Paris Orly (ORY) to City Center:</strong>
+            <ul>
+                <li><strong>Metro Line 14:</strong> Extended direct metro line (~25 mins to Châtelet / Gare de Lyon, special €10.30 ticket).</li>
+                <li><strong>Official Taxi:</strong> Flat fixed rates (€44 to Left Bank / €49 to Right Bank).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Public Transit Tickets & Where to Buy</h3>
+    <ul>
+        <li><strong>Navigo Easy Card & Digital Tickets:</strong> Physical paper magnetic tickets have been phased out in favor of the reloadable contactless <strong>Navigo Easy card</strong> (€2 for the physical card, reloadable with individual tickets or packs of 10 *Ticket t+*).</li>
+        <li><strong>Where to Buy Physically:</strong> Automated multi-lingual ticket vending machines and customer service counters at every Metro, RER, and tram station. Machines accept contactless credit/debit cards and cash.</li>
+        <li><strong>Mobile Apps & Digital Validation:</strong> Download the official <strong>Bonjour RATP</strong> or <strong>Île-de-France Mobilités</strong> app (iOS / Android). You can purchase tickets directly through your phone and validate using NFC tap on subway turnstiles.</li>
+        <li><strong>Paris Museum Pass (€85):</strong> Gives direct admission to 50+ monuments and museums over 4 days (covers Louvre, Arc de Triomphe, Sainte-Chapelle, Panthéon, Musée d'Orsay, Centre Pompidou). Pre-booking a free time slot online is mandatory for the Louvre and Notre-Dame.</li>
+    </ul>
+
+    <h3>Public Bikes in Paris (Vélib' Métropole & E-Bikes)</h3>
+    <ul>
+        <li><strong>Vélib' Métropole (City Bike Scheme):</strong> Unlike some European cities, Paris's municipal <strong>Vélib'</strong> system is <strong>fully open to tourists and short-term visitors</strong>. You do NOT need a local French ID or residency.
+            <ul>
+                <li><strong>Tourist Passes:</strong> Buy a <em>Pass 24h</em> (€5 for classic green bikes / €10 including electric blue bikes) or <em>Pass 72h</em> (€20) directly via the official <strong>Vélib' Métropole app</strong> or at any bike station terminal with a credit card.</li>
+            </ul>
+        </li>
+        <li><strong>App-Based Dockless Alternatives:</strong> <strong>Lime</strong>, <strong>Dott</strong>, and <strong>TIER</strong> provide extensive fleets of electric bikes across all arrondissements, unlockable with their respective smartphone apps.</li>
+    </ul>
+
+    <h3>Emergency Numbers</h3>
+    <div class="emergency-grid">
+        <div class="emergency-card">
+            <span class="emergency-number">112</span>
+            <span class="emergency-desc">European All-Services Emergency</span>
+        </div>
+        <div class="emergency-card">
+            <span class="emergency-number">15</span>
+            <span class="emergency-desc">SAMU (Medical Emergency & Ambulance)</span>
+        </div>
+        <div class="emergency-card">
+            <span class="emergency-number">17</span>
+            <span class="emergency-desc">Police Secours (Emergency Police)</span>
+        </div>
+        <div class="emergency-card">
+            <span class="emergency-number">18</span>
+            <span class="emergency-desc">Sapeurs-Pompiers (Fire & Rescue)</span>
+        </div>
+    </div>
+    <div class="info-box">
+        <p style="margin:0;"><strong>Central Police Station (Commissariat Central 19e arr. - near hostel):</strong> 3–5 Rue Botzaris, 75019 Paris | <strong>Central Headquarters:</strong> Préfecture de Police, 1 Rue de Lutèce, 75004 Paris (Île de la Cité).</p>
+    </div>
+
+    <!-- SECTION 4: MAPS LISTS -->
+    <h2>4. Interactive Paris Map & Curated Spots</h2>
+    <p>Explore all key itinerary stops, monuments, museums, and accommodation across Paris on the interactive map below or open the consolidated Google Maps list to view all places simultaneously.</p>
+    
+    <a class="map-btn" href="https://www.google.com/maps/search/St+Christopher's+Inn+Paris+Canal+OR+Jardin+des+Tuileries+OR+Hotel+de+la+Marine+OR+Pont+Alexandre+III+OR+Les+Invalides+OR+Eiffel+Tower+OR+Trocadero+OR+Arc+de+Triomphe+OR+Musee+d'Orsay+OR+Louvre+Museum+OR+Cathedrale+Notre-Dame+de+Paris+OR+Sainte-Chapelle+OR+Pantheon+OR+Place+des+Vosges+OR+Centre+Pompidou+OR+Palais+Garnier+OR+Sacre-Coeur+Paris+OR+Pere+Lachaise+Cemetery+OR+Shakespeare+and+Company+Paris+OR+Jardin+du+Luxembourg+Paris" target="_blank">🗺️ Open All Paris Itinerary Points in Google Maps</a>
+
+    <div id="map"></div>
+    <style>
+        #map {
+            width: 100%;
+            height: 500px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 1px solid var(--border-color);
+            z-index: 1;
+        }
+    </style>
+
+    <h3>Authentic Neighborhood Markets List</h3>
+    <p>Experience the finest fresh produce, cheeses, rotisserie chickens, and street bites across Paris:</p>
+    <ul>
+        <li><strong>Marché des Enfants Rouges (Le Marais):</strong> Paris's oldest covered market (1615), legendary for international and French lunch stalls.</li>
+        <li><strong>Marché d'Aligre (12th arr.):</strong> Vibrant food and flea market with quintessential Parisian neighborhood character.</li>
+        <li><strong>Marché Bastille (Boulevard Richard-Lenoir):</strong> One of the largest open-air food markets in Paris (Thursdays & Sundays).</li>
+        <li><strong>Marché Mouffetard (5th arr. / Latin Quarter):</strong> Historic market street packed with traditional fromageries, boucheries, and bakeries.</li>
+        <li><strong>Marché Saxe-Breteuil (7th arr.):</strong> Scenic open-air market boasting stunning direct views of the Eiffel Tower.</li>
+        <li><strong>Rue Cler Market Street (7th arr.):</strong> Charming paved market street filled with fine gourmet delis, cafés, and flower shops.</li>
+    </ul>
+    <a class="map-btn" href="https://www.google.com/maps/search/Marche+des+Enfants+Rouges+OR+Marche+d'Aligre+OR+Marche+Bastille+OR+Marche+Mouffetard+OR+Marche+Saxe-Breteuil+OR+Rue+Cler+Paris" target="_blank">🗺️ Open All Paris Markets in Google Maps</a>
+
+    <h3>Curated Paris Film & Cultural Spots List</h3>
+    <p>Consolidated map view of iconic cultural and cinema locations featured in this itinerary:</p>
+    <ul>
+        <li>Shakespeare and Company (Latin Quarter bookstore)</li>
+        <li>Studio 28 (Montmartre art-house cinema)</li>
+        <li>Le Pure Café (<em>Before Sunset</em> film café)</li>
+        <li>Cour de l'Étoile-d'Or (Céline's courtyard)</li>
+        <li>Villa Léandre (Picturesque Montmartre cul-de-sac)</li>
+        <li>Place Dalida & Rue de l'Abreuvoir</li>
+    </ul>
+    <a class="map-btn map-btn-secondary" href="https://www.google.com/maps/search/Shakespeare+and+Company+Paris+OR+Cinema+Studio+28+Paris+OR+Le+Pure+Cafe+Paris+OR+Cour+de+l'Etoile-d'Or+Paris+OR+Villa+Leandre+Paris+OR+Place+Dalida+Paris" target="_blank">🗺️ Open Curated Film & Cultural Spots in Google Maps</a>
+
+    <footer>
+        <p>Eurotrip 2026 Companion Guide • Generated according to standard travel itinerary guidelines • Safe travels in Paris!</p>
+    </footer>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Initialize map centered on Paris
+    const map = L.map('map').setView([48.8566, 2.3522], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    const places = [
+        { name: "St Christopher's Inn Paris Canal (Hostel)", coords: [48.8895, 2.3758], desc: "Base accommodation (19th arr.)" },
+        { name: "Canal Saint-Martin", coords: [48.8718, 2.3667], desc: "Day 1: Evening stroll & apéro" },
+        { name: "Jardin des Tuileries", coords: [48.8635, 2.3275], desc: "Day 2: Royal garden" },
+        { name: "Hôtel de la Marine", coords: [48.8669, 2.3225], desc: "Day 2: 18th-century monument" },
+        { name: "Pont Alexandre III", coords: [48.8639, 2.3135], desc: "Day 2: Ornate bridge" },
+        { name: "Les Invalides", coords: [48.8565, 2.3125], desc: "Day 2: Golden dome & museum" },
+        { name: "Tour Eiffel & Champ de Mars", coords: [48.8584, 2.2945], desc: "Day 2: Must-see landmark" },
+        { name: "Trocadéro", coords: [48.8626, 2.2883], desc: "Day 2: Best Eiffel Tower views" },
+        { name: "Arc de Triomphe", coords: [48.8738, 2.2950], desc: "Day 2: Champs-Élysées monument" },
+        { name: "Musée d'Orsay", coords: [48.8599, 2.3266], desc: "Day 2/4: Impressionist art" },
+        { name: "Musée du Louvre", coords: [48.8606, 2.3376], desc: "Day 3: Mona Lisa, Venus de Milo, full-day art" },
+        { name: "Cathédrale Notre-Dame de Paris", coords: [48.8530, 2.3499], desc: "Day 3: Historic cathedral" },
+        { name: "Sainte-Chapelle", coords: [48.8554, 2.3450], desc: "Day 3: Stained glass chapel" },
+        { name: "Panthéon", coords: [48.8462, 2.3448], desc: "Day 3: Latin Quarter monument" },
+        { name: "Le Marais", coords: [48.8566, 2.3600], desc: "Day 3: Historic quarter, thrift shops & Place des Vosges" },
+        { name: "Palais Garnier (Opéra)", coords: [48.8719, 2.3316], desc: "Day 4: Belle Époque opera house" },
+        { name: "Passage des Panoramas", coords: [48.8715, 2.3423], desc: "Day 4: Covered arcade" },
+        { name: "Petit Palais", coords: [48.8660, 2.3142], desc: "Day 4: Fine arts museum & garden" },
+        { name: "Montmartre & Sacré-Cœur", coords: [48.8867, 2.3431], desc: "Day 4: Artistic hilltop basilica & winding streets" },
+        { name: "Père-Lachaise Cemetery", coords: [48.8615, 2.3936], desc: "Day 4: Historic cemetery" },
+        { name: "Shakespeare and Company", coords: [48.8528, 2.3472], desc: "Day 5: Iconic English bookstore" },
+        { name: "Saint-Germain-des-Prés", coords: [48.8538, 2.3335], desc: "Day 5: Literary cafes & culture" },
+        { name: "Jardin du Luxembourg", coords: [48.8462, 2.3372], desc: "Day 5: Iconic park" },
+        { name: "Gare du Nord", coords: [48.8809, 2.3553], desc: "Day 5: International train station to Brussels" }
+    ];
+
+    places.forEach(p => {
+        L.marker(p.coords).addTo(map)
+          .bindPopup(`<strong>${p.name}</strong><br>${p.desc}`);
+    });
+</script>
+
+</body>
+</html>

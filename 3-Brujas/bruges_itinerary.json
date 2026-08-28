@@ -1,0 +1,523 @@
+{
+  "destination": "Bruges",
+  "country": "Belgium",
+  "dates": {
+    "start": "2026-10-21",
+    "end": "2026-10-22"
+  },
+  "accommodation": {
+    "name": "St Christopher's Bruges The Bauhaus",
+    "address": "Langestraat 133, 8000 Brugge",
+    "neighborhood": "Langestraat",
+    "link": "https://www.hostelworld.com/pwa/hosteldetails.php/St-Christopher-s-Bruges-The-Bauhaus/Bruges/6494?from=2026-10-21&to=2026-10-22&guests=1&origin=microsite",
+    "checkIn": "2026-10-21",
+    "checkOut": "2026-10-22",
+    "bookingReference": null,
+    "meals_included": [],
+    "notes": "Bike rentals available at hostel. Lively hostel bar. Check-in after 14:00 but bag drop available earlier."
+  },
+  "transport": {
+    "arrival": {
+      "date": "2026-10-21",
+      "time": "11:10",
+      "from": "Paris (Bercy Seine)",
+      "to": "Bruges Station",
+      "provider": "FlixBus",
+      "transportType": "bus",
+      "link": "https://shop.flixbus.com/search?departureCity=40de8964-8646-11e6-9066-549f350fcb0c&arrivalCity=40df5e22-8646-11e6-9066-549f350fcb0c&route=Par%C3%ADs-Brujas&rideDate=21.10.2026&adult=1&_locale=es_US&departureCountryCode=FR&arrivalCountryCode=BE",
+      "bookingReference": null,
+      "notes": "Direct bus from Paris Bercy Seine to Bruges central station"
+    },
+    "departure": {
+      "date": "2026-10-22",
+      "time": null,
+      "from": "Bruges",
+      "to": null,
+      "provider": "Omio",
+      "transportType": "bus",
+      "link": "https://www.omio.com/app/search-frontend/journey/bus/1332087742/E0054C1E675CD4F1E8B350FAC17D05DB5/-5163905115221097893?locale=en&origin_domain=com",
+      "bookingReference": null,
+      "notes": "Bus departure to next destination (TBD)"
+    }
+  },
+  "days": [
+    {
+      "date": "2026-10-21",
+      "dayNumber": 1,
+      "title": "Bruges in One Day: Medieval Heart, Canals & Beer",
+      "isArrivalDay": true,
+      "isDepartureDay": false,
+      "total_walking_distance": "~4-5 km (plus 14 km cycling to Damme)",
+      "total_duration": "~10 hours",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "11:10-13:30",
+          "start_time": "11:10",
+          "end_time": "13:30",
+          "duration": "~2.5 hours",
+          "description": "Arrival, bag drop, climb Belfry tower, grab a waffle, and take canal boat tour",
+          "activities": [
+            {
+              "order": 1,
+              "name": "FlixBus Arrival at Bruges Station",
+              "link": "https://www.google.com/maps/search/Bruges+Railway+Station",
+              "duration": null,
+              "suggestedTime": "11:10",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": ["🆓", "👀"],
+              "type": "transport",
+              "notes": null,
+              "bookingRequired": false,
+              "optional": false
+            },
+            {
+              "order": 2,
+              "name": "St Christopher's Hostel The Bauhaus",
+              "link": "https://www.google.com/maps/search/St.+Christopher's+Bruges+The+Bauhaus",
+              "duration": 15,
+              "suggestedTime": "11:30",
+              "timeRestriction": "Check-in after 14:00 (bag drop available earlier)",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": ["🆓", "👀"],
+              "type": "accommodation",
+              "notes": "Drop your bags at the hostel (Langestraat). Walk to Markt square from here (10 mins).",
+              "bookingRequired": false,
+              "optional": false
+            },
+            {
+              "order": 3,
+              "name": "Belfry of Bruges (Belfort van Brugge)",
+              "link": "https://www.google.com/maps/search/Belfry+of+Bruges",
+              "duration": 60,
+              "suggestedTime": "12:00",
+              "timeRestriction": "Open 09:30-18:00 (last entry 17:00)",
+              "priority": "high",
+              "priceRange": "€€",
+              "cost": "14 EUR",
+              "tags": ["🎟️", "⏳", "⭐", "📸"],
+              "type": "monument",
+              "notes": "Climb the 366 steps for iconic panoramic city views. UNESCO World Heritage Site.",
+              "bookingRequired": false,
+              "optional": false,
+              "opening_hours": "09:30-18:00 daily (last entry 17:00)"
+            },
+            {
+              "order": 4,
+              "name": "Chez Albert",
+              "link": "https://www.google.com/maps/search/Chez+Albert+Bruges",
+              "duration": 20,
+              "suggestedTime": "13:00",
+              "timeRestriction": "Open 10:00-18:00 (varies by season)",
+              "priority": "high",
+              "priceRange": "€",
+              "cost": "5-8 EUR",
+              "tags": ["🎟️", "👀", "🍽️", "📸"],
+              "type": "cafe",
+              "notes": "Grab your fresh, authentic Belgian waffle (gaufre). One of the best in Bruges.",
+              "bookingRequired": false,
+              "optional": false
+            },
+            {
+              "order": 5,
+              "name": "Canal Boat Tour",
+              "link": "https://www.google.com/maps/search/Boat+Tours+Bruges+Canals",
+              "duration": 40,
+              "suggestedTime": "13:30",
+              "timeRestriction": "Boats run 10:00-18:00 (March-November, weather dependent)",
+              "priority": "high",
+              "priceRange": "€€",
+              "cost": "12-15 EUR",
+              "tags": ["🎟️", "⏳", "⭐", "📸"],
+              "type": "tour",
+              "notes": "Classic 40-minute boat tour of the canals. Multiple departure points around the city. Incredibly photogenic.",
+              "bookingRequired": false,
+              "optional": false
+            }
+          ]
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "14:30-17:00",
+          "start_time": "14:30",
+          "end_time": "17:00",
+          "duration": "~2.5 hours",
+          "description": "Bike trip to Damme: scenic 7km canal-side ride to historic book town",
+          "activities": [
+            {
+              "order": 6,
+              "name": "Supermarket Stop (near Hostel)",
+              "link": "https://www.google.com/maps/search/Supermarket+Langestraat+Bruges",
+              "duration": 15,
+              "suggestedTime": "14:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€",
+              "cost": "5-10 EUR",
+              "tags": ["🎟️", "👀", "🍽️"],
+              "type": "shopping",
+              "notes": "Grab snacks and water supplies for the bike ride.",
+              "bookingRequired": false,
+              "optional": false
+            },
+            {
+              "order": 7,
+              "name": "Bike Rental at Hostel & Damme Cycling Route",
+              "link": "https://www.google.com/maps/dir/St.+Christopher's+Bruges+The+Bauhaus/Damme",
+              "duration": 120,
+              "suggestedTime": "15:00",
+              "timeRestriction": "Daylight hours recommended (return before dark)",
+              "priority": "high",
+              "priceRange": "€",
+              "cost": "Bike rental included at hostel or 10-15 EUR elsewhere",
+              "tags": ["🎟️", "⏳", "⭐", "📸"],
+              "type": "cycling",
+              "notes": "Rent your bike directly at the hostel and take the scenic 7 km canal-side path (Damsevaart canal) to the historic book town of Damme and back. Total ~14 km round trip. Flat, easy ride.",
+              "bookingRequired": false,
+              "optional": false,
+              "secondaryPlaces": [
+                {
+                  "name": "Damme",
+                  "link": "https://www.google.com/maps/search/Damme+Belgium",
+                  "notes": "Medieval book town with charming squares, cafes, and bookshops. Historic Town Hall and Church of Our Lady."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "evening",
+          "timeRange": "17:00-19:00",
+          "start_time": "17:00",
+          "end_time": "19:00",
+          "duration": "~2 hours",
+          "description": "De Halve Maan brewery tour with rooftop access",
+          "activities": [
+            {
+              "order": 8,
+              "name": "De Halve Maan Brewery Tour (Classic 45 mins)",
+              "link": "https://www.google.com/maps/search/De+Halve+Maan+Brewery+Bruges",
+              "duration": 45,
+              "suggestedTime": "17:00",
+              "timeRestriction": "Last tour at 17:00 (check seasonal hours)",
+              "priority": "high",
+              "priceRange": "€€",
+              "cost": "14 EUR (includes beer)",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️", "📸"],
+              "type": "brewery tour",
+              "notes": "Tour the historic family brewery (since 1856), check out the rooftop terrace with city views, and explore the underground beer pipeline (2 km to bottling plant). Includes one beer.",
+              "bookingRequired": true,
+              "optional": false,
+              "bookingDetails": {
+                "url": "https://www.halvemaan.be/en",
+                "instructions": "Book online in advance recommended, especially in peak season",
+                "advanceTimeNeeded": "1-2 days"
+              },
+              "opening_hours": "Tours: 11:00-17:00 (last tour varies by season)"
+            }
+          ]
+        },
+        {
+          "name": "night",
+          "timeRange": "19:00-23:00",
+          "start_time": "19:00",
+          "end_time": "23:00",
+          "duration": "~4 hours",
+          "description": "Unwind at hostel bar and evening stroll through illuminated medieval Bruges",
+          "activities": [
+            {
+              "order": 9,
+              "name": "St Christopher's Hostel Bar",
+              "link": "https://www.google.com/maps/search/St.+Christopher's+Bruges+The+Bauhaus",
+              "duration": 120,
+              "suggestedTime": "19:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€€",
+              "cost": "5-15 EUR",
+              "tags": ["🎟️", "⏳", "🍽️", "⭐"],
+              "type": "bar",
+              "notes": "Unwind and enjoy a drink at the hostel's lively bar. Social atmosphere, Belgian beer selection.",
+              "bookingRequired": false,
+              "optional": true
+            },
+            {
+              "order": 10,
+              "name": "Night Walk: Markt Square & Canals",
+              "link": "https://www.google.com/maps/search/Markt+Bruges",
+              "duration": 60,
+              "suggestedTime": "21:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "cost": "free",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "walk",
+              "notes": "Stroll through the beautifully illuminated medieval squares and empty canals. Markt square, Burg square, and canal bridges are magical at night.",
+              "bookingRequired": false,
+              "optional": true
+            }
+          ]
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/St.+Christopher's+Bruges+The+Bauhaus/Belfry+of+Bruges/Chez+Albert+Bruges/Boat+Tours+Bruges/Damme+Belgium/De+Halve+Maan+Brewery/Markt+Bruges/St.+Christopher's+Bruges+The+Bauhaus",
+      "research_notes": {
+        "alternatives": [
+          {
+            "name": "Adornes Chapel (Jerusalem Chapel)",
+            "reason_not_selected": "Marked as optional by user; time constraints with one-day itinerary",
+            "notes": "15th-century chapel with Jerusalem architecture and lace museum"
+          },
+          {
+            "name": "Hospital de San Juan (Sint-Janshospitaal)",
+            "reason_not_selected": "Not enough time for museum visit in one-day itinerary",
+            "notes": "12th-century hospital with Hans Memling masterpieces mentioned by Alanxelmundo"
+          },
+          {
+            "name": "Church of Our Lady (Onze-Lieve-Vrouwekerk)",
+            "reason_not_selected": "Time constraints; prioritized Belfry and canal tour",
+            "notes": "Features Michelangelo's Madonna and Child sculpture"
+          }
+        ],
+        "sources": [
+          "Alanxelmundo YouTube video mentions (menciones_videos_brujas.md)",
+          "User's specific activity requests"
+        ],
+        "notes": "Itinerary optimized for single day with arrival at 11:10 AM. Focused on user's explicit requests: Belfry, Chez Albert waffle, canal tour, Damme bike trip, De Halve Maan brewery tour, hostel bar, and night walk. Prioritized outdoor activities and experiential tourism over museums due to time constraints."
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "dayNumber": 2,
+      "title": "Departure Day",
+      "isArrivalDay": false,
+      "isDepartureDay": true,
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "TBD",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Check-out & Bus Departure",
+              "link": "https://www.google.com/maps/search/Bruges+Railway+Station",
+              "duration": null,
+              "suggestedTime": null,
+              "timeRestriction": "Check-out by 10:00",
+              "priority": "mandatory",
+              "priceRange": null,
+              "cost": "free",
+              "tags": ["🆓", "👀"],
+              "type": "transport",
+              "notes": "Head to the station to catch your scheduled bus departure via Omio. Time TBD based on final booking.",
+              "bookingRequired": false,
+              "optional": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "food_recommendations": {
+    "must_try_dishes": [
+      {
+        "name_local": "Gaufre / Wafel",
+        "name_english": "Belgian Waffle",
+        "description": "Authentic Belgian waffles - two types: Brussels waffle (light, rectangular) and Liège waffle (dense, sweet, caramelized). Best fresh from street vendors or specialty shops like Chez Albert.",
+        "typical_cost": "5-8 EUR",
+        "meal_type": "snack"
+      },
+      {
+        "name_local": "Moules-frites",
+        "name_english": "Mussels and Fries",
+        "description": "Classic Belgian dish of steamed mussels (often in white wine, cream, or beer) served with crispy fries. Bruges specialty given coastal proximity.",
+        "typical_cost": "18-25 EUR",
+        "meal_type": "main"
+      },
+      {
+        "name_local": "Stoofvlees / Carbonade Flamande",
+        "name_english": "Flemish Beef Stew",
+        "description": "Slow-cooked beef stew braised in Belgian beer with onions, often served with fries or bread.",
+        "typical_cost": "16-22 EUR",
+        "meal_type": "main"
+      },
+      {
+        "name_local": "Chocolat Belge",
+        "name_english": "Belgian Chocolate",
+        "description": "World-famous pralines and truffles. Bruges has many artisanal chocolatiers. Try the caramel praliné called 'Brujas' at Galler.",
+        "typical_cost": "3-10 EUR per piece/box",
+        "meal_type": "dessert"
+      }
+    ],
+    "drinks_and_rituals": [
+      {
+        "name_local": "Bière Belge / Belgisch Bier",
+        "name_english": "Belgian Beer",
+        "description": "Belgium produces over 1,500 different beers. In Bruges, try Brugse Zot (local blonde or brown ale from De Halve Maan), Trappist beers, or abbey ales. Served in brewery-specific glassware.",
+        "typical_cost": "4-8 EUR",
+        "typical_time": "Afternoon/evening"
+      },
+      {
+        "name_local": "Genever",
+        "name_english": "Belgian Gin",
+        "description": "Traditional Belgian juniper spirit, predecessor to Dutch gin. Often enjoyed as a digestif.",
+        "typical_cost": "5-8 EUR",
+        "typical_time": "After dinner"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Chez Albert",
+        "link": "https://www.google.com/maps/search/Chez+Albert+Bruges",
+        "neighborhood": "Near Markt",
+        "cuisine": "Belgian - Waffles",
+        "priceRange": "€",
+        "specialties": ["Authentic Belgian waffles", "Liège waffles"],
+        "notes": "Famous for fresh, authentic waffles. Recommended by locals and travel guides."
+      },
+      {
+        "name": "De Halve Maan Brewery",
+        "link": "https://www.google.com/maps/search/De+Halve+Maan+Brewery+Bruges",
+        "neighborhood": "Walplein",
+        "cuisine": "Belgian - Brewery/Pub",
+        "priceRange": "€€",
+        "specialties": ["Brugse Zot beer", "Brewery tour", "Traditional Belgian pub food"],
+        "notes": "Historic family brewery since 1856. Rooftop terrace with city views. Underground beer pipeline."
+      },
+      {
+        "name": "Bar 2be / The Beer Wall",
+        "link": "https://www.google.com/maps/search/2BE+Beer+Wall+Bruges",
+        "neighborhood": "Canalside",
+        "cuisine": "Belgian - Beer Bar",
+        "priceRange": "€€",
+        "specialties": ["Massive Belgian beer selection", "Canal-side terrace"],
+        "notes": "Famous bar with extensive Belgian beer menu. Great location by the canal. Mentioned by Alanxelmundo."
+      }
+    ],
+    "special_meal_formats": [],
+    "tourist_traps_to_avoid": [
+      "Overpriced restaurants directly on Markt square - walk one block away for better prices",
+      "Pre-packaged 'Belgian' chocolates in tourist shops - seek out artisanal chocolatiers",
+      "Waffle stands with excessive toppings marketed to tourists - authentic waffles need minimal toppings"
+    ]
+  },
+  "logistics": {
+    "public_transport": {
+      "overview": "Bruges is compact and very walkable. Most attractions are within 15-20 minute walk from center.",
+      "ticket_types": [
+        {
+          "name": "City bus ticket",
+          "cost": "3 EUR (single journey)",
+          "validity": "1 hour",
+          "notes": "Rarely needed for tourists staying in city center"
+        }
+      ],
+      "where_to_buy": {
+        "bus_driver": "Cash or card accepted on board",
+        "ticket_machines": "At bus stops (limited availability)"
+      },
+      "operating_hours": {
+        "weekdays": "06:00-23:00",
+        "weekends": "07:00-23:00"
+      }
+    },
+    "bike_rentals": {
+      "hostel_rental": {
+        "name": "St Christopher's Bruges The Bauhaus",
+        "included": "May be included with accommodation - check at reception",
+        "notes": "Most convenient option for Damme bike trip"
+      },
+      "alternative_rentals": [
+        {
+          "name": "Bruges Bike Rental",
+          "cost": "10-15 EUR per day",
+          "notes": "Multiple rental shops near train station and city center"
+        }
+      ],
+      "cycling_notes": "Bruges is very bike-friendly. Flat terrain. Damme route follows dedicated canal-side bike path."
+    },
+    "emergency_contacts": {
+      "emergency_number": "112 (EU-wide emergency)",
+      "police": "101",
+      "medical": "112",
+      "tourist_information": "+32 50 44 46 46"
+    },
+    "practical_tips": [
+      "Bruges is very compact - most attractions are within walking distance",
+      "Bike rental highly recommended for Damme trip",
+      "Book De Halve Maan brewery tour 1-2 days in advance online",
+      "Canal boat tours run March-November, weather permitting",
+      "Belfry tower has 366 narrow steps - not suitable for those with mobility issues",
+      "October can be rainy - carry umbrella/rain jacket",
+      "Many restaurants close between lunch and dinner service (15:00-18:00)",
+      "Hostel bag drop available before check-in (14:00)"
+    ]
+  },
+  "maps": {
+    "full_day_route": {
+      "url": "https://www.google.com/maps/dir/St.+Christopher's+Bruges+The+Bauhaus/Belfry+of+Bruges/Chez+Albert+Bruges/Boat+Tours+Bruges/Damme+Belgium/De+Halve+Maan+Brewery/Markt+Bruges/St.+Christopher's+Bruges+The+Bauhaus",
+      "description": "Complete day route from hostel through all main activities and back"
+    },
+    "all_locations_list": {
+      "url": "https://www.google.com/maps/search/St.+Christopher's+Bruges+The+Bauhaus+OR+Belfry+of+Bruges+OR+Chez+Albert+OR+Damme+OR+De+Halve+Maan+Brewery",
+      "description": "All key locations pinpointed without route"
+    }
+  },
+  "research_notes": {
+    "sources": [
+      {
+        "name": "Alanxelmundo - ¡Llegué a Brujas! Bélgica y Luxemburgo #9",
+        "url": "https://www.youtube.com/watch?v=mEs65s3unJE",
+        "type": "video"
+      },
+      {
+        "name": "Alanxelmundo - La ciudad más bonita de Europa | Bélgica y Luxemburgo #10",
+        "url": "https://www.youtube.com/watch?v=xtgY9rEDrZ0",
+        "type": "video"
+      },
+      {
+        "name": "User's explicit activity list and transport details",
+        "url": null,
+        "type": "recommendation"
+      }
+    ],
+    "alternatives_considered": [
+      {
+        "name": "Historium Bruges",
+        "reason_not_selected": "Time constraints with one-day itinerary; prioritized outdoor experiences",
+        "notes": "Immersive medieval Bruges experience mentioned by Alanxelmundo"
+      },
+      {
+        "name": "Groeninge Museum",
+        "reason_not_selected": "Limited time; no museum interest expressed by user",
+        "notes": "Flemish Primitives art collection"
+      },
+      {
+        "name": "Begijnhof (Beguinage)",
+        "reason_not_selected": "Time constraints; prioritized user's specific requests",
+        "notes": "Peaceful historic convent recommended by Alanxelmundo"
+      }
+    ],
+    "notes": "Itinerary designed for maximum efficiency with late morning arrival (11:10 AM) and full-day departure (Oct 22). User explicitly requested: Belfry tower, Damme bike trip, Adornes Chapel (marked optional), Chez Albert waffle, canal boat tour, De Halve Maan brewery tour, hostel bar, and night walk. Prioritized experiential activities over museums. Incorporated Alanxelmundo's recommendations where they aligned with user preferences and time constraints."
+  },
+  "emoji_legend": {
+    "cost_and_booking": {
+      "🆓": "Free - No admission fee",
+      "🎟️": "Paid - Requires ticket or entrance fee",
+      "📅": "Reservation Required - Must be booked in advance"
+    },
+    "visit_style": {
+      "👀": "See & Continue - Quick stop, exterior view, photo op (10-30 mins)",
+      "⏳": "Be There - Immersive visit, full experience (1-3+ hours)"
+    },
+    "special_markers": {
+      "⭐": "Top Highlight - Must-see priority spot",
+      "📸": "Photo Spot - Prime viewpoint or photogenic location",
+      "☂️": "Indoor / Rainy Day - Fully indoor activity",
+      "🍽️": "Food / Dining - Restaurant, cafe, or food experience"
+    }
+  }
+}

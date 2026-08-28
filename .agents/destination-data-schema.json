@@ -1,0 +1,593 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Eurotrip Destination Data Schema",
+  "description": "Standardized structure for organizing destination data across the Eurotrip project",
+  "type": "object",
+  "required": ["destination", "country", "dates", "accommodation"],
+  "properties": {
+    "destination": {
+      "type": "string",
+      "description": "Name of the destination city/town"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country name"
+    },
+    "dates": {
+      "type": "object",
+      "required": ["start", "end"],
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date",
+          "description": "Arrival date (YYYY-MM-DD)"
+        },
+        "end": {
+          "type": "string",
+          "format": "date",
+          "description": "Departure date (YYYY-MM-DD)"
+        }
+      }
+    },
+    "accommodation": {
+      "type": "object",
+      "required": ["name", "address"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Accommodation name"
+        },
+        "address": {
+          "type": "string",
+          "description": "Full street address"
+        },
+        "neighborhood": {
+          "type": "string",
+          "description": "Neighborhood or district name"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "description": "Booking or Google Maps link"
+        },
+        "checkIn": {
+          "type": "string",
+          "description": "Check-in date (YYYY-MM-DD) or time restrictions"
+        },
+        "checkOut": {
+          "type": "string",
+          "description": "Check-out date (YYYY-MM-DD) or time restrictions"
+        },
+        "bookingReference": {
+          "type": ["string", "null"],
+          "description": "Confirmation number or booking reference"
+        },
+        "meals_included": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["breakfast", "lunch", "dinner"]
+          },
+          "description": "Meals provided by accommodation"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Any important accommodation details"
+        }
+      }
+    },
+    "transport": {
+      "type": "object",
+      "description": "Inter-city transportation (stored in both departure and arrival city folders)",
+      "properties": {
+        "arrival": {
+          "$ref": "#/definitions/transportSegment",
+          "description": "Transportation arriving TO this destination"
+        },
+        "departure": {
+          "$ref": "#/definitions/transportSegment",
+          "description": "Transportation departing FROM this destination to next city"
+        }
+      }
+    },
+    "days": {
+      "type": "array",
+      "description": "Day-by-day itinerary",
+      "items": {
+        "$ref": "#/definitions/day"
+      }
+    },
+    "food_recommendations": {
+      "type": "object",
+      "description": "Local cuisine guide",
+      "properties": {
+        "must_try_dishes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/dish"
+          }
+        },
+        "drinks_and_rituals": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/drink"
+          }
+        },
+        "restaurants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/restaurant"
+          }
+        },
+        "special_meal_formats": {
+          "type": "array",
+          "description": "Regional meal traditions (e.g., menu del dia)",
+          "items": {
+            "type": "object"
+          }
+        },
+        "tourist_traps_to_avoid": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "logistics": {
+      "type": "object",
+      "description": "Practical information for navigating the destination",
+      "properties": {
+        "public_transport": {
+          "type": "object",
+          "description": "Local transport options, tickets, and passes"
+        },
+        "bike_rentals": {
+          "type": "object",
+          "description": "Bike and scooter rental options"
+        },
+        "emergency_contacts": {
+          "type": "object",
+          "description": "Emergency numbers and important contacts"
+        },
+        "practical_tips": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "General tips for navigating the city"
+        }
+      }
+    },
+    "maps": {
+      "type": "object",
+      "description": "Curated Google Maps links for easy navigation",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "research_notes": {
+      "type": "object",
+      "description": "Raw research data, alternatives, and source materials",
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "type": {
+                "type": "string",
+                "enum": ["guide", "blog", "video", "official", "forum", "recommendation"]
+              }
+            }
+          }
+        },
+        "alternatives_considered": {
+          "type": "array",
+          "description": "Options that were considered but not selected",
+          "items": {
+            "type": "object"
+          }
+        },
+        "notes": {
+          "type": "string",
+          "description": "General research notes"
+        }
+      }
+    },
+    "emoji_legend": {
+      "type": "object",
+      "description": "Legend for emoji tags used throughout itinerary (if using itinerary-formatter skill)",
+      "properties": {
+        "cost_and_booking": {
+          "type": "object"
+        },
+        "visit_style": {
+          "type": "object"
+        },
+        "special_markers": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "transportSegment": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date of travel (YYYY-MM-DD)"
+        },
+        "time": {
+          "type": ["string", "null"],
+          "description": "Departure/arrival time (HH:MM)"
+        },
+        "from": {
+          "type": "string",
+          "description": "Departure location (city or station name)"
+        },
+        "to": {
+          "type": "string",
+          "description": "Arrival location (city or station name)"
+        },
+        "provider": {
+          "type": "string",
+          "description": "Transport provider (airline, train, bus company)"
+        },
+        "transportType": {
+          "type": "string",
+          "enum": ["flight", "train", "bus", "ferry", "car"],
+          "description": "Type of transportation"
+        },
+        "flightNumber": {
+          "type": "string",
+          "description": "Flight, train, or bus number"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "description": "Booking or provider link"
+        },
+        "bookingReference": {
+          "type": ["string", "null"],
+          "description": "Confirmation number"
+        },
+        "recommended_departure_from_accommodation": {
+          "type": "string",
+          "description": "Suggested time to leave accommodation (HH:MM)"
+        },
+        "recommended_arrival_at_station": {
+          "type": "string",
+          "description": "Suggested arrival time at departure station (HH:MM)"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Important travel notes"
+        }
+      }
+    },
+    "day": {
+      "type": "object",
+      "required": ["date", "timeBlocks"],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Day date (YYYY-MM-DD)"
+        },
+        "dayNumber": {
+          "type": "integer",
+          "description": "Sequential day number in this destination"
+        },
+        "title": {
+          "type": "string",
+          "description": "Day theme or title"
+        },
+        "isArrivalDay": {
+          "type": "boolean",
+          "default": false
+        },
+        "isDepartureDay": {
+          "type": "boolean",
+          "default": false
+        },
+        "total_walking_distance": {
+          "type": "string",
+          "description": "Estimated walking distance for the day"
+        },
+        "total_duration": {
+          "type": "string",
+          "description": "Total duration of activities"
+        },
+        "timeBlocks": {
+          "type": "array",
+          "description": "Time-organized blocks of activities (morning, lunch, afternoon, evening, night)",
+          "items": {
+            "$ref": "#/definitions/timeBlock"
+          }
+        },
+        "map_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Google Maps round-trip route for the day"
+        },
+        "research_notes": {
+          "type": "object",
+          "description": "Raw research data specific to this day",
+          "properties": {
+            "alternatives": {
+              "type": "array",
+              "description": "Alternative activities or routes considered",
+              "items": {
+                "type": "object"
+              }
+            },
+            "sources": {
+              "type": "array",
+              "description": "Sources consulted for this day",
+              "items": {
+                "type": "string"
+              }
+            },
+            "notes": {
+              "type": "string",
+              "description": "General notes for this day"
+            }
+          }
+        }
+      }
+    },
+    "timeBlock": {
+      "type": "object",
+      "required": ["name", "activities"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": ["morning", "lunch", "afternoon", "evening", "night", "all-day"],
+          "description": "Time block name"
+        },
+        "timeRange": {
+          "type": "string",
+          "description": "Time range for this block (e.g., '09:00-13:00')"
+        },
+        "start_time": {
+          "type": "string",
+          "description": "Block start time (HH:MM)"
+        },
+        "end_time": {
+          "type": "string",
+          "description": "Block end time (HH:MM)"
+        },
+        "duration": {
+          "type": "string",
+          "description": "Total duration of this block"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief overview of this time block"
+        },
+        "activities": {
+          "type": "array",
+          "description": "List of activities/places for this time block",
+          "items": {
+            "$ref": "#/definitions/activity"
+          }
+        },
+        "budget": {
+          "type": "string",
+          "description": "Expected budget range for this block (optional, if user wants)"
+        }
+      }
+    },
+    "activity": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "order": {
+          "type": "integer",
+          "description": "Sequential order within the time block"
+        },
+        "name": {
+          "type": "string",
+          "description": "Activity or place name"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "description": "Google Maps or official website link"
+        },
+        "duration": {
+          "type": ["integer", "string", "null"],
+          "description": "Duration in minutes or as string (e.g., '1-2 hours')"
+        },
+        "suggestedTime": {
+          "type": "string",
+          "description": "Suggested start time (HH:MM)"
+        },
+        "timeRestriction": {
+          "type": ["string", "null"],
+          "description": "Opening hours or time constraints"
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["mandatory", "high", "medium", "low", "optional"],
+          "description": "Activity priority level"
+        },
+        "priceRange": {
+          "type": ["string", "null"],
+          "description": "Price indicator (e.g., '€', '€€', '€€€') or specific price"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Emoji tags from itinerary-formatter skill (e.g., 🆓, 🎟️, ⏳, 👀, ⭐, 📸, ☂️)"
+        },
+        "type": {
+          "type": "string",
+          "description": "Activity type (e.g., 'museum', 'park', 'restaurant', 'walk', 'monument')"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Important notes or tips"
+        },
+        "bookingRequired": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether advance booking is required"
+        },
+        "bookingDetails": {
+          "type": ["object", "null"],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "advanceTimeNeeded": {
+              "type": "string",
+              "description": "How far in advance to book"
+            }
+          }
+        },
+        "opening_hours": {
+          "type": "string",
+          "description": "Regular opening hours"
+        },
+        "cost": {
+          "type": "string",
+          "description": "Detailed cost information"
+        },
+        "optional": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether this activity is optional"
+        },
+        "secondaryPlaces": {
+          "type": "array",
+          "description": "Optional secondary places within or near this activity",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string",
+                "format": "uri"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "dish": {
+      "type": "object",
+      "required": ["name_local", "name_english"],
+      "properties": {
+        "name_local": {
+          "type": "string",
+          "description": "Dish name in local language"
+        },
+        "name_english": {
+          "type": "string",
+          "description": "Dish name in English or Spanish"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief description of the dish"
+        },
+        "typical_cost": {
+          "type": "string",
+          "description": "Typical price range"
+        },
+        "meal_type": {
+          "type": "string",
+          "enum": ["starter", "main", "dessert", "side", "snack"],
+          "description": "Type of dish"
+        },
+        "seasonal": {
+          "type": "string",
+          "description": "Seasonal availability (if applicable)"
+        }
+      }
+    },
+    "drink": {
+      "type": "object",
+      "required": ["name_local"],
+      "properties": {
+        "name_local": {
+          "type": "string"
+        },
+        "name_english": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "typical_cost": {
+          "type": "string"
+        },
+        "typical_time": {
+          "type": "string",
+          "description": "When this drink is typically consumed"
+        }
+      }
+    },
+    "restaurant": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri"
+        },
+        "neighborhood": {
+          "type": "string"
+        },
+        "cuisine": {
+          "type": "string"
+        },
+        "priceRange": {
+          "type": "string"
+        },
+        "specialties": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

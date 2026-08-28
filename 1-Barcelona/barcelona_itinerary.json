@@ -1,0 +1,1527 @@
+{
+  "destination": "Barcelona",
+  "country": "Spain",
+  "dates": {
+    "start": "2026-10-14",
+    "end": "2026-10-17"
+  },
+  "accommodation": {
+    "name": "Onefam Batlló",
+    "address": "Carrer de Aragó 284, 08009 Barcelona",
+    "neighborhood": "Passeig de Gràcia, Eixample",
+    "link": "https://www.google.com/maps/search/Onefam+Batllo+Carrer+de+Arago+284+Barcelona",
+    "email": "batllo@onefamhostels.com",
+    "checkIn": "2026-10-14",
+    "checkInTime": "14:00 (from 2pm, limited check-in available after 12:00 am)",
+    "checkOut": "2026-10-17",
+    "checkOutTime": "11:00 (at 11 am)",
+    "receptionHours": "Limited reception between 12:00 am and 8:00 am",
+    "bookingReference": "famiglialambrecht@gmail.com",
+    "bookingConfirmation": "2026-08-28",
+    "meals_included": ["breakfast", "dinner"],
+    "ageRecommendation": "18-45 years (social, party-oriented hostel for travelers who want to meet new people and enjoy nightlife)",
+    "cancellationPolicy": "Changes or cancellations must be made at least 2 full days before arrival by emailing to avoid late cancellation fee. Non-refundable bookings not entitled to refund.",
+    "facilities": "Mixed dorms and private rooms available",
+    "discount": "10% discount on next stay using code ONEFAMDIRECT when booking directly on website",
+    "notes": "Hostel located on famous Modernist avenue, walking distance from Casa Batlló and Casa Milà. Social atmosphere designed for young travelers."
+  },
+  "transport": {
+    "arrival": {
+      "date": "2026-10-14",
+      "time": "05:25",
+      "from": "Buenos Aires EZE",
+      "to": "Barcelona BCN",
+      "provider": "LEVEL",
+      "transportType": "flight",
+      "flightNumber": "LL2602",
+      "link": "https://www.flylevel.com",
+      "bookingReference": null,
+      "recommended_departure_from_accommodation": null,
+      "recommended_arrival_at_airport": null,
+      "notes": "Long-haul overnight flight from Buenos Aires. Arrive early morning. Airport transport options: R2 Nord train (4.90 EUR, 26 mins to Passeig de Gràcia), Metro L9 Sud (5.90 EUR), Aerobús (7.45 EUR), or taxi (30-40 EUR)."
+    },
+    "departure": {
+      "date": "2026-10-17",
+      "time": "08:45",
+      "from": "Barcelona BCN",
+      "to": "Paris Orly ORY",
+      "provider": "Vueling",
+      "transportType": "flight",
+      "flightNumber": null,
+      "link": "https://www.vueling.com",
+      "bookingReference": null,
+      "recommended_departure_from_accommodation": "06:15",
+      "recommended_arrival_at_airport": "06:45-07:00",
+      "notes": "Early morning departure. Metro and trains start at 05:00 on weekdays. R2 Nord from Passeig de Gràcia or Metro L9 Sud are viable at 06:15. Allow 2 hours before departure."
+    }
+  },
+  "days": [
+    {
+      "date": "2026-10-14",
+      "dayNumber": 1,
+      "title": "Arrival Day & Historic Heart (Ciutat Vella, Gótico & El Born)",
+      "isArrivalDay": true,
+      "isDepartureDay": false,
+      "total_walking_distance": "~5-6 km",
+      "total_duration": "~8-9 hours active (after arrival)",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "05:25-13:00",
+          "start_time": "05:25",
+          "end_time": "13:00",
+          "duration": "~7.5 hours",
+          "description": "Arrival from Buenos Aires. Check-in at hostel (if available) or store luggage. Start exploring La Rambla and Barrio Gótico.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Airport Arrival & Transport to City",
+              "link": "https://www.google.com/maps/dir/Barcelona+Airport+BCN/Onefam+Batllo+Carrer+de+Arago+284+Barcelona",
+              "duration": 60,
+              "suggestedTime": "05:25",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Take Renfe R2 Nord train (4.90 EUR, 26 mins to Passeig de Gràcia) or Metro L9 Sud (5.90 EUR). Early morning arrival means early check-in may not be available.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Trains start at 05:42 from airport",
+              "cost": "4.90-5.90 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Onefam Batlló Check-in / Luggage Storage",
+              "link": "https://www.google.com/maps/search/Onefam+Batllo+Carrer+de+Arago+284+Barcelona",
+              "duration": 30,
+              "suggestedTime": "06:45",
+              "timeRestriction": "Check-in typically 14:00-15:00, early luggage storage usually available",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "accommodation",
+              "notes": "Store luggage if room not ready. Freshen up and have breakfast if included.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free (already booked)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "La Rambla",
+              "link": "https://www.google.com/maps/search/La+Rambla+Barcelona",
+              "duration": 40,
+              "suggestedTime": "09:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐"],
+              "type": "street/promenade",
+              "notes": "Iconic tree-lined pedestrian boulevard. See flower stalls, street performers, and Fuente de Canaletes. Watch for pickpockets.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": [
+                {
+                  "name": "Fuente de Canaletes",
+                  "notes": "Legend says drinking from this fountain means you'll return to Barcelona"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "name": "Mercat de la Boqueria",
+              "link": "https://www.google.com/maps/search/Mercat+de+la+Boqueria+Barcelona",
+              "duration": 45,
+              "suggestedTime": "10:15",
+              "timeRestriction": "08:00-20:30 (Mon-Sat), closed Sunday",
+              "priority": "high",
+              "priceRange": "€-€€",
+              "tags": ["🆓", "👀", "⭐", "☂️"],
+              "type": "market",
+              "notes": "Famous covered market on La Rambla. Front stalls are touristy; venture deeper for authentic produce, jamón, and fresh juice stands.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "08:00-20:30 (Mon-Sat)",
+              "cost": "free entry, purchases vary",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 5,
+              "name": "Barrio Gótico Walking Exploration",
+              "link": "https://www.google.com/maps/search/Barrio+Gotico+Barcelona",
+              "duration": 90,
+              "suggestedTime": "11:15",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐"],
+              "type": "neighborhood",
+              "notes": "Medieval Gothic Quarter with narrow winding streets, hidden plazas, and Roman walls. Get intentionally lost.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 6,
+              "name": "Catedral de Barcelona",
+              "link": "https://www.google.com/maps/search/Catedral+de+Barcelona",
+              "duration": 45,
+              "suggestedTime": "12:15",
+              "timeRestriction": "08:30-19:30 (Mon-Sat), 14:00-17:00 (Sun)",
+              "priority": "high",
+              "priceRange": "€",
+              "tags": ["🆓", "⏳", "⭐", "☂️"],
+              "type": "cathedral",
+              "notes": "Gothic cathedral with beautiful cloister and rooftop views (9 EUR extra). Free entry for worship; donation suggested.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "08:30-19:30 (Mon-Sat), 14:00-17:00 (Sun)",
+              "cost": "free (donation), 9 EUR rooftop",
+              "optional": false,
+              "secondaryPlaces": [
+                {
+                  "name": "Pont del Bisbe",
+                  "notes": "Neo-Gothic bridge with skull detail nearby"
+                },
+                {
+                  "name": "Plaça de Sant Felip Neri",
+                  "notes": "Quiet hidden square with tragic Civil War history"
+                }
+              ]
+            }
+          ],
+          "budget": "5-10 EUR (transport + snacks)"
+        },
+        {
+          "name": "lunch",
+          "timeRange": "13:00-15:00",
+          "start_time": "13:00",
+          "end_time": "15:00",
+          "duration": "~2 hours",
+          "description": "Menú del día at authentic local restaurant in Barrio Gótico or El Born.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Lunch - Menú del Día",
+              "link": "https://www.google.com/maps/@41.3850639,2.1734035,16z",
+              "duration": 90,
+              "suggestedTime": "13:00",
+              "timeRestriction": "13:00-16:00 (menú del día hours)",
+              "priority": "mandatory",
+              "priceRange": "€€",
+              "tags": ["🍽️", "⭐"],
+              "type": "meal",
+              "notes": "Find authentic spot with menú del día (15-25 EUR). Order pa amb tomàquet as starter. Avoid touristy laminated multilingual menus on La Rambla.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "15-25 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "15-25 EUR"
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "15:00-18:30",
+          "start_time": "15:00",
+          "end_time": "18:30",
+          "duration": "~3.5 hours",
+          "description": "Explore El Born & La Ribera. Visit Santa Maria del Mar and walk through Parc de la Ciutadella.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "El Born & La Ribera Neighborhood",
+              "link": "https://www.google.com/maps/search/El+Born+Barcelona",
+              "duration": 30,
+              "suggestedTime": "15:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐"],
+              "type": "neighborhood",
+              "notes": "Trendy medieval neighborhood with artisan shops, galleries, and tapas bars. More authentic than La Rambla.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Santa Maria del Mar",
+              "link": "https://www.google.com/maps/search/Santa+Maria+del+Mar+Barcelona",
+              "duration": 40,
+              "suggestedTime": "15:30",
+              "timeRestriction": "09:00-20:30 daily",
+              "priority": "high",
+              "priceRange": "€",
+              "tags": ["🆓", "⏳", "⭐", "☂️"],
+              "type": "church",
+              "notes": "Stunning 14th-century Catalan Gothic church. Free entry for worship, 10 EUR for guided tour. Famous for pure Gothic architecture.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "09:00-20:30 daily",
+              "cost": "free (worship), 10 EUR guided tour",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Museu Picasso",
+              "link": "https://www.google.com/maps/search/Museu+Picasso+Barcelona",
+              "duration": 120,
+              "suggestedTime": "16:15",
+              "timeRestriction": "09:00-19:00 (Tue-Sun), closed Monday",
+              "priority": "medium",
+              "priceRange": "€€",
+              "tags": ["🎟️", "📅", "⏳", "☂️"],
+              "type": "museum",
+              "notes": "Picasso's early works and Blue Period collection. Book online to skip lines. Optional if tired from overnight flight.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.museupicasso.bcn.cat",
+                "advanceTimeNeeded": "1-2 days recommended"
+              },
+              "opening_hours": "09:00-19:00 (Tue-Sun), closed Mon",
+              "cost": "12 EUR general, extra for temporary exhibitions",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 4,
+              "name": "Parc de la Ciutadella",
+              "link": "https://www.google.com/maps/search/Parc+de+la+Ciutadella+Barcelona",
+              "duration": 60,
+              "suggestedTime": "17:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "tags": ["🆓", "👀"],
+              "type": "park",
+              "notes": "Large central park with lake, fountain, and greenery. Good for relaxing after museum or long walk.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "10:00-22:30 (summer), 10:00-19:00 (winter)",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": [
+                {
+                  "name": "Cascada Monumental",
+                  "notes": "Ornate fountain designed partly by young Gaudí"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "name": "Arc de Triomf",
+              "link": "https://www.google.com/maps/search/Arc+de+Triomf+Barcelona",
+              "duration": 15,
+              "suggestedTime": "18:00",
+              "timeRestriction": null,
+              "priority": "low",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "📸"],
+              "type": "monument",
+              "notes": "Red brick triumphal arch built for 1888 World's Fair. Great photo spot at entrance to park.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0-12 EUR (free if skip museum)"
+        },
+        {
+          "name": "evening",
+          "timeRange": "18:30-20:00",
+          "start_time": "18:30",
+          "end_time": "20:00",
+          "duration": "~1.5 hours",
+          "description": "Experience la hora del vermut before returning to hostel for included dinner.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "La Hora del Vermut",
+              "link": "https://www.google.com/maps/@41.3897464,2.1519993,15z",
+              "duration": 90,
+              "suggestedTime": "18:30",
+              "timeRestriction": "Traditionally 12:00-14:00 (pre-lunch) or 18:00-20:00 (pre-dinner)",
+              "priority": "high",
+              "priceRange": "€",
+              "tags": ["🍽️", "⭐"],
+              "type": "cultural experience",
+              "notes": "Traditional Catalan aperitif ritual. Order vermut de grifo (on tap) with olives, chips, and anchovies. Use Entrespacios restaurant map for authentic spots.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "8-15 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "8-15 EUR"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Barcelona+Airport+BCN/Onefam+Batllo+Carrer+de+Arago+284+Barcelona/La+Rambla,+Barcelona/Mercat+de+la+Boqueria,+Barcelona/Catedral+de+Barcelona/Santa+Maria+del+Mar,+Barcelona/Arc+de+Triomf,+Barcelona/Onefam+Batllo,+Carrer+de+Arago+284,+08009+Barcelona",
+      "research_notes": {
+        "alternatives": [
+          {
+            "name": "Palau de la Música Catalana",
+            "reason_not_selected": "Moved to Day 2 for better pacing on arrival day after overnight flight"
+          }
+        ],
+        "sources": [
+          {
+            "name": "Entrespacios Barcelona Guides (4 PDFs)",
+            "type": "guide"
+          }
+        ],
+        "notes": "Day 1 intentionally lighter due to overnight flight from Buenos Aires. Focused on walkable historic center. Museu Picasso marked optional if jetlag is strong."
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "dayNumber": 2,
+      "title": "Modernism & Gaudí Masterpieces (Eixample & Sagrada Família)",
+      "isArrivalDay": false,
+      "isDepartureDay": false,
+      "total_walking_distance": "~4-5 km",
+      "total_duration": "~8-9 hours",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "09:00-13:00",
+          "start_time": "09:00",
+          "end_time": "13:00",
+          "duration": "~4 hours",
+          "description": "Walk Passeig de Gràcia to see Manzana de la Discordia modernist houses and visit Casa Batlló or La Pedrera.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Manzana de la Discordia",
+              "link": "https://www.google.com/maps/search/Manzana+de+la+Discordia+Barcelona",
+              "duration": 20,
+              "suggestedTime": "09:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "architectural ensemble",
+              "notes": "Block of Discord - three competing Modernist buildings (Casa Batlló, Casa Amatller, Casa Lleó Morera). Just 2 blocks from your hostel. Free exterior viewing.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 (exterior)",
+              "cost": "free (exterior)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Casa Batlló",
+              "link": "https://www.google.com/maps/search/Casa+Batllo+Barcelona",
+              "duration": 90,
+              "suggestedTime": "09:30",
+              "timeRestriction": "09:00-20:00 daily",
+              "priority": "high",
+              "priceRange": "€€€",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
+              "type": "museum/architecture",
+              "notes": "Gaudí's organic sea-inspired house. Book online in advance for cheaper tickets and specific time slot. Audio guide included.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.casabatllo.es",
+                "advanceTimeNeeded": "Book 1-3 days ahead, often sells out"
+              },
+              "opening_hours": "09:00-20:00 daily",
+              "cost": "35 EUR (online), 39 EUR (on-site)",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Casa Amatller",
+              "link": "https://www.google.com/maps/search/Casa+Amatller+Barcelona",
+              "duration": 60,
+              "suggestedTime": "09:30",
+              "timeRestriction": "10:00-19:00 daily",
+              "priority": "medium",
+              "priceRange": "€€",
+              "tags": ["🎟️", "📅", "⏳", "☂️"],
+              "type": "museum/architecture",
+              "notes": "Neo-Gothic modernist house by Puig i Cadafalch. Alternative to Casa Batlló if budget-conscious. Chocolate museum inside.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://amatller.org",
+                "advanceTimeNeeded": "Recommended"
+              },
+              "opening_hours": "10:00-19:00 daily",
+              "cost": "24 EUR guided tour",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 4,
+              "name": "Passeig de Gràcia Walk",
+              "link": "https://www.google.com/maps/search/Passeig+de+Gracia+Barcelona",
+              "duration": 30,
+              "suggestedTime": "11:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐"],
+              "type": "street",
+              "notes": "Barcelona's most elegant boulevard. Walk 15 blocks from Manzana up to La Pedrera. Designer shops, cafés, modernist streetlamps by Gaudí.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 5,
+              "name": "La Pedrera (Casa Milà)",
+              "link": "https://www.google.com/maps/search/La+Pedrera+Casa+Mila+Barcelona",
+              "duration": 90,
+              "suggestedTime": "12:00",
+              "timeRestriction": "09:00-20:30 daily",
+              "priority": "high",
+              "priceRange": "€€€",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "📸"],
+              "type": "museum/architecture",
+              "notes": "Gaudí's wave-like apartment building with surreal rooftop. Book online for time slot. Rooftop is iconic photo spot. Choose this OR Casa Batlló if budget/time limited.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.lapedrera.com",
+                "advanceTimeNeeded": "1-3 days recommended"
+              },
+              "opening_hours": "09:00-20:30 daily",
+              "cost": "25 EUR (online), 28 EUR (on-site)",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0-60 EUR (free walk, or 25-35 EUR for one house interior)"
+        },
+        {
+          "name": "lunch",
+          "timeRange": "13:00-15:00",
+          "start_time": "13:00",
+          "end_time": "15:00",
+          "duration": "~2 hours",
+          "description": "Menú del día at Mercat del Ninot or local bistro in Esquerra Eixample. Try botifarra amb mongetes or fricandó.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Mercat del Ninot",
+              "link": "https://www.google.com/maps/search/Mercat+del+Ninot+Barcelona",
+              "duration": 45,
+              "suggestedTime": "13:00",
+              "timeRestriction": "08:00-20:00 (Mon-Fri), 08:00-15:00 (Sat)",
+              "priority": "medium",
+              "priceRange": "€",
+              "tags": ["🆓", "👀", "☂️"],
+              "type": "market",
+              "notes": "Renovated neighborhood market in Eixample with fresh produce and tapas bars inside. Good for quick bites or full lunch.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "08:00-20:00 (Mon-Fri), 08:00-15:00 (Sat)",
+              "cost": "free entry",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Lunch - Catalan Classics",
+              "link": "https://www.google.com/maps/@41.3850639,2.1634035,15z",
+              "duration": 90,
+              "suggestedTime": "13:15",
+              "timeRestriction": "13:00-16:00",
+              "priority": "mandatory",
+              "priceRange": "€€",
+              "tags": ["🍽️", "⭐"],
+              "type": "meal",
+              "notes": "Order botifarra amb mongetes (sausage with white beans) or fricandó (veal stew). Menú del día 15-25 EUR. Use Entrespacios restaurant map.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "15-25 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "15-25 EUR"
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "15:00-18:30",
+          "start_time": "15:00",
+          "end_time": "18:30",
+          "duration": "~3.5 hours",
+          "description": "Visit La Sagrada Família (book ahead!). Optional: Hospital de Sant Pau.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "La Sagrada Família",
+              "link": "https://www.google.com/maps/search/Sagrada+Familia+Barcelona",
+              "duration": 120,
+              "suggestedTime": "15:30",
+              "timeRestriction": "09:00-19:00 (Nov-Feb), 09:00-20:00 (Mar-Oct)",
+              "priority": "high",
+              "priceRange": "€€€",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
+              "type": "basilica/architecture",
+              "notes": "Gaudí's unfinished masterpiece. MUST book specific time slot online days/weeks ahead - often sells out. Allow 1.5-2 hours. Consider tower access (+10 EUR).",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://sagradafamilia.org",
+                "advanceTimeNeeded": "Book 1-4 weeks ahead, especially in high season"
+              },
+              "opening_hours": "09:00-19:00 (Nov-Feb), 09:00-20:00 (Mar-Oct)",
+              "cost": "26 EUR (basic), 36 EUR (with tower)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Hospital de Sant Pau",
+              "link": "https://www.google.com/maps/search/Hospital+de+Sant+Pau+Barcelona",
+              "duration": 75,
+              "suggestedTime": "17:45",
+              "timeRestriction": "09:30-18:30 (Mon-Sat), 09:30-14:30 (Sun)",
+              "priority": "low",
+              "priceRange": "€€",
+              "tags": ["🎟️", "⏳", "☂️"],
+              "type": "architecture/museum",
+              "notes": "Modernist hospital complex by Domènech i Montaner. 10-min walk from Sagrada Família. Beautiful but optional if tired.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "09:30-18:30 (Mon-Sat), 09:30-14:30 (Sun)",
+              "cost": "15 EUR",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "26-51 EUR (Sagrada Família required, Hospital optional)"
+        },
+        {
+          "name": "evening",
+          "timeRange": "18:30-20:00",
+          "start_time": "18:30",
+          "end_time": "20:00",
+          "duration": "~1.5 hours",
+          "description": "Stroll elegant Eixample streets before returning to hostel for dinner.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Eixample Neighborhood Evening Walk",
+              "link": "https://www.google.com/maps/search/Eixample+Barcelona",
+              "duration": 60,
+              "suggestedTime": "18:30",
+              "timeRestriction": null,
+              "priority": "low",
+              "priceRange": null,
+              "tags": ["🆓", "👀"],
+              "type": "neighborhood",
+              "notes": "Walk grid-pattern streets back toward hostel. Admire chamfered corners (xamfrans) and modernist details on residential buildings.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0 EUR (dinner included at hostel)"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Onefam+Batllo,+Carrer+de+Arago,+284,+08009+Barcelona/Manzana+de+la+Discordia+Barcelona/Casa+Batllo,+Passeig+de+Gracia,+Barcelona/La+Pedrera,+Passeig+de+Gracia,+Barcelona/Mercat+del+Ninot,+Barcelona/Sagrada+Familia,+Barcelona/Hospital+de+Sant+Pau,+Barcelona/Onefam+Batllo,+Carrer+de+Arago,+284,+08009+Barcelona",
+      "research_notes": {
+        "alternatives": [
+          {
+            "name": "Casa Lleó Morera",
+            "reason_not_selected": "Less visited than Casa Batlló or Casa Amatller; exterior view sufficient"
+          },
+          {
+            "name": "Palau de la Música Catalana",
+            "reason_not_selected": "Would require booking guided tour; prioritized Gaudí sites for Day 2"
+          }
+        ],
+        "sources": [
+          {
+            "name": "Entrespacios Barcelona Guides",
+            "type": "guide"
+          }
+        ],
+        "notes": "Day 2 is Gaudí/Modernism heavy. Sagrada Família booking is CRITICAL - often sold out. Budget consideration: choose ONE paid house (Casa Batlló OR La Pedrera) if needed."
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "dayNumber": 3,
+      "title": "Coastal Escape & Neighborhood Culture (Gràcia & Beaches)",
+      "isArrivalDay": false,
+      "isDepartureDay": false,
+      "total_walking_distance": "~3-4 km (excluding beach time)",
+      "total_duration": "~8-10 hours",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "09:00-13:00",
+          "start_time": "09:00",
+          "end_time": "13:00",
+          "duration": "~4 hours",
+          "description": "Explore Gràcia neighborhood - independent village vibe with plazas and local markets.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Gràcia Neighborhood Walk",
+              "link": "https://www.google.com/maps/search/Gracia+Barcelona",
+              "duration": 90,
+              "suggestedTime": "09:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐"],
+              "type": "neighborhood",
+              "notes": "Former independent village absorbed by Barcelona. Bohemian atmosphere, local shops, squares with outdoor terraces. More authentic than touristy areas.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Plaça de la Virreina",
+              "link": "https://www.google.com/maps/search/Placa+de+la+Virreina+Gracia+Barcelona",
+              "duration": 20,
+              "suggestedTime": "10:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "tags": ["🆓", "👀"],
+              "type": "plaza",
+              "notes": "Charming square with church bell tower and outdoor cafés. Heart of Gràcia.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Plaça del Sol",
+              "link": "https://www.google.com/maps/search/Placa+del+Sol+Barcelona",
+              "duration": 20,
+              "suggestedTime": "11:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "tags": ["🆓", "👀"],
+              "type": "plaza",
+              "notes": "Sun Square - popular spot for locals, especially evenings. Good for morning coffee stop.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 4,
+              "name": "Mercat de la Llibertat",
+              "link": "https://www.google.com/maps/search/Mercat+de+la+Llibertat+Barcelona",
+              "duration": 45,
+              "suggestedTime": "11:30",
+              "timeRestriction": "08:00-20:30 (Mon-Fri), 08:00-15:00 (Sat), closed Sunday",
+              "priority": "medium",
+              "priceRange": "€",
+              "tags": ["🆓", "👀", "☂️"],
+              "type": "market",
+              "notes": "Modernist neighborhood market in Gràcia. Less touristy than La Boqueria. Good for snacks or picnic supplies.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "08:00-20:30 (Mon-Fri), 08:00-15:00 (Sat)",
+              "cost": "free entry",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "5-10 EUR (coffee/snacks)"
+        },
+        {
+          "name": "lunch",
+          "timeRange": "13:00-15:00",
+          "start_time": "13:00",
+          "end_time": "15:00",
+          "duration": "~2 hours",
+          "description": "Seafood lunch - order suquet de peix or arròs negre. Avoid tourist trap 'paella in 15 minutes'.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Lunch - Seafood Specialties",
+              "link": "https://www.google.com/maps/@41.3897464,2.1519993,15z",
+              "duration": 120,
+              "suggestedTime": "13:00",
+              "timeRestriction": "13:00-16:00",
+              "priority": "mandatory",
+              "priceRange": "€€-€€€",
+              "tags": ["🍽️", "⭐"],
+              "type": "meal",
+              "notes": "Order suquet de peix (fish stew) or arròs negre (black rice with squid ink). AVOID places advertising 'paella ready in 15 minutes' - authentic rice dishes take 20-30 mins minimum. Use Entrespacios map.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "20-30 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "20-30 EUR"
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "15:00-19:00",
+          "start_time": "15:00",
+          "end_time": "19:00",
+          "duration": "~4 hours",
+          "description": "Beach time at Bogatell or Mar Bella (skip crowded Barceloneta). Alternative: Montjuïc hill.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Bogatell Beach",
+              "link": "https://www.google.com/maps/search/Bogatell+Beach+Barcelona",
+              "duration": 180,
+              "suggestedTime": "15:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐"],
+              "type": "beach",
+              "notes": "Sandy beach north of Port Olímpic. Less crowded and touristy than Barceloneta. Good for swimming, sunbathing, or beach walk. Take Metro L4 to Ciutadella Vila Olímpica.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Mar Bella Beach",
+              "link": "https://www.google.com/maps/search/Mar+Bella+Beach+Barcelona",
+              "duration": 180,
+              "suggestedTime": "15:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "tags": ["🆓", "👀"],
+              "type": "beach",
+              "notes": "Even quieter beach further north. Alternative to Bogatell. Partial nudist section. Take Metro L4 to Selva de Mar.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Montjuïc Hill",
+              "link": "https://www.google.com/maps/search/Montjuic+Barcelona",
+              "duration": 240,
+              "suggestedTime": "15:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐"],
+              "type": "hill/park complex",
+              "notes": "Alternative to beach. Large hill with gardens, museums, Olympic sites, and castle. Take cable car or bus 150 from Plaça Espanya. Good if weather is bad or prefer culture over beach.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free (parks), museums vary",
+              "optional": true,
+              "secondaryPlaces": [
+                {
+                  "name": "Jardins de Mossèn Costa i Llobera",
+                  "notes": "Cactus gardens with sea views"
+                },
+                {
+                  "name": "Fundació Joan Miró",
+                  "notes": "Museum of Miró's works (14 EUR)"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "name": "Castell de Montjuïc",
+              "link": "https://www.google.com/maps/search/Castell+de+Montjuic+Barcelona",
+              "duration": 90,
+              "suggestedTime": "17:00",
+              "timeRestriction": "10:00-20:00 (Apr-Oct), 10:00-18:00 (Nov-Mar)",
+              "priority": "low",
+              "priceRange": "€",
+              "tags": ["🎟️", "⏳", "📸"],
+              "type": "fortress",
+              "notes": "18th-century fortress at top of Montjuïc with panoramic city views. If choosing Montjuïc over beach.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "10:00-20:00 (Apr-Oct), 10:00-18:00 (Nov-Mar)",
+              "cost": "5 EUR",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0-5 EUR (free beach, or 5 EUR castle if Montjuïc)"
+        },
+        {
+          "name": "evening",
+          "timeRange": "19:00-20:30",
+          "start_time": "19:00",
+          "end_time": "20:30",
+          "duration": "~1.5 hours",
+          "description": "Final night aperitif - toast with cava and escalivada before hostel dinner.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Evening Aperitif - Cava & Tapas",
+              "link": "https://www.google.com/maps/@41.3897464,2.1519993,15z",
+              "duration": 90,
+              "suggestedTime": "19:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "€",
+              "tags": ["🍽️", "⭐"],
+              "type": "cultural experience",
+              "notes": "Final evening in Barcelona. Order glass of local cava (sparkling wine) and escalivada (roasted vegetables). Celebrate last night before Paris departure tomorrow.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "10-20 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "10-20 EUR"
+        },
+        {
+          "name": "night",
+          "timeRange": "21:00-22:00",
+          "start_time": "21:00",
+          "end_time": "22:00",
+          "duration": "~30-60 mins",
+          "description": "Optional: Magic Fountain of Montjuïc light and music show.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Font Màgica de Montjuïc (Magic Fountain Show)",
+              "link": "https://www.google.com/maps/search/Font+Magica+Montjuic+Barcelona",
+              "duration": 30,
+              "suggestedTime": "21:00",
+              "timeRestriction": "Thu-Sun evenings, times vary by season (typically 21:00-22:00 Oct)",
+              "priority": "optional",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐"],
+              "type": "light show",
+              "notes": "Free choreographed water, light, and music show at Plaça Espanya. Schedule changes by season - check official website. About 20-min show. Get there early for good spot.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Check barcelona.cat/fontmagica for current schedule",
+              "cost": "free",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0 EUR"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Onefam+Batllo,+Carrer+de+Arago,+284,+08009+Barcelona/Placa+de+la+Virreina,+Gracia,+Barcelona/Mercat+de+la+Llibertat+Barcelona/Bogatell+Beach,+Barcelona/Castell+de+Montjuic,+Barcelona/Font+Magica+de+Montjuic,+Barcelona/Onefam+Batllo,+Carrer+de+Arago,+284,+08009+Barcelona",
+      "research_notes": {
+        "alternatives": [
+          {
+            "name": "Barceloneta Beach",
+            "reason_not_selected": "Very crowded and touristy according to Entrespacios guide; Bogatell recommended instead"
+          },
+          {
+            "name": "Park Güell",
+            "reason_not_selected": "Would require advance booking and take full morning; already have 2 Gaudí sites on Day 2"
+          }
+        ],
+        "sources": [
+          {
+            "name": "Entrespacios Barcelona Guides - Beaches PDF",
+            "type": "guide"
+          }
+        ],
+        "notes": "Day 3 offers flexibility: beach OR Montjuïc depending on weather/preference. Magic Fountain is optional night activity if energy permits before early departure tomorrow."
+      }
+    },
+    {
+      "date": "2026-10-17",
+      "dayNumber": 4,
+      "title": "Departure Day to Paris",
+      "isArrivalDay": false,
+      "isDepartureDay": true,
+      "total_walking_distance": "minimal",
+      "total_duration": "~3 hours (departure logistics)",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "05:00-08:45",
+          "start_time": "05:00",
+          "end_time": "08:45",
+          "duration": "~3.75 hours",
+          "description": "Early departure to airport for 08:45 flight to Paris Orly.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Wake Up & Check Out",
+              "link": "https://www.google.com/maps/search/Onefam+Batllo+Barcelona",
+              "duration": 45,
+              "suggestedTime": "05:00",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "logistics",
+              "notes": "Pack and check out. Breakfast may not be available due to early departure - check with hostel or pack snacks night before.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Transport to Barcelona Airport",
+              "link": "https://www.google.com/maps/dir/Onefam+Batllo+Carrer+de+Arago+284+Barcelona/Barcelona+Airport+BCN",
+              "duration": 60,
+              "suggestedTime": "06:15",
+              "timeRestriction": "Metro starts 05:00, R2 Nord first train ~05:50 from Passeig de Gràcia",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Options: (1) R2 Nord train from Passeig de Gràcia (4.90 EUR, 19 mins to airport T2, first train ~05:50), (2) Metro L9 Sud (5.90 EUR, starts 05:00), (3) Taxi/Cabify (30-40 EUR, most reliable for early morning). Arrive airport by 06:45-07:00 (2 hours before 08:45 flight).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Metro/train from 05:00, Aerobús 24/7",
+              "cost": "4.90-40 EUR depending on method",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Flight to Paris Orly",
+              "link": "https://www.vueling.com",
+              "duration": 105,
+              "suggestedTime": "08:45",
+              "timeRestriction": "Departure 08:45",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "flight",
+              "notes": "Vueling flight BCN → ORY. Flight time ~1h45. Arrive Paris Orly mid-morning.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "included (already booked)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "5-40 EUR (airport transport only)"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Onefam+Batllo+Carrer+de+Arago+284+Barcelona/Barcelona+Airport+BCN",
+      "research_notes": {
+        "alternatives": [
+          {
+            "name": "Aerobús early morning",
+            "reason_not_selected": "More expensive (7.45 EUR) and slower (35-40 mins) than train; but is 24/7 option"
+          }
+        ],
+        "sources": [],
+        "notes": "Departure day is purely logistics. R2 Nord train timing confirmed - first departure from Passeig de Gràcia to airport around 05:50. Taxi is backup if train timing is tight."
+      }
+    }
+  ],
+  "food_recommendations": {
+    "must_try_dishes": [
+      {
+        "name_local": "Pa amb tomàquet",
+        "name_english": "Pan con tomate / Bread with tomato",
+        "description": "Toasted bread rubbed with ripe tomato, drizzled with olive oil and salt. Catalan staple, served as side or starter.",
+        "typical_cost": "3-5 EUR",
+        "meal_type": "starter",
+        "seasonal": null
+      },
+      {
+        "name_local": "Calçots con romesco",
+        "name_english": "Spring onions with romesco sauce",
+        "description": "Flame-roasted spring onions dipped in rich romesco (nut and pepper) sauce. Eaten with hands.",
+        "typical_cost": "12-18 EUR",
+        "meal_type": "main",
+        "seasonal": "Winter/Spring (Jan-Apr)"
+      },
+      {
+        "name_local": "Escalivada",
+        "name_english": "Roasted vegetables",
+        "description": "Slow-roasted smoky Mediterranean vegetables (eggplant, peppers, onions) with olive oil.",
+        "typical_cost": "8-12 EUR",
+        "meal_type": "starter",
+        "seasonal": null
+      },
+      {
+        "name_local": "Escudella i carn d'olla",
+        "name_english": "Catalan soup with meat",
+        "description": "Traditional winter soup with pasta, vegetables, and boiled meat. Two-course dish.",
+        "typical_cost": "12-16 EUR",
+        "meal_type": "main",
+        "seasonal": "Winter"
+      },
+      {
+        "name_local": "Canelons",
+        "name_english": "Canelones / Cannelloni",
+        "description": "Roasted meat-filled pasta tubes topped with bechamel and baked. Traditional for Sant Esteve (Dec 26).",
+        "typical_cost": "10-14 EUR",
+        "meal_type": "main",
+        "seasonal": "Winter holidays"
+      },
+      {
+        "name_local": "Botifarra amb mongetes",
+        "name_english": "Catalan sausage with white beans",
+        "description": "Grilled local pork sausage served with sautéed white beans. Classic Catalan comfort food.",
+        "typical_cost": "12-16 EUR",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Fricandó",
+        "name_english": "Veal stew with mushrooms",
+        "description": "Tender veal stewed with wild mushrooms (moixernons) in savory sauce.",
+        "typical_cost": "14-18 EUR",
+        "meal_type": "main",
+        "seasonal": "Autumn (mushroom season)"
+      },
+      {
+        "name_local": "Cap i pota",
+        "name_english": "Tripe and chickpea stew",
+        "description": "Traditional veal tripe and trotters stewed with chickpeas. Hearty winter dish.",
+        "typical_cost": "12-16 EUR",
+        "meal_type": "main",
+        "seasonal": "Winter"
+      },
+      {
+        "name_local": "Suquet de peix",
+        "name_english": "Catalan fish stew",
+        "description": "Coastal fish and potato stew with sofrito (tomato, garlic, onion) base. Simple and flavorful.",
+        "typical_cost": "16-22 EUR",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Arròs negre",
+        "name_english": "Black rice with squid",
+        "description": "Rice cooked with squid ink, giving it black color and briny flavor. Served with alioli.",
+        "typical_cost": "14-20 EUR",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Crema catalana",
+        "name_english": "Catalan cream / Burnt custard",
+        "description": "Historic medieval custard dessert with caramelized sugar crust. Catalonia's answer to crème brûlée.",
+        "typical_cost": "4-6 EUR",
+        "meal_type": "dessert",
+        "seasonal": null
+      }
+    ],
+    "drinks_and_rituals": [
+      {
+        "name_local": "La hora del vermut",
+        "name_english": "The vermouth hour",
+        "description": "Midday aperitif ritual (12:00-14:00 or 18:00-20:00). Vermut de grifo (on tap) served with olives, chips, anchovies, and cheese. Social tradition.",
+        "typical_cost": "8-15 EUR",
+        "typical_time": "12:00-14:00 (pre-lunch) or 18:00-20:00 (pre-dinner)"
+      },
+      {
+        "name_local": "Cava",
+        "name_english": "Catalan sparkling wine",
+        "description": "Local sparkling wine made in traditional method, primarily from Penedès region near Barcelona.",
+        "typical_cost": "4-8 EUR per glass, 15-30 EUR per bottle",
+        "typical_time": "Anytime, especially celebrations"
+      },
+      {
+        "name_local": "Tinto de verano",
+        "name_english": "Summer red wine drink",
+        "description": "Red wine mixed with lemon soda (not Sprite). Refreshing summer drink, less sweet than sangria.",
+        "typical_cost": "3-5 EUR",
+        "typical_time": "Lunch and afternoon"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Entrespacios Curated Restaurant Map",
+        "link": "https://www.google.com/maps/@41.3897464,2.1519993,15z/data=!4m3!11m2!2sPR5l-Z44SE24gShlk1pVxQ!3e3?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "neighborhood": "Various",
+        "cuisine": "Catalan/Spanish",
+        "priceRange": "€-€€€",
+        "specialties": ["Traditional Catalan dishes", "Authentic vermut bars", "Non-touristy spots"],
+        "notes": "Official Entrespacios map with 20+ vetted historic bars and restaurants across Barcelona neighborhoods. Use this as primary restaurant guide."
+      }
+    ],
+    "special_meal_formats": [
+      {
+        "name_local": "Menú del día",
+        "name_english": "Menu of the day / Fixed-price lunch",
+        "description": "Weekday lunch special (13:00-16:00) including starter, main, dessert, drink, and bread/coffee. Best value for authentic meal.",
+        "typical_cost": "15-25 EUR",
+        "serving_hours": "13:00-16:00 (Mon-Fri, some Sat)",
+        "notes": "Quality varies. Look for handwritten chalkboard menus and local clientele."
+      }
+    ],
+    "tourist_traps_to_avoid": [
+      "Laminated menus in 5+ languages",
+      "Waiters aggressively calling you in from the street",
+      "Photos of dishes on the menu with prices like 'Paella + sangria 9,90 €'",
+      "Bottled pre-made sangria",
+      "Any restaurant advertising 'paella ready in 15 minutes' (authentic rice dishes need 20-30 mins minimum)",
+      "Restaurants directly on La Rambla (overpriced and low quality - venture one block off)"
+    ]
+  },
+  "logistics": {
+    "airport_transit": {
+      "from_airport_to_city": [
+        {
+          "method": "Renfe R2 Nord Train",
+          "cost": "4.90 EUR (special airport ticket)",
+          "duration": "19 mins to Sants, 26 mins to Passeig de Gràcia",
+          "destinations": ["Sants", "Passeig de Gràcia", "Clot", "El Clot-Aragó"],
+          "frequency": "Every 30 mins",
+          "operating_hours": "05:42-23:38 (from airport T2)",
+          "notes": "Most convenient for Passeig de Gràcia area. Take free shuttle from T1 to T2 if needed."
+        },
+        {
+          "method": "Metro L9 Sud",
+          "cost": "5.90 EUR (special airport ticket, not valid with T-Casual)",
+          "duration": "~32 mins to Zona Universitària, then transfer",
+          "operating_hours": "05:00-00:00 (Mon-Thu, Sun), 05:00-02:00 (Fri), 24h (Sat)",
+          "notes": "Requires transfer at Zona Universitària to reach city center. Less direct than train."
+        },
+        {
+          "method": "Aerobús",
+          "cost": "7.45 EUR one-way, 14.50 EUR round-trip",
+          "duration": "35-40 mins to city center",
+          "frequency": "Every 5-10 mins",
+          "operating_hours": "24/7",
+          "stops": ["Plaça Espanya", "Gran Via-Urgell", "Plaça Universitat", "Plaça Catalunya"],
+          "notes": "Most expensive but runs 24/7. Good backup option."
+        },
+        {
+          "method": "Taxi / Cabify / Bolt",
+          "cost": "30-40 EUR flat rate",
+          "duration": "25-35 mins depending on traffic",
+          "operating_hours": "24/7",
+          "notes": "No Uber in Barcelona. Most reliable for early morning departures. Fixed airport rate."
+        }
+      ]
+    },
+    "public_transport": {
+      "ticket_types": [
+        {
+          "name": "T-Casual",
+          "trips": 10,
+          "cost": "11.35 EUR",
+          "shareable": false,
+          "zones": "Zone 1 (covers central Barcelona)",
+          "valid_for": ["Metro", "Bus", "Tram", "FGC trains", "Rodalies trains"],
+          "notes": "Best option for 3-4 days. Requires 1 EUR T-mobilitat reusable card."
+        },
+        {
+          "name": "T-Familiar",
+          "trips": 8,
+          "cost": "10 EUR",
+          "shareable": true,
+          "zones": "Zone 1",
+          "valid_for": ["Metro", "Bus", "Tram", "FGC trains", "Rodalies trains"],
+          "notes": "Can be shared by multiple people traveling together."
+        },
+        {
+          "name": "Billete sencillo",
+          "trips": 1,
+          "cost": "2.55 EUR",
+          "zones": "Zone 1",
+          "notes": "Single trip ticket. Not economical for multiple trips."
+        },
+        {
+          "name": "Hola Barcelona Travel Card",
+          "duration": "2, 3, 4, or 5 days unlimited",
+          "cost": "17.50 EUR (2 days), 24.50 EUR (3 days), 32 EUR (4 days), 39.50 EUR (5 days)",
+          "notes": "Unlimited travel pass for tourists. May not be economical if staying near attractions."
+        }
+      ],
+      "where_to_buy": {
+        "physical": {
+          "location": "Ticket vending machines in any metro station",
+          "payment": "Card or cash accepted",
+          "card_required": "1 EUR T-mobilitat reusable card (one-time purchase, then recharge)",
+          "languages": "English, Spanish, Catalan, French available"
+        },
+        "digital": {
+          "apps": ["T-mobilitat app (official)", "ATM Barcelona app", "TMB app"],
+          "notes": "Can purchase and manage tickets digitally on smartphone. Contactless validation."
+        }
+      },
+      "operating_hours": {
+        "metro": {
+          "monday_thursday": "05:00-00:00",
+          "friday": "05:00-02:00",
+          "saturday": "24 hours continuous",
+          "sunday": "05:00-00:00 (continues into Monday morning)"
+        },
+        "buses": {
+          "day": "Most routes 05:00-23:00",
+          "night": "Nitbus routes 23:00-05:00"
+        }
+      },
+      "notes": "For 4 days (Oct 14-17), T-Casual (10 trips for 11.35 EUR) is most economical. Zone 1 covers all central Barcelona attractions."
+    },
+    "bike_rentals": {
+      "bicing_official": {
+        "available_for_tourists": false,
+        "notes": "Bicing (official city bike-share) is ONLY for residents with annual subscription and Spanish NIE/ID number. NOT available for tourists."
+      },
+      "tourist_alternatives": [
+        {
+          "name": "Donkey Republic",
+          "type": "App-based bike rental",
+          "cost": "~5 EUR/hour, 15-20 EUR/day",
+          "bike_types": ["standard bikes", "electric bikes"],
+          "link": "https://www.donkey.bike",
+          "notes": "Unlock via app, leave anywhere within service area."
+        },
+        {
+          "name": "Cooltra",
+          "type": "Electric scooter/moped rental",
+          "cost": "~0.30 EUR/min, daily passes available",
+          "requirements": "Valid driver's license",
+          "link": "https://www.cooltra.com",
+          "notes": "Good for longer distances, requires license and helmet."
+        },
+        {
+          "name": "Traditional bike rental shops",
+          "type": "Physical rental shops",
+          "cost": "~10-15 EUR/day",
+          "locations": "Throughout city, especially near beaches and Ciutadella park",
+          "notes": "In-person rental, more personal service, guided tours available."
+        }
+      ]
+    },
+    "emergency_contacts": {
+      "general_emergency": {
+        "number": "112",
+        "description": "General emergencies (police, fire, ambulance)",
+        "languages": "English and other languages available",
+        "available": "24/7"
+      },
+      "police_non_urgent": {
+        "number": "088",
+        "description": "Mossos d'Esquadra (Catalan police) non-urgent line"
+      },
+      "police_station": {
+        "address": "La Rambla, 43, 08002 Barcelona",
+        "name": "Comisaría de la Policía Nacional",
+        "link": "https://www.google.com/maps/search/Comisaria+Policia+La+Rambla+43+Barcelona"
+      },
+      "tourist_assistance": {
+        "number": "012",
+        "description": "Barcelona tourist information and assistance hotline"
+      },
+      "consulates": {
+        "notes": "For citizens of other countries, contact your embassy/consulate in Barcelona or Madrid if needed."
+      }
+    },
+    "practical_tips": [
+      "Pickpockets are common on La Rambla, metro, and crowded tourist areas. Keep valuables secure.",
+      "Most restaurants close 16:00-20:00 between lunch and dinner. Menú del día only available 13:00-16:00.",
+      "Tap water is safe to drink. Ask for 'agua del grifo' (free tap water) instead of bottled.",
+      "October weather: 15-22°C (59-72°F). Bring light layers and check forecast for beach day.",
+      "Siesta: Some smaller shops close 14:00-17:00. Major attractions stay open.",
+      "Book Sagrada Família online days/weeks ahead - it sells out!",
+      "Catalan is primary language, but Spanish widely spoken. English common in tourist areas.",
+      "Tipping: Not mandatory. Round up or leave 5-10% for good service.",
+      "Late dining culture: Locals eat dinner 21:00-23:00, but restaurants open earlier for tourists."
+    ]
+  },
+  "maps": {
+    "neighborhood_markets": {
+      "url": "https://www.google.com/maps/search/Mercat+de+Santa+Caterina+OR+Mercat+de+Sant+Antoni+OR+Mercat+de+la+Llibertat+OR+Mercat+del+Ninot+OR+Mercat+de+la+Sagrada+Familia+OR+Mercat+de+Lesseps+OR+La+Boqueria+Barcelona",
+      "description": "List view of 7 recommended neighborhood markets (not a route)",
+      "markets": [
+        {
+          "name": "Mercat de Santa Caterina",
+          "neighborhood": "La Ribera",
+          "opening_hours": "07:30-15:30 (Mon, Wed, Sat), 07:30-20:30 (Tue, Thu, Fri)",
+          "highlights": "Modernist colorful roof, local produce, tapas bars"
+        },
+        {
+          "name": "Mercat de Sant Antoni",
+          "neighborhood": "Sant Antoni",
+          "opening_hours": "08:00-20:00 (Mon-Thu), 08:00-21:00 (Fri), 08:00-15:00 (Sat)",
+          "highlights": "Recently renovated, Sunday book market outside"
+        },
+        {
+          "name": "Mercat de la Llibertat",
+          "neighborhood": "Gràcia",
+          "opening_hours": "08:00-20:30 (Mon-Fri), 08:00-15:00 (Sat)",
+          "highlights": "Modernist architecture, local neighborhood feel, covered"
+        },
+        {
+          "name": "Mercat del Ninot",
+          "neighborhood": "Eixample",
+          "opening_hours": "08:00-20:00 (Mon-Fri), 08:00-15:00 (Sat)",
+          "highlights": "Recently renovated, tapas bars, central location near hostel"
+        },
+        {
+          "name": "Mercat de la Sagrada Família",
+          "neighborhood": "Sagrada Família",
+          "opening_hours": "08:00-14:30, 17:00-20:00 (Mon-Fri), 08:00-15:00 (Sat)",
+          "highlights": "Small local market near basilica"
+        },
+        {
+          "name": "Mercat de Lesseps",
+          "neighborhood": "Gràcia",
+          "opening_hours": "08:00-14:00, 17:00-20:00 (Mon-Fri), 08:00-15:00 (Sat)",
+          "highlights": "Small neighborhood market in upper Gràcia"
+        },
+        {
+          "name": "La Boquería (Mercat de Sant Josep)",
+          "neighborhood": "La Rambla",
+          "opening_hours": "08:00-20:30 (Mon-Sat), closed Sunday",
+          "highlights": "Most famous market, very touristy",
+          "warning": "Front stalls overpriced and touristy; venture deeper for authentic vendors"
+        }
+      ]
+    },
+    "curated_restaurants": {
+      "url": "https://www.google.com/maps/@41.3897464,2.1519993,15z/data=!4m3!11m2!2sPR5l-Z44SE24gShlk1pVxQ!3e3?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "description": "Official Entrespacios curated map with 20+ historic, non-touristy bars and restaurants across Barcelona",
+      "source": "Entrespacios Barcelona Dining Guide PDF",
+      "notes": "Use this map as primary restaurant reference. All vetted for authenticity and local quality."
+    }
+  },
+  "budget_summary": {
+    "daily_estimates": {
+      "accommodation": "Included (already booked)",
+      "meals_per_day": {
+        "breakfast": "Included at hostel",
+        "lunch": "15-30 EUR (menú del día or seafood)",
+        "aperitif": "8-15 EUR (vermut or cava)",
+        "dinner": "Included at hostel",
+        "total": "23-45 EUR per day"
+      },
+      "attractions_by_day": {
+        "day_1": "0-12 EUR (free walks, optional Museu Picasso 12 EUR)",
+        "day_2": "26-86 EUR (Sagrada Família 26 EUR required, Casa Batlló 35 EUR or La Pedrera 25 EUR optional)",
+        "day_3": "0-5 EUR (free beach/Gràcia, or Castell 5 EUR if Montjuïc)",
+        "day_4": "0 EUR (departure day)"
+      },
+      "transport": {
+        "airport_arrival": "4.90-5.90 EUR (train/metro)",
+        "t_casual_ticket": "11.35 EUR (10 trips, sufficient for 4 days)",
+        "airport_departure": "4.90-5.90 EUR (train/metro) or 30-40 EUR (taxi recommended for early flight)",
+        "total": "21-58 EUR"
+      }
+    },
+    "total_4_day_estimate": "150-350 EUR",
+    "notes": "Range depends on: (1) choosing paid Gaudí attractions (Casa Batlló, La Pedrera) vs free exterior viewing, (2) taxi vs public transport for departure, (3) daily food/drink spending. Minimum budget assumes skipping paid attractions and public transport only."
+  },
+  "research_notes": {
+    "sources": [
+      {
+        "name": "Entrespacios Barcelona - Barrios y Playas (Neighborhoods & Beaches)",
+        "url": "Local PDF guide",
+        "type": "guide"
+      },
+      {
+        "name": "Entrespacios Barcelona - Cómo moverse (Transport Guide)",
+        "url": "Local PDF guide",
+        "type": "guide"
+      },
+      {
+        "name": "Entrespacios Barcelona - Dónde comer (Dining Guide)",
+        "url": "Local PDF guide",
+        "type": "guide"
+      },
+      {
+        "name": "Entrespacios Barcelona - Qué ver (What to See)",
+        "url": "Local PDF guide",
+        "type": "guide"
+      },
+      {
+        "name": "User Preferences & Constraints",
+        "url": null,
+        "type": "requirement"
+      }
+    ],
+    "alternatives_considered": [
+      {
+        "name": "Park Güell",
+        "reason_not_selected": "Requires advance booking (10 EUR), located far from city center, would consume full morning. Already have Sagrada Família and Casa Batlló/La Pedrera as Gaudí highlights."
+      },
+      {
+        "name": "Montserrat Day Trip",
+        "reason_not_selected": "Only 4 days total in Barcelona with early departure Day 4. Montserrat requires full day (2-3 hours each way). Not enough time."
+      },
+      {
+        "name": "Camp Nou Stadium Tour",
+        "reason_not_selected": "User showed no interest in football/sports. Prioritized architecture, food culture, and authentic neighborhoods."
+      },
+      {
+        "name": "Barceloneta Beach",
+        "reason_not_selected": "Entrespacios guide explicitly warns it's overcrowded and very touristy. Bogatell and Mar Bella beaches recommended instead as quieter alternatives."
+      }
+    ],
+    "notes": "Itinerary designed for 4-day stay (Oct 14-17, 2026) with: (1) Early arrival Day 1 (05:25 from Buenos Aires), intentionally lighter day due to jetlag, (2) Full Modernism/Gaudí day on Day 2 with emphasis on advance booking Sagrada Família, (3) Neighborhood/beach culture Day 3, (4) Early departure Day 4 to Paris (08:45). Accommodation provides breakfast and dinner, so lunch is main meal planning focus. Emphasizes authentic local experiences over tourist traps per Entrespacios guidance and user's trip-itinerary-generator skill preferences."
+  },
+  "emoji_legend": {
+    "cost_and_booking": {
+      "🆓": "Free - No admission fee",
+      "🎟️": "Paid - Requires ticket or entrance fee",
+      "📅": "Reservation Required - Must be booked in advance"
+    },
+    "visit_style": {
+      "👀": "See & Continue - Quick stop, exterior view, photo op (10-30 mins)",
+      "⏳": "Be There - Immersive visit, full tour, extended stay (1-3+ hours)"
+    },
+    "special_markers": {
+      "⭐": "Top Highlight - Must-see priority spot",
+      "📸": "Photo Spot - Prime viewpoint or aesthetic location",
+      "☂️": "Indoor / Rainy Day - Fully indoor activity",
+      "🍽️": "Food/Dining - Restaurant, meal, or culinary experience"
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "destination": "Bruges",
+  "country": "Belgium",
+  "dates": {
+    "start": "2026-10-21",
+    "end": "2026-10-22"
+  },
+  "accommodation": {
+    "name": "St Christopher's Bruges The Bauhaus",
+    "address": "Langestraat 133, 8000 Brugge",
+    "link": "https://www.hostelworld.com/pwa/hosteldetails.php/St-Christopher-s-Bruges-The-Bauhaus/Bruges/6494?from=2026-10-21&to=2026-10-22&guests=1&origin=microsite",
+    "checkIn": "2026-10-21",
+    "checkOut": "2026-10-22",
+    "bookingReference": null
+  },
+  "transport": {
+    "arrival": {
+      "date": "2026-10-21",
+      "time": "11:10",
+      "from": "Paris (Bercy Seine)",
+      "to": "Bruges Station",
+      "provider": "FlixBus",
+      "link": "https://shop.flixbus.com/search?departureCity=40de8964-8646-11e6-9066-549f350fcb0c&arrivalCity=40df5e22-8646-11e6-9066-549f350fcb0c&route=Par%C3%ADs-Brujas&rideDate=21.10.2026&adult=1&_locale=es_US&departureCountryCode=FR&arrivalCountryCode=BE&features[feature.enable_distribusion]=1&features[feature.train_cities_only]=0&features[feature.station_search]=0&features[feature.station_search_recommendation]=0&features[feature.darken_page]=1",
+      "bookingReference": null
+    },
+    "departure": {
+      "date": "2026-10-22",
+      "time": null,
+      "from": "Bruges",
+      "to": null,
+      "provider": "Omio",
+      "link": "https://www.omio.com/app/search-frontend/journey/bus/1332087742/E0054C1E675CD4F1E8B350FAC17D05DB5/-5163905115221097893?locale=en&origin_domain=com",
+      "bookingReference": null
+    }
+  },
+  "days": [
+    {
+      "date": "2026-10-21",
+      "isArrivalDay": true,
+      "isDepartureDay": false,
+      "timeBlocks": [
+        {
+          "name": "Morning",
+          "timeRange": "11:10-13:30",
+          "activities": [
+            {
+              "order": 1,
+              "name": "FlixBus Arrival at Bruges Station",
+              "link": "https://www.google.com/maps/search/Bruges+Railway+Station",
+              "duration": null,
+              "suggestedTime": "11:10",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": ["🆓", "👀"],
+              "notes": null,
+              "bookingRequired": false,
+              "bookingDetails": null
+            },
+            {
+              "order": 2,
+              "name": "St Christopher's Hostel The Bauhaus",
+              "link": "https://www.google.com/maps/search/St.+Christopher's+Bruges+The+Bauhaus",
+              "duration": 15,
+              "suggestedTime": "11:30",
+              "timeRestriction": "Check-in after 14:00 (bag drop available earlier)",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": ["🆓", "👀"],
+              "notes": "Drop your bags at the hostel (Langestraat).",
+              "bookingRequired": false,
+              "bookingDetails": null
+            },
+            {
+              "order": 3,
+              "name": "Torre Belfort (Campanario)",
+              "link": "https://www.google.com/maps/search/Belfry+of+Bruges",
+              "duration": 60,
+              "suggestedTime": "12:00",
+              "timeRestriction": "Open 09:30-18:00 (last entry 17:00)",
+              "priority": "high",
+              "priceRange": "€€",
+              "tags": ["🎟️", "⏳", "⭐", "📸"],
+              "notes": "Climb the 366 steps for iconic panoramic city views.",
+              "bookingRequired": false,
+              "bookingDetails": null
+            },
+            {
+              "order": 4,
+              "name": "Chez Albert",
+              "link": "https://www.google.com/maps/search/Chez+Albert+Bruges",
+              "duration": 20,
+              "suggestedTime": "13:00",
+              "timeRestriction": "Open 10:00-18:00 (varies by season)",
+              "priority": "high",
+              "priceRange": "€",
+              "tags": ["🎟️", "👀", "🍽️", "📸"],
+              "notes": "Grab your fresh, authentic Belgian waffle.",
+              "bookingRequired": false,
+              "bookingDetails": null
+            },
+            {
+              "order": 5,
+              "name": "Paseo en bote por los canales",
+              "link": "https://www.google.com/maps/search/Historium+Boat+Rental+Canal+Tour+Bruges",
+              "duration": 40,
+              "suggestedTime": "13:30",
+              "timeRestriction": "Boats run 10:00-18:00 (March-November, weather dependent)",
+              "priority": "high",
+              "priceRange": "€€",
+              "tags": ["🎟️", "⏳", "⭐", "📸"],
+              "notes": "Classic 40-minute boat tour of the canals right after your waffle.",
+              "bookingRequired": false,
+              "bookingDetails": null
+            }
+          ]
+        },
+        {
+          "name": "Afternoon",
+          "timeRange": "14:30-17:00",
+          "activities": [
+            {
+              "order": 6,
+              "name": "Supermarket near Hostel",
+              "link": "https://www.google.com/maps/search/Supermarket+near+Langestraat+Bruges",
+              "duration": 15,
+              "suggestedTime": "14:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€",
+              "tags": ["🎟️", "👀", "🍽️"],
+              "notes": "Grab snacks and water supplies for the ride.",
+              "bookingRequired": false,
+              "bookingDetails": null
+            },
+            {
+              "order": 7,
+              "name": "Bike Rental at Hostel & Damme by Bike",
+              "link": "https://www.google.com/maps/dir/St.+Christopher's+Bruges+The+Bauhaus/Damme",
+              "duration": 120,
+              "suggestedTime": "15:00",
+              "timeRestriction": "Daylight hours recommended (return before dark)",
+              "priority": "high",
+              "priceRange": "€",
+              "tags": ["🎟️", "⏳", "⭐", "📸"],
+              "notes": "Rent your bike directly at the hostel and take the scenic 7 km canal-side path to the historic book town of Damme and back.",
+              "bookingRequired": false,
+              "bookingDetails": null
+            }
+          ]
+        },
+        {
+          "name": "Evening",
+          "timeRange": "17:00-19:00",
+          "activities": [
+            {
+              "order": 8,
+              "name": "De Halve Maan Brewery Tour & Rooftop (Classic 45 mins)",
+              "link": "https://www.google.com/maps/search/De+Halve+Maan+Brewery+Bruges",
+              "duration": 45,
+              "suggestedTime": "17:00",
+              "timeRestriction": "Last tour at 17:00 (check seasonal hours)",
+              "priority": "high",
+              "priceRange": "€€",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️", "📸"],
+              "notes": "Tour the historic family brewery, check out the rooftop, and explore the underground beer pipeline before 5:00 p.m.",
+              "bookingRequired": true,
+              "bookingDetails": "Book online in advance recommended, especially in peak season"
+            }
+          ]
+        },
+        {
+          "name": "Night",
+          "timeRange": "19:00-23:00",
+          "activities": [
+            {
+              "order": 9,
+              "name": "St Christopher's Hostel Bar",
+              "link": "https://www.google.com/maps/search/St.+Christopher's+Bruges+The+Bauhaus",
+              "duration": null,
+              "suggestedTime": "19:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€€",
+              "tags": ["🎟️", "👀", "🍽️", "⭐"],
+              "notes": "Unwind and enjoy a drink at the hostel's lively bar.",
+              "bookingRequired": false,
+              "bookingDetails": null
+            },
+            {
+              "order": 10,
+              "name": "Walk in the night",
+              "link": "https://www.google.com/maps/search/Markt+Bruges",
+              "duration": 60,
+              "suggestedTime": "21:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "notes": "Stroll through the beautifully illuminated medieval squares and empty canals.",
+              "bookingRequired": false,
+              "bookingDetails": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "isArrivalDay": false,
+      "isDepartureDay": true,
+      "timeBlocks": [
+        {
+          "name": "Morning",
+          "timeRange": "TBD",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Check-out & Bus Departure",
+              "link": "https://www.google.com/maps/search/Bruges+Railway+Station",
+              "duration": null,
+              "suggestedTime": null,
+              "timeRestriction": "Check-out by 10:00",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": ["🆓", "👀"],
+              "notes": "Head to the station to catch your scheduled bus departure via Omio.",
+              "bookingRequired": false,
+              "bookingDetails": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "maps": {
+    "fullDayRoute": "https://www.google.com/maps/dir/St.+Christopher's+Bruges+The+Bauhaus/Belfry+of+Bruges/Chez+Albert/Historium+Boat+Rental+(Canal+Tour)/Damme/De+Halve+Maan+Brewery/St.+Christopher's+Bruges+The+Bauhaus",
+    "allLocationsSearch": "https://www.google.com/maps/search/St.+Christopher's+Bruges+The+Bauhaus+OR+Belfry+of+Bruges+OR+Chez+Albert+OR+Damme+OR+De+Halve+Maan+Brewery"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "destination": "",
+  "country": "",
+  "dates": {
+    "start": "YYYY-MM-DD",
+    "end": "YYYY-MM-DD"
+  },
+  "accommodation": {
+    "name": "",
+    "address": "",
+    "neighborhood": "",
+    "link": "",
+    "checkIn": "",
+    "checkOut": "",
+    "bookingReference": null,
+    "meals_included": [],
+    "notes": ""
+  },
+  "transport": {
+    "arrival": {
+      "date": "YYYY-MM-DD",
+      "time": "HH:MM",
+      "from": "",
+      "to": "",
+      "provider": "",
+      "transportType": "flight|train|bus|ferry|car",
+      "flightNumber": "",
+      "link": "",
+      "bookingReference": null,
+      "recommended_departure_from_accommodation": "HH:MM",
+      "recommended_arrival_at_station": "HH:MM",
+      "notes": ""
+    },
+    "departure": {
+      "date": "YYYY-MM-DD",
+      "time": "HH:MM",
+      "from": "",
+      "to": "",
+      "provider": "",
+      "transportType": "flight|train|bus|ferry|car",
+      "flightNumber": "",
+      "link": "",
+      "bookingReference": null,
+      "recommended_departure_from_accommodation": "HH:MM",
+      "recommended_arrival_at_station": "HH:MM",
+      "notes": ""
+    }
+  },
+  "days": [
+    {
+      "date": "YYYY-MM-DD",
+      "dayNumber": 1,
+      "title": "",
+      "isArrivalDay": false,
+      "isDepartureDay": false,
+      "total_walking_distance": "",
+      "total_duration": "",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "HH:MM-HH:MM",
+          "start_time": "HH:MM",
+          "end_time": "HH:MM",
+          "duration": "",
+          "description": "",
+          "activities": [
+            {
+              "order": 1,
+              "name": "",
+              "link": "",
+              "duration": 0,
+              "suggestedTime": "HH:MM",
+              "timeRestriction": "",
+              "priority": "mandatory|high|medium|low|optional",
+              "priceRange": "",
+              "tags": [],
+              "type": "",
+              "notes": "",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "",
+              "cost": "",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": ""
+        },
+        {
+          "name": "lunch",
+          "timeRange": "HH:MM-HH:MM",
+          "start_time": "HH:MM",
+          "end_time": "HH:MM",
+          "duration": "",
+          "description": "",
+          "activities": [],
+          "budget": ""
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "HH:MM-HH:MM",
+          "start_time": "HH:MM",
+          "end_time": "HH:MM",
+          "duration": "",
+          "description": "",
+          "activities": [],
+          "budget": ""
+        },
+        {
+          "name": "evening",
+          "timeRange": "HH:MM-HH:MM",
+          "start_time": "HH:MM",
+          "end_time": "HH:MM",
+          "duration": "",
+          "description": "",
+          "activities": [],
+          "budget": ""
+        }
+      ],
+      "map_url": "",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": ""
+      }
+    }
+  ],
+  "food_recommendations": {
+    "must_try_dishes": [
+      {
+        "name_local": "",
+        "name_english": "",
+        "description": "",
+        "typical_cost": "",
+        "meal_type": "starter|main|dessert|side|snack",
+        "seasonal": ""
+      }
+    ],
+    "drinks_and_rituals": [
+      {
+        "name_local": "",
+        "name_english": "",
+        "description": "",
+        "typical_cost": "",
+        "typical_time": ""
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "",
+        "link": "",
+        "neighborhood": "",
+        "cuisine": "",
+        "priceRange": "",
+        "specialties": [],
+        "notes": ""
+      }
+    ],
+    "special_meal_formats": [],
+    "tourist_traps_to_avoid": []
+  },
+  "logistics": {
+    "public_transport": {
+      "ticket_types": [],
+      "where_to_buy": {},
+      "operating_hours": {}
+    },
+    "bike_rentals": {},
+    "emergency_contacts": {},
+    "practical_tips": []
+  },
+  "maps": {
+    "example_curated_map": {
+      "url": "",
+      "description": ""
+    }
+  },
+  "research_notes": {
+    "sources": [
+      {
+        "name": "",
+        "url": "",
+        "type": "guide|blog|video|official|forum|recommendation"
+      }
+    ],
+    "alternatives_considered": [],
+    "notes": ""
+  },
+  "emoji_legend": {
+    "cost_and_booking": {
+      "🆓": "Free - No admission fee",
+      "🎟️": "Paid - Requires ticket or entrance fee",
+      "📅": "Reservation Required - Must be booked in advance"
+    },
+    "visit_style": {
+      "👀": "See & Continue - Quick stop, exterior view, photo op (10-30 mins)",
+      "⏳": "Be There - Immersive visit, full tour, extended stay (1-3+ hours)"
+    },
+    "special_markers": {
+      "⭐": "Top Highlight - Must-see priority spot",
+      "📸": "Photo Spot - Prime viewpoint or aesthetic location",
+      "☂️": "Indoor / Rainy Day - Fully indoor activity",
+      "🍽️": "Food/Dining"
+    }
+  }
+}

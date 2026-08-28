@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eurotrip 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --bg-elevated: #12121a;
+      --fg: #f0f0f5;
+      --muted: #8888a0;
+      --accent: #c8ff00;
+      --accent-soft: rgba(200, 255, 0, 0.12);
+      --card: #1a1a24;
+      --border: #2a2a3a;
+      --success: #00e676;
+      --city-paris: rgba(96, 165, 250, 0.08);
+      --city-brussels: rgba(189, 147, 249, 0.07);
+      --city-amsterdam: rgba(251, 191, 36, 0.07);
+      --city-berlin: rgba(37, 99, 155, 0.08);
+      --city-prague: rgba(254, 240, 9, 0.07);
+      --city-barcelona: rgba(239, 68, 68, 0.07);
+      --city-vienna: rgba(250, 36, 105, 0.07);
+      --city-madrid: rgba(220, 38, 38, 0.07);
+      --city-portugal: rgba(34, 197, 94, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Background texture - subtle paper grain */
+    .bg-texture {
+      position: fixed;
+      inset: 0;
+      background-image: 
+        radial-gradient(ellipse at 20% 20%, rgba(200, 255, 0, 0.04) 0, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(200, 255, 0, 0.03) 0, transparent 50%),
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='1.5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Route line - hand-drawn path through cities */
+    .route-line {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.4;
+    }
+    .route-path {
+      stroke: var(--accent);
+      stroke-width: 1;
+      stroke-dasharray: 8 6;
+      stroke-linecap: round;
+      fill: none;
+      filter: blur(1px);
+    }
+    .city-marker {
+      stroke: var(--accent);
+      stroke-width: 3;
+      stroke-linecap: round;
+      opacity: 0.6;
+    }
+
+    /* Floating elements */
+    .float-orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .orb-1 { width: 450px; height: 450px; background: var(--accent); top: -150px; left: -150px; opacity: 0.08; }
+    .orb-2 { width: 350px; height: 350px; background: #ff6b6b; bottom: -75px; right: -75px; opacity: 0.06; }
+
+    /* Header */
+    header {
+      position: relative;
+      z-index: 10;
+      padding: 2rem 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+
+    .logo span {
+      color: var(--fg);
+      font-style: italic;
+    }
+
+    .tagline {
+      margin-top: 0.5rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+
+    /* Navigation */
+    .nav {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav a:hover {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .nav a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* Main content */
+    main {
+      position: relative;
+      z-index: 10;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Section headers */
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--accent);
+      margin: 3.5rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* Itinerary grid */
+    .itinerary {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .itinerary {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .itinerary {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Day card */
+    .day-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, transform 0.2s;
+      animation: cardIn 0.4s ease-out forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .day-card {
+        animation: none;
+      }
+      @keyframes cardIn { from { opacity: 1; } to { opacity: 1; } }
+    }
+
+    .day-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .day-card:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+      border-radius: 6px;
+    }
+
+    .day-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .day-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      color: var(--accent);
+      min-width: 32px;
+    }
+
+    .day-name {
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* City indicator dot */
+    .city-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-right: 0.4rem;
+      opacity: 0.9;
+    }
+
+    /* Activity list */
+    .activity-list {
+      margin: 0;
+      padding-left: 1rem;
+    }
+
+    .activity-list li {
+      margin-bottom: 0.6rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .activity-list li:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .activity-name {
+      font-weight: 500;
+      color: var(--fg);
+      font-size: 0.8rem;
+    }
+
+    .activity-desc {
+      font-size: 0.65rem;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+
+    /* Must-do badge */
+    .must-do {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.55rem;
+      padding: 0.1rem 0.35rem;
+      border-radius: 2px;
+      margin-left: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* Cost badge */
+    .cost-badge {
+      display: inline-block;
+      background: var(--card);
+      color: var(--fg);
+      font-size: 0.7rem;
+      padding: 0.2rem 0.45rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Logistics */
+    .logistics {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .logistics h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin: 0 0 1.2rem;
+    }
+
+    .log-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.6rem;
+      font-size: 0.8rem;
+    }
+
+    .log-item .icon {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .log-item.bus .icon { background: var(--accent); }
+    .log-item.train .icon { background: #ff6b6b; }
+    .log-item.plane .icon { background: #ffd93d; }
+    .log-item.foot .icon { background: var(--success); }
+
+    /* Map section */
+    .map-section {
+      margin-top: 3rem;
+      min-height: 400px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), #ff6b6b, var(--accent));
+    }
+
+    .map-canvas {
+      width: 100%;
+      height: 100%;
+      background: var(--card);
+    }
+
+    /* Cost summary */
+    .cost-summary {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .cost-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      font-size: 0.8rem;
+    }
+
+    .cost-row .label {
+      color: var(--muted);
+    }
+
+    .cost-row .value {
+      color: var(--accent);
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
+
+    /* Focus states */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* Entrance animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-texture"></div>
+
+  <!-- Route line through cities -->
+  <svg class="route-line" viewBox="0 0 256 256" aria-hidden="true">
+    <path class="route-path" d="M60 180 S100 50 160 130 S200 220 140 260"/>
+    <circle class="city-marker" cx="60" cy="180" r="4"/>
+    <circle class="city-marker" cx="100" cy="50" r="4"/>
+    <circle class="city-marker" cx="160" cy="130" r="4"/>
+    <circle class="city-marker" cx="200" cy="220" r="4"/>
+    <circle class="city-marker" cx="140" cy="260" r="4"/>
+  </svg>
+
+  <div class="float-orb orb-1"></div>
+  <div class="float-orb orb-2"></div>
+
+  <header>
+    <h1 class="logo">Eurotrip <span>2026</span></h1>
+    <p class="tagline">24 días • 9 ciudades • Presupuesto compartido</p>
+    <nav class="nav">
+      <a href="#día-1">Día 1</a>
+      <a href="#día-2">Día 2</a>
+      <a href="#día-3">Día 3</a>
+      <a href="#día-4">Día 4</a>
+      <a href="#día-5">Día 5</a>
+      <a href="#día-6">Día 6</a>
+      <a href="#día-7">Día 7</a>
+      <a href="#día-8">Día 8</a>
+      <a href="#día-9">Día 9</a>
+      <a href="#día-10">Día 10</a>
+      <a href="#día-11">Día 11</a>
+      <a href="#día-12">Día 12</a>
+      <a href="#día-13">Día 13</a>
+      <a href="#día-14">Día 14</a>
+      <a href="#día-15">Día 15</a>
+      <a href="#día-16">Día 16</a>
+      <a href="#día-17">Día 17</a>
+      <a href="#día-18">Día 18</a>
+      <a href="#día-19">Día 19</a>
+      <a href="#día-20">Día 20</a>
+      <a href="#día-21">Día 21</a>
+      <a href="#día-22">Día 22</a>
+      <a href="#costos">Costos</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- DAY 1: Paris Arrival -->
+    <section id="día-1" class="section-title">Día 1 - PARÍS <span class="city-dot" style="background: rgba(96,165,250,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">1</span>
+          <span class="day-name">Llegada a París</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Check-in en hostel St Christopher's Canal</span>
+            <span class="cost-badge">≈€20</span>
+          </li>
+          <li>
+            <span class="activity-name">Paseo por Canal Saint-Martin</span>
+            <span class="activity-desc">Aclimatación urbana</span>
+          </li>
+          <li>
+            <span class="activity-name">Comprar Museum Pass Louvre</span>
+            <span class="must-do">Must Do</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 2: Paris Museums -->
+    <section id="día-2" class="section-title">Día 2 - PARÍS <span class="city-dot" style="background: rgba(96,165,250,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">2</span>
+          <span class="day-name">París</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Jardin des Tuileries</span>
+            <span class="activity-desc">Museo zona</span>
+          </li>
+          <li>
+            <span class="activity-name">Hotel de la Marine</span>
+          </li>
+          <li>
+            <span class="activity-name">Pont Alexandre III</span>
+          </li>
+          <li>
+            <span class="activity-name">Rue de l'Université + Invalides</span>
+          </li>
+          <li>
+            <span class="activity-name">Campo de Marte + Torre Eiffel</span>
+            <span class="must-do">Must Do</span>
+          </li>
+          <li>
+            <span class="activity-name">Arco del Triunfo</span>
+            <span class="activity-desc">(si hay tiempo: Museo d'Orsay)</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 3: Louvre Full Day -->
+    <section id="día-3" class="section-title">Día 3 - PARÍS <span class="city-dot" style="background: rgba(96,165,250,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">3</span>
+          <span class="day-name">París</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Museo del Louvre</span>
+            <span class="activity-desc">Entrada por Carrousel du Louvre</span>
+          </li>
+          <li>
+            <span class="activity-name">Ala Denon - Piso 1</span>
+            <span class="activity-desc">Mona Lisa</span>
+          </li>
+          <li>
+            <span class="activity-name">The Wedding at Cana</span>
+          </li>
+          <li>
+            <span class="activity-name">Puerta de Schengen</span>
+            <span class="activity-desc">Alas egipcias</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 4: Paris Orsay + Depart to Brussels -->
+    <section id="día-4" class="section-title">Día 4 - PARÍS <span class="city-dot" style="background: rgba(96,165,250,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">4</span>
+          <span class="day-name">París</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Museo d'Orsay</span>
+            <span class="activity-desc">Arte impresionista</span>
+          </li>
+          <li>
+            <span class="activity-name">Café de Flore - zona Saint-Germain</span>
+          </li>
+          <li>
+            <span class="activity-name">Salida a Bruselas</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 5: Brussels -->
+    <section id="día-5" class="section-title">Día 5 - BRUSELAS <span class="city-dot" style="background: rgba(189,147,249,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">5</span>
+          <span class="day-name">Bruselas</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Llegada a Bruselas</span>
+          </li>
+          <li>
+            <span class="activity-name">Grand Place</span>
+            <span class="activity-desc">Patrimonio UNESCO</span>
+          </li>
+          <li>
+            <span class="activity-name">Comida: waffles con chocolate</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 6: Amsterdam -->
+    <section id="día-6" class="section-title">Día 6 - ÁMSTERDAM <span class="city-dot" style="background: rgba(251,191,36,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">6</span>
+          <span class="day-name">Ámsterdam</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Museo Casa de Anne Frank</span>
+            <span class="must-do">Must Do</span>
+          </li>
+          <li>
+            <span class="activity-name">Crucero por los canales</span>
+            <span class="activity-desc">1 hora</span>
+          </li>
+          <li>
+            <span class="activity-name">Callejón Warmoesstraat</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 7: Berlin -->
+    <section id="día-7" class="section-title">Día 7 - BERLÍN <span class="city-dot" style="background: rgba(37,99,155,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">7</span>
+          <span class="day-name">Berlín</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Museo del Muro de Berlín</span>
+            <span class="must-do">Must Do</span>
+          </li>
+          <li>
+            <span class="activity-name">Checkpoint Charlie</span>
+          </li>
+          <li>
+            <span class="activity-name">Isla de los Museos</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 8: Berlin East Side Gallery -->
+    <section id="día-8" class="section-title">Día 8 - BERLÍN <span class="city-dot" style="background: rgba(37,99,155,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">8</span>
+          <span class="day-name">Berlín</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">East Side Gallery</span>
+            <span class="activity-desc">Tramo largo del Muro</span>
+          </li>
+          <li>
+            <span class="activity-name">Plaza Alexanderplatz</span>
+          </li>
+          <li>
+            <span class="activity-name">Cena: currywurst local</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 9: Prague -->
+    <section id="día-9" class="section-title">Día 9 - PRAGA <span class="city-dot" style="background: rgba(254,240,9,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">9</span>
+          <span class="day-name">Praga</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Llegada a Praga</span>
+          </li>
+          <li>
+            <span class="activity-name">Callejuela de las Torres Decoradas</span>
+          </li>
+          <li>
+            <span class="activity-name">Reloj Astronómico</span>
+          </li>
+          <li>
+            <span class="activity-name">Cena: trdelník en la Plaza de la Ciudad Vieja</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 10: Prague Castle -->
+    <section id="día-10" class="section-title">Día 10 - PRAGA <span class="city-dot" style="background: rgba(254,240,9,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">10</span>
+          <span class="day-name">Praga</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Castillo de Praga</span>
+            <span class="activity-desc">Vista al río Vltava</span>
+          </li>
+          <li>
+            <span class="activity-name">Catedral de San Vito</span>
+          </li>
+          <li>
+            <span class="activity-name">Calle Celetná - tiendas locales</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 11: Barcelona -->
+    <section id="día-11" class="section-title">Día 11 - BARCELONA <span class="city-dot" style="background: rgba(239,68,68,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">11</span>
+          <span class="day-name">Barcelona</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Llegada a Barcelona</span>
+          </li>
+          <li>
+            <span class="activity-name">Barrio Gótico</span>
+            <span class="activity-desc">Catedral y plazas ocultas</span>
+          </li>
+          <li>
+            <span class="activity-name">La Rambla - mercado de la Boqueria</span>
+          </li>
+          <li>
+            <span class="activity-name">Cena: tapas en El Born</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 12: Sagrada Familia -->
+    <section id="día-12" class="section-title">Día 12 - BARCELONA <span class="city-dot" style="background: rgba(239,68,68,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">12</span>
+          <span class="day-name">Barcelona</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Sagrada Familia</span>
+            <span class="must-do">Must Do</span>
+          </li>
+          <li>
+            <span class="activity-name">Park Güell</span>
+            <span class="activity-desc">zona norte, vista ciudad</span>
+          </li>
+          <li>
+            <span class="activity-name">Passeig de Gràcia</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 13: Picasso Museum + Beach -->
+    <section id="día-13" class="section-title">Día 13 - BARCELONA <span class="city-dot" style="background: rgba(239,68,68,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">13</span>
+          <span class="day-name">Barcelona</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Museo Picasso</span>
+            <span class="activity-desc">Obras tempranas</span>
+          </li>
+          <li>
+            <span class="activity-name">Playa Barceloneta</span>
+            <span class="activity-desc">atardecer</span>
+          </li>
+          <li>
+            <span class="activity-name">Museo Marítimo</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 14: Vienna -->
+    <section id="día-14" class="section-title">Día 14 - VIENA <span class="city-dot" style="background: rgba(250,36,105,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">14</span>
+          <span class="day-name">Viena</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Llegada a Viena</span>
+          </li>
+          <li>
+            <span class="activity-name">Catedral de San Esteban</span>
+            <span class="activity-desc">Plaza del mismo nombre</span>
+          </li>
+          <li>
+            <span class="activity-name">Palacio de Hofburg</span>
+          </li>
+          <li>
+            <span class="activity-name">Cena: schnitzel tradicional</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 15: Vienna Museums -->
+    <section id="día-15" class="section-title">Día 15 - VIENA <span class="city-dot" style="background: rgba(250,36,105,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">15</span>
+          <span class="day-name">Viena</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">MuseosQuartier</span>
+            <span class="activity-desc">Kunsthistorisches Museum</span>
+          </li>
+          <li>
+            <span class="activity-name">Palacio de Schönbrunn</span>
+            <span class="activity-desc">Jardines formales</span>
+          </li>
+          <li>
+            <span class="activity-name">Café Sperl - especialidad local</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 16: Madrid -->
+    <section id="día-16" class="section-title">Día 16 - MADRID <span class="city-dot" style="background: rgba(220,38,38,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">16</span>
+          <span class="day-name">Madrid</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Llegada a Madrid</span>
+          </li>
+          <li>
+            <span class="activity-name">Museo del Prado</span>
+            <span class="must-do">Must Do</span>
+          </li>
+          <li>
+            <span class="activity-name">Jardines del Retiro</span>
+          </li>
+          <li>
+            <span class="activity-name">Cena: cocido madrileño</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 17: Madrid Reina Sofía -->
+    <section id="día-17" class="section-title">Día 17 - MADRID <span class="city-dot" style="background: rgba(220,38,38,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">17</span>
+          <span class="day-name">Madrid</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Museo Reina Sofía</span>
+            <span class="activity-desc">Guernica + arte contemporáneo</span>
+          </li>
+          <li>
+            <span class="activity-name">Gran Vía</span>
+            <span class="activity-desc">Teatro y shopping</span>
+          </li>
+          <li>
+            <span class="activity-name">Mercado de San Miguel</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 18: Madrid + departure prep -->
+    <section id="día-18" class="section-title">Día 18 - MADRID <span class="city-dot" style="background: rgba(220,38,38,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">18</span>
+          <span class="day-name">Madrid</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Templo de Debod</span>
+            <span class="activity-desc">atardecer</span>
+          </li>
+          <li>
+            <span class="activity-name">Últimas compras zona Sol</span>
+          </li>
+          <li>
+            <span class="activity-name">Empaque y preparación viaje Portugal</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 19: Portugal (Lisbon) -->
+    <section id="día-19" class="section-title">Día 19 - PORTUGAL <span class="city-dot" style="background: rgba(34,197,94,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">19</span>
+          <span class="day-name">Lisboa</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Llegada a Lisboa</span>
+          </li>
+          <li>
+            <span class="activity-name">Alfama - hostel check-in</span>
+          </li>
+          <li>
+            <span class="activity-name">Miradouro de Santa Catarina</span>
+            <span class="activity-desc">Vistas río Tajo</span>
+          </li>
+          <li>
+            <span class="activity-name">Paseo por Rua das Portas del Sol</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 20: Belém -->
+    <section id="día-20" class="section-title">Día 20 - PORTUGAL <span class="city-dot" style="background: rgba(34,197,94,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">20</span>
+          <span class="day-name">Lisboa</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Monasterio dos Jerónimos</span>
+            <span class="must-do">Must Do</span>
+          </li>
+          <li>
+            <span class="activity-name">Torre de Belém</span>
+          </li>
+          <li>
+            <span class="activity-name">Pastel de Belém - original</span>
+          </li>
+          <li>
+            <span class="activity-name">Tram 28 - recorrido por la ciudad</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 21: Alfama & São Jorge -->
+    <section id="día-21" class="section-title">Día 21 - PORTUGAL <span class="city-dot" style="background: rgba(34,197,94,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">21</span>
+          <span class="day-name">Lisboa</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Castelo de São Jorge</span>
+            <span class="activity-desc">Vistas panorámicas</span>
+          </li>
+          <li>
+            <span class="activity-name">Alfama - laberinto de callejones</span>
+          </li>
+          <li>
+            <span class="activity-name">Fado en casa de música tradicional</span>
+            <span class="must-do">Must Do</span>
+          </li>
+          <li>
+            <span class="activity-name">LX Factory - tiendas vintage</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 22: Sintra day trip -->
+    <section id="día-22" class="section-title">Día 22 - PORTUGAL <span class="city-dot" style="background: rgba(34,197,94,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">22</span>
+          <span class="day-name">Lisboa</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Excursión a Sintra</span>
+            <span class="activity-desc">Autobús directo desde Estação do Rossio</span>
+          </li>
+          <li>
+            <span class="activity-name">Palacio da Pena</span>
+            <span class="must-do">Must Do</span>
+          </li>
+          <li>
+            <span class="activity-name">Queso local en la tienda da Vila</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- DAY 23: Final Lisbon exploration -->
+    <section id="día-23" class="section-title">Día 23 - PORTUGAL <span class="city-dot" style="background: rgba(34,197,94,0.9)"></span></section>
+    <div class="itinerary">
+      <article class="day-card">
+        <div class="day-header">
+          <span class="day-number">23</span>
+          <span class="day-name">Lisboa</span>
+        </div>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-name">Últimos compras Chiado</span>
+          </li>
+          <li>
+            <span class="activity-name">Museu de Arte, Arquitetura e Tecnologia (MAAT)</span>
+          </li>
+          <li>
+            <span class="activity-name">Despedida: cena mariscos zona Alcântara</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- COST SUMMARY -->
+    <div class="cost-summary">
+      <h3>Resumen de Costos Aproximados</h3>
+      <div class="cost-row">
+        <span class="label">Vuelos Madrid-Paris/Retorno</span>
+        <span class="value">€295</span>
+      </div>
+      <div class="cost-row">
+        <span class="label">Paseos de Museo</span>
+        <span class="value">€85</span>
+      </div>
+      <div class="cost-row">
+        <span class="label">Alojamiento (23 noches)</span>
+        <span class="value">€425</span>
+      </div>
+      <div class="cost-row">
+        <span class="label">Transporte local</span>
+        <span class="value">€70</span>
+      </div>
+      <div class="cost-row">
+        <span class="label">Comidas y entradas</span>
+        <span class="value">€340</span>
+      </div>
+      <div class="cost-row">
+        <span class="label">TOTAL APROX.</span>
+        <span class="value">€1,215</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Logística Section -->
+  <section class="logistics" id="logistics">
+    <h3>Logística</h3>
+    <div class="log-item">
+      <span class="icon bus"></span>
+      <span>Autobús entre ciudades seleccionadas</span>
+    </div>
+    <div class="log-item">
+      <span class="icon train"></span>
+      <span>Train París-Brúxelas-Amsterdam-Berlín (tickets reservados)</span>
+    </div>
+    <div class="log-item">
+      <span class="icon plane"></span>
+      <span>Vuelo Madrid-Paris + regreso desde Lisboa</span>
+    </div>
+    <div class="log-item">
+      <span class="icon foot"></span>
+      <span>Exploración a pie en cada ciudad — calzado cómodo recomendado</span>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section" id="map">
+    <h3>Ruta por ciudad</h3>
+    <div class="map-canvas" id="map-canvas"></div>
+    <p class="map-desc">Mapa interactivo con marcadores de cada actividad diaria</p>
+  </section>
+
+</body>
+</html>

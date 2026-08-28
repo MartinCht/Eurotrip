@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris 5-Day Itinerary | Oct 17-21, 2026</title>
+    <style>
+        :root {
+            --primary: #2c5aa0;
+            --secondary: #1a1a2e;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #dee2e6;
+            --highlight: #e8f4f8;
+            --success: #27ae60;
+            --info: #3498db;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid var(--primary);
+        }
+        
+        h1 {
+            color: var(--secondary);
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .trip-meta {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #666;
+            font-size: 1rem;
+            padding: 8px 16px;
+            background: var(--highlight);
+            border-radius: 8px;
+        }
+        
+        .meta-item strong {
+            color: var(--primary);
+        }
+        
+        .alert {
+            background: #fff3cd;
+            border-left: 5px solid var(--warning);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .alert-success {
+            background: #d4edda;
+            border-left-color: var(--success);
+        }
+        
+        .alert h3 {
+            color: var(--warning);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .alert-success h3 {
+            color: var(--success);
+        }
+        
+        .alert ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .section {
+            margin: 50px 0;
+        }
+        
+        h2 {
+            color: var(--secondary);
+            font-size: 2rem;
+            margin: 40px 0 25px 0;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--border-color);
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin: 25px 0 15px 0;
+        }
+        
+        h4 {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin: 18px 0 12px 0;
+        }
+        
+        .day-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, var(--highlight) 100%);
+            border-left: 8px solid var(--primary);
+            padding: 35px;
+            margin: 35px 0;
+            border-radius: 0 16px 16px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .day-title {
+            flex: 1;
+        }
+        
+        .day-title h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.8rem;
+        }
+        
+        .day-date {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .day-badges {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .badge-arrival {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        
+        .badge-departure {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .day-meta {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            color: #555;
+            flex-wrap: wrap;
+        }
+        
+        .day-meta strong {
+            color: var(--primary);
+        }
+        
+        .time-block {
+            margin: 30px 0;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+        }
+        
+        .time-block-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .time-block-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: capitalize;
+        }
+        
+        .time-range {
+            font-size: 0.9rem;
+            color: #666;
+            background: #e9ecef;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        
+        .activity-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .activity-item {
+            padding: 20px;
+            margin: 15px 0;
+            background: #fafafa;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            transition: all 0.3s;
+        }
+        
+        .activity-item:hover {
+            background: #f0f0f0;
+            transform: translateX(8px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .activity-item.optional {
+            border-left-color: #adb5bd;
+            opacity: 0.85;
+        }
+        
+        .activity-item.mandatory {
+            border-left-color: var(--danger);
+            background: #fff5f5;
+        }
+        
+        .activity-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            gap: 15px;
+        }
+        
+        .activity-name {
+            font-weight: 700;
+            color: var(--secondary);
+            font-size: 1.15rem;
+            flex: 1;
+        }
+        
+        .activity-name a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        
+        .activity-name a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+        
+        .activity-tags {
+            display: flex;
+            gap: 6px;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        
+        .activity-meta {
+            display: flex;
+            gap: 18px;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: #666;
+            flex-wrap: wrap;
+        }
+        
+        .activity-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .priority-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .priority-mandatory {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .priority-high {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .priority-medium {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        
+        .priority-low {
+            background: #e2e3e5;
+            color: #383d41;
+        }
+        
+        .priority-optional {
+            background: #f8f9fa;
+            color: #6c757d;
+        }
+        
+        .activity-notes {
+            margin-top: 12px;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+            padding-left: 15px;
+            border-left: 2px solid #dee2e6;
+        }
+        
+        .activity-booking {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: #fff3cd;
+            border-left: 4px solid var(--warning);
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .activity-booking strong {
+            color: var(--warning);
+        }
+        
+        .activity-pmp {
+            margin-top: 10px;
+            padding: 10px 14px;
+            background: #d4edda;
+            border-left: 4px solid var(--success);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--success);
+            font-weight: 600;
+        }
+        
+        .map-link {
+            display: inline-block;
+            margin-top: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .map-link:hover {
+            background: #1e3a6d;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(44, 90, 160, 0.4);
+        }
+        
+        .alternatives-section {
+            margin-top: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 2px dashed var(--border-color);
+        }
+        
+        .alternatives-section h4 {
+            color: #6c757d;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        .alternatives-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .alternative-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 6px;
+            border-left: 3px solid #6c757d;
+        }
+        
+        .alternative-name {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 5px;
+        }
+        
+        .alternative-reason {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .food-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s;
+        }
+        
+        .food-card:hover {
+            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+        
+        .food-name-local {
+            color: var(--primary);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .food-name-english {
+            color: #6c757d;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        
+        .food-description {
+            margin: 12px 0;
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .food-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+        }
+        
+        .food-cost {
+            color: var(--success);
+            font-weight: 600;
+        }
+        
+        .food-type {
+            color: #6c757d;
+            text-transform: capitalize;
+        }
+        
+        .logistics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .logistics-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+        }
+        
+        .logistics-card h4 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .logistics-card ul {
+            margin-left: 20px;
+        }
+        
+        .logistics-card li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        .emoji-legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+            padding: 25px;
+            background: var(--highlight);
+            border-radius: 10px;
+        }
+        
+        .emoji-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .emoji-symbol {
+            font-size: 1.5rem;
+        }
+        
+        .emoji-description {
+            color: #555;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .day-card {
+                padding: 20px;
+            }
+            
+            .activity-item {
+                padding: 15px;
+            }
+            
+            .food-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇫🇷 Paris 5-Day Itinerary</h1>
+            <div class="subtitle">October 17-21, 2026</div>
+            <div class="trip-meta">
+                <div class="meta-item">
+                    <span>📍</span>
+                    <span><strong>Destination:</strong> Paris, France</span>
+                </div>
+                <div class="meta-item">
+                    <span>📅</span>
+                    <span><strong>Duration:</strong> 5 days (4 nights)</span>
+                </div>
+                <div class="meta-item">
+                    <span>🏨</span>
+                    <span><strong>Base:</strong> Hôtel Madrigal (Montparnasse)</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="alert">
+            <h3>⚠️ CRITICAL: Book Immediately</h3>
+            <ul>
+                <li><strong>Paris Museum Pass (€85):</strong> Purchase on arrival Day 1. Covers 60+ museums including Louvre, Orsay, Arc de Triomphe, Sainte-Chapelle.</li>
+                <li><strong>Eiffel Tower:</strong> Book 2-4 weeks ahead. NOT covered by Museum Pass. €22-30.</li>
+                <li><strong>Timed Entry Reservations:</strong> Louvre, Sainte-Chapelle, Hôtel de la Marine require advance online booking (even with Museum Pass).</li>
+            </ul>
+        </div>
+
+        <div class="alert alert-success">
+            <h3>✅ Transport Confirmed</h3>
+            <ul>
+                <li><strong>Arrival:</strong> Vueling VY8017 from Barcelona (BCN) → Paris Orly (ORY) at 10:35 on Oct 17</li>
+                <li><strong>Departure:</strong> FlixBus from Quai de Bercy → Bruges at 06:30 on Oct 21 (arrive 11:10)</li>
+            </ul>
+        </div>
+
+        <section class="section">
+            <h2>📍 Accommodation</h2>
+            <div class="logistics-card">
+                <h4>Hôtel Madrigal</h4>
+                <p><strong>Address:</strong> 14 Rue Pernety, 75014 Paris</p>
+                <p><strong>Neighborhood:</strong> Montparnasse / 14th Arrondissement</p>
+                <p><strong>Check-in:</strong> October 17, 2026</p>
+                <p><strong>Check-out:</strong> October 21, 2026</p>
+                <p><strong>Metro Access:</strong> Pasteur station (Lines 4, 6, 12, 13)</p>
+                <p><strong>Notes:</strong> Excellent connectivity. 15 min to Eiffel Tower (Line 6). Direct Line 4 to Gare du Nord.</p>
+                <a href="https://www.google.com/maps/search/Hotel+Madrigal+14+Rue+Pernety+75014+Paris" class="map-link" target="_blank">📍 View on Google Maps</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🗓️ Day-by-Day Itinerary</h2>
+
+            <!-- Day 1 -->
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-title">
+                        <h3>Day 1: Arrival & Canal Saint-Martin</h3>
+                        <div class="day-date">Friday, October 17, 2026</div>
+                    </div>
+                    <div class="day-badges">
+                        <span class="badge badge-arrival">Arrival Day</span>
+                    </div>
+                </div>
+                <div class="day-meta">
+                    <span><strong>Walking Distance:</strong> ~3-4 km</span>
+                    <span><strong>Active Time:</strong> ~5-6 hours (after arrival)</span>
+                </div>
+
+                <!-- Morning -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🌅 Morning</span>
+                        <span class="time-range">10:35 - 13:00</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item mandatory">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/dir/Paris+Orly+Airport/Hotel+Madrigal+14+Rue+Pernety+75014+Paris" target="_blank">Airport Arrival & Transport to Hotel</a>
+                                </div>
+                                <div class="activity-tags">🎟️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-mandatory">Mandatory</span>
+                                <span>⏱️ ~70 min</span>
+                                <span>💰 €11.65</span>
+                            </div>
+                            <div class="activity-notes">
+                                Take Orlybus to Denfert-Rochereau (€9.50), then Metro Line 4 to Pasteur (€2.15 or use Navigo/ticket carnet). Total time: 45-60 min.
+                            </div>
+                        </li>
+                        <li class="activity-item mandatory">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Hotel+Madrigal+14+Rue+Pernety+75014+Paris" target="_blank">Hôtel Madrigal Check-in / Luggage Storage</a>
+                                </div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-mandatory">Mandatory</span>
+                                <span>⏱️ ~30 min</span>
+                                <span>🕐 11:45</span>
+                            </div>
+                            <div class="activity-notes">
+                                Store luggage if room not ready. Freshen up and prepare for afternoon exploration.
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.parismuseumpass.com" target="_blank">Paris Museum Pass Purchase (PRIORITY)</a>
+                                </div>
+                                <div class="activity-tags">🎟️ 📅</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High Priority</span>
+                                <span>⏱️ ~15 min</span>
+                                <span>💰 €85 (4-day pass)</span>
+                            </div>
+                            <div class="activity-notes">
+                                <strong>CRITICAL:</strong> Purchase 4-day Paris Museum Pass (€85) before visiting museums. Covers Louvre, Orsay, Arc de Triomphe, Versailles, and 60+ museums. Requires online timed-entry reservations for major sites.
+                            </div>
+                            <div class="activity-booking">
+                                <strong>📅 Booking Required:</strong> Purchase immediately, then book timed entries online
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Lunch -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🍽️ Lunch</span>
+                        <span class="time-range">13:00 - 14:30</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/restaurants+near+Gare+Montparnasse+Paris" target="_blank">Lunch near Montparnasse</a>
+                                </div>
+                                <div class="activity-tags">🍽️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~90 min</span>
+                                <span>💰 €12-18</span>
+                            </div>
+                            <div class="activity-notes">
+                                Grab a casual lunch near the hotel or pick up baguette sandwiches from a local boulangerie.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Afternoon -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">☀️ Afternoon</span>
+                        <span class="time-range">14:30 - 18:30</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Canal+Saint+Martin+Paris" target="_blank">Canal Saint-Martin</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 📸</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~90 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Scenic canal with iron footbridges, trendy cafés, and boutiques. Great for a leisurely stroll.
+                            </div>
+                        </li>
+                        <li class="activity-item optional">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Bassin+de+la+Villette+Paris" target="_blank">Bassin de la Villette</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-medium">Medium</span>
+                                <span>⏱️ ~60 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Large basin with waterfront cafés, MK2 floating cinema, and local hangout vibe.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Evening -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🌆 Evening</span>
+                        <span class="time-range">18:30 - 21:00</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/restaurants+Canal+Saint+Martin+Paris" target="_blank">Dinner near Hotel or Canal</a>
+                                </div>
+                                <div class="activity-tags">🍽️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~90 min</span>
+                                <span>💰 €18-28</span>
+                            </div>
+                            <div class="activity-notes">
+                                Casual dinner at a local bistro. Consider traditional French dishes like coq au vin or steak frites.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Canal+Saint+Martin+Paris/Bassin+de+la+Villette+Paris/Hotel+Madrigal+Paris" class="map-link" target="_blank">🗺️ View Day 1 Route on Google Maps</a>
+
+                <!-- Alternatives -->
+                <div class="alternatives-section">
+                    <h4>📋 Alternative Options for Day 1</h4>
+                    <ul class="alternatives-list">
+                        <li class="alternative-item">
+                            <div class="alternative-name">Plaza de la Concordia & Place Vendôme</div>
+                            <div class="alternative-reason">Classic central Paris monuments. Could visit if energy permits, but arrival day best kept light.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Champs-Élysées & Arc de Triomphe</div>
+                            <div class="alternative-reason">Iconic avenue and monument. Better saved for Day 2 when fresh and with Museum Pass active.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-title">
+                        <h3>Day 2: Royal Gardens, Grand Bridges & Eiffel Tower</h3>
+                        <div class="day-date">Saturday, October 18, 2026</div>
+                    </div>
+                </div>
+                <div class="day-meta">
+                    <span><strong>Walking Distance:</strong> ~8-10 km</span>
+                    <span><strong>Active Time:</strong> ~10-12 hours</span>
+                </div>
+
+                <!-- Morning -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🌅 Morning</span>
+                        <span class="time-range">08:30 - 13:00</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Jardin+des+Tuileries+Paris" target="_blank">Jardin des Tuileries</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 📸</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~45 min</span>
+                                <span>💰 Free</span>
+                                <span>🕐 09:00</span>
+                            </div>
+                            <div class="activity-notes">
+                                Historic royal garden between Louvre and Place de la Concorde. Morning stroll before crowds.
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.hotel-de-la-marine.paris/en" target="_blank">Hôtel de la Marine</a>
+                                </div>
+                                <div class="activity-tags">🎟️ 📅 ⏳ ⭐ ☂️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~120 min</span>
+                                <span>🕐 10:00</span>
+                            </div>
+                            <div class="activity-notes">
+                                Stunning 18th-century palace with 3D audio guides. Timed entry reservation REQUIRED.
+                            </div>
+                            <div class="activity-pmp">✅ Paris Museum Pass INCLUDED</div>
+                            <div class="activity-booking">
+                                <strong>📅 Booking Required:</strong> Reserve 2-3 days ahead
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Pont+Alexandre+III+Paris" target="_blank">Pont Alexandre III</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 📸 ⭐</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~20 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Paris's most ornate bridge with gilded statues and Art Nouveau lamps. Featured in Midnight in Paris.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Lunch -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🍽️ Lunch</span>
+                        <span class="time-range">13:00 - 14:30</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Rue+Cler+Paris+restaurants" target="_blank">Lunch at Rue Cler or nearby bistro</a>
+                                </div>
+                                <div class="activity-tags">🍽️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~90 min</span>
+                                <span>💰 €15-22</span>
+                            </div>
+                            <div class="activity-notes">
+                                Rue Cler is a famous pedestrian market street with cafés and food shops. Great for a casual lunch.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Afternoon -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">☀️ Afternoon</span>
+                        <span class="time-range">14:30 - 18:30</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.musee-armee.fr/en/" target="_blank">Les Invalides & Musée de l'Armée</a>
+                                </div>
+                                <div class="activity-tags">🎟️ 📅 ⏳ ⭐ ☂️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~120 min</span>
+                                <span>🕐 14:30</span>
+                            </div>
+                            <div class="activity-notes">
+                                Napoleon's tomb and extensive military museum. Reservation recommended.
+                            </div>
+                            <div class="activity-pmp">✅ Paris Museum Pass INCLUDED</div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Champ+de+Mars+Paris" target="_blank">Champ de Mars</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 📸</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~30 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Large public greenspace at the base of the Eiffel Tower. Perfect for picnic or rest.
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.toureiffel.paris/en" target="_blank">Eiffel Tower</a>
+                                </div>
+                                <div class="activity-tags">🎟️ 📅 ⏳ ⭐ 📸</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~120 min</span>
+                                <span>💰 €22.60-€29.40</span>
+                            </div>
+                            <div class="activity-notes">
+                                <strong>NOT covered by Museum Pass.</strong> Elevator to summit: €29.40. Stairs to 2nd floor + elevator to summit: €22.60.
+                            </div>
+                            <div class="activity-booking">
+                                <strong>📅 BOOK WEEKS IN ADVANCE:</strong> 2-4 weeks recommended, especially sunset slots
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Evening -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🌆 Evening</span>
+                        <span class="time-range">18:30 - 21:00</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Trocadero+Paris" target="_blank">Trocadéro</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 📸 ⭐</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~45 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Best frontal view of the Eiffel Tower, especially at sunset. Watch the tower sparkle on the hour after dark.
+                            </div>
+                        </li>
+                        <li class="activity-item optional">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.paris-arc-de-triomphe.fr/en" target="_blank">Arc de Triomphe</a>
+                                </div>
+                                <div class="activity-tags">🎟️ 📅 ⏳ ⭐</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~75 min</span>
+                            </div>
+                            <div class="activity-notes">
+                                Climb to rooftop for 360° panoramic views. Reservation recommended.
+                            </div>
+                            <div class="activity-pmp">✅ Paris Museum Pass INCLUDED</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Jardin+des+Tuileries+Paris/Hotel+de+la+Marine+Paris/Pont+Alexandre+III+Paris/Les+Invalides+Paris/Champ+de+Mars+Paris/Eiffel+Tower+Paris/Trocadero+Paris/Arc+de+Triomphe+Paris/Hotel+Madrigal+Paris" class="map-link" target="_blank">🗺️ View Day 2 Route on Google Maps</a>
+
+                <!-- Alternatives -->
+                <div class="alternatives-section">
+                    <h4>📋 Alternative Options for Day 2</h4>
+                    <ul class="alternatives-list">
+                        <li class="alternative-item">
+                            <div class="alternative-name">Musée de l'Orangerie</div>
+                            <div class="alternative-reason">Monet's Water Lilies in oval rooms. Museum Pass included. 60-90 min visit.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Champs-Élysées walk</div>
+                            <div class="alternative-reason">Famous avenue from Arc de Triomphe. Can walk down if energy permits, though crowded.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Musée d'Orsay (Thursday late opening)</div>
+                            <div class="alternative-reason">Open until 21:45 on Thursdays only. Impressionist masterpieces. Museum Pass included.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Bateaux Mouches dinner cruise</div>
+                            <div class="alternative-reason">Seine river cruise with meal and live music. €70-100+ per person. Romantic but costly.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-title">
+                        <h3>Day 3: Louvre Masterpieces, Historic Islands & Le Marais</h3>
+                        <div class="day-date">Sunday, October 19, 2026</div>
+                    </div>
+                </div>
+                <div class="day-meta">
+                    <span><strong>Walking Distance:</strong> ~9-11 km</span>
+                    <span><strong>Active Time:</strong> ~11-13 hours</span>
+                </div>
+
+                <!-- Morning -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🌅 Morning (Louvre Deep Dive)</span>
+                        <span class="time-range">08:30 - 13:00</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.louvre.fr/en" target="_blank">Musée du Louvre - Carrousel Entrance</a>
+                                </div>
+                                <div class="activity-tags">🎟️ 📅 ⏳ ⭐ ☂️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~240 min</span>
+                                <span>🕐 09:00</span>
+                            </div>
+                            <div class="activity-notes">
+                                <strong>ENTER via Carrousel du Louvre to skip pyramid lines.</strong> Focus on: Ala Denon (Mona Lisa, Winged Victory, Liberty Leading the People, Coronation of Napoleon, Wedding at Cana), Ala Sully (Venus de Milo, Sphinx of Tanis, Egyptian mummies, Lamassu), Ala Richelieu (Galerie d'Apollon, Napoleon III Apartments).
+                            </div>
+                            <div class="activity-pmp">✅ Paris Museum Pass INCLUDED</div>
+                            <div class="activity-booking">
+                                <strong>📅 Timed Entry REQUIRED:</strong> Book 1-3 days ahead
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Lunch -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🍽️ Lunch</span>
+                        <span class="time-range">13:00 - 14:30</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/restaurants+Latin+Quarter+Paris" target="_blank">Lunch in Latin Quarter or Le Marais</a>
+                                </div>
+                                <div class="activity-tags">🍽️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~90 min</span>
+                                <span>💰 €14-20</span>
+                            </div>
+                            <div class="activity-notes">
+                                Casual French bistro or crêperie. Latin Quarter has many student-friendly options.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Afternoon -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">☀️ Afternoon</span>
+                        <span class="time-range">14:30 - 18:30</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Ile+de+la+Cite+Paris" target="_blank">Île de la Cité & Place Dauphine</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 📸</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~30 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Historic island heart of Paris. Charming tree-lined square with cafés.
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.notredamedeparis.fr/en/" target="_blank">Cathédrale Notre-Dame de Paris</a>
+                                </div>
+                                <div class="activity-tags">🆓 📅 ⏳ ⭐</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~45 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Under reconstruction after 2019 fire. Exterior viewing and square accessible. Check if interior has reopened by Oct 2026. Reservation required if interior open.
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.sainte-chapelle.fr/en" target="_blank">Sainte-Chapelle</a>
+                                </div>
+                                <div class="activity-tags">🎟️ 📅 ⏳ ⭐ ☂️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~60 min</span>
+                            </div>
+                            <div class="activity-notes">
+                                Stunning 13th-century Gothic chapel with floor-to-ceiling stained glass. Security line can be long.
+                            </div>
+                            <div class="activity-pmp">✅ Paris Museum Pass INCLUDED</div>
+                            <div class="activity-booking">
+                                <strong>📅 Timed Entry REQUIRED:</strong> Reserve 2-3 days ahead
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.paris-pantheon.fr/en" target="_blank">Panthéon</a>
+                                </div>
+                                <div class="activity-tags">🎟️ 📅 ⏳ ⭐ ☂️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~75 min</span>
+                            </div>
+                            <div class="activity-notes">
+                                Neoclassical mausoleum of France's greatest citizens (Rousseau, Voltaire, Victor Hugo, Marie Curie).
+                            </div>
+                            <div class="activity-pmp">✅ Paris Museum Pass INCLUDED</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Evening -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🌆 Evening (Le Marais)</span>
+                        <span class="time-range">18:30 - 21:30</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.centrepompidou.fr/en" target="_blank">Centre Pompidou (Exterior)</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 📸</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-medium">Medium</span>
+                                <span>⏱️ ~20 min</span>
+                                <span>💰 Free exterior</span>
+                            </div>
+                            <div class="activity-notes">
+                                Iconic inside-out modern architecture. Exterior walk-by. Museum interior and rooftop terrace are Museum Pass INCLUDED if time permits.
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/L+As+du+Fallafel+Paris" target="_blank">L'As du Fallafel</a>
+                                </div>
+                                <div class="activity-tags">🍽️ ⭐</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~45 min</span>
+                                <span>💰 €8-12</span>
+                            </div>
+                            <div class="activity-notes">
+                                Famous falafel sandwich on Rue des Rosiers in Le Marais. Expect long lines but fast service. <strong>Closed Friday evening & Saturday (Jewish Sabbath).</strong>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Place+des+Vosges+Paris" target="_blank">Place des Vosges & Maison de Victor Hugo</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 ⭐ 📸</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~45 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Oldest planned square in Paris (1612). Elegant red-brick arcades. Victor Hugo's former residence museum is Museum Pass INCLUDED but likely closed by evening.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Musee+du+Louvre+Paris/Ile+de+la+Cite+Paris/Cathedrale+Notre+Dame+de+Paris/Sainte+Chapelle+Paris/Pantheon+Paris/Centre+Pompidou+Paris/L+As+du+Fallafel+Paris/Place+des+Vosges+Paris/Hotel+Madrigal+Paris" class="map-link" target="_blank">🗺️ View Day 3 Route on Google Maps</a>
+
+                <!-- Alternatives -->
+                <div class="alternatives-section">
+                    <h4>📋 Alternative Options for Day 3</h4>
+                    <ul class="alternatives-list">
+                        <li class="alternative-item">
+                            <div class="alternative-name">La Conciergerie</div>
+                            <div class="alternative-reason">Former royal palace and Marie Antoinette's prison. Museum Pass included. 60 min.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Musée de Cluny (Medieval Museum)</div>
+                            <div class="alternative-reason">Medieval art including Lady and the Unicorn tapestries. Museum Pass included. 90 min.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Jardin du Luxembourg</div>
+                            <div class="alternative-reason">Beautiful palace gardens with fountain and chairs. Free. Near Panthéon.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Musée Carnavalet</div>
+                            <div class="alternative-reason">Paris history museum in Le Marais. Free permanent collection. 90-120 min.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Musée Picasso</div>
+                            <div class="alternative-reason">Largest Picasso collection. Museum Pass included. 90-120 min. Reservation required.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-title">
+                        <h3>Day 4: Belle Époque, Montmartre & Cinema Heritage</h3>
+                        <div class="day-date">Monday, October 20, 2026</div>
+                    </div>
+                </div>
+                <div class="day-meta">
+                    <span><strong>Walking Distance:</strong> ~7-9 km</span>
+                    <span><strong>Active Time:</strong> ~10-11 hours</span>
+                </div>
+
+                <!-- Morning -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🌅 Morning (Belle Époque)</span>
+                        <span class="time-range">09:00 - 13:00</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item optional">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Petit+Palais+Paris" target="_blank">Petit Palais</a>
+                                </div>
+                                <div class="activity-tags">🆓 ⏳ ☂️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-medium">Medium</span>
+                                <span>⏱️ ~90 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Permanent collection of fine arts is FREE. Temporary exhibits may charge fee. Beautiful interior courtyard garden.
+                            </div>
+                        </li>
+                        <li class="activity-item optional">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.operadeparis.fr/en/visits/palais-garnier" target="_blank">Palais Garnier (Opéra Garnier)</a>
+                                </div>
+                                <div class="activity-tags">🎟️ 📅 ⏳ ⭐ ☂️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~90 min</span>
+                                <span>💰 €14</span>
+                            </div>
+                            <div class="activity-notes">
+                                Opulent 19th-century opera house (Phantom of the Opera setting). <strong>NOT covered by Museum Pass.</strong> Self-guided tour.
+                            </div>
+                            <div class="activity-booking">
+                                <strong>📅 Reservation Recommended:</strong> 1-2 days ahead
+                            </div>
+                        </li>
+                        <li class="activity-item optional">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Passage+des+Panoramas+Paris" target="_blank">Passage des Panoramas</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 ☂️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-medium">Medium</span>
+                                <span>⏱️ ~30 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                One of Paris's oldest covered shopping arcades (1800). Charming glass-roofed passage with boutiques and cafés.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Lunch -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🍽️ Lunch</span>
+                        <span class="time-range">13:00 - 14:30</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/restaurants+Montmartre+Paris" target="_blank">Lunch near Montmartre</a>
+                                </div>
+                                <div class="activity-tags">🍽️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~90 min</span>
+                                <span>💰 €15-22</span>
+                            </div>
+                            <div class="activity-notes">
+                                Casual bistro before climbing Montmartre hill. Rue des Abbesses area has good options.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Afternoon -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">☀️ Afternoon (Montmartre Hill)</span>
+                        <span class="time-range">14:30 - 18:30</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item optional">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Rue+des+Abbesses+Paris" target="_blank">Rue des Abbesses & Montmartre Streets</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 📸</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-medium">Medium</span>
+                                <span>⏱️ ~45 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Charming village-like streets at the base of Montmartre. Art Nouveau metro entrance.
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Villa+Leandre+Paris" target="_blank">Villa Léandre</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 📸</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-medium">Medium</span>
+                                <span>⏱️ ~15 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Hidden cobblestone cul-de-sac with English-style cottages. Very photogenic.
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Place+Dalida+Paris" target="_blank">Place Dalida</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 📸</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-medium">Medium</span>
+                                <span>⏱️ ~15 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Small square with bust of French-Italian singer Dalida. Nice views over Paris.
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Basilique+du+Sacre+Coeur+Paris" target="_blank">Basilique du Sacré-Cœur</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 ⭐</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~60 min</span>
+                                <span>💰 Free / €7 dome</span>
+                            </div>
+                            <div class="activity-notes">
+                                White Romano-Byzantine basilica on Montmartre hilltop. FREE entry to basilica. Dome climb is €7 (NOT Museum Pass). Note: STEEP hill climb or funicular (metro ticket).
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Place+du+Tertre+Paris" target="_blank">Place du Tertre</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-medium">Medium</span>
+                                <span>⏱️ ~30 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                Historic artists' square. Very touristy but iconic. Street artists paint portraits and caricatures.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Evening -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🌆 Evening</span>
+                        <span class="time-range">18:30 - 21:00</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/Pere+Lachaise+Cemetery+Paris" target="_blank">Père-Lachaise Cemetery</a>
+                                </div>
+                                <div class="activity-tags">🆓 👀 ⭐</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~90 min</span>
+                                <span>💰 Free</span>
+                            </div>
+                            <div class="activity-notes">
+                                World's most visited cemetery. Graves of Jim Morrison, Oscar Wilde, Edith Piaf, Chopin, Molière. FREE entry. Bring cemetery map or use app. <strong>Check closing time for October (closes 17:30 Nov-Mar).</strong>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/search/restaurants+Pere+Lachaise+Paris" target="_blank">Dinner near Père-Lachaise or hotel area</a>
+                                </div>
+                                <div class="activity-tags">🍽️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-high">High</span>
+                                <span>⏱️ ~90 min</span>
+                                <span>💰 €18-26</span>
+                            </div>
+                            <div class="activity-notes">
+                                Casual dinner in Ménilmontant/Oberkampf area or return to Montparnasse neighborhood.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Petit+Palais+Paris/Palais+Garnier+Paris/Passage+des+Panoramas+Paris/Rue+des+Abbesses+Paris/Villa+Leandre+Paris/Place+Dalida+Paris/Basilique+du+Sacre+Coeur+Paris/Place+du+Tertre+Paris/Pere+Lachaise+Cemetery+Paris/Hotel+Madrigal+Paris" class="map-link" target="_blank">🗺️ View Day 4 Route on Google Maps</a>
+
+                <!-- Alternatives -->
+                <div class="alternatives-section">
+                    <h4>📋 Alternative Options for Day 4</h4>
+                    <ul class="alternatives-list">
+                        <li class="alternative-item">
+                            <div class="alternative-name">Studio 28 (Historic Cinema)</div>
+                            <div class="alternative-reason">Oldest cinema in Paris (1928). Charming art house theater in Montmartre.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Moulin de la Galette & La Maison Rose</div>
+                            <div class="alternative-reason">Historic windmill and pink café painted by Impressionists. Quick photo stops.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Le Pure Café (Before Sunset film location)</div>
+                            <div class="alternative-reason">Café featured in Before Sunset film. Near Père-Lachaise.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-title">
+                        <h3>Day 5: Departure to Bruges</h3>
+                        <div class="day-date">Wednesday, October 21, 2026</div>
+                    </div>
+                    <div class="day-badges">
+                        <span class="badge badge-departure">Departure Day</span>
+                    </div>
+                </div>
+                <div class="day-meta">
+                    <span><strong>Walking Distance:</strong> Minimal</span>
+                    <span><strong>Active Time:</strong> ~2.5 hours (departure logistics)</span>
+                </div>
+
+                <!-- Morning -->
+                <div class="time-block">
+                    <div class="time-block-header">
+                        <span class="time-block-title">🌅 Morning (Departure)</span>
+                        <span class="time-range">06:30 - 09:00</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item mandatory">
+                            <div class="activity-header">
+                                <div class="activity-name">
+                                    <a href="https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Quai+de+Bercy+Bus+Station+Paris" target="_blank">Hotel Check-out & Departure to Quai de Bercy</a>
+                                </div>
+                                <div class="activity-tags">🎟️</div>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="priority-badge priority-mandatory">Mandatory</span>
+                                <span>⏱️ ~75 min</span>
+                                <span>🕐 05:15 (depart hotel)</span>
+                            </div>
+                            <div class="activity-notes">
+                                <strong>CRITICAL: Leave hotel by 05:15.</strong> Take Metro Line 6 from Pasteur to Bercy (direct, 15 min). Arrive bus station by 06:00 latest. FlixBus to Bruges departs 06:30, arrives 11:10.
+                            </div>
+                            <div class="activity-booking">
+                                <strong>⚠️ EARLY DEPARTURE:</strong> Metro starts ~05:30. Set multiple alarms. No sightseeing possible.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Quai+de+Bercy+Bus+Station+Paris" class="map-link" target="_blank">🗺️ View Day 5 Route on Google Maps</a>
+
+                <!-- Alternatives -->
+                <div class="alternatives-section">
+                    <h4>📋 Alternative Options for Day 5</h4>
+                    <p style="color: #6c757d; font-style: italic; margin-top: 10px;">No alternatives available. 06:30 FlixBus departure requires very early wake-up. Focus entirely on departure logistics.</p>
+                    <ul class="alternatives-list">
+                        <li class="alternative-item">
+                            <div class="alternative-name">Shakespeare and Company</div>
+                            <div class="alternative-reason">Iconic English-language bookstore on Left Bank. Opens 10:00. Not feasible with 06:30 bus.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Jardin du Luxembourg</div>
+                            <div class="alternative-reason">Beautiful palace gardens. Not feasible on early departure day.</div>
+                        </li>
+                        <li class="alternative-item">
+                            <div class="alternative-name">Saint-Germain-des-Prés</div>
+                            <div class="alternative-reason">Historic literary café district. Not feasible on early departure day.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Recommendations -->
+        <section class="section">
+            <h2>🍽️ Food Recommendations</h2>
+            
+            <h3>Must-Try Dishes</h3>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-name-local">Croissant</div>
+                    <div class="food-name-english">Croissant</div>
+                    <div class="food-description">Buttery, flaky crescent-shaped pastry. Best eaten fresh in the morning from a boulangerie.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€1.20-€2.50</span>
+                        <span class="food-type">Snack</span>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-name-local">Pain au chocolat</div>
+                    <div class="food-name-english">Chocolate croissant</div>
+                    <div class="food-description">Flaky pastry with dark chocolate batons inside.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€1.50-€2.80</span>
+                        <span class="food-type">Snack</span>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-name-local">Baguette jambon-beurre</div>
+                    <div class="food-name-english">Ham and butter baguette</div>
+                    <div class="food-description">Simple but perfect: fresh baguette with quality ham and butter. The quintessential French lunch.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€4.50-€7</span>
+                        <span class="food-type">Main</span>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-name-local">Crêpe</div>
+                    <div class="food-name-english">Crêpe / Thin pancake</div>
+                    <div class="food-description">Thin pancakes, sweet or savory. Popular street food and casual meal.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€5-€10</span>
+                        <span class="food-type">Snack</span>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-name-local">Steak frites</div>
+                    <div class="food-name-english">Steak with fries</div>
+                    <div class="food-description">Classic French bistro dish. Beef steak with crispy fries and simple sauce.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€16-€26</span>
+                        <span class="food-type">Main</span>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-name-local">Coq au vin</div>
+                    <div class="food-name-english">Chicken braised in wine</div>
+                    <div class="food-description">Traditional Burgundy dish: chicken slow-cooked in red wine with mushrooms, bacon, onions.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€18-€25</span>
+                        <span class="food-type">Main</span>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-name-local">Escargots de Bourgogne</div>
+                    <div class="food-name-english">Burgundy snails</div>
+                    <div class="food-description">Snails cooked in garlic-parsley butter. A French classic.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€12-€18</span>
+                        <span class="food-type">Starter</span>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-name-local">Soupe à l'oignon</div>
+                    <div class="food-name-english">French onion soup</div>
+                    <div class="food-description">Rich beef broth with caramelized onions, topped with toasted bread and melted Gruyère cheese.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€8-€14</span>
+                        <span class="food-type">Starter</span>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-name-local">Crème brûlée</div>
+                    <div class="food-name-english">Burnt cream</div>
+                    <div class="food-description">Creamy vanilla custard with hard caramelized sugar top that cracks when tapped.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€7-€11</span>
+                        <span class="food-type">Dessert</span>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-name-local">Macaron</div>
+                    <div class="food-name-english">Macaron</div>
+                    <div class="food-description">Delicate almond meringue sandwich cookies with ganache filling. Parisian specialty.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€2-€3.50 each</span>
+                        <span class="food-type">Dessert</span>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-name-local">Tarte Tatin</div>
+                    <div class="food-name-english">Upside-down apple tart</div>
+                    <div class="food-description">Classic French dessert: apples caramelized in butter and sugar, baked with pastry on top, then flipped.</div>
+                    <div class="food-meta">
+                        <span class="food-cost">€8-€12</span>
+                        <span class="food-type">Dessert</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Recommended Restaurants</h3>
+            <div class="logistics-grid">
+                <div class="logistics-card">
+                    <h4>L'As du Fallafel</h4>
+                    <p><strong>Neighborhood:</strong> Le Marais</p>
+                    <p><strong>Cuisine:</strong> Middle Eastern / Jewish</p>
+                    <p><strong>Price:</strong> €</p>
+                    <p><strong>Specialty:</strong> Falafel sandwich</p>
+                    <p><strong>Notes:</strong> Closed Friday evening & Saturday (Sabbath). Long lines but fast service.</p>
+                    <a href="https://www.google.com/maps/search/L+As+du+Fallafel+Paris" class="map-link" target="_blank" style="font-size: 0.85rem; padding: 8px 16px; margin-top: 10px;">📍 View Location</a>
+                </div>
+                <div class="logistics-card">
+                    <h4>La Maison d'Isabelle</h4>
+                    <p><strong>Neighborhood:</strong> Latin Quarter</p>
+                    <p><strong>Cuisine:</strong> Bakery</p>
+                    <p><strong>Price:</strong> €</p>
+                    <p><strong>Specialty:</strong> Best croissant in Paris</p>
+                    <p><strong>Notes:</strong> Featured in Alan's guide. Small bakery, expect lines.</p>
+                    <a href="https://www.google.com/maps/search/La+Maison+d+Isabelle+Paris" class="map-link" target="_blank" style="font-size: 0.85rem; padding: 8px 16px; margin-top: 10px;">📍 View Location</a>
+                </div>
+                <div class="logistics-card">
+                    <h4>Paul (Bakery Chain)</h4>
+                    <p><strong>Neighborhood:</strong> Citywide</p>
+                    <p><strong>Cuisine:</strong> Bakery / Café</p>
+                    <p><strong>Price:</strong> €</p>
+                    <p><strong>Specialty:</strong> Croissants, baguette sandwiches, quiche</p>
+                    <p><strong>Notes:</strong> Reliable chain for quick breakfast or lunch.</p>
+                    <a href="https://www.google.com/maps/search/Paul+bakery+Paris" class="map-link" target="_blank" style="font-size: 0.85rem; padding: 8px 16px; margin-top: 10px;">📍 Find Nearest</a>
+                </div>
+            </div>
+
+            <h3>Tourist Traps to Avoid</h3>
+            <ul style="margin-left: 20px; line-height: 1.8;">
+                <li>Avoid restaurants with large picture menus in multiple languages near major monuments (Eiffel Tower, Notre-Dame, Champs-Élysées).</li>
+                <li>Skip chain restaurants on Champs-Élysées - extremely expensive and touristy.</li>
+                <li>Don't pay for bottled water at cafés unless necessary - tap water (une carafe d'eau) is free and safe.</li>
+                <li>Avoid eating on Place du Tertre in Montmartre - very overpriced. Walk 2 blocks away for better value.</li>
+            </ul>
+        </section>
+
+        <!-- Logistics -->
+        <section class="section">
+            <h2>🚇 Logistics & Practical Info</h2>
+
+            <h3>Public Transport</h3>
+            <div class="logistics-grid">
+                <div class="logistics-card">
+                    <h4>t+ Ticket (Single Journey)</h4>
+                    <p><strong>Cost:</strong> €2.15</p>
+                    <p><strong>Validity:</strong> Metro, bus, tram for 90 min (one-way only, no round-trips)</p>
+                    <p><strong>Where to Buy:</strong> Metro stations, vending machines, tabacs. Carnet of 10 for €17.35.</p>
+                </div>
+                <div class="logistics-card">
+                    <h4>Navigo Découverte (Weekly Pass)</h4>
+                    <p><strong>Cost:</strong> €5 one-time card + €30.75/week (zones 1-5)</p>
+                    <p><strong>Validity:</strong> Monday-Sunday unlimited travel</p>
+                    <p><strong>Notes:</strong> Best value for 3+ days. Requires passport photo. Covers airport transport (Orly, CDG).</p>
+                </div>
+                <div class="logistics-card">
+                    <h4>Orlybus</h4>
+                    <p><strong>Cost:</strong> €9.50</p>
+                    <p><strong>Route:</strong> Orly Airport → Denfert-Rochereau (~30 min)</p>
+                    <p><strong>Frequency:</strong> Every 10-20 min, 06:00-00:30</p>
+                </div>
+            </div>
+
+            <h3>Bike Rentals</h3>
+            <div class="logistics-card" style="max-width: 800px;">
+                <h4>Vélib' Métropole (Paris Bike-Share)</h4>
+                <p><strong>Cost:</strong> €1 for 24h or €8 for 7 days (plus usage fees per 30 min)</p>
+                <p><strong>Notes:</strong> Requires credit card with chip. Mechanical (green) and electric (blue) bikes. Electric bikes recommended for Montmartre hill.</p>
+            </div>
+
+            <h3>Emergency Contacts</h3>
+            <div class="logistics-card" style="max-width: 800px;">
+                <ul>
+                    <li><strong>EU Emergency Number:</strong> 112</li>
+                    <li><strong>Police:</strong> 17</li>
+                    <li><strong>Fire/Ambulance:</strong> 18</li>
+                    <li><strong>Tourist Police:</strong> 72-76 Rue de Lutèce, 75004 (near Notre-Dame)</li>
+                    <li><strong>US Embassy:</strong> +33 1 43 12 22 22</li>
+                    <li><strong>Hospital (Hôtel-Dieu):</strong> +33 1 42 34 82 34</li>
+                </ul>
+            </div>
+
+            <h3>Practical Tips</h3>
+            <ul style="margin-left: 20px; line-height: 1.8; max-width: 900px;">
+                <li>Buy Paris Museum Pass (€85 for 4 days) ASAP and book all timed entries online immediately.</li>
+                <li>Book Eiffel Tower tickets 2-4 weeks ahead (NOT covered by Museum Pass).</li>
+                <li>Metro Line 4 connects hotel to Gare du Nord directly.</li>
+                <li>Most museums closed on Mondays or Tuesdays - check before planning.</li>
+                <li>Restaurants expect you to ask for the bill (l'addition) - it won't come automatically.</li>
+                <li>Tipping: Service included. Rounding up or €1-2 per person is polite but optional.</li>
+                <li>Many smaller shops prefer cash. Carry €20-50 daily.</li>
+                <li>Free public toilets are rare. Use cafés/museums (may need to purchase something).</li>
+            </ul>
+        </section>
+
+        <!-- Emoji Legend -->
+        <section class="section">
+            <h2>🏷️ Emoji Legend</h2>
+            <div class="emoji-legend">
+                <div class="emoji-item">
+                    <span class="emoji-symbol">🆓</span>
+                    <span class="emoji-description">Free - No admission fee</span>
+                </div>
+                <div class="emoji-item">
+                    <span class="emoji-symbol">🎟️</span>
+                    <span class="emoji-description">Paid - Requires ticket</span>
+                </div>
+                <div class="emoji-item">
+                    <span class="emoji-symbol">📅</span>
+                    <span class="emoji-description">Reservation Required</span>
+                </div>
+                <div class="emoji-item">
+                    <span class="emoji-symbol">👀</span>
+                    <span class="emoji-description">See & Continue (10-30 min)</span>
+                </div>
+                <div class="emoji-item">
+                    <span class="emoji-symbol">⏳</span>
+                    <span class="emoji-description">Be There (1-3+ hours)</span>
+                </div>
+                <div class="emoji-item">
+                    <span class="emoji-symbol">⭐</span>
+                    <span class="emoji-description">Top Highlight</span>
+                </div>
+                <div class="emoji-item">
+                    <span class="emoji-symbol">📸</span>
+                    <span class="emoji-description">Photo Spot</span>
+                </div>
+                <div class="emoji-item">
+                    <span class="emoji-symbol">☂️</span>
+                    <span class="emoji-description">Indoor / Rainy Day</span>
+                </div>
+                <div class="emoji-item">
+                    <span class="emoji-symbol">🍽️</span>
+                    <span class="emoji-description">Food/Dining</span>
+                </div>
+            </div>
+        </section>
+
+        <footer style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 2px solid var(--border-color); color: #666;">
+            <p>Paris Itinerary | October 17-21, 2026</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated with Eurotrip Framework</p>
+        </footer>
+    </div>
+</body>
+</html>

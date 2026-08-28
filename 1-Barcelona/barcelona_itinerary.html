@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona 4-Day Itinerary | Oct 14-17, 2026</title>
+    <style>
+        :root {
+            --primary: #c25e00;
+            --secondary: #2c3e50;
+            --bg-color: #fcfbfa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #e2dcd6;
+            --highlight: #fff9f0;
+            --success: #27ae60;
+            --info: #3498db;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        h1 {
+            color: var(--secondary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .trip-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .meta-item strong {
+            color: var(--primary);
+        }
+        
+        .section {
+            margin: 40px 0;
+        }
+        
+        h2 {
+            color: var(--secondary);
+            font-size: 1.8rem;
+            margin: 30px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin: 20px 0 12px 0;
+        }
+        
+        h4 {
+            color: var(--secondary);
+            font-size: 1.1rem;
+            margin: 15px 0 10px 0;
+        }
+        
+        .day-card {
+            background: linear-gradient(135deg, #fffcf8 0%, #fff9f0 100%);
+            border-left: 6px solid var(--primary);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .day-title {
+            flex: 1;
+        }
+        
+        .day-title h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.5rem;
+        }
+        
+        .day-date {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .day-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .badge-arrival {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .badge-departure {
+            background: #fff3e0;
+            color: #e65100;
+        }
+        
+        .day-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #666;
+            flex-wrap: wrap;
+        }
+        
+        .time-block {
+            margin: 25px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .time-block-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .time-block-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: capitalize;
+        }
+        
+        .time-range {
+            font-size: 0.85rem;
+            color: #666;
+            background: #f5f5f5;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+        
+        .activity-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .activity-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: #fafafa;
+            border-radius: 6px;
+            border-left: 3px solid var(--primary);
+            transition: all 0.2s;
+        }
+        
+        .activity-item:hover {
+            background: #f5f5f5;
+            transform: translateX(5px);
+        }
+        
+        .activity-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            gap: 15px;
+        }
+        
+        .activity-name {
+            font-weight: 600;
+            color: var(--secondary);
+            font-size: 1rem;
+            flex: 1;
+        }
+        
+        .activity-name a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        
+        .activity-name a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+        
+        .activity-tags {
+            display: flex;
+            gap: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .activity-meta {
+            display: flex;
+            gap: 15px;
+            margin: 8px 0;
+            font-size: 0.85rem;
+            color: #666;
+            flex-wrap: wrap;
+        }
+        
+        .activity-meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .activity-notes {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .activity-booking {
+            margin-top: 8px;
+            padding: 8px 12px;
+            background: #fff3cd;
+            border-left: 3px solid #ffc107;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+        
+        .activity-optional {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 2px 8px;
+            background: #e3f2fd;
+            color: #1976d2;
+            font-size: 0.75rem;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        
+        .map-link {
+            display: inline-block;
+            margin-top: 15px;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        .map-link:hover {
+            background: #a34e00;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(194, 94, 0, 0.3);
+        }
+        
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .food-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+        
+        .food-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+        }
+        
+        .food-name {
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 5px;
+        }
+        
+        .food-name-local {
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+        
+        .food-name-english {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .food-description {
+            margin: 10px 0;
+            color: #555;
+            font-size: 0.9rem;
+        }
+        
+        .food-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .info-box {
+            background: #f0f7ff;
+            border-left: 4px solid var(--info);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        
+        .logistics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .logistics-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .logistics-card h4 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        
+        ul.simple-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul.simple-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        ul.simple-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .budget-summary {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .budget-summary h3 {
+            margin-top: 0;
+            color: #2e7d32;
+        }
+        
+        .budget-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .budget-total {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1b5e20;
+            margin-top: 10px;
+        }
+        
+        .emoji-legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .emoji-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 6px;
+        }
+        
+        .emoji-symbol {
+            font-size: 1.5rem;
+        }
+        
+        .emoji-description {
+            font-size: 0.85rem;
+            color: #555;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #777;
+            border-top: 1px solid var(--border-color);
+            padding-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .trip-meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .day-header {
+                flex-direction: column;
+            }
+            
+            .food-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .logistics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .map-link {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🇪🇸 Barcelona 4-Day Itinerary</h1>
+        <div class="trip-meta">
+            <div class="meta-item">
+                <span>📅</span>
+                <span><strong>Dates:</strong> Oct 14-17, 2026</span>
+            </div>
+            <div class="meta-item">
+                <span>🏠</span>
+                <span><strong>Stay:</strong> Onefam Batlló, Passeig de Gràcia</span>
+            </div>
+            <div class="meta-item">
+                <span>💰</span>
+                <span><strong>Budget:</strong> 150-350 EUR</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ACCOMMODATION INFO -->
+    <section class="section">
+        <h2>🏨 Accommodation</h2>
+        
+        <div class="info-box">
+            <h3 style="margin-top: 0;">Onefam Batlló</h3>
+            <p><strong>📍 Address:</strong> Carrer de Aragó 284, 08009 Barcelona (Passeig de Gràcia, Eixample)</p>
+            <p><strong>📧 Email:</strong> batllo@onefamhostels.com</p>
+            <p><strong>🗓️ Dates:</strong> Oct 14-17, 2026 (3 nights)</p>
+            <p><strong>📧 Booking Email:</strong> famiglialambrecht@gmail.com</p>
+            
+            <div style="margin-top: 20px;">
+                <h4>Check-in & Check-out</h4>
+                <ul style="padding-left: 20px; margin-top: 10px;">
+                    <li><strong>Check-in:</strong> From 2:00 PM (limited check-in available after 12:00 AM)</li>
+                    <li><strong>Check-out:</strong> At 11:00 AM</li>
+                    <li><strong>Reception:</strong> Limited reception between 12:00 AM and 8:00 AM</li>
+                </ul>
+            </div>
+            
+            <div style="margin-top: 20px;">
+                <h4>What's Included</h4>
+                <ul style="padding-left: 20px; margin-top: 10px;">
+                    <li>✅ <strong>Breakfast</strong> included daily</li>
+                    <li>✅ <strong>Dinner</strong> included daily</li>
+                    <li>✅ Mixed dorms and private rooms available</li>
+                </ul>
+            </div>
+            
+            <div style="margin-top: 20px;">
+                <h4>Important Policies</h4>
+                <ul style="padding-left: 20px; margin-top: 10px;">
+                    <li><strong>Age Recommendation:</strong> 18-45 years (social, party-oriented hostel designed for travelers who want to meet new people and enjoy nightlife)</li>
+                    <li><strong>Cancellation:</strong> Changes or cancellations must be made at least 2 full days before arrival by email to avoid late cancellation fee</li>
+                    <li><strong>Future Stay Discount:</strong> Use code <strong>ONEFAMDIRECT</strong> for 10% off next booking when booking directly on website</li>
+                </ul>
+            </div>
+            
+            <a class="map-link" href="https://www.google.com/maps/search/Onefam+Batllo+Carrer+de+Arago+284+Barcelona" target="_blank">
+                🗺️ View Hostel Location on Google Maps
+            </a>
+        </div>
+        
+        <div class="warning-box" style="margin-top: 20px;">
+            <h4>⚠️ Early Arrival Note (Oct 14)</h4>
+            <p>Your flight arrives at <strong>05:25 AM</strong>, but check-in is from <strong>2:00 PM</strong>. Limited early check-in may be available after 12:00 AM.</p>
+            <p><strong>Plan:</strong> Store luggage at hostel, freshen up if possible, and start exploring the city. Breakfast should be available upon arrival or shortly after.</p>
+        </div>
+    </section>
+
+    <!-- TRANSPORT INFO -->
+    <section class="section">
+        <h2>✈️ Transport</h2>
+        
+        <div class="info-box">
+            <h4>Arrival: Tuesday, October 14, 2026</h4>
+            <p><strong>LEVEL LL2602</strong> from Buenos Aires (EZE) → Barcelona (BCN)</p>
+            <p><strong>Landing:</strong> 05:25 AM</p>
+            <p><strong>To City:</strong> Renfe R2 Nord train (4.90 EUR, 26 mins to Passeig de Gràcia) or Metro L9 Sud (5.90 EUR)</p>
+        </div>
+        
+        <div class="warning-box">
+            <h4>Departure: Friday, October 17, 2026</h4>
+            <p><strong>Vueling</strong> Barcelona (BCN) → Paris Orly (ORY)</p>
+            <p><strong>Departure:</strong> 08:45 AM</p>
+            <p><strong>Leave Hostel:</strong> 06:15 AM (arrive airport by 06:45-07:00)</p>
+            <p><strong>Transport:</strong> R2 Nord train from Passeig de Gràcia (first train ~05:50) or taxi (30-40 EUR)</p>
+        </div>
+    </section>
+
+    <!-- DAY-BY-DAY ITINERARY -->
+    <section class="section">
+        <h2>📍 Day-by-Day Itinerary</h2>
+
+        <!-- DAY 1 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-title">
+                    <h3>Day 1: Historic Heart (Ciutat Vella, Gótico & El Born)</h3>
+                    <div class="day-date">Tuesday, October 14, 2026</div>
+                </div>
+                <div class="day-badges">
+                    <span class="badge badge-arrival">Arrival Day</span>
+                </div>
+            </div>
+            
+            <div class="day-meta">
+                <span>🚶 ~5-6 km walking</span>
+                <span>⏱️ ~8-9 hours</span>
+                <span>💰 28-47 EUR</span>
+            </div>
+
+            <!-- Morning -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">🌅 Morning</span>
+                    <span class="time-range">05:25 - 13:00</span>
+                </div>
+                
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/dir/Barcelona+Airport+BCN/Onefam+Batllo+Carrer+de+Arago+284+Barcelona" target="_blank">
+                                    Airport Arrival & Transport to City
+                                </a>
+                            </div>
+                            <div class="activity-tags">🎟️</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 60 mins</span>
+                            <span>💰 4.90-5.90 EUR</span>
+                            <span>🕐 05:25</span>
+                            <span>⚡ Mandatory</span>
+                        </div>
+                        <div class="activity-notes">
+                            Take Renfe R2 Nord train (4.90 EUR, 26 mins to Passeig de Gràcia) or Metro L9 Sud (5.90 EUR). Early morning arrival means early check-in may not be available.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/La+Rambla+Barcelona" target="_blank">
+                                    La Rambla
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ⭐</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 40 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 09:30</span>
+                        </div>
+                        <div class="activity-notes">
+                            Iconic tree-lined pedestrian boulevard. See flower stalls, street performers, and Fuente de Canaletes. Watch for pickpockets.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Mercat+de+la+Boqueria+Barcelona" target="_blank">
+                                    Mercat de la Boqueria
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ⭐ ☂️</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 45 mins</span>
+                            <span>💰 Free entry</span>
+                            <span>🕐 10:15</span>
+                            <span>📅 08:00-20:30 (Mon-Sat)</span>
+                        </div>
+                        <div class="activity-notes">
+                            Famous covered market on La Rambla. Front stalls are touristy; venture deeper for authentic produce, jamón, and fresh juice stands.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Barrio+Gotico+Barcelona" target="_blank">
+                                    Barrio Gótico Walking Exploration
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ⭐</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 90 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 11:15</span>
+                        </div>
+                        <div class="activity-notes">
+                            Medieval Gothic Quarter with narrow winding streets, hidden plazas, and Roman walls. Get intentionally lost.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Catedral+de+Barcelona" target="_blank">
+                                    Catedral de Barcelona
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 ⏳ ⭐ ☂️</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 45 mins</span>
+                            <span>💰 Free (9 EUR rooftop)</span>
+                            <span>🕐 12:15</span>
+                            <span>📅 08:30-19:30</span>
+                        </div>
+                        <div class="activity-notes">
+                            Gothic cathedral with beautiful cloister and rooftop views (9 EUR extra). Free entry for worship; donation suggested.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Lunch -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">🍽️ Lunch</span>
+                    <span class="time-range">13:00 - 15:00</span>
+                </div>
+                
+                <div class="activity-notes" style="padding: 15px;">
+                    <strong>Menú del día</strong> at authentic local restaurant in Barrio Gótico or El Born (15-25 EUR). Order <em>pa amb tomàquet</em> as starter. Avoid touristy laminated multilingual menus on La Rambla.
+                </div>
+            </div>
+
+            <!-- Afternoon -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">☀️ Afternoon</span>
+                    <span class="time-range">15:00 - 18:30</span>
+                </div>
+                
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/El+Born+Barcelona" target="_blank">
+                                    El Born & La Ribera Neighborhood
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ⭐</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 30 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 15:00</span>
+                        </div>
+                        <div class="activity-notes">
+                            Trendy medieval neighborhood with artisan shops, galleries, and tapas bars. More authentic than La Rambla.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Santa+Maria+del+Mar+Barcelona" target="_blank">
+                                    Santa Maria del Mar
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 ⏳ ⭐ ☂️</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 40 mins</span>
+                            <span>💰 Free (10 EUR tour)</span>
+                            <span>🕐 15:30</span>
+                            <span>📅 09:00-20:30</span>
+                        </div>
+                        <div class="activity-notes">
+                            Stunning 14th-century Catalan Gothic church. Free entry for worship, 10 EUR for guided tour. Famous for pure Gothic architecture.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Museu+Picasso+Barcelona" target="_blank">
+                                    Museu Picasso
+                                </a>
+                                <span class="activity-optional">OPTIONAL</span>
+                            </div>
+                            <div class="activity-tags">🎟️ 📅 ⏳ ☂️</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 120 mins</span>
+                            <span>💰 12 EUR</span>
+                            <span>🕐 16:15</span>
+                            <span>📅 09:00-19:00 (Tue-Sun)</span>
+                        </div>
+                        <div class="activity-notes">
+                            Picasso's early works and Blue Period collection. Book online to skip lines. Optional if tired from overnight flight.
+                        </div>
+                        <div class="activity-booking">
+                            ⚠️ <strong>Booking:</strong> Reserve 1-2 days ahead at museupicasso.bcn.cat
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Parc+de+la+Ciutadella+Barcelona" target="_blank">
+                                    Parc de la Ciutadella
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 60 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 17:00</span>
+                        </div>
+                        <div class="activity-notes">
+                            Large central park with lake, fountain, and greenery. Good for relaxing after museum or long walk.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Arc+de+Triomf+Barcelona" target="_blank">
+                                    Arc de Triomf
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀 📸</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 15 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 18:00</span>
+                        </div>
+                        <div class="activity-notes">
+                            Red brick triumphal arch built for 1888 World's Fair. Great photo spot at entrance to park.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Evening -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">🌆 Evening</span>
+                    <span class="time-range">18:30 - 20:00</span>
+                </div>
+                
+                <div class="activity-notes" style="padding: 15px;">
+                    <strong>La Hora del Vermut</strong> - Traditional Catalan aperitif ritual (8-15 EUR). Order <em>vermut de grifo</em> (on tap) with olives, chips, and anchovies before returning to hostel for included dinner.
+                </div>
+            </div>
+
+            <a class="map-link" href="https://www.google.com/maps/dir/Barcelona+Airport+BCN/Onefam+Batllo+Carrer+de+Arago+284+Barcelona/La+Rambla,+Barcelona/Mercat+de+la+Boqueria,+Barcelona/Catedral+de+Barcelona/Santa+Maria+del+Mar,+Barcelona/Arc+de+Triomf,+Barcelona/Onefam+Batllo,+Carrer+de+Arago+284,+08009+Barcelona" target="_blank">
+                🗺️ Open Day 1 Full Route in Google Maps
+            </a>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-title">
+                    <h3>Day 2: Modernism & Gaudí Masterpieces</h3>
+                    <div class="day-date">Wednesday, October 15, 2026</div>
+                </div>
+            </div>
+            
+            <div class="day-meta">
+                <span>🚶 ~4-5 km walking</span>
+                <span>⏱️ ~8-9 hours</span>
+                <span>💰 41-111 EUR</span>
+            </div>
+
+            <!-- Morning -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">🌅 Morning</span>
+                    <span class="time-range">09:00 - 13:00</span>
+                </div>
+                
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Manzana+de+la+Discordia+Barcelona" target="_blank">
+                                    Manzana de la Discordia
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ⭐ 📸</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 20 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 09:00</span>
+                        </div>
+                        <div class="activity-notes">
+                            Block of Discord - three competing Modernist buildings (Casa Batlló, Casa Amatller, Casa Lleó Morera). Just 2 blocks from your hostel.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Casa+Batllo+Barcelona" target="_blank">
+                                    Casa Batlló
+                                </a>
+                                <span class="activity-optional">OPTIONAL</span>
+                            </div>
+                            <div class="activity-tags">🎟️ 📅 ⏳ ⭐ ☂️</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 90 mins</span>
+                            <span>💰 35 EUR (online)</span>
+                            <span>🕐 09:30</span>
+                            <span>📅 09:00-20:00</span>
+                        </div>
+                        <div class="activity-notes">
+                            Gaudí's organic sea-inspired house. Book online in advance for cheaper tickets and specific time slot. Audio guide included.
+                        </div>
+                        <div class="activity-booking">
+                            ⚠️ <strong>Booking Required:</strong> Book 1-3 days ahead at casabatllo.es (often sells out)
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Passeig+de+Gracia+Barcelona" target="_blank">
+                                    Passeig de Gràcia Walk
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ⭐</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 30 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 11:30</span>
+                        </div>
+                        <div class="activity-notes">
+                            Barcelona's most elegant boulevard. Walk 15 blocks from Manzana up to La Pedrera. Designer shops, cafés, modernist streetlamps by Gaudí.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/La+Pedrera+Casa+Mila+Barcelona" target="_blank">
+                                    La Pedrera (Casa Milà)
+                                </a>
+                                <span class="activity-optional">OPTIONAL</span>
+                            </div>
+                            <div class="activity-tags">🎟️ 📅 ⏳ ⭐ 📸</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 90 mins</span>
+                            <span>💰 25 EUR (online)</span>
+                            <span>🕐 12:00</span>
+                            <span>📅 09:00-20:30</span>
+                        </div>
+                        <div class="activity-notes">
+                            Gaudí's wave-like apartment building with surreal rooftop. Book online for time slot. Rooftop is iconic photo spot. Choose this OR Casa Batlló if budget/time limited.
+                        </div>
+                        <div class="activity-booking">
+                            ⚠️ <strong>Booking Required:</strong> Book 1-3 days ahead at lapedrera.com
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Lunch -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">🍽️ Lunch</span>
+                    <span class="time-range">13:00 - 15:00</span>
+                </div>
+                
+                <div class="activity-notes" style="padding: 15px;">
+                    Stop at <strong>Mercat del Ninot</strong> or local bistro in Esquerra Eixample. Try <em>botifarra amb mongetes</em> (sausage with white beans) or <em>fricandó</em> (veal stew). Menú del día 15-25 EUR.
+                </div>
+            </div>
+
+            <!-- Afternoon -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">☀️ Afternoon</span>
+                    <span class="time-range">15:00 - 18:30</span>
+                </div>
+                
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Sagrada+Familia+Barcelona" target="_blank">
+                                    La Sagrada Família
+                                </a>
+                            </div>
+                            <div class="activity-tags">🎟️ 📅 ⏳ ⭐ ☂️</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 120 mins</span>
+                            <span>💰 26 EUR (36 EUR with tower)</span>
+                            <span>🕐 15:30</span>
+                            <span>📅 09:00-20:00 (Oct)</span>
+                            <span>⚡ High Priority</span>
+                        </div>
+                        <div class="activity-notes">
+                            Gaudí's unfinished masterpiece. MUST book specific time slot online days/weeks ahead - often sells out. Allow 1.5-2 hours. Consider tower access (+10 EUR).
+                        </div>
+                        <div class="activity-booking">
+                            ⚠️ <strong>BOOKING REQUIRED:</strong> Book 1-4 weeks ahead at sagradafamilia.org (sells out frequently)
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Hospital+de+Sant+Pau+Barcelona" target="_blank">
+                                    Hospital de Sant Pau
+                                </a>
+                                <span class="activity-optional">OPTIONAL</span>
+                            </div>
+                            <div class="activity-tags">🎟️ ⏳ ☂️</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 75 mins</span>
+                            <span>💰 15 EUR</span>
+                            <span>🕐 17:45</span>
+                            <span>📅 09:30-18:30</span>
+                        </div>
+                        <div class="activity-notes">
+                            Modernist hospital complex by Domènech i Montaner. 10-min walk from Sagrada Família. Beautiful but optional if tired.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="map-link" href="https://www.google.com/maps/dir/Onefam+Batllo,+Carrer+de+Arago,+284,+08009+Barcelona/Manzana+de+la+Discordia+Barcelona/Casa+Batllo,+Passeig+de+Gracia,+Barcelona/La+Pedrera,+Passeig+de+Gracia,+Barcelona/Mercat+del+Ninot,+Barcelona/Sagrada+Familia,+Barcelona/Hospital+de+Sant+Pau,+Barcelona/Onefam+Batllo,+Carrer+de+Arago,+284,+08009+Barcelona" target="_blank">
+                🗺️ Open Day 2 Full Route in Google Maps
+            </a>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-title">
+                    <h3>Day 3: Gràcia & Beaches / Montjuïc</h3>
+                    <div class="day-date">Thursday, October 16, 2026</div>
+                </div>
+            </div>
+            
+            <div class="day-meta">
+                <span>🚶 ~3-4 km</span>
+                <span>⏱️ ~8-10 hours</span>
+                <span>💰 35-55 EUR</span>
+            </div>
+
+            <!-- Morning -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">🌅 Morning</span>
+                    <span class="time-range">09:00 - 13:00</span>
+                </div>
+                
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Gracia+Barcelona" target="_blank">
+                                    Gràcia Neighborhood Walk
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ⭐</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 90 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 09:00</span>
+                        </div>
+                        <div class="activity-notes">
+                            Former independent village absorbed by Barcelona. Bohemian atmosphere, local shops, squares with outdoor terraces. More authentic than touristy areas.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Placa+de+la+Virreina+Gracia+Barcelona" target="_blank">
+                                    Plaça de la Virreina
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 20 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 10:30</span>
+                        </div>
+                        <div class="activity-notes">
+                            Charming square with church bell tower and outdoor cafés. Heart of Gràcia.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Mercat+de+la+Llibertat+Barcelona" target="_blank">
+                                    Mercat de la Llibertat
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ☂️</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 45 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 11:30</span>
+                            <span>📅 08:00-20:30 (Mon-Fri)</span>
+                        </div>
+                        <div class="activity-notes">
+                            Modernist neighborhood market in Gràcia. Less touristy than La Boqueria. Good for snacks or picnic supplies.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Lunch -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">🍽️ Lunch</span>
+                    <span class="time-range">13:00 - 15:00</span>
+                </div>
+                
+                <div class="activity-notes" style="padding: 15px;">
+                    <strong>Seafood specialties</strong> - Order <em>suquet de peix</em> (fish stew) or <em>arròs negre</em> (black rice with squid ink). <strong>AVOID</strong> places advertising "paella ready in 15 minutes" - authentic rice dishes take 20-30 mins minimum. Budget: 20-30 EUR.
+                </div>
+            </div>
+
+            <!-- Afternoon -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">☀️ Afternoon (Choose Beach OR Montjuïc)</span>
+                    <span class="time-range">15:00 - 19:00</span>
+                </div>
+                
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Bogatell+Beach+Barcelona" target="_blank">
+                                    Bogatell Beach
+                                </a>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ⭐</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 180 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 15:30</span>
+                        </div>
+                        <div class="activity-notes">
+                            Sandy beach north of Port Olímpic. Less crowded and touristy than Barceloneta. Good for swimming, sunbathing, or beach walk. Take Metro L4 to Ciutadella Vila Olímpica.
+                        </div>
+                    </li>
+
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Montjuic+Barcelona" target="_blank">
+                                    Montjuïc Hill (Alternative to Beach)
+                                </a>
+                                <span class="activity-optional">OPTIONAL</span>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ⭐</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 240 mins</span>
+                            <span>💰 Free (parks)</span>
+                            <span>🕐 15:00</span>
+                        </div>
+                        <div class="activity-notes">
+                            Alternative to beach. Large hill with gardens, museums, Olympic sites, and castle. Take cable car or bus 150 from Plaça Espanya. Good if weather is bad or prefer culture over beach.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Evening -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">🌆 Evening</span>
+                    <span class="time-range">19:00 - 20:30</span>
+                </div>
+                
+                <div class="activity-notes" style="padding: 15px;">
+                    <strong>Final Night Aperitif</strong> - Toast your last night with a glass of local <em>cava</em> (sparkling wine) and <em>escalivada</em> (roasted vegetables). Budget: 10-20 EUR.
+                </div>
+            </div>
+
+            <!-- Night Optional -->
+            <div class="time-block">
+                <div class="time-block-header">
+                    <span class="time-block-title">🌙 Night (Optional)</span>
+                    <span class="time-range">21:00 - 22:00</span>
+                </div>
+                
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-header">
+                            <div class="activity-name">
+                                <a href="https://www.google.com/maps/search/Font+Magica+Montjuic+Barcelona" target="_blank">
+                                    Font Màgica de Montjuïc (Magic Fountain Show)
+                                </a>
+                                <span class="activity-optional">OPTIONAL</span>
+                            </div>
+                            <div class="activity-tags">🆓 👀 ⭐</div>
+                        </div>
+                        <div class="activity-meta">
+                            <span>⏱️ 30 mins</span>
+                            <span>💰 Free</span>
+                            <span>🕐 21:00</span>
+                            <span>📅 Thu-Sun (check schedule)</span>
+                        </div>
+                        <div class="activity-notes">
+                            Free choreographed water, light, and music show at Plaça Espanya. Schedule changes by season - check barcelona.cat/fontmagica. About 20-min show. Get there early for good spot.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="map-link" href="https://www.google.com/maps/dir/Onefam+Batllo,+Carrer+de+Arago,+284,+08009+Barcelona/Placa+de+la+Virreina,+Gracia,+Barcelona/Mercat+de+la+Llibertat+Barcelona/Bogatell+Beach,+Barcelona/Castell+de+Montjuic,+Barcelona/Font+Magica+de+Montjuic,+Barcelona/Onefam+Batllo,+Carrer+de+Arago,+284,+08009+Barcelona" target="_blank">
+                🗺️ Open Day 3 Full Route in Google Maps
+            </a>
+        </div>
+
+        <!-- DAY 4 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-title">
+                    <h3>Day 4: Departure to Paris</h3>
+                    <div class="day-date">Friday, October 17, 2026</div>
+                </div>
+                <div class="day-badges">
+                    <span class="badge badge-departure">Departure Day</span>
+                </div>
+            </div>
+            
+            <div class="day-meta">
+                <span>⏱️ Departure logistics only</span>
+                <span>💰 5-40 EUR (transport)</span>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ Early Morning Departure</h4>
+                <p><strong>Wake up:</strong> 05:00 AM</p>
+                <p><strong>Leave hostel:</strong> 06:15 AM</p>
+                <p><strong>Flight departs:</strong> 08:45 AM</p>
+                <p><strong>Transport options:</strong></p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li><strong>R2 Nord train</strong> from Passeig de Gràcia (first train ~05:50, 4.90 EUR, 19 mins)</li>
+                    <li><strong>Metro L9 Sud</strong> (starts 05:00, 5.90 EUR, ~40 mins with connections)</li>
+                    <li><strong>Taxi/Cabify</strong> (30-40 EUR, most reliable for early departure)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOD RECOMMENDATIONS -->
+    <section class="section">
+        <h2>🍴 Food Recommendations</h2>
+
+        <h3>Must-Try Dishes</h3>
+        <div class="food-grid">
+            <div class="food-card">
+                <div class="food-name">
+                    <div class="food-name-local">Pa amb tomàquet</div>
+                    <div class="food-name-english">Pan con tomate / Bread with tomato</div>
+                </div>
+                <div class="food-description">
+                    Toasted bread rubbed with ripe tomato, drizzled with olive oil and salt. Catalan staple, served as side or starter.
+                </div>
+                <div class="food-meta">
+                    <span>💰 3-5 EUR</span>
+                    <span>🍽️ Starter</span>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-name">
+                    <div class="food-name-local">Botifarra amb mongetes</div>
+                    <div class="food-name-english">Catalan sausage with white beans</div>
+                </div>
+                <div class="food-description">
+                    Grilled local pork sausage served with sautéed white beans. Classic Catalan comfort food.
+                </div>
+                <div class="food-meta">
+                    <span>💰 12-16 EUR</span>
+                    <span>🍽️ Main</span>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-name">
+                    <div class="food-name-local">Suquet de peix</div>
+                    <div class="food-name-english">Catalan fish stew</div>
+                </div>
+                <div class="food-description">
+                    Coastal fish and potato stew with sofrito (tomato, garlic, onion) base. Simple and flavorful.
+                </div>
+                <div class="food-meta">
+                    <span>💰 16-22 EUR</span>
+                    <span>🍽️ Main</span>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-name">
+                    <div class="food-name-local">Arròs negre</div>
+                    <div class="food-name-english">Black rice with squid</div>
+                </div>
+                <div class="food-description">
+                    Rice cooked with squid ink, giving it black color and briny flavor. Served with alioli.
+                </div>
+                <div class="food-meta">
+                    <span>💰 14-20 EUR</span>
+                    <span>🍽️ Main</span>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-name">
+                    <div class="food-name-local">Fricandó</div>
+                    <div class="food-name-english">Veal stew with mushrooms</div>
+                </div>
+                <div class="food-description">
+                    Tender veal stewed with wild mushrooms in savory sauce.
+                </div>
+                <div class="food-meta">
+                    <span>💰 14-18 EUR</span>
+                    <span>🍽️ Main</span>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-name">
+                    <div class="food-name-local">Crema catalana</div>
+                    <div class="food-name-english">Catalan cream / Burnt custard</div>
+                </div>
+                <div class="food-description">
+                    Historic medieval custard dessert with caramelized sugar crust. Catalonia's answer to crème brûlée.
+                </div>
+                <div class="food-meta">
+                    <span>💰 4-6 EUR</span>
+                    <span>🍽️ Dessert</span>
+                </div>
+            </div>
+        </div>
+
+        <h3>Drinks & Rituals</h3>
+        <div class="food-grid">
+            <div class="food-card">
+                <div class="food-name">
+                    <div class="food-name-local">La hora del vermut</div>
+                    <div class="food-name-english">The vermouth hour</div>
+                </div>
+                <div class="food-description">
+                    Midday aperitif ritual (12:00-14:00 or 18:00-20:00). Vermut de grifo (on tap) served with olives, chips, anchovies, and cheese. Social tradition.
+                </div>
+                <div class="food-meta">
+                    <span>💰 8-15 EUR</span>
+                    <span>🕐 Pre-lunch/dinner</span>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-name">
+                    <div class="food-name-local">Cava</div>
+                    <div class="food-name-english">Catalan sparkling wine</div>
+                </div>
+                <div class="food-description">
+                    Local sparkling wine made in traditional method, primarily from Penedès region near Barcelona.
+                </div>
+                <div class="food-meta">
+                    <span>💰 4-8 EUR/glass</span>
+                    <span>🍾 15-30 EUR/bottle</span>
+                </div>
+            </div>
+        </div>
+
+        <h3>Menú del Día</h3>
+        <div class="info-box">
+            <p><strong>Fixed-price lunch menu</strong> served at most restaurants on weekdays.</p>
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><strong>Hours:</strong> 13:00-16:00 (Mon-Fri, some Sat)</li>
+                <li><strong>Price:</strong> 15-25 EUR</li>
+                <li><strong>Includes:</strong> Starter, main, dessert, drink, bread/coffee</li>
+            </ul>
+            <p><strong>Tip:</strong> Look for handwritten chalkboard menus and local clientele for best quality.</p>
+        </div>
+
+        <h3>⚠️ Tourist Traps to Avoid</h3>
+        <div class="warning-box">
+            <ul style="padding-left: 20px;">
+                <li>Laminated menus in 5+ languages</li>
+                <li>Waiters aggressively calling you in from the street</li>
+                <li>Photos of dishes with prices like "Paella + sangria 9,90 €"</li>
+                <li>Bottled pre-made sangria</li>
+                <li>Any restaurant advertising "paella ready in 15 minutes" (authentic rice dishes need 20-30 mins)</li>
+                <li>Restaurants directly on La Rambla (venture one block off)</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h4>🗺️ Restaurant Map</h4>
+            <p>Use the <strong>Entrespacios Curated Restaurant Map</strong> with 20+ vetted historic bars and restaurants:</p>
+            <a class="map-link" href="https://www.google.com/maps/@41.3897464,2.1519993,15z/data=!4m3!11m2!2sPR5l-Z44SE24gShlk1pVxQ!3e3?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                🗺️ Open Restaurant Map
+            </a>
+        </div>
+    </section>
+
+    <!-- LOGISTICS -->
+    <section class="section">
+        <h2>🚇 Logistics & Practical Info</h2>
+
+        <h3>Public Transport</h3>
+        <div class="logistics-grid">
+            <div class="logistics-card">
+                <h4>💳 Best Ticket Option</h4>
+                <p><strong>T-Casual</strong> (10 trips)</p>
+                <p>Cost: <strong>11.35 EUR</strong></p>
+                <p>Valid for: Metro, bus, tram, trains in Zone 1</p>
+                <p>Note: Requires 1 EUR T-mobilitat card</p>
+            </div>
+
+            <div class="logistics-card">
+                <h4>🕐 Operating Hours</h4>
+                <p><strong>Metro:</strong></p>
+                <ul style="padding-left: 20px; margin-top: 5px;">
+                    <li>Mon-Thu, Sun: 05:00-00:00</li>
+                    <li>Friday: 05:00-02:00</li>
+                    <li>Saturday: 24 hours</li>
+                </ul>
+            </div>
+
+            <div class="logistics-card">
+                <h4>🛒 Where to Buy</h4>
+                <p><strong>Physical:</strong> Vending machines at any metro station</p>
+                <p><strong>Digital:</strong> T-mobilitat app, ATM Barcelona app, TMB app</p>
+            </div>
+        </div>
+
+        <h3>🚲 Bike Rentals (for Tourists)</h3>
+        <div class="warning-box">
+            <p><strong>⚠️ Bicing NOT available:</strong> The official city bike-share (Bicing) is ONLY for residents with Spanish ID. NOT available for tourists.</p>
+        </div>
+        <div class="logistics-grid">
+            <div class="logistics-card">
+                <h4>Donkey Republic</h4>
+                <p>App-based bike rental</p>
+                <p>~5 EUR/hour, 15-20 EUR/day</p>
+            </div>
+            <div class="logistics-card">
+                <h4>Cooltra</h4>
+                <p>Electric scooter rental</p>
+                <p>~0.30 EUR/min (license required)</p>
+            </div>
+            <div class="logistics-card">
+                <h4>Rental Shops</h4>
+                <p>Traditional bike shops</p>
+                <p>~10-15 EUR/day</p>
+            </div>
+        </div>
+
+        <h3>🚨 Emergency Contacts</h3>
+        <div class="info-box">
+            <ul class="simple-list">
+                <li><strong>112</strong> - General emergencies (police, fire, ambulance)</li>
+                <li><strong>088</strong> - Mossos d'Esquadra (Catalan police) non-urgent</li>
+                <li><strong>012</strong> - Barcelona tourist information and assistance</li>
+                <li><strong>Police Station:</strong> La Rambla, 43</li>
+            </ul>
+        </div>
+
+        <h3>💡 Practical Tips</h3>
+        <ul style="padding-left: 20px;">
+            <li>Pickpockets are common on La Rambla, metro, and crowded areas - keep valuables secure</li>
+            <li>Most restaurants close 16:00-20:00 between lunch and dinner</li>
+            <li>Tap water is safe - ask for "agua del grifo" (free tap water)</li>
+            <li>October weather: 15-22°C (59-72°F) - bring light layers</li>
+            <li>Book Sagrada Família online days/weeks ahead - it sells out!</li>
+            <li>Tipping not mandatory - round up or 5-10% for good service</li>
+            <li>Late dining culture: locals eat dinner 21:00-23:00</li>
+        </ul>
+    </section>
+
+    <!-- BUDGET SUMMARY -->
+    <section class="section">
+        <div class="budget-summary">
+            <h3>💰 4-Day Budget Summary</h3>
+            
+            <div class="budget-row">
+                <span>Accommodation (Onefam Batlló)</span>
+                <span><strong>Included ✓</strong></span>
+            </div>
+            
+            <div class="budget-row">
+                <span>Breakfast & Dinner (hostel)</span>
+                <span><strong>Included ✓</strong></span>
+            </div>
+            
+            <div class="budget-row">
+                <span>Meals (lunches + aperitifs)</span>
+                <span><strong>92-180 EUR</strong></span>
+            </div>
+            
+            <div class="budget-row">
+                <span>Transport (airport + metro)</span>
+                <span><strong>21-58 EUR</strong></span>
+            </div>
+            
+            <div class="budget-row">
+                <span>Attractions</span>
+                <span><strong>26-117 EUR</strong></span>
+            </div>
+            
+            <div class="budget-row">
+                <span style="font-style: italic; font-size: 0.9rem;">
+                    (Sagrada 26 EUR required, Casa Batlló/La Pedrera optional)
+                </span>
+            </div>
+            
+            <div class="budget-row budget-total">
+                <span>TOTAL ESTIMATE</span>
+                <span>150-350 EUR</span>
+            </div>
+            
+            <p style="margin-top: 15px; font-size: 0.9rem;">
+                <strong>Minimum budget (150 EUR):</strong> Skip paid Gaudí attractions, public transport only<br>
+                <strong>Maximum budget (350 EUR):</strong> All paid attractions, taxi for departure
+            </p>
+        </div>
+    </section>
+
+    <!-- EMOJI LEGEND -->
+    <section class="section">
+        <h2>🏷️ Emoji Tag Legend</h2>
+        <div class="emoji-legend">
+            <div class="emoji-item">
+                <span class="emoji-symbol">🆓</span>
+                <span class="emoji-description">Free - No admission fee</span>
+            </div>
+            <div class="emoji-item">
+                <span class="emoji-symbol">🎟️</span>
+                <span class="emoji-description">Paid - Ticket required</span>
+            </div>
+            <div class="emoji-item">
+                <span class="emoji-symbol">📅</span>
+                <span class="emoji-description">Reservation Required</span>
+            </div>
+            <div class="emoji-item">
+                <span class="emoji-symbol">👀</span>
+                <span class="emoji-description">See & Continue (10-30 mins)</span>
+            </div>
+            <div class="emoji-item">
+                <span class="emoji-symbol">⏳</span>
+                <span class="emoji-description">Be There (1-3+ hours)</span>
+            </div>
+            <div class="emoji-item">
+                <span class="emoji-symbol">⭐</span>
+                <span class="emoji-description">Top Highlight</span>
+            </div>
+            <div class="emoji-item">
+                <span class="emoji-symbol">📸</span>
+                <span class="emoji-description">Photo Spot</span>
+            </div>
+            <div class="emoji-item">
+                <span class="emoji-symbol">☂️</span>
+                <span class="emoji-description">Indoor / Rainy Day</span>
+            </div>
+            <div class="emoji-item">
+                <span class="emoji-symbol">🍽️</span>
+                <span class="emoji-description">Food/Dining</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Barcelona 4-Day Itinerary | Oct 14-17, 2026</p>
+        <p>Generated from Entrespacios Barcelona Guides</p>
+        <p style="margin-top: 10px; font-size: 0.8rem;">
+            <strong>Source Data:</strong> barcelona_itinerary.json
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

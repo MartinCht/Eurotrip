@@ -1,0 +1,215 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Travel Itinerary Schema",
+  "description": "Structured JSON schema for travel itineraries with accommodation, transport, and daily activities",
+  "type": "object",
+  "required": ["destination", "country", "dates", "days"],
+  "properties": {
+    "destination": {
+      "type": "string",
+      "description": "City or region name"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country name"
+    },
+    "dates": {
+      "type": "object",
+      "required": ["start", "end"],
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date",
+          "description": "Trip start date (YYYY-MM-DD)"
+        },
+        "end": {
+          "type": "string",
+          "format": "date",
+          "description": "Trip end date (YYYY-MM-DD)"
+        }
+      }
+    },
+    "accommodation": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri"
+        },
+        "checkIn": {
+          "type": "string",
+          "format": "date"
+        },
+        "checkOut": {
+          "type": "string",
+          "format": "date"
+        },
+        "bookingReference": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "transport": {
+      "type": "object",
+      "properties": {
+        "arrival": {
+          "$ref": "#/definitions/transportDetails"
+        },
+        "departure": {
+          "$ref": "#/definitions/transportDetails"
+        }
+      }
+    },
+    "days": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/dayObject"
+      }
+    },
+    "maps": {
+      "type": "object",
+      "properties": {
+        "fullDayRoute": {
+          "type": "string",
+          "format": "uri"
+        },
+        "allLocationsSearch": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "transportDetails": {
+      "type": ["object", "null"],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time": {
+          "type": ["string", "null"],
+          "pattern": "^([0-1][0-9]|2[0-3]):[0-5][0-9]$"
+        },
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": ["string", "null"]
+        },
+        "provider": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri"
+        },
+        "bookingReference": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "dayObject": {
+      "type": "object",
+      "required": ["date", "isArrivalDay", "isDepartureDay", "timeBlocks"],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "isArrivalDay": {
+          "type": "boolean"
+        },
+        "isDepartureDay": {
+          "type": "boolean"
+        },
+        "timeBlocks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/timeBlock"
+          }
+        }
+      }
+    },
+    "timeBlock": {
+      "type": "object",
+      "required": ["name", "timeRange", "activities"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": ["Morning", "Afternoon", "Evening", "Night", "Midday"]
+        },
+        "timeRange": {
+          "type": "string",
+          "description": "Time range (HH:MM-HH:MM) or descriptive text"
+        },
+        "activities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/activity"
+          }
+        }
+      }
+    },
+    "activity": {
+      "type": "object",
+      "required": ["order", "name", "priority", "tags"],
+      "properties": {
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "name": {
+          "type": "string"
+        },
+        "link": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "duration": {
+          "type": ["integer", "null"],
+          "description": "Duration in minutes"
+        },
+        "suggestedTime": {
+          "type": ["string", "null"],
+          "pattern": "^([0-1][0-9]|2[0-3]):[0-5][0-9]$"
+        },
+        "timeRestriction": {
+          "type": ["string", "null"],
+          "description": "Opening hours or time constraints"
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["mandatory", "high", "medium", "low", "optional"]
+        },
+        "priceRange": {
+          "type": ["string", "null"],
+          "enum": ["€", "€€", "€€€", null]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Emoji tags from itinerary-formatter skill"
+          }
+        },
+        "notes": {
+          "type": ["string", "null"]
+        },
+        "bookingRequired": {
+          "type": "boolean"
+        },
+        "bookingDetails": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}
