@@ -291,7 +291,7 @@
               "priceRange": "€€",
               "tags": ["🎟️", "📅", "⏳", "☂️"],
               "type": "museum",
-              "notes": "Picasso's early works and Blue Period collection. Book online to skip lines. Optional if tired from overnight flight.",
+              "notes": "Picasso's early works and Blue Period collection. Book online to skip lines. Optional if tired from overnight flight. If visiting museum, skip or shorten Parc de la Ciutadella time. If skipping museum, proceed directly to park at 16:15.",
               "bookingRequired": true,
               "bookingDetails": {
                 "url": "https://www.museupicasso.bcn.cat",
@@ -313,7 +313,7 @@
               "priceRange": null,
               "tags": ["🆓", "👀"],
               "type": "park",
-              "notes": "Large central park with lake, fountain, and greenery. Good for relaxing after museum or long walk.",
+              "notes": "Large central park with lake, fountain, and greenery. Good for relaxing after museum or long walk. Start at 16:15 if skipping Museu Picasso, or 18:15 if visiting museum.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": "10:00-22:30 (summer), 10:00-19:00 (winter)",
@@ -788,11 +788,11 @@
               "priceRange": "€€-€€€",
               "tags": ["🍽️", "⭐"],
               "type": "meal",
-              "notes": "Order suquet de peix (fish stew) or arròs negre (black rice with squid ink). AVOID places advertising 'paella ready in 15 minutes' - authentic rice dishes take 20-30 mins minimum. Use Entrespacios map.",
+              "notes": "Order suquet de peix (fish stew) or arròs negre (black rice with squid ink). AVOID places advertising 'paella ready in 15 minutes' - authentic rice dishes take 20-30 mins minimum. Use Entrespacios map. Cost is à la carte; menú del día (15-25 EUR) may not include these seafood specialties.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
-              "cost": "20-30 EUR",
+              "cost": "20-30 EUR (à la carte seafood)",
               "optional": false,
               "secondaryPlaces": []
             }
@@ -944,7 +944,7 @@
               "priceRange": null,
               "tags": ["🆓", "👀", "⭐"],
               "type": "light show",
-              "notes": "Free choreographed water, light, and music show at Plaça Espanya. Schedule changes by season - check official website. About 20-min show. Get there early for good spot.",
+              "notes": "Free choreographed water, light, and music show at Plaça Espanya. Schedule changes by season - check official website 1-2 weeks before Oct 16, 2026 for exact times. About 20-min show. Get there early for good spot.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": "Check barcelona.cat/fontmagica for current schedule",
@@ -1005,7 +1005,7 @@
               "priceRange": null,
               "tags": [],
               "type": "logistics",
-              "notes": "Pack and check out. Breakfast may not be available due to early departure - check with hostel or pack snacks night before.",
+              "notes": "Pack and check out. Breakfast will NOT be available due to early departure - pack snacks the night before (pastries, fruit, water). Check out by 05:45 latest.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
@@ -1024,11 +1024,11 @@
               "priceRange": "€",
               "tags": ["🎟️"],
               "type": "transport",
-              "notes": "Options: (1) R2 Nord train from Passeig de Gràcia (4.90 EUR, 19 mins to airport T2, first train ~05:50), (2) Metro L9 Sud (5.90 EUR, starts 05:00), (3) Taxi/Cabify (30-40 EUR, most reliable for early morning). Arrive airport by 06:45-07:00 (2 hours before 08:45 flight).",
+              "notes": "RECOMMENDED: Taxi/Cabify (30-40 EUR) for reliability and early timing - book night before. PUBLIC TRANSPORT OPTIONS: (1) R2 Nord train from Passeig de Gràcia at 05:50 (4.90 EUR, 19 mins to T2) arrives 06:09 - TIGHT timing for 08:45 flight, (2) Metro L9 Sud from 05:00 (5.90 EUR, ~32 mins plus transfer). Target arrival: 06:30-06:45 (2 hours before flight).",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": "Metro/train from 05:00, Aerobús 24/7",
-              "cost": "4.90-40 EUR depending on method",
+              "opening_hours": "Metro/train from 05:00, Aerobús 24/7, Taxi 24/7",
+              "cost": "4.90-40 EUR (train cheapest, taxi most reliable)",
               "optional": false,
               "secondaryPlaces": []
             },
@@ -1447,7 +1447,8 @@
         "day_1": "0-12 EUR (free walks, optional Museu Picasso 12 EUR)",
         "day_2": "26-86 EUR (Sagrada Família 26 EUR required, Casa Batlló 35 EUR or La Pedrera 25 EUR optional)",
         "day_3": "0-5 EUR (free beach/Gràcia, or Castell 5 EUR if Montjuïc)",
-        "day_4": "0 EUR (departure day)"
+        "day_4": "0 EUR (departure day)",
+        "day_4_breakfast": "5-10 EUR (pack snacks night before - hostel breakfast unavailable at 05:00 departure)"
       },
       "transport": {
         "airport_arrival": "4.90-5.90 EUR (train/metro)",
@@ -1456,8 +1457,8 @@
         "total": "21-58 EUR"
       }
     },
-    "total_4_day_estimate": "150-350 EUR",
-    "notes": "Range depends on: (1) choosing paid Gaudí attractions (Casa Batlló, La Pedrera) vs free exterior viewing, (2) taxi vs public transport for departure, (3) daily food/drink spending. Minimum budget assumes skipping paid attractions and public transport only."
+    "total_4_day_estimate": "155-365 EUR",
+    "notes": "Range depends on: (1) choosing paid Gaudí attractions (Casa Batlló, La Pedrera) vs free exterior viewing, (2) taxi (recommended, 30-40 EUR) vs public transport for departure (4.90 EUR), (3) daily food/drink spending, (4) departure day breakfast snacks (5-10 EUR). Minimum budget assumes skipping paid attractions and public transport only."
   },
   "research_notes": {
     "sources": [

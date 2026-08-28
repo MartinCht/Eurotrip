@@ -434,6 +434,117 @@ Before delivering your work:
 
 ---
 
+## 🎯 Activity Selection & Reasoning
+
+When planning activities, always document WHY you selected or rejected options. This helps users understand the logic and make informed changes.
+
+### Document in `research_notes.alternatives`
+
+For EACH DAY, include an `alternatives` array with rejected options:
+
+```json
+"research_notes": {
+  "alternatives": [
+    {
+      "name": "Musée de Cluny",
+      "reason_not_selected": "€9 student, 90 min visit. Too much for arrival day. Can add if you skip some Latin Quarter walking or save for Day 4.",
+      "when_to_add": "Day 4 if you want more museums"
+    },
+    {
+      "name": "Notre-Dame Exterior Walk-by",
+      "reason_not_selected": "Quick 15 min stop from Shakespeare & Co. Saved for Day 4 when doing full Île de la Cité tour.",
+      "when_to_add": "Afternoon if near area, or save for Day 4"
+    }
+  ],
+  "sources": [...],
+  "notes": "Day 1 restructured to include Montmartre sunset..."
+}
+```
+
+### Document in Overall `research_notes.alternatives_considered`
+
+For MAJOR decisions affecting the whole trip, add to the top-level `research_notes`:
+
+```json
+"research_notes": {
+  "alternatives_considered": [
+    {
+      "name": "4-Day Museum Pass (€62)",
+      "reason_not_selected": "2-Day Museum Pass (€55) is more efficient. Concentrated museum days on Sat-Sun (Days 2-3). Saves €30 vs trying to use 4-day pass with gaps.",
+      "notes": "2-day pass strategy covers: Hôtel de la Marine, Invalides, Arc (Day 2), Versailles, Orsay (Day 3). Louvre separate ticket Day 4."
+    },
+    {
+      "name": "Hôtel Madrigal (original accommodation)",
+      "reason_not_selected": "Switched to St Christopher's Inn - closer to Bercy bus station (15 min vs 25 min), near Canal/Montmartre, social hostel atmosphere, cheaper.",
+      "notes": "St Christopher's saves 10 min on Day 5 departure and puts you near Montmartre."
+    },
+    {
+      "name": "Le Marais on Day 4 (original plan)",
+      "reason_not_selected": "Moved Le Marais to Day 1 evening to free up Day 4 for Palais Garnier + Louvre + Islands.",
+      "notes": "Day 4 now: Palais Garnier → Louvre → Île de la Cité → Panthéon."
+    }
+  ]
+}
+```
+
+### Why This Matters
+
+**For the User:**
+- Understands the reasoning behind the plan
+- Can easily swap alternatives if preferences differ
+- Sees what was considered but rejected
+
+**For Future Agents:**
+- Context for why certain choices were made
+- Guidance on what can be swapped without breaking flow
+- Documented research prevents duplicate work
+
+### Real Example: Paris Day 5 Decision
+
+**Original Plan:** 04:00-06:00 Montmartre walk before 06:30 bus departure
+
+**Problem:** Too rushed, defeats the purpose of enjoying Montmartre
+
+**Solution:** Move Montmartre to Day 1 evening (sunset at Sacré-Cœur)
+
+**Documentation:**
+```json
+{
+  "name": "Day 5 Early Morning Montmartre (04:00-06:00)",
+  "reason_not_selected": "Too rushed before 06:30 FlixBus. Moved Montmartre to Day 1 late afternoon/evening for sunset at Sacré-Cœur - much better experience and no 4am wake-up!",
+  "notes": "Day 5 now pure departure logistics (05:45 leave hostel → 06:00 at bus station)."
+}
+```
+
+### Selection Criteria to Consider
+
+When choosing activities, document reasoning based on:
+
+1. **Time constraints** - "90 min museum doesn't fit after 2-hour Louvre visit"
+2. **Energy levels** - "Too much for arrival day"
+3. **Geographic flow** - "Backtracking from Eiffel to Marais, saved for Day 1"
+4. **Opening hours** - "Closed Mondays, conflicts with departure day"
+5. **Cost optimization** - "Museum Pass expired, buying separate ticket"
+6. **Thematic coherence** - "Day 2 = Royal Paris, saving Latin Quarter for Day 1"
+7. **User preferences** - "User requested Palais Garnier, moved activities from Day 4 to Day 1"
+8. **Practical logistics** - "Near hostel, easy to add any evening"
+
+### Template for Alternatives
+
+Use this structure for each alternative:
+
+```json
+{
+  "name": "Clear, specific name",
+  "reason_not_selected": "Why NOT in main plan: timing/cost/energy/flow/preference",
+  "when_to_add": "Specific guidance: 'Morning of Day 3 instead of X' or 'If you skip Y'"
+}
+```
+
+**Keep it actionable** - User should know exactly WHEN and HOW to add the alternative.
+
+---
+
 ## 💡 Pro Tips
 
 1. **Start with the template** - Don't write JSON from scratch
@@ -446,6 +557,8 @@ Before delivering your work:
 8. **Test your route** - Click the Google Maps link
 9. **Document as you go** - Add sources immediately
 10. **Validate at the end** - Check against schema
+11. **Document ALL decisions** - Why you selected AND rejected activities
+12. **Make alternatives actionable** - Tell user exactly when/how to swap
 
 ---
 

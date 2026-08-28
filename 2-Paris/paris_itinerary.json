@@ -9,12 +9,12 @@
     "name": "St Christopher's Inn Paris - Gare du Nord",
     "address": "159 Rue de Crimée, 75019 Paris",
     "neighborhood": "La Villette / 19th Arrondissement",
-    "link": "https://www.google.com/maps/place/St+Christopher's+Paris+-+Gare+du+Nord",
+    "link": "https://www.google.com/maps/search/St+Christopher's+Inn+Paris+Gare+du+Nord",
     "checkIn": "2026-10-17",
     "checkOut": "2026-10-21",
     "bookingReference": null,
     "meals_included": [],
-    "notes": "Social hostel near Canal de l'Ourcq and Bassin de la Villette. Metro: Crimée (Line 7) or Laumière (Line 5). Direct Line 5 to Quai de Bercy bus station (15 min). Close to Canal Saint-Martin area. Hostel has bar, common areas, and social events. ~25-30 min to central Paris attractions."
+    "notes": "Social hostel near Canal de l'Ourcq and Bassin de la Villette. Metro: Crimée (Line 7) or Laumière (Line 5). Direct Line 5 to Quai de Bercy bus station (15 min) - MUCH better than Madrigal for Bruges departure. Close to Canal Saint-Martin area. Hostel has bar, common areas, and social events. ~25-30 min to central Paris attractions. 15 min metro to Montmartre (Line 7 to Abbesses)."
   },
   "transport": {
     "arrival": {
@@ -27,9 +27,9 @@
       "flightNumber": "VY8017",
       "link": "https://tickets.vueling.com/booking/selectFlight",
       "bookingReference": null,
-      "recommended_departure_from_accommodation": "06:15",
-      "recommended_arrival_at_airport": "06:45-07:00",
-      "notes": "Flight arrives 10:35 at Orly. Take Orlybus to Denfert-Rochereau (€9.50, ~30 min), then Metro Line 4 to Gare du Nord, transfer to Line 5 to Laumière (total ~40 min metro). OR: RER B to Gare du Nord, walk 15 min to hostel. Total transit: 60-75 min. Estimated hostel arrival: 11:45-12:30."
+      "recommended_departure_from_accommodation": null,
+      "recommended_arrival_at_station": null,
+      "notes": "Flight arrives 10:35 at Orly. Take Orlybus to Denfert-Rochereau (€9.50, ~30 min), then Metro Line 4 to Gare du Nord, transfer to Line 5 to Laumière (~40 min metro). OR: RER B to Gare du Nord + walk. Total transit: 60-75 min. Estimated hostel arrival: 11:45-12:30."
     },
     "departure": {
       "date": "2026-10-21",
@@ -43,346 +43,681 @@
       "bookingReference": null,
       "recommended_departure_from_accommodation": "05:45",
       "recommended_arrival_at_station": "06:00-06:10",
-      "notes": "FlixBus departs 06:30 from Quai de Bercy, arrives Bruges 11:10 (4h 40m, no transfers). Metro Line 5 from Laumière to Quai de la Gare (direct, 15 min). Allow 45 min from hostel to bus station. MUCH easier than from Madrigal."
+      "notes": "FlixBus departs 06:30 from Quai de Bercy, arrives Bruges 11:10 (4h 40m, no transfers). Metro Line 5 from Laumière to Quai de la Gare (direct, 15 min). Allow 45 min from hostel to bus station. MAJOR ADVANTAGE of St Christopher's location vs Madrigal (which was 25 min)."
     }
   },
   "days": [
     {
       "date": "2026-10-17",
       "dayNumber": 1,
-      "title": "Arrival Day & Canal Saint-Martin",
+      "title": "Arrival Day - Latin Quarter, Montmartre Sunset & Le Marais",
       "isArrivalDay": true,
       "isDepartureDay": false,
-      "total_walking_distance": "~3-4 km",
-      "total_duration": "~5-6 hours active (after arrival)",
+      "total_walking_distance": "~5-6 km",
+      "total_duration": "~8-9 hours active (after arrival)",
       "timeBlocks": [
         {
           "name": "morning",
-          "timeRange": "10:35-13:00",
+          "timeRange": "10:35-14:00",
           "start_time": "10:35",
-          "end_time": "13:00",
-          "duration": "~2.5 hours",
-          "description": "Flight arrival from Barcelona. Transport to hotel, check-in or luggage storage.",
+          "end_time": "14:00",
+          "duration": "~3.5 hours",
+          "description": "Flight arrival from Barcelona. Transport to hostel, check-in/luggage storage. Purchase 2-Day Museum Pass online or at FNAC/tourism office.",
           "activities": [
             {
               "order": 1,
-              "name": "Airport Arrival & Transport to Hotel",
-              "link": "https://www.google.com/maps/dir/Paris+Orly+Airport/Hotel+Madrigal+14+Rue+Pernety+75014+Paris",
-              "duration": 70,
+              "name": "Airport Arrival & Transport to Hostel",
+              "link": "https://www.google.com/maps/dir/Paris+Orly+Airport/St+Christopher's+Inn+Paris+Gare+du+Nord",
+              "duration": 75,
               "suggestedTime": "10:35",
               "timeRestriction": "Orlybus runs every 10-20 min, 06:00-00:30",
               "priority": "mandatory",
               "priceRange": "€",
               "tags": ["🎟️"],
               "type": "transport",
-              "notes": "Take Orlybus to Denfert-Rochereau (€9.50), then Metro Line 4 to Pasteur (€2.15 or use Navigo/ticket carnet). Total time: 45-60 min.",
+              "notes": "Take Orlybus to Denfert-Rochereau (€9.50), then Metro Line 4 to Gare du Nord, transfer Line 5 to Laumière. Total: 60-75 min.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
-              "cost": "€11.65 total",
+              "cost": "€11.65 total (Orlybus + Metro)",
               "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 2,
-              "name": "Hôtel Madrigal Check-in / Luggage Storage",
-              "link": "https://www.google.com/maps/search/Hotel+Madrigal+14+Rue+Pernety+75014+Paris",
+              "name": "St Christopher's Inn Check-in / Luggage Storage",
+              "link": "https://www.google.com/maps/search/St+Christopher's+Inn+Paris+Gare+du+Nord",
               "duration": 30,
-              "suggestedTime": "11:45",
+              "suggestedTime": "12:00",
               "timeRestriction": "Check-in typically 14:00-15:00",
               "priority": "mandatory",
               "priceRange": null,
               "tags": [],
               "type": "accommodation",
-              "notes": "Store luggage if room not ready. Freshen up and prepare for afternoon exploration.",
+              "notes": "Store luggage if room not ready. Freshen up and prepare for afternoon exploration. Social hostel with bar - great for meeting people later.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
-              "cost": "included",
+              "cost": "free",
               "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 3,
-              "name": "Paris Museum Pass Purchase (PRIORITY)",
-              "link": "https://www.parismuseumpass.com",
+              "name": "Purchase 2-Day Museum Pass",
+              "link": "https://www.parismuseumpass.fr/en",
               "duration": 15,
-              "suggestedTime": "12:15",
-              "timeRestriction": "Purchase at Montparnasse tourism kiosk, Gare du Nord, or major museums",
+              "suggestedTime": "13:00",
+              "timeRestriction": "Available online or at FNAC stores, tourism offices",
               "priority": "high",
-              "priceRange": "€€€",
+              "priceRange": "€€",
               "tags": ["🎟️", "📅"],
               "type": "logistics",
-              "notes": "CRITICAL: Purchase 4-day Paris Museum Pass (€85) before visiting museums. Covers Louvre, Orsay, Arc de Triomphe, Versailles, and 60+ museums. Requires online timed-entry reservations for major sites.",
-              "bookingRequired": true,
+              "notes": "CRITICAL: Buy 2-Day Pass (€55) for Days 2 & 3. Activate Saturday morning at first museum. Saves €30 vs 4-day pass. Can buy online now or at FNAC/tourism office in Latin Quarter.",
+              "bookingRequired": false,
               "bookingDetails": {
-                "url": "https://www.parismuseumpass.com",
-                "advanceTimeNeeded": "Purchase immediately, then book timed entries online"
+                "url": "https://www.parismuseumpass.fr/en",
+                "advanceTimeNeeded": "Can buy same-day or in advance online"
               },
-              "opening_hours": null,
-              "cost": "€85 (4-day pass)",
+              "opening_hours": "Online 24/7, FNAC stores 10:00-20:00",
+              "cost": "€55",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€96.65 (transport + Museum Pass)"
+          "budget": "€66.65 (transport + museum pass)"
         },
         {
           "name": "lunch",
-          "timeRange": "13:00-14:30",
-          "start_time": "13:00",
-          "end_time": "14:30",
-          "duration": "~1.5 hours",
-          "description": "Casual lunch near hotel or Canal Saint-Martin area",
+          "timeRange": "14:00-15:00",
+          "start_time": "14:00",
+          "end_time": "15:00",
+          "duration": "1 hour",
+          "description": "Latin Quarter lunch - student-friendly bistros and cafés around Panthéon/Sorbonne area",
           "activities": [
             {
               "order": 1,
-              "name": "Lunch near Montparnasse",
-              "link": "https://www.google.com/maps/search/restaurants+near+Gare+Montparnasse+Paris",
-              "duration": 90,
-              "suggestedTime": "13:00",
+              "name": "Latin Quarter Lunch",
+              "link": "https://www.google.com/maps/search/restaurants+latin+quarter+paris",
+              "duration": 60,
+              "suggestedTime": "14:00",
               "timeRestriction": null,
-              "priority": "high",
-              "priceRange": "€€",
+              "priority": "mandatory",
+              "priceRange": "€",
               "tags": ["🍽️"],
-              "type": "dining",
-              "notes": "Grab a casual lunch near the hotel or pick up baguette sandwiches from a local boulangerie.",
+              "type": "meal",
+              "notes": "Student-friendly bistros near Sorbonne. Try Rue Mouffetard for casual options. Budget €10-15 for lunch.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
-              "cost": "€12-18",
+              "opening_hours": "Most open 12:00-15:00",
+              "cost": "€10-15",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€12-18"
+          "budget": "€10-15"
         },
         {
           "name": "afternoon",
-          "timeRange": "14:30-18:30",
-          "start_time": "14:30",
+          "timeRange": "15:00-18:30",
+          "start_time": "15:00",
           "end_time": "18:30",
-          "duration": "~4 hours",
-          "description": "Explore Canal Saint-Martin and surrounding neighborhoods (Core Itinerary)",
+          "duration": "3.5 hours",
+          "description": "Latin Quarter literary exploration - Shakespeare and Company, medieval streets, Panthéon exterior, Luxembourg Gardens. Light arrival day activities.",
           "activities": [
             {
               "order": 1,
-              "name": "Canal Saint-Martin",
-              "link": "https://www.google.com/maps/search/Canal+Saint+Martin+Paris",
-              "duration": 90,
+              "name": "Shakespeare and Company",
+              "link": "https://www.google.com/maps/search/Shakespeare+and+Company+Paris",
+              "duration": 30,
               "suggestedTime": "15:00",
-              "timeRestriction": null,
+              "timeRestriction": "Open daily 10:00-22:00",
               "priority": "high",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "📸"],
-              "type": "neighborhood",
-              "notes": "Scenic canal with iron footbridges, trendy cafés, and boutiques. Great for a leisurely stroll.",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "⭐", "📸", "☂️"],
+              "type": "bookstore",
+              "notes": "Iconic English-language bookstore on the Left Bank. Literary pilgrimage spot. Free to browse, cozy atmosphere.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
-              "cost": "free",
+              "opening_hours": "10:00-22:00 daily",
+              "cost": "free (browsing)",
               "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 2,
-              "name": "Bassin de la Villette",
-              "link": "https://www.google.com/maps/search/Bassin+de+la+Villette+Paris",
-              "duration": 60,
-              "suggestedTime": "16:30",
+              "name": "Rue Saint-Julien-le-Pauvre & Rue Galande",
+              "link": "https://www.google.com/maps/search/Rue+Saint-Julien-le-Pauvre+Paris",
+              "duration": 20,
+              "suggestedTime": "15:30",
               "timeRestriction": null,
               "priority": "medium",
-              "priceRange": null,
-              "tags": ["🆓", "👀"],
-              "type": "waterfront",
-              "notes": "Large basin with waterfront cafés, MK2 floating cinema, and local hangout vibe.",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "street",
+              "notes": "Medieval streets near Shakespeare & Co. Picturesque narrow lanes with old architecture.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
+              "opening_hours": "24/7",
               "cost": "free",
-              "optional": true,
+              "optional": false,
               "secondaryPlaces": []
-            }
-          ],
-          "budget": "€0-5 (optional drinks)"
-        },
-        {
-          "name": "evening",
-          "timeRange": "18:30-21:00",
-          "start_time": "18:30",
-          "end_time": "21:00",
-          "duration": "~2.5 hours",
-          "description": "Casual dinner and rest after arrival day",
-          "activities": [
+            },
             {
-              "order": 1,
-              "name": "Dinner near Hotel or Canal",
-              "link": "https://www.google.com/maps/search/restaurants+Canal+Saint+Martin+Paris",
-              "duration": 90,
-              "suggestedTime": "19:00",
-              "timeRestriction": null,
+              "order": 3,
+              "name": "Panthéon (Exterior)",
+              "link": "https://www.google.com/maps/search/Panthéon+Paris",
+              "duration": 15,
+              "suggestedTime": "15:50",
+              "timeRestriction": "Interior open 10:00-18:30 (save for Day 4)",
               "priority": "high",
-              "priceRange": "€€",
-              "tags": ["🍽️"],
-              "type": "dining",
-              "notes": "Casual dinner at a local bistro. Consider traditional French dishes like coq au vin or steak frites.",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "monument",
+              "notes": "Neoclassical mausoleum in Latin Quarter. View exterior today, save interior visit (€11.50 student) for Day 4.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
-              "cost": "€18-28",
+              "opening_hours": "Exterior 24/7, interior 10:00-18:30",
+              "cost": "free (exterior only today)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 4,
+              "name": "Rue Mouffetard & Place de la Contrescarpe",
+              "link": "https://www.google.com/maps/search/Rue+Mouffetard+Paris",
+              "duration": 30,
+              "suggestedTime": "16:15",
+              "timeRestriction": "Market best in mornings, but shops open until evening",
+              "priority": "high",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "🍽️", "📸"],
+              "type": "street/market",
+              "notes": "Historic market street dating to Roman times. Cafés, food shops, local atmosphere. One of oldest streets in Paris.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Street 24/7, shops ~09:00-19:00",
+              "cost": "free (window shopping)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 5,
+              "name": "Jardin du Luxembourg",
+              "link": "https://www.google.com/maps/search/Jardin+du+Luxembourg+Paris",
+              "duration": 45,
+              "suggestedTime": "17:00",
+              "timeRestriction": "Open dawn to dusk (~08:00-21:00 in Oct)",
+              "priority": "high",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "garden",
+              "notes": "Beautiful formal gardens with palace, fountains, sculptures. Relax before evening activities. Popular with students and locals.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "~08:00-21:00 (Oct)",
+              "cost": "free",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€18-28"
+          "budget": "€0 (all free activities)"
+        },
+        {
+          "name": "evening_part1",
+          "timeRange": "18:30-21:00",
+          "start_time": "18:30",
+          "end_time": "21:00",
+          "duration": "2.5 hours",
+          "description": "Montmartre evening - Sacré-Cœur sunset, artists' square, picturesque streets. 15 min metro from Latin Quarter (Line 4 to Abbesses).",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Metro to Montmartre",
+              "link": "https://www.google.com/maps/dir/Jardin+du+Luxembourg/Abbesses+Metro+Station+Paris",
+              "duration": 20,
+              "suggestedTime": "18:30",
+              "timeRestriction": "Metro runs until ~00:30",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Line 4 from Luxembourg/RER B to Abbesses station (15 min). Abbesses has beautiful Art Nouveau entrance.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Metro ~05:30-00:30",
+              "cost": "€2.15 (or included in travel pass)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Rue des Abbesses",
+              "link": "https://www.google.com/maps/search/Rue+des+Abbesses+Paris",
+              "duration": 10,
+              "suggestedTime": "18:50",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "street",
+              "notes": "Charming Montmartre street. Note the Art Nouveau metro entrance (designed by Hector Guimard). Local cafés and shops.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Villa Léandre",
+              "link": "https://www.google.com/maps/search/Villa+Léandre+Paris",
+              "duration": 10,
+              "suggestedTime": "19:00",
+              "timeRestriction": null,
+              "priority": "low",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "street",
+              "notes": "Hidden cobblestone alley with English-style cottages. Secret gem of Montmartre. Very Instagrammable.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 4,
+              "name": "Place Dalida",
+              "link": "https://www.google.com/maps/search/Place+Dalida+Montmartre",
+              "duration": 10,
+              "suggestedTime": "19:10",
+              "timeRestriction": null,
+              "priority": "low",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "viewpoint",
+              "notes": "Bust of French singer Dalida with nice viewpoint over Paris. Locals touch the bust for good luck.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 5,
+              "name": "Rue de l'Abreuvoir",
+              "link": "https://www.google.com/maps/search/Rue+de+l'Abreuvoir+Paris",
+              "duration": 10,
+              "suggestedTime": "19:20",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "street",
+              "notes": "One of the most picturesque streets in Paris. Classic Montmartre view with Sacré-Cœur in background. Featured in many paintings.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 6,
+              "name": "Basilique du Sacré-Cœur",
+              "link": "https://www.google.com/maps/search/Sacré-Cœur+Basilica+Paris",
+              "duration": 45,
+              "suggestedTime": "19:30",
+              "timeRestriction": "Basilica open 06:00-22:30 daily. Dome closes 20:00.",
+              "priority": "high",
+              "priceRange": "free",
+              "tags": ["🆓", "⏳", "⭐", "📸"],
+              "type": "religious site",
+              "notes": "White Romano-Byzantine basilica atop Montmartre hill. FREE entry to basilica. CATCH SUNSET from steps (around 19:30-20:00 in Oct). Panoramic Paris views. Dome costs extra (€6) if you want to climb - closes at 20:00 so skip today.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "06:00-22:30 (basilica), 09:00-20:00 (dome)",
+              "cost": "free (basilica), €6 (dome - optional)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 7,
+              "name": "Place du Tertre",
+              "link": "https://www.google.com/maps/search/Place+du+Tertre+Paris",
+              "duration": 20,
+              "suggestedTime": "20:15",
+              "timeRestriction": "Artists present ~10:00-23:00",
+              "priority": "medium",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "square",
+              "notes": "Historic artists' square behind Sacré-Cœur. Street artists doing portraits and caricatures. Touristy but iconic Montmartre experience. More atmospheric in evening than midday crowds.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 (artists ~10:00-23:00)",
+              "cost": "free (portraits cost €20-50 if you want one)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "€2.15 (metro only)"
+        },
+        {
+          "name": "evening_part2",
+          "timeRange": "21:00-23:00",
+          "start_time": "21:00",
+          "end_time": "23:00",
+          "duration": "2 hours",
+          "description": "Le Marais evening - L'As du Fallafel dinner, Place des Vosges, thrift shopping on Rue de la Verrerie. Metro from Montmartre to Le Marais (~20 min).",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Metro Montmartre to Le Marais",
+              "link": "https://www.google.com/maps/dir/Abbesses+Metro/Saint-Paul+Metro+Paris",
+              "duration": 25,
+              "suggestedTime": "21:00",
+              "timeRestriction": "Metro runs until ~00:30",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Line 4 from Abbesses to Châtelet, transfer Line 1 to Saint-Paul (~20 min). Or walk down Montmartre and catch Line 1 at Hôtel de Ville.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Metro ~05:30-00:30",
+              "cost": "€2.15 (or included in travel pass)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "L'As du Fallafel",
+              "link": "https://www.google.com/maps/search/L'As+du+Fallafel+Paris",
+              "duration": 45,
+              "suggestedTime": "21:30",
+              "timeRestriction": "CLOSED Friday evening & all day Saturday. Open Sun-Thu 11:00-23:00",
+              "priority": "high",
+              "priceRange": "€",
+              "tags": ["🍽️", "⭐"],
+              "type": "restaurant",
+              "notes": "Famous falafel spot in Jewish quarter (Rue des Rosiers). Budget €8-12 for falafel sandwich. Lines can be long but move fast. Lenny Kravitz's favorite spot! CONFIRM it's Friday (open today!).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Sun-Thu 11:00-23:00, CLOSED Fri PM & Sat",
+              "cost": "€8-12",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Rue de la Verrerie (Thrift Stores)",
+              "link": "https://www.google.com/maps/search/Rue+de+la+Verrerie+Paris",
+              "duration": 30,
+              "suggestedTime": "22:15",
+              "timeRestriction": "Kilo Shop open until 21:00 Mon-Sat (might be closed), Free'P'Star open until 20:00",
+              "priority": "low",
+              "priceRange": "€",
+              "tags": ["🆓", "👀", "🛍️"],
+              "type": "shopping",
+              "notes": "Vintage/thrift stores: Kilo Shop (pay by weight), Free'P'Star. Might be closed by now but street is charming to walk. Save detailed shopping for another day if stores closed.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Most close 20:00-21:00",
+              "cost": "free to window shop",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 4,
+              "name": "Place des Vosges",
+              "link": "https://www.google.com/maps/search/Place+des+Vosges+Paris",
+              "duration": 20,
+              "suggestedTime": "22:45",
+              "timeRestriction": "Park closed at night, but square is accessible 24/7",
+              "priority": "high",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "square",
+              "notes": "Oldest planned square in Paris (1612). Beautiful arcaded square with red brick buildings. Atmospheric at night. Victor Hugo lived at #6.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Square accessible 24/7, garden 08:00-dusk",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "€10-14 (metro + falafel)"
         }
       ],
-      "map_url": "https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Canal+Saint+Martin+Paris/Bassin+de+la+Villette+Paris/Hotel+Madrigal+Paris",
+      "map_url": "https://www.google.com/maps/dir/St+Christopher's+Inn+Paris/Shakespeare+and+Company+Paris/Panthéon+Paris/Rue+Mouffetard+Paris/Jardin+du+Luxembourg/Sacré-Cœur+Paris/L'As+du+Fallafel/Place+des+Vosges/St+Christopher's+Inn+Paris",
       "research_notes": {
         "alternatives": [
           {
-            "name": "Plaza de la Concordia & Place Vendôme",
-            "reason_considered": "Classic central Paris monuments",
-            "notes": "Could visit if energy permits, but arrival day best kept light"
+            "name": "Musée de Cluny (Medieval Museum)",
+            "reason_not_selected": "€9 student, 90 min visit. Too much for arrival day. Can add if you skip some Latin Quarter walking or save for Day 4.",
+            "when_to_add": "Day 4 if you want more museums"
           },
           {
-            "name": "Champs-Élysées & Arc de Triomphe",
-            "reason_considered": "Iconic avenue and monument",
-            "notes": "Better saved for Day 2 when fresh and with Museum Pass active"
+            "name": "Saint-Étienne-du-Mont Church",
+            "reason_not_selected": "Near Panthéon, free, 30 min. Can add if you have extra time in Latin Quarter.",
+            "when_to_add": "Add to afternoon if desired, near Panthéon"
+          },
+          {
+            "name": "Notre-Dame Exterior Walk-by",
+            "reason_not_selected": "Quick 15 min stop from Shakespeare & Co. Saved for Day 4 when doing full Île de la Cité tour.",
+            "when_to_add": "Afternoon if near area, or save for Day 4"
+          },
+          {
+            "name": "Île de la Cité Walk",
+            "reason_not_selected": "Saved for Day 4 comprehensive islands visit with Sainte-Chapelle interior.",
+            "when_to_add": "Day 4 afternoon"
+          },
+          {
+            "name": "Saint-Germain-des-Prés (Literary Cafés)",
+            "reason_not_selected": "Near Luxembourg Gardens. Can add if time, or saved for Day 3 evening after Orsay.",
+            "when_to_add": "After Luxembourg if time, or Day 3 evening"
+          },
+          {
+            "name": "Maison de Victor Hugo",
+            "reason_not_selected": "Free museum at Place des Vosges. Opens 10:00-18:00 (closed by evening). Can add to Day 4.",
+            "when_to_add": "Day 4 Le Marais daytime visit"
+          },
+          {
+            "name": "Canal Saint-Martin Walk",
+            "reason_not_selected": "5 min from hostel. Can do as evening/night activity or before sleep. Not scheduled to keep flexibility.",
+            "when_to_add": "Any evening, especially if back at hostel early"
           }
         ],
         "sources": [
           {
-            "name": "Paris Itinerary Summary (User-provided)",
-            "url": null,
-            "type": "recommendation"
-          },
-          {
-            "name": "Alan por el mundo Paris Guide",
-            "url": null,
-            "type": "video"
+            "name": "RESTRUCTURED_ITINERARY_PREVIEW.md",
+            "url": "local",
+            "type": "guide"
           }
         ],
-        "notes": "Arrival day kept intentionally light. Focus on logistics (Museum Pass purchase), neighborhood exploration, and adjusting to Paris pace."
+        "notes": "Day 1 restructured to include Montmartre sunset (better than rushing at 4am Day 5) and Le Marais evening (moved from Day 4 to free up time for Palais Garnier). Light activities appropriate for arrival day. All free except transport and dinner. Bike not recommended due to luggage and evening activities across different areas."
       }
     },
     {
       "date": "2026-10-18",
       "dayNumber": 2,
-      "title": "Royal Gardens, Grand Bridges & Eiffel Tower",
+      "title": "Museum Pass Day 1 - Royal Paris, Eiffel Tower & Arc de Triomphe",
       "isArrivalDay": false,
       "isDepartureDay": false,
-      "total_walking_distance": "~8-10 km",
-      "total_duration": "~10-12 hours",
+      "total_walking_distance": "~6-8 km (or bike 12-15 km)",
+      "total_duration": "~12 hours",
       "timeBlocks": [
         {
           "name": "morning",
           "timeRange": "08:30-13:00",
           "start_time": "08:30",
           "end_time": "13:00",
-          "duration": "~4.5 hours",
-          "description": "Royal Paris: Tuileries, Hôtel de la Marine, Pont Alexandre III (CORE OPTIONS)",
+          "duration": "4.5 hours",
+          "description": "ACTIVATE Museum Pass today! Tuileries Gardens, Place de la Concorde, Hôtel de la Marine (2-hour visit, book ahead). Pont Alexandre III. Bike recommended.",
           "activities": [
             {
               "order": 1,
-              "name": "Jardin des Tuileries",
-              "link": "https://www.google.com/maps/search/Jardin+des+Tuileries+Paris",
-              "duration": 45,
-              "suggestedTime": "09:00",
-              "timeRestriction": "Open 07:00-21:00 daily",
+              "name": "Bike Rental (Vélib')",
+              "link": "https://www.velib-metropole.fr/en",
+              "duration": 15,
+              "suggestedTime": "08:30",
+              "timeRestriction": "24/7 bike stations",
               "priority": "high",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "📸"],
-              "type": "park",
-              "notes": "Historic royal garden between Louvre and Place de la Concorde. Morning stroll before crowds.",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Pick up Vélib' bike near hostel. 7-day pass (€8) or pay-as-you-go. E-bikes recommended for longer distances. Stations at all major attractions.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": "07:00-21:00",
-              "cost": "free",
-              "optional": false,
+              "opening_hours": "24/7",
+              "cost": "€8 (7-day pass) or €1.70/30min",
+              "optional": true,
               "secondaryPlaces": []
             },
             {
               "order": 2,
-              "name": "Hôtel de la Marine",
-              "link": "https://www.google.com/maps/search/Hotel+de+la+Marine+Paris",
-              "duration": 120,
-              "suggestedTime": "10:00",
-              "timeRestriction": "Open 10:30-19:00 (closed Mon)",
-              "priority": "high",
-              "priceRange": "€€",
-              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
-              "type": "palace",
-              "notes": "Stunning 18th-century palace with 3D audio guides. Paris Museum Pass INCLUDED. Timed entry reservation REQUIRED.",
-              "bookingRequired": true,
-              "bookingDetails": {
-                "url": "https://www.hotel-de-la-marine.paris/en",
-                "advanceTimeNeeded": "2-3 days recommended"
-              },
-              "opening_hours": "10:30-19:00 (closed Mon)",
-              "cost": "Covered by Paris Museum Pass",
+              "name": "Bike/Metro to Tuileries",
+              "link": "https://www.google.com/maps/dir/St+Christopher's+Inn+Paris/Jardin+des+Tuileries",
+              "duration": 30,
+              "suggestedTime": "08:45",
+              "timeRestriction": "Metro runs from ~05:30",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Bike ride: 25 min. Or Metro Line 5 to Bastille, transfer Line 1 to Tuileries (25 min). Biking recommended for beautiful route along Seine.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "€2.15 metro OR included in bike pass",
               "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 3,
-              "name": "Pont Alexandre III",
-              "link": "https://www.google.com/maps/search/Pont+Alexandre+III+Paris",
-              "duration": 20,
-              "suggestedTime": "12:15",
-              "timeRestriction": null,
-              "priority": "high",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "📸", "⭐"],
-              "type": "bridge",
-              "notes": "Paris's most ornate bridge with gilded statues and Art Nouveau lamps. Featured in Midnight in Paris.",
+              "name": "Jardin des Tuileries",
+              "link": "https://www.google.com/maps/search/Jardin+des+Tuileries+Paris",
+              "duration": 30,
+              "suggestedTime": "09:15",
+              "timeRestriction": "Open 07:00-21:00 (Oct)",
+              "priority": "medium",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "garden",
+              "notes": "Historic formal gardens between Louvre and Place de la Concorde. Morning stroll, sculptures, fountains. Part of old royal palace grounds.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
+              "opening_hours": "07:00-21:00 (Oct)",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 4,
+              "name": "Place de la Concorde",
+              "link": "https://www.google.com/maps/search/Place+de+la+Concorde+Paris",
+              "duration": 15,
+              "suggestedTime": "09:45",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸", "⭐"],
+              "type": "square",
+              "notes": "Largest square in Paris. Egyptian obelisk (3,300 years old!). Site of Louis XVI and Marie Antoinette executions during French Revolution. Views of Champs-Élysées, Eiffel Tower, Madeleine Church.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 5,
+              "name": "Hôtel de la Marine",
+              "link": "https://www.google.com/maps/search/Hôtel+de+la+Marine+Paris",
+              "duration": 120,
+              "suggestedTime": "10:15",
+              "timeRestriction": "Open 10:30-19:00, last entry 18:00. BOOK TIMED ENTRY IN ADVANCE.",
+              "priority": "high",
+              "priceRange": "included",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
+              "type": "museum/palace",
+              "notes": "ACTIVATE MUSEUM PASS HERE (Day 1 of 2-day pass). Stunning 18th-century palace on Place de la Concorde. Opulent apartments, Crown Jewels storage history. BOOK TIMED ENTRY ahead after buying pass. 2-hour visit.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.hotel-de-la-marine.paris/en",
+                "advanceTimeNeeded": "Book as soon as you purchase Museum Pass"
+              },
+              "opening_hours": "10:30-19:00 (last entry 18:00)",
+              "cost": "Included in Museum Pass",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 6,
+              "name": "Pont Alexandre III",
+              "link": "https://www.google.com/maps/search/Pont+Alexandre+III+Paris",
+              "duration": 15,
+              "suggestedTime": "12:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸", "⭐"],
+              "type": "bridge",
+              "notes": "Most ornate bridge in Paris. Art Nouveau lamps, gold statues, views of Eiffel Tower and Invalides. Built for 1900 World's Fair. Very Instagrammable!",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
               "cost": "free",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€0 (Museum Pass covers entry)"
+          "budget": "€8 (bike pass, optional)"
         },
         {
           "name": "lunch",
           "timeRange": "13:00-14:30",
           "start_time": "13:00",
           "end_time": "14:30",
-          "duration": "~1.5 hours",
-          "description": "Lunch near Invalides or Rue Cler market street",
+          "duration": "1.5 hours",
+          "description": "Rue Cler market street lunch, or bistro near Invalides/Eiffel area.",
           "activities": [
             {
               "order": 1,
-              "name": "Lunch at Rue Cler or nearby bistro",
-              "link": "https://www.google.com/maps/search/Rue+Cler+Paris+restaurants",
+              "name": "Rue Cler Market Street Lunch",
+              "link": "https://www.google.com/maps/search/Rue+Cler+Paris",
               "duration": 90,
               "suggestedTime": "13:00",
-              "timeRestriction": null,
+              "timeRestriction": "Market best morning-early afternoon, cafés open longer",
               "priority": "high",
-              "priceRange": "€€",
-              "tags": ["🍽️"],
-              "type": "dining",
-              "notes": "Rue Cler is a famous pedestrian market street with cafés and food shops. Great for a casual lunch.",
+              "priceRange": "€-€€",
+              "tags": ["🍽️", "⭐"],
+              "type": "meal/market",
+              "notes": "Charming pedestrian market street in 7th arrondissement. Food shops, bakeries, cafés. Pick up picnic supplies or sit at café. Budget €12-20 for lunch.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
-              "cost": "€15-22",
+              "opening_hours": "Shops ~08:00-19:00, cafés longer",
+              "cost": "€12-20",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€15-22"
+          "budget": "€12-20"
         },
         {
           "name": "afternoon",
           "timeRange": "14:30-18:30",
           "start_time": "14:30",
           "end_time": "18:30",
-          "duration": "~4 hours",
-          "description": "Les Invalides, Eiffel Tower, Trocadéro (CORE OPTIONS)",
+          "duration": "4 hours",
+          "description": "Les Invalides & Napoleon's Tomb (Museum Pass), Champ de Mars, Eiffel Tower (€14.50 student stairs ticket, NOT Museum Pass), Trocadéro views.",
           "activities": [
             {
               "order": 1,
@@ -390,19 +725,19 @@
               "link": "https://www.google.com/maps/search/Les+Invalides+Paris",
               "duration": 120,
               "suggestedTime": "14:30",
-              "timeRestriction": "Open 10:00-18:00 daily",
+              "timeRestriction": "Open 10:00-18:00 daily (until 21:00 Tue)",
               "priority": "high",
-              "priceRange": "€€",
+              "priceRange": "included",
               "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
-              "type": "museum",
-              "notes": "Napoleon's tomb and extensive military museum. Paris Museum Pass INCLUDED. Reservation recommended.",
-              "bookingRequired": false,
+              "type": "museum/monument",
+              "notes": "MUSEUM PASS INCLUDED. Napoleon's Tomb under golden dome - incredible! Army museum with armor, weapons, WWI/WWII exhibits. 2 hours recommended. One of best museums in Paris.",
+              "bookingRequired": true,
               "bookingDetails": {
-                "url": "https://www.musee-armee.fr/en/",
-                "advanceTimeNeeded": "Same-day or 1 day ahead"
+                "url": "https://www.musee-armee.fr/en",
+                "advanceTimeNeeded": "Book timed entry with Museum Pass"
               },
-              "opening_hours": "10:00-18:00",
-              "cost": "Covered by Paris Museum Pass",
+              "opening_hours": "10:00-18:00 (until 21:00 Tue)",
+              "cost": "Included in Museum Pass",
               "optional": false,
               "secondaryPlaces": []
             },
@@ -412,618 +747,649 @@
               "link": "https://www.google.com/maps/search/Champ+de+Mars+Paris",
               "duration": 30,
               "suggestedTime": "16:45",
-              "timeRestriction": null,
-              "priority": "high",
-              "priceRange": null,
+              "timeRestriction": "Open 24/7",
+              "priority": "medium",
+              "priceRange": "free",
               "tags": ["🆓", "👀", "📸"],
               "type": "park",
-              "notes": "Large public greenspace at the base of the Eiffel Tower. Perfect for picnic or rest.",
+              "notes": "Large public greenspace at base of Eiffel Tower. Great for picnic, rest, photos looking up at tower. Former military training ground.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
+              "opening_hours": "24/7",
               "cost": "free",
               "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 3,
-              "name": "Eiffel Tower",
+              "name": "Eiffel Tower (Stairs to 2nd Floor)",
               "link": "https://www.google.com/maps/search/Eiffel+Tower+Paris",
-              "duration": 120,
+              "duration": 90,
               "suggestedTime": "17:15",
-              "timeRestriction": "Open 09:30-23:45 (elevator), 09:30-18:30 (stairs)",
+              "timeRestriction": "Stairs open 09:30-23:45 (last entry 22:30). BOOK AHEAD!",
               "priority": "high",
-              "priceRange": "€€€",
+              "priceRange": "€€",
               "tags": ["🎟️", "📅", "⏳", "⭐", "📸"],
               "type": "monument",
-              "notes": "BOOK WEEKS IN ADVANCE. NOT covered by Museum Pass. Elevator to summit: €29.40. Stairs to 2nd floor + elevator to summit: €22.60.",
+              "notes": "BOOK NOW! Student stairs ticket to 2nd floor (€14.50). NOT included in Museum Pass. Stairs are better experience than elevator - see structure up close. 674 steps but worth it! Views of all Paris. Book 2-4 weeks ahead.",
               "bookingRequired": true,
               "bookingDetails": {
                 "url": "https://www.toureiffel.paris/en",
-                "advanceTimeNeeded": "2-4 weeks recommended, especially sunset slots"
+                "advanceTimeNeeded": "2-4 weeks ahead, BOOK ASAP"
               },
-              "opening_hours": "09:30-23:45",
-              "cost": "€22.60-€29.40",
+              "opening_hours": "09:30-23:45 (last stairs entry 22:30)",
+              "cost": "€14.50 (student stairs to 2nd floor)",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€22.60-€29.40 (Eiffel Tower ticket)"
+          "budget": "€14.50 (Eiffel stairs ticket)"
         },
         {
           "name": "evening",
-          "timeRange": "18:30-21:00",
-          "start_time": "18:30",
-          "end_time": "21:00",
-          "duration": "~2.5 hours",
-          "description": "Trocadéro sunset views, Arc de Triomphe (CORE OPTIONS)",
+          "timeRange": "19:00-21:30",
+          "start_time": "19:00",
+          "end_time": "21:30",
+          "duration": "2.5 hours",
+          "description": "Trocadéro for sunset/sparkling Eiffel views, then Arc de Triomphe rooftop (Museum Pass) for 360° night views of Paris. Bike back or metro.",
           "activities": [
             {
               "order": 1,
               "name": "Trocadéro",
-              "link": "https://www.google.com/maps/search/Trocadero+Paris",
-              "duration": 45,
-              "suggestedTime": "19:15",
-              "timeRestriction": null,
+              "link": "https://www.google.com/maps/search/Trocadéro+Paris",
+              "duration": 30,
+              "suggestedTime": "19:00",
+              "timeRestriction": "Best at sunset and for Eiffel Tower light show (on the hour after dark)",
               "priority": "high",
-              "priceRange": null,
+              "priceRange": "free",
               "tags": ["🆓", "👀", "📸", "⭐"],
               "type": "viewpoint",
-              "notes": "Best frontal view of the Eiffel Tower, especially at sunset. Watch the tower sparkle on the hour after dark.",
+              "notes": "BEST Eiffel Tower view! Esplanade du Trocadéro across from tower. Wait for sparkling lights (every hour on the hour for 5 min after dark - starts ~20:00 in Oct). Iconic photo spot.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
+              "opening_hours": "24/7",
               "cost": "free",
               "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 2,
-              "name": "Arc de Triomphe",
+              "name": "Bike/Metro to Arc de Triomphe",
+              "link": "https://www.google.com/maps/dir/Trocadéro/Arc+de+Triomphe",
+              "duration": 15,
+              "suggestedTime": "19:45",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Bike: 15 min uphill along Avenue Kléber. Or Metro Line 6/9 to Charles de Gaulle-Étoile (10 min).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "€2.15 metro OR included in bike pass",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Arc de Triomphe (Rooftop)",
               "link": "https://www.google.com/maps/search/Arc+de+Triomphe+Paris",
               "duration": 75,
-              "suggestedTime": "20:15",
-              "timeRestriction": "Open 10:00-23:00 daily (last entry 22:15)",
+              "suggestedTime": "20:00",
+              "timeRestriction": "Open 10:00-23:00 (Apr-Sep), 10:00-22:30 (Oct-Mar). Last entry 45 min before close.",
               "priority": "high",
-              "priceRange": "€€",
-              "tags": ["🎟️", "📅", "⏳", "⭐"],
+              "priceRange": "included",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "📸"],
               "type": "monument",
-              "notes": "Climb to rooftop for 360° panoramic views. Paris Museum Pass INCLUDED. Reservation recommended.",
-              "bookingRequired": false,
-              "bookingDetails": {
-                "url": "https://www.paris-arc-de-triomphe.fr/en",
-                "advanceTimeNeeded": "1-2 days recommended"
-              },
-              "opening_hours": "10:00-23:00",
-              "cost": "Covered by Paris Museum Pass",
-              "optional": true,
-              "secondaryPlaces": []
-            }
-          ],
-          "budget": "€0 (Museum Pass covers Arc)"
-        },
-        {
-          "name": "night",
-          "timeRange": "21:00-23:00",
-          "start_time": "21:00",
-          "end_time": "23:00",
-          "duration": "~2 hours",
-          "description": "Optional: Musée d'Orsay late opening (Thursday) or dinner cruise",
-          "activities": [
-            {
-              "order": 1,
-              "name": "Musée d'Orsay (Optional - Thursday Late Opening)",
-              "link": "https://www.google.com/maps/search/Musee+d+Orsay+Paris",
-              "duration": 120,
-              "suggestedTime": "21:00",
-              "timeRestriction": "Open until 21:45 on Thursdays only",
-              "priority": "optional",
-              "priceRange": "€€",
-              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
-              "type": "museum",
-              "notes": "Impressionist masterpieces (Monet, Van Gogh, Renoir). Paris Museum Pass INCLUDED. Check if Oct 18, 2026 is a Thursday. Reservation REQUIRED.",
+              "notes": "MUSEUM PASS INCLUDED. 360° rooftop views of Paris at night - see Eiffel sparkling, Champs-Élysées, La Défense, Sacré-Cœur. 284 steps to top. Tomb of Unknown Soldier beneath. Book timed entry.",
               "bookingRequired": true,
               "bookingDetails": {
-                "url": "https://www.musee-orsay.fr/en",
-                "advanceTimeNeeded": "2-3 days recommended"
+                "url": "https://www.paris-arc-de-triomphe.fr/en",
+                "advanceTimeNeeded": "Book with Museum Pass"
               },
-              "opening_hours": "09:30-18:00 (Thu until 21:45)",
-              "cost": "Covered by Paris Museum Pass",
-              "optional": true,
+              "opening_hours": "10:00-22:30 (Oct)",
+              "cost": "Included in Museum Pass",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 4,
+              "name": "Return to Hostel",
+              "link": "https://www.google.com/maps/dir/Arc+de+Triomphe/St+Christopher's+Inn+Paris",
+              "duration": 30,
+              "suggestedTime": "21:15",
+              "timeRestriction": "Metro until ~00:30",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Bike: 30 min ride back (or return bike and take metro). Metro: Line 2 to Stalingrad, transfer Line 7 to Crimée (25 min).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "€2.15 metro OR included in bike pass",
+              "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€0 (Museum Pass)"
+          "budget": "€0-2.15 (transport if not biking)"
         }
       ],
-      "map_url": "https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Jardin+des+Tuileries+Paris/Hotel+de+la+Marine+Paris/Pont+Alexandre+III+Paris/Les+Invalides+Paris/Champ+de+Mars+Paris/Eiffel+Tower+Paris/Trocadero+Paris/Arc+de+Triomphe+Paris/Hotel+Madrigal+Paris",
+      "map_url": "https://www.google.com/maps/dir/St+Christopher's+Inn+Paris/Jardin+des+Tuileries/Place+de+la+Concorde/Hôtel+de+la+Marine+Paris/Pont+Alexandre+III/Les+Invalides/Eiffel+Tower/Trocadéro/Arc+de+Triomphe/St+Christopher's+Inn+Paris",
       "research_notes": {
         "alternatives": [
           {
-            "name": "Musée de l'Orangerie",
-            "reason_considered": "Monet's Water Lilies in oval rooms. Museum Pass included.",
-            "notes": "Excellent option if time permits in morning (Tuileries Gardens). 60-90 min visit."
+            "name": "Musée de l'Orangerie (Monet's Water Lilies)",
+            "reason_not_selected": "Museum Pass included, 90 min visit in Tuileries Gardens. Would need to cut Hôtel de la Marine. Can swap if you prefer Impressionism over royal apartments.",
+            "when_to_add": "Morning instead of Hôtel de la Marine, or squeeze in before lunch"
           },
           {
-            "name": "Champs-Élysées walk",
-            "reason_considered": "Famous avenue from Arc de Triomphe",
-            "notes": "Can walk down from Arc if energy permits, though crowded and touristy."
+            "name": "Grand Palais",
+            "reason_not_selected": "Currently under renovation (exterior only). Check for temporary exhibitions.",
+            "when_to_add": "Walk-by only unless special exhibition"
           },
           {
-            "name": "Bateaux Mouches dinner cruise",
-            "reason_considered": "Seine river cruise with meal and live music",
-            "notes": "€70-100+ per person. Romantic option but adds significant cost. Not prioritized."
+            "name": "Petit Palais",
+            "reason_not_selected": "FREE permanent collection (Belle Époque art), 90 min. Near Pont Alexandre III. Would need to cut lunch time or skip Champ de Mars rest.",
+            "when_to_add": "After Pont Alexandre III if you want more museums"
           },
           {
-            "name": "Musée du Quai Branly",
-            "reason_considered": "Non-European art museum, Museum Pass included",
-            "notes": "Near Eiffel Tower but would require cutting Invalides short."
+            "name": "Champs-Élysées Walk",
+            "reason_not_selected": "From Arc de Triomphe downhill to Place de la Concorde (30 min). Touristy shopping street. Can walk after Arc if you have energy, but it's mostly chain stores.",
+            "when_to_add": "Evening after Arc de Triomphe, before returning to hostel"
+          },
+          {
+            "name": "Musée du Quai Branly (Non-European Art)",
+            "reason_not_selected": "Museum Pass included, 90 min, near Eiffel Tower. Would need to skip Les Invalides. Only if you prefer indigenous/African/Asian/Oceanic art over military history.",
+            "when_to_add": "Afternoon instead of Les Invalides"
+          },
+          {
+            "name": "Musée Rodin (Sculpture & Gardens)",
+            "reason_not_selected": "Museum Pass included, 90 min, between Invalides and Eiffel. Would need to cut other afternoon activities or skip Champ de Mars rest. Garden alone worth visiting.",
+            "when_to_add": "Afternoon if you skip Les Invalides or shorten Eiffel time"
           }
         ],
         "sources": [
           {
-            "name": "User's Paris Itinerary Summary",
-            "url": null,
-            "type": "recommendation"
+            "name": "RESTRUCTURED_ITINERARY_PREVIEW.md",
+            "url": "local",
+            "type": "guide"
           },
           {
-            "name": "Alan por el mundo - Day 2",
-            "url": null,
-            "type": "video"
+            "name": "Alan's Paris Guide",
+            "url": "local",
+            "type": "guide"
           }
         ],
-        "notes": "Saturday. Full day focused on iconic Paris monuments and river views. Eiffel Tower reservation is CRITICAL and should be booked as early as possible. Museum Pass covers most entries."
+        "notes": "Day 2 is Museum Pass Day 1 activation. Focused on royal/monumental Paris - gardens, palaces, Eiffel Tower (NOT on pass, must buy separately). Arc de Triomphe at night for sparkling Eiffel views from above. Long day but bike helps. Hôtel de la Marine and Invalides both need timed bookings with Museum Pass. Eiffel stairs ticket must be booked 2-4 weeks ahead (€14.50 student, NOT covered by pass - this is critical!). Budget total: €55 (Museum Pass) + €14.50 (Eiffel) + €8 (bike optional) = €77.50 main costs."
       }
     },
     {
       "date": "2026-10-19",
       "dayNumber": 3,
-      "title": "Louvre Masterpieces, Historic Islands & Le Marais",
+      "title": "Museum Pass Day 2 - Versailles Palace & Gardens + Musée d'Orsay",
       "isArrivalDay": false,
       "isDepartureDay": false,
-      "total_walking_distance": "~9-11 km",
-      "total_duration": "~11-13 hours",
+      "total_walking_distance": "~8-10 km (Versailles gardens are huge)",
+      "total_duration": "~12 hours",
       "timeBlocks": [
         {
           "name": "morning",
-          "timeRange": "08:30-13:00",
-          "start_time": "08:30",
-          "end_time": "13:00",
-          "duration": "~4.5 hours",
-          "description": "Louvre Museum deep dive (CORE - PRIORITY)",
+          "timeRange": "08:00-12:00",
+          "start_time": "08:00",
+          "end_time": "12:00",
+          "duration": "4 hours",
+          "description": "MUSEUM PASS DAY 2 (last day - must use today!). Early train to Versailles. Palace tour focusing on Hall of Mirrors, King & Queen's Apartments, Chapel.",
           "activities": [
             {
               "order": 1,
-              "name": "Musée du Louvre - Carrousel Entrance",
-              "link": "https://www.google.com/maps/search/Musee+du+Louvre+Paris",
-              "duration": 240,
-              "suggestedTime": "09:00",
-              "timeRestriction": "Open 09:00-18:00 (closed Tue), Wed/Fri until 21:45",
+              "name": "Metro + RER to Versailles",
+              "link": "https://www.google.com/maps/dir/St+Christopher's+Inn+Paris/Versailles+Château+Rive+Gauche",
+              "duration": 70,
+              "suggestedTime": "08:00",
+              "timeRestriction": "RER C runs from ~05:30, every 15-30 min",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Metro Line 5 to Bastille, transfer Line 1 to Charles de Gaulle-Étoile, transfer RER C to Versailles Château Rive Gauche (70 min total). OR: Line 5 to Gare d'Austerlitz, RER C direct. RER ticket costs €7.20 round-trip (zones 1-4). Arrive early to beat crowds!",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "RER C ~05:30-00:30",
+              "cost": "€7.20 round-trip",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Palace of Versailles",
+              "link": "https://www.google.com/maps/search/Palace+of+Versailles",
+              "duration": 150,
+              "suggestedTime": "09:30",
+              "timeRestriction": "Open 09:00-18:30 Tue-Sun (last entry 18:00). CLOSED MONDAYS. BOOK TIMED ENTRY!",
               "priority": "high",
-              "priceRange": "€€€",
+              "priceRange": "included",
               "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
-              "type": "museum",
-              "notes": "ENTER via Carrousel du Louvre to skip pyramid lines. Paris Museum Pass INCLUDED. Timed entry REQUIRED. Focus on: Ala Denon (Mona Lisa, Winged Victory, Liberty Leading the People, Coronation of Napoleon, Wedding at Cana), Ala Sully (Venus de Milo, Sphinx of Tanis, Egyptian mummies, Lamassu), Ala Richelieu (Galerie d'Apollon, Napoleon III Apartments).",
+              "type": "palace/museum",
+              "notes": "MUSEUM PASS INCLUDED. Must book timed entry in advance! Palace of Louis XIV - epitome of royal excess. FOCUS ROUTE (2.5 hours): Hall of Mirrors (iconic!), King's Grand Apartment, Queen's Apartment, Royal Chapel, Hercules Salon. Skip Marie Antoinette's Estate inside palace if short on time - see gardens instead.",
               "bookingRequired": true,
               "bookingDetails": {
-                "url": "https://www.louvre.fr/en",
-                "advanceTimeNeeded": "1-3 days for timed entry slot"
+                "url": "https://www.chateauversailles.fr/",
+                "advanceTimeNeeded": "Book as soon as you buy Museum Pass - very popular!"
               },
-              "opening_hours": "09:00-18:00 (closed Tue)",
-              "cost": "Covered by Paris Museum Pass",
+              "opening_hours": "09:00-18:30 (Tue-Sun), CLOSED Mon",
+              "cost": "Included in Museum Pass",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "€7.20 (RER round-trip)"
+        },
+        {
+          "name": "lunch",
+          "timeRange": "12:00-14:30",
+          "start_time": "12:00",
+          "end_time": "14:30",
+          "duration": "2.5 hours",
+          "description": "Picnic lunch in Versailles Gardens (bring food from Paris or buy from garden café). Explore gardens, fountains, Grand Canal.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Gardens of Versailles",
+              "link": "https://www.google.com/maps/search/Gardens+of+Versailles",
+              "duration": 150,
+              "suggestedTime": "12:00",
+              "timeRestriction": "Open 08:00-20:30 (Apr-Oct). Fountain shows some days (extra €10 ticket if show days).",
+              "priority": "high",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸", "⭐"],
+              "type": "garden",
+              "notes": "FREE entry to gardens (no ticket needed - Museum Pass not required here!). 800 hectares of formal French gardens. Grand Canal, fountains (check if fountain show day - Sat/Sun spring-fall, extra €10 if shows running but worth it!). Pack picnic lunch OR eat at garden café (€15-25). Beautiful for walking and photos. If tired, skip Trianon palaces and focus on main gardens + Grand Canal.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "08:00-20:30 (Apr-Oct)",
+              "cost": "FREE (gardens), €10 if fountain show day",
               "optional": false,
               "secondaryPlaces": [
                 {
-                  "name": "Ala Denon - Mona Lisa & Winged Victory",
-                  "link": "https://www.louvre.fr/en/explore/the-palace/the-denon-wing",
-                  "notes": "Most famous works. Arrive early to Mona Lisa room to avoid peak crowds."
+                  "name": "Grand Canal",
+                  "duration": 30,
+                  "notes": "1.6km cruciform canal - centerpiece of gardens. Great for photos."
                 },
                 {
-                  "name": "Ala Sully - Venus de Milo & Egyptian Antiquities",
-                  "link": "https://www.louvre.fr/en/explore/the-palace/the-sully-wing",
-                  "notes": "Greek statues and extensive Egyptian collection."
+                  "name": "Orangery",
+                  "duration": 15,
+                  "notes": "1,000+ orange trees in ornate greenhouse."
                 },
                 {
-                  "name": "Ala Richelieu - Napoleon III Apartments",
-                  "link": "https://www.louvre.fr/en/explore/the-palace/the-richelieu-wing",
-                  "notes": "Opulent 19th-century palace rooms."
+                  "name": "Apollo Fountain",
+                  "duration": 10,
+                  "notes": "Gold statue of Apollo rising from water in chariot."
                 }
               ]
             }
           ],
-          "budget": "€0 (Museum Pass)"
+          "budget": "€10-25 (picnic OR café + possible fountain show)"
         },
         {
-          "name": "lunch",
-          "timeRange": "13:00-14:30",
-          "start_time": "13:00",
-          "end_time": "14:30",
-          "duration": "~1.5 hours",
-          "description": "Lunch near Latin Quarter or Île de la Cité",
+          "name": "afternoon",
+          "timeRange": "14:30-15:30",
+          "start_time": "14:30",
+          "end_time": "15:30",
+          "duration": "1 hour",
+          "description": "Return train to Paris. Rest briefly at hostel or head straight to Musée d'Orsay.",
           "activities": [
             {
               "order": 1,
-              "name": "Lunch in Latin Quarter or Le Marais",
-              "link": "https://www.google.com/maps/search/restaurants+Latin+Quarter+Paris",
-              "duration": 90,
-              "suggestedTime": "13:00",
-              "timeRestriction": null,
-              "priority": "high",
-              "priceRange": "€€",
-              "tags": ["🍽️"],
-              "type": "dining",
-              "notes": "Casual French bistro or crêperie. Latin Quarter has many student-friendly options.",
+              "name": "Return RER to Paris",
+              "link": "https://www.google.com/maps/dir/Versailles+Château+Rive+Gauche/Musée+d'Orsay+Paris",
+              "duration": 60,
+              "suggestedTime": "14:30",
+              "timeRestriction": "RER C every 15-30 min",
+              "priority": "mandatory",
+              "priceRange": "included",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "RER C from Versailles Château to Musée d'Orsay station (50 min), OR to Invalides and walk 10 min. Round-trip ticket already covers return. Arrive Paris ~15:30.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
-              "cost": "€14-20",
+              "opening_hours": "RER C ~05:30-00:30",
+              "cost": "Included in round-trip ticket",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€14-20"
+          "budget": "€0 (included in morning ticket)"
         },
         {
-          "name": "afternoon",
-          "timeRange": "14:30-18:30",
-          "start_time": "14:30",
-          "end_time": "18:30",
-          "duration": "~4 hours",
-          "description": "Île de la Cité, Notre-Dame, Sainte-Chapelle, Latin Quarter (CORE OPTIONS)",
+          "name": "evening",
+          "timeRange": "16:00-19:30",
+          "start_time": "16:00",
+          "end_time": "19:30",
+          "duration": "3.5 hours",
+          "description": "Musée d'Orsay - Impressionist & Post-Impressionist masterpieces (Museum Pass Day 2 - LAST CHANCE!). Saint-Germain-des-Prés dinner after.",
           "activities": [
             {
               "order": 1,
-              "name": "Île de la Cité & Place Dauphine",
-              "link": "https://www.google.com/maps/search/Ile+de+la+Cite+Paris",
+              "name": "Quick Rest (Optional)",
+              "link": "https://www.google.com/maps/search/St+Christopher's+Inn+Paris",
               "duration": 30,
-              "suggestedTime": "14:30",
+              "suggestedTime": "16:00",
               "timeRestriction": null,
-              "priority": "high",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "📸"],
-              "type": "neighborhood",
-              "notes": "Historic island heart of Paris. Charming tree-lined square with cafés.",
+              "priority": "low",
+              "priceRange": "free",
+              "tags": ["🆓"],
+              "type": "rest",
+              "notes": "OPTIONAL: Go back to hostel for 30 min rest if exhausted from Versailles. OR head straight to Orsay and rest on Seine benches before museum.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
               "cost": "free",
-              "optional": false,
+              "optional": true,
               "secondaryPlaces": []
             },
             {
               "order": 2,
-              "name": "Cathédrale Notre-Dame de Paris",
-              "link": "https://www.google.com/maps/search/Notre+Dame+Cathedral+Paris",
-              "duration": 45,
-              "suggestedTime": "15:00",
-              "timeRestriction": "Exterior viewable 24/7. Interior reopening late 2024.",
-              "priority": "high",
-              "priceRange": null,
-              "tags": ["🆓", "📅", "⏳", "⭐"],
-              "type": "cathedral",
-              "notes": "Under reconstruction after 2019 fire. Exterior viewing and square accessible. Check if interior has reopened by Oct 2026. Reservation required if interior open.",
-              "bookingRequired": true,
-              "bookingDetails": {
-                "url": "https://www.notredamedeparis.fr/en/",
-                "advanceTimeNeeded": "Check official site for reopening status and booking"
-              },
-              "opening_hours": "TBD (post-restoration)",
-              "cost": "Free entry",
-              "optional": false,
-              "secondaryPlaces": []
-            },
-            {
-              "order": 3,
-              "name": "Sainte-Chapelle",
-              "link": "https://www.google.com/maps/search/Sainte+Chapelle+Paris",
-              "duration": 60,
-              "suggestedTime": "15:45",
-              "timeRestriction": "Open 09:00-19:00 daily (Oct hours may vary)",
-              "priority": "high",
-              "priceRange": "€€",
-              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
-              "type": "chapel",
-              "notes": "Stunning 13th-century Gothic chapel with floor-to-ceiling stained glass. Paris Museum Pass INCLUDED. Timed entry REQUIRED. Security line can be long.",
-              "bookingRequired": true,
-              "bookingDetails": {
-                "url": "https://www.sainte-chapelle.fr/en",
-                "advanceTimeNeeded": "2-3 days recommended"
-              },
-              "opening_hours": "09:00-19:00 (Oct)",
-              "cost": "Covered by Paris Museum Pass",
-              "optional": false,
-              "secondaryPlaces": []
-            },
-            {
-              "order": 4,
-              "name": "Panthéon",
-              "link": "https://www.google.com/maps/search/Pantheon+Paris",
-              "duration": 75,
+              "name": "Musée d'Orsay",
+              "link": "https://www.google.com/maps/search/Musée+d'Orsay+Paris",
+              "duration": 150,
               "suggestedTime": "17:00",
-              "timeRestriction": "Open 10:00-18:30 daily",
+              "timeRestriction": "Open 09:30-18:00 Tue-Wed-Fri-Sat-Sun, until 21:45 Thursday. CLOSED MONDAYS. Last entry 17:00 (20:15 Thu).",
               "priority": "high",
-              "priceRange": "€€",
+              "priceRange": "included",
               "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
-              "type": "monument",
-              "notes": "Neoclassical mausoleum of France's greatest citizens (Rousseau, Voltaire, Victor Hugo, Marie Curie). Paris Museum Pass INCLUDED. Reservation recommended.",
-              "bookingRequired": false,
+              "type": "museum",
+              "notes": "MUSEUM PASS INCLUDED - MUST USE TODAY (Day 2 of 2-day pass)! Former railway station turned Impressionist art museum. HIGHLIGHTS: Monet (Water Lilies, Impression Sunrise), Renoir (Bal du moulin de la Galette), Degas (ballerinas), Van Gogh (Starry Night Over the Rhône, Bedroom in Arles), Cézanne, Manet (Olympia). Top floor has best Impressionist galleries. Architecture is stunning too! 2-2.5 hours recommended. Book timed entry.",
+              "bookingRequired": true,
               "bookingDetails": {
-                "url": "https://www.paris-pantheon.fr/en",
-                "advanceTimeNeeded": "Same-day or 1 day ahead"
+                "url": "https://www.musee-orsay.fr/en",
+                "advanceTimeNeeded": "Book with Museum Pass for Sunday afternoon slot"
               },
-              "opening_hours": "10:00-18:30",
-              "cost": "Covered by Paris Museum Pass",
+              "opening_hours": "09:30-18:00 (Tue-Sun, until 21:45 Thu), CLOSED Mon",
+              "cost": "Included in Museum Pass",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€0 (Museum Pass)"
+          "budget": "€0 (Museum Pass covers)"
         },
         {
-          "name": "evening",
-          "timeRange": "18:30-21:30",
-          "start_time": "18:30",
+          "name": "night",
+          "timeRange": "19:30-21:30",
+          "start_time": "19:30",
           "end_time": "21:30",
-          "duration": "~3 hours",
-          "description": "Le Marais neighborhood, Place des Vosges, dinner (CORE OPTIONS)",
+          "duration": "2 hours",
+          "description": "Saint-Germain-des-Prés evening - literary cafés district, Seine riverside walk.",
           "activities": [
             {
               "order": 1,
-              "name": "Centre Pompidou (Exterior)",
-              "link": "https://www.google.com/maps/search/Centre+Pompidou+Paris",
-              "duration": 20,
-              "suggestedTime": "18:45",
-              "timeRestriction": "Building exterior 24/7. Museum open 11:00-21:00 (closed Tue)",
-              "priority": "medium",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "📸"],
-              "type": "museum",
-              "notes": "Iconic inside-out modern architecture. Exterior walk-by. Museum interior and rooftop terrace are Museum Pass INCLUDED if time permits.",
+              "name": "Saint-Germain-des-Prés Dinner",
+              "link": "https://www.google.com/maps/search/Saint-Germain-des-Prés+Paris",
+              "duration": 90,
+              "suggestedTime": "19:30",
+              "timeRestriction": "Dinner service typically 19:00-22:30",
+              "priority": "high",
+              "priceRange": "€€",
+              "tags": ["🍽️", "⭐"],
+              "type": "meal/neighborhood",
+              "notes": "Literary café district on Left Bank. Historic cafés: Café de Flore (expensive but iconic, Sartre/Hemingway hangout), Les Deux Magots, Brasserie Lipp. Or find smaller bistro on side streets for better value (€20-30 for dinner). Beautiful neighborhood for evening stroll.",
               "bookingRequired": false,
-              "bookingDetails": {
-                "url": "https://www.centrepompidou.fr/en",
-                "advanceTimeNeeded": "1-2 days if visiting interior"
-              },
-              "opening_hours": "11:00-21:00 (museum)",
-              "cost": "Free exterior / Museum Pass for interior",
+              "bookingDetails": null,
+              "opening_hours": "Cafés typically 07:00-01:00",
+              "cost": "€20-35 dinner",
               "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 2,
-              "name": "L'As du Fallafel",
-              "link": "https://www.google.com/maps/search/L+As+du+Fallafel+Paris",
-              "duration": 45,
-              "suggestedTime": "19:15",
-              "timeRestriction": "Closed Fri evening & Sat (Jewish Sabbath)",
-              "priority": "high",
-              "priceRange": "€",
-              "tags": ["🍽️", "⭐"],
-              "type": "restaurant",
-              "notes": "Famous falafel sandwich on Rue des Rosiers in Le Marais. Expect long lines but fast service. Check day of week.",
+              "name": "Seine Riverside Walk",
+              "link": "https://www.google.com/maps/search/Seine+River+Paris+Quai+d'Orsay",
+              "duration": 30,
+              "suggestedTime": "21:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "free",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "walk",
+              "notes": "Walk along Seine quays near Orsay. See booksellers (bouquinistes), bridges lit up at night. Romantic Paris atmosphere. Can walk toward Île de la Cité to see Notre-Dame lit up from outside.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": "12:00-23:00 (closed Fri evening & Sat)",
-              "cost": "€8-12",
-              "optional": false,
-              "secondaryPlaces": []
-            },
-            {
-              "order": 3,
-              "name": "Place des Vosges & Maison de Victor Hugo",
-              "link": "https://www.google.com/maps/search/Place+des+Vosges+Paris",
-              "duration": 45,
-              "suggestedTime": "20:15",
-              "timeRestriction": "Square open 24/7. Museum closed Mon.",
-              "priority": "high",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "⭐", "📸"],
-              "type": "square",
-              "notes": "Oldest planned square in Paris (1612). Elegant red-brick arcades. Victor Hugo's former residence museum is Museum Pass INCLUDED but likely closed by evening.",
-              "bookingRequired": false,
-              "bookingDetails": null,
-              "opening_hours": "Square: 24/7. Museum: 10:00-18:00 (closed Mon)",
-              "cost": "Free square / Museum Pass for museum",
-              "optional": false,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": true,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€8-12 (falafel)"
+          "budget": "€20-35 (dinner)"
         }
       ],
-      "map_url": "https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Musee+du+Louvre+Paris/Ile+de+la+Cite+Paris/Cathedrale+Notre+Dame+de+Paris/Sainte+Chapelle+Paris/Pantheon+Paris/Centre+Pompidou+Paris/L+As+du+Fallafel+Paris/Place+des+Vosges+Paris/Hotel+Madrigal+Paris",
+      "map_url": "https://www.google.com/maps/dir/St+Christopher's+Inn+Paris/Versailles+Château/Palace+of+Versailles+Gardens/Musée+d'Orsay/Saint-Germain-des-Prés/St+Christopher's+Inn+Paris",
       "research_notes": {
         "alternatives": [
           {
-            "name": "La Conciergerie",
-            "reason_considered": "Former royal palace and Marie Antoinette's prison cell. Museum Pass included.",
-            "notes": "On Île de la Cité. Can combine with Sainte-Chapelle (often sold as combo ticket). 60 min visit."
+            "name": "Marie Antoinette's Estate (Grand Trianon, Petit Trianon, Hameau)",
+            "reason_not_selected": "Museum Pass covers it, but it's 30-45 min walk from main palace. Would cut garden time or require skipping Orsay. Only add if you LOVE Marie Antoinette history or have extra energy.",
+            "when_to_add": "After palace tour, before lunch (adds 90 min)"
           },
           {
-            "name": "Musée de Cluny (Medieval Museum)",
-            "reason_considered": "Medieval art including Lady and the Unicorn tapestries. Museum Pass included.",
-            "notes": "In Latin Quarter. 90 min visit. Would fit after Panthéon."
+            "name": "Skip Orsay if too tired from Versailles",
+            "reason_not_selected": "Orsay is incredible and Museum Pass expires today - would lose the value. But if genuinely exhausted, you can skip and rest at hostel. Museums will always be there!",
+            "when_to_add": "Personal judgment call based on energy"
           },
           {
-            "name": "Jardin du Luxembourg",
-            "reason_considered": "Beautiful palace gardens with fountain and chairs",
-            "notes": "Free. Near Panthéon. Could add 30-45 min stroll if time permits."
+            "name": "Musée de l'Orangerie (instead of Orsay)",
+            "reason_not_selected": "Museum Pass included, 90 min visit. Monet's Water Lilies in oval rooms - very zen. Smaller than Orsay, less overwhelming. Can swap if you prefer focused Monet experience over broad Impressionism survey.",
+            "when_to_add": "Evening instead of Orsay (in Tuileries Gardens)"
           },
           {
-            "name": "Musée Carnavalet",
-            "reason_considered": "Paris history museum in Le Marais. Free permanent collection.",
-            "notes": "Free entry. 90-120 min. Could visit if skipping Pompidou interior."
+            "name": "Sacré-Cœur Sunset (if back early)",
+            "reason_not_selected": "Already did Sacré-Cœur on Day 1 evening. But you live near it - can always pop up if back early and want to see it again in different light!",
+            "when_to_add": "Evening if back from Versailles before 18:00"
           },
           {
-            "name": "Musée Picasso",
-            "reason_considered": "Largest Picasso collection. Museum Pass included.",
-            "notes": "In Le Marais. 90-120 min. Reservation required. Better for Day 4 or 5."
+            "name": "Canal Saint-Martin Evening Walk",
+            "reason_not_selected": "5 min from hostel. Can do any evening you're back. Not scheduled to preserve flexibility. Trendy area with bars, cafés, locks.",
+            "when_to_add": "After dinner if energy remains, or any other evening"
           }
         ],
         "sources": [
           {
-            "name": "User's Paris Itinerary Summary",
-            "url": null,
-            "type": "recommendation"
+            "name": "RESTRUCTURED_ITINERARY_PREVIEW.md",
+            "url": "local",
+            "type": "guide"
           },
           {
-            "name": "Alan por el mundo - Day 3",
-            "url": null,
-            "type": "video"
+            "name": "Versailles Official Site",
+            "url": "https://www.chateauversailles.fr/",
+            "type": "official"
           }
         ],
-        "notes": "Sunday. Louvre is the highlight - dedicate full morning. Afternoon focuses on Île de la Cité and Latin Quarter. Evening in Le Marais. Very full day with extensive walking."
+        "notes": "Day 3 is Museum Pass Day 2 (FINAL DAY - expires tonight). MUST visit Versailles + Orsay today to maximize pass value. Early Versailles departure (08:00) crucial to beat crowds - palace gets PACKED by 11am. RER C train is straightforward (€7.20 round-trip, zones 1-4). Versailles gardens are FREE - Museum Pass only needed for palace interior. Check if fountain show day (Sat/Sun in season) - worth the extra €10! Orsay in late afternoon is calmer than morning. Both museums require timed entry booking with Museum Pass. Sunday = no bike due to train travel. Budget: €7.20 RER + €10-25 lunch + €20-35 dinner = ~€40-65 day cost."
       }
     },
     {
       "date": "2026-10-20",
       "dayNumber": 4,
-      "title": "Belle Époque, Montmartre & Cinema Heritage",
+      "title": "Louvre, Palais Garnier, Islands & Panthéon",
       "isArrivalDay": false,
       "isDepartureDay": false,
-      "total_walking_distance": "~7-9 km",
-      "total_duration": "~10-11 hours",
+      "total_walking_distance": "~5-6 km",
+      "total_duration": "~11-12 hours",
       "timeBlocks": [
         {
           "name": "morning",
-          "timeRange": "09:00-13:00",
-          "start_time": "09:00",
+          "timeRange": "09:30-13:00",
+          "start_time": "09:30",
           "end_time": "13:00",
-          "duration": "~4 hours",
-          "description": "Belle Époque architecture (CORE + ALTERNATIVES)",
+          "duration": "3.5 hours",
+          "description": "Palais Garnier opera house tour, then Louvre Museum deep dive (separate student ticket, NOT Museum Pass). LOUVRE VIEWING LIST = WIP for now.",
           "activities": [
             {
               "order": 1,
-              "name": "Petit Palais",
-              "link": "https://www.google.com/maps/search/Petit+Palais+Paris",
-              "duration": 90,
+              "name": "Metro to Opera",
+              "link": "https://www.google.com/maps/dir/St+Christopher's+Inn+Paris/Palais+Garnier",
+              "duration": 25,
               "suggestedTime": "09:30",
-              "timeRestriction": "Open 10:00-18:00 (closed Mon)",
-              "priority": "medium",
-              "priceRange": null,
-              "tags": ["🆓", "⏳", "☂️"],
-              "type": "museum",
-              "notes": "Permanent collection of fine arts is FREE. Temporary exhibits may charge fee. Beautiful interior courtyard garden.",
+              "timeRestriction": "Metro runs from ~05:30",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Metro Line 7 from Crimée to Opéra (direct, 20 min). Or bike 25 min.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": "10:00-18:00 (closed Mon)",
-              "cost": "Free permanent collection",
-              "optional": true,
+              "opening_hours": "Metro ~05:30-00:30",
+              "cost": "€2.15 metro",
+              "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 2,
-              "name": "Palais Garnier (Opéra Garnier)",
+              "name": "Palais Garnier",
               "link": "https://www.google.com/maps/search/Palais+Garnier+Paris",
               "duration": 90,
-              "suggestedTime": "11:00",
-              "timeRestriction": "Open 10:00-17:00 daily (closes earlier on performance days)",
+              "suggestedTime": "10:00",
+              "timeRestriction": "Open 10:00-17:00 daily (closes earlier on performance days - check schedule). Last entry 16:30.",
               "priority": "high",
               "priceRange": "€€",
-              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
-              "type": "opera house",
-              "notes": "Opulent 19th-century opera house (Phantom of the Opera setting). NOT covered by Museum Pass. Self-guided tour. Reservation recommended.",
+              "tags": ["🎟️", "⏳", "⭐", "☂️"],
+              "type": "opera house/monument",
+              "notes": "Opulent 19th-century opera house. Grand Staircase, Grand Foyer (Hall of Mirrors vibe), Chagall ceiling in auditorium. Phantom of the Opera setting! Self-guided visit 60-90 min. Student ticket €12 (NOT covered by Museum Pass). Can book ahead or buy on-site. CLOSES early on performance days - check calendar!",
               "bookingRequired": false,
               "bookingDetails": {
                 "url": "https://www.operadeparis.fr/en/visits/palais-garnier",
-                "advanceTimeNeeded": "1-2 days recommended"
+                "advanceTimeNeeded": "Can book ahead for peace of mind, or buy on arrival"
               },
-              "opening_hours": "10:00-17:00",
-              "cost": "€14",
-              "optional": true,
+              "opening_hours": "10:00-17:00 (shorter hours on performance days)",
+              "cost": "€12 (student)",
+              "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 3,
-              "name": "Passage des Panoramas",
-              "link": "https://www.google.com/maps/search/Passage+des+Panoramas+Paris",
-              "duration": 30,
-              "suggestedTime": "12:30",
+              "name": "Walk to Louvre (via Passage des Panoramas optional)",
+              "link": "https://www.google.com/maps/dir/Palais+Garnier/Louvre+Museum",
+              "duration": 20,
+              "suggestedTime": "11:30",
               "timeRestriction": null,
-              "priority": "medium",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "☂️"],
-              "type": "arcade",
-              "notes": "One of Paris's oldest covered shopping arcades (1800). Charming glass-roofed passage with boutiques and cafés.",
+              "priority": "mandatory",
+              "priceRange": "free",
+              "tags": ["🆓", "👀"],
+              "type": "walk",
+              "notes": "15-20 min walk from Garnier to Louvre. Optional detour through Passage des Panoramas (historic covered shopping gallery, 10 min) or Galerie Vivienne (beautiful 1820s arcade).",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
               "cost": "free",
-              "optional": true,
-              "secondaryPlaces": []
-            }
-          ],
-          "budget": "€0-14 (depending on Palais Garnier visit)"
-        },
-        {
-          "name": "lunch",
-          "timeRange": "13:00-14:30",
-          "start_time": "13:00",
-          "end_time": "14:30",
-          "duration": "~1.5 hours",
-          "description": "Lunch near Montmartre base or Pigalle",
-          "activities": [
+              "optional": false,
+              "secondaryPlaces": [
+                {
+                  "name": "Passage des Panoramas",
+                  "duration": 10,
+                  "notes": "Historic covered shopping arcade from 1800. Stamp dealers, restaurants, old-world charm."
+                },
+                {
+                  "name": "Galerie Vivienne",
+                  "duration": 10,
+                  "notes": "Stunning 1820s shopping arcade with mosaic floors and glass roof."
+                }
+              ]
+            },
             {
-              "order": 1,
-              "name": "Lunch near Montmartre",
-              "link": "https://www.google.com/maps/search/restaurants+Montmartre+Paris",
+              "order": 4,
+              "name": "Musée du Louvre (Morning Session)",
+              "link": "https://www.google.com/maps/search/Louvre+Museum+Paris",
               "duration": 90,
-              "suggestedTime": "13:00",
-              "timeRestriction": null,
+              "suggestedTime": "12:00",
+              "timeRestriction": "Open 09:00-18:00 Wed-Mon (until 21:45 Wed & Fri). CLOSED TUESDAYS. Last entry 17:00 (21:00 Wed/Fri). BOOK AHEAD!",
               "priority": "high",
               "priceRange": "€€",
-              "tags": ["🍽️"],
-              "type": "dining",
-              "notes": "Casual bistro before climbing Montmartre hill. Rue des Abbesses area has good options.",
-              "bookingRequired": false,
-              "bookingDetails": null,
-              "opening_hours": null,
-              "cost": "€15-22",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
+              "type": "museum",
+              "notes": "BOOK STUDENT TICKET IN ADVANCE (€17). NOT covered by Museum Pass (pass expired yesterday). World's largest art museum. ENTER via Carrousel du Louvre entrance (underground mall) to skip pyramid lines! VIEWING LIST = WIP - to be added based on your interests. Plan 90 min morning session before lunch, then 2-3 hours afternoon. Monday is good day (avoids Sunday crowds, museum reopened). CRITICAL: Louvre is MASSIVE - you cannot see everything. Focus on must-sees + 1-2 interest areas.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.louvre.fr/en",
+                "advanceTimeNeeded": "Book student ticket 1-2 weeks ahead for Monday slot"
+              },
+              "opening_hours": "09:00-18:00 (Wed-Mon), until 21:45 Wed & Fri, CLOSED Tue",
+              "cost": "€17 (student - BOOK AHEAD!)",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€15-22"
+          "budget": "€31.15 (€12 Garnier + €17 Louvre + €2.15 metro)"
+        },
+        {
+          "name": "lunch",
+          "timeRange": "13:30-14:30",
+          "start_time": "13:30",
+          "end_time": "14:30",
+          "duration": "1 hour",
+          "description": "Quick lunch in Louvre food court (Carrousel du Louvre) or nearby bistro in 1st arrondissement. Stay close to continue Louvre visit after.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Lunch near Louvre",
+              "link": "https://www.google.com/maps/search/restaurants+near+Louvre+Paris",
+              "duration": 60,
+              "suggestedTime": "13:30",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "Quick lunch to maximize Louvre time. Options: Carrousel du Louvre food court (€10-15, stays inside), café in Tuileries, or bistro on Rue Saint-Honoré (€15-20). Keep it light - more Louvre time ahead!",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "€10-20",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "€10-20"
         },
         {
           "name": "afternoon",
           "timeRange": "14:30-18:30",
           "start_time": "14:30",
           "end_time": "18:30",
-          "duration": "~4 hours",
-          "description": "Montmartre hill, Sacré-Cœur, artistic squares (CORE OPTIONS)",
+          "duration": "4 hours",
+          "description": "Louvre continuation (2-3 hours more), then Île de la Cité - Notre-Dame, Sainte-Chapelle, optional Conciergerie.",
           "activities": [
             {
               "order": 1,
-              "name": "Rue des Abbesses & Montmartre Streets",
-              "link": "https://www.google.com/maps/search/Rue+des+Abbesses+Paris",
-              "duration": 45,
+              "name": "Musée du Louvre (Afternoon Session)",
+              "link": "https://www.google.com/maps/search/Louvre+Museum+Paris",
+              "duration": 150,
               "suggestedTime": "14:30",
-              "timeRestriction": null,
-              "priority": "medium",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "📸"],
-              "type": "neighborhood",
-              "notes": "Charming village-like streets at the base of Montmartre. Art Nouveau metro entrance.",
+              "timeRestriction": "Open until 18:00 (last entry 17:00)",
+              "priority": "high",
+              "priceRange": "included",
+              "tags": ["⏳", "⭐", "☂️"],
+              "type": "museum",
+              "notes": "Continue Louvre exploration. TOTAL LOUVRE TIME: ~4-4.5 hours across morning + afternoon. VIEWING LIST WIP - will be populated with specific works/wings based on your interests (Ancient Egypt? Italian Renaissance? French painting? Sculpture?). Recommended: Take break on pyramid lawn if nice weather. NOTE: You can re-enter same day with your ticket.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
-              "cost": "free",
-              "optional": true,
+              "opening_hours": "09:00-18:00",
+              "cost": "Included in morning ticket (€17 student)",
+              "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 2,
-              "name": "Villa Léandre",
-              "link": "https://www.google.com/maps/search/Villa+Leandre+Paris",
-              "duration": 15,
-              "suggestedTime": "15:15",
+              "name": "Walk to Île de la Cité",
+              "link": "https://www.google.com/maps/dir/Louvre+Museum/Île+de+la+Cité",
+              "duration": 10,
+              "suggestedTime": "17:00",
               "timeRestriction": null,
-              "priority": "medium",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "📸"],
-              "type": "street",
-              "notes": "Hidden cobblestone cul-de-sac with English-style cottages. Very photogenic.",
+              "priority": "mandatory",
+              "priceRange": "free",
+              "tags": ["🆓", "👀"],
+              "type": "walk",
+              "notes": "10 min walk from Louvre across Pont Neuf (oldest bridge in Paris - ironically named 'New Bridge'!) to Île de la Cité island.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
@@ -1033,228 +1399,307 @@
             },
             {
               "order": 3,
-              "name": "Place Dalida",
-              "link": "https://www.google.com/maps/search/Place+Dalida+Paris",
-              "duration": 15,
-              "suggestedTime": "15:45",
+              "name": "Place Dauphine",
+              "link": "https://www.google.com/maps/search/Place+Dauphine+Paris",
+              "duration": 10,
+              "suggestedTime": "17:10",
               "timeRestriction": null,
               "priority": "medium",
-              "priceRange": null,
+              "priceRange": "free",
               "tags": ["🆓", "👀", "📸"],
-              "type": "viewpoint",
-              "notes": "Small square with bust of French-Italian singer Dalida. Nice views over Paris.",
+              "type": "square",
+              "notes": "Tranquil triangular square on western tip of Île de la Cité. Hidden gem - locals playing pétanque, quiet cafés. One of Paris's most peaceful spots.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
+              "opening_hours": "24/7",
               "cost": "free",
-              "optional": false,
+              "optional": true,
               "secondaryPlaces": []
             },
             {
               "order": 4,
-              "name": "Basilique du Sacré-Cœur",
-              "link": "https://www.google.com/maps/search/Basilique+du+Sacre+Coeur+Paris",
-              "duration": 60,
-              "suggestedTime": "16:15",
-              "timeRestriction": "Basilica open 06:00-22:30. Dome open 09:00-19:00 (May-Sep), 10:00-17:00 (Oct-Apr)",
+              "name": "Cathédrale Notre-Dame",
+              "link": "https://www.google.com/maps/search/Notre-Dame+Cathedral+Paris",
+              "duration": 30,
+              "suggestedTime": "17:20",
+              "timeRestriction": "CHECK if interior reopened post-2019 fire. Exterior always accessible.",
               "priority": "high",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "⭐"],
-              "type": "basilica",
-              "notes": "White Romano-Byzantine basilica on Montmartre hilltop. FREE entry to basilica. Dome climb is €7 (NOT Museum Pass). Panoramic views. Note: STEEP hill climb or funicular (metro ticket).",
+              "priceRange": "free",
+              "tags": ["🆓", "📅", "⏳", "⭐", "📸"],
+              "type": "cathedral",
+              "notes": "Gothic cathedral (1163-1345). Damaged in 2019 fire, under restoration. CHECK before visit if interior reopened by Oct 2026 (planned for Dec 2024 initially but may delay). Exterior + square always viewable. Flying buttresses, gargoyles, rose windows (if interior open). FREE entry if open. Otherwise: exterior views + parvis (square) for 30 min.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": "06:00-22:30 (basilica), 10:00-17:00 (dome, Oct)",
-              "cost": "Free basilica / €7 dome",
+              "opening_hours": "TBD based on restoration progress",
+              "cost": "FREE (if open)",
               "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 5,
-              "name": "Place du Tertre",
-              "link": "https://www.google.com/maps/search/Place+du+Tertre+Paris",
-              "duration": 30,
-              "suggestedTime": "17:15",
-              "timeRestriction": null,
-              "priority": "medium",
-              "priceRange": null,
-              "tags": ["🆓", "👀"],
-              "type": "square",
-              "notes": "Historic artists' square. Very touristy but iconic. Street artists paint portraits and caricatures.",
-              "bookingRequired": false,
-              "bookingDetails": null,
-              "opening_hours": null,
-              "cost": "free",
+              "name": "Sainte-Chapelle",
+              "link": "https://www.google.com/maps/search/Sainte-Chapelle+Paris",
+              "duration": 45,
+              "suggestedTime": "18:00",
+              "timeRestriction": "Open 09:00-19:00 (Apr-Sep), 09:00-17:00 (Oct-Mar). Last entry 40 min before close. BOOK TIMED ENTRY!",
+              "priority": "high",
+              "priceRange": "€€",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
+              "type": "chapel",
+              "notes": "STUNNING 13th-century Gothic chapel. 15 stained-glass windows floor-to-ceiling (15m high) depicting 1,113 Biblical scenes. On sunny day, light through glass is BREATHTAKING - one of most beautiful sights in Paris! Student ticket €11.50 (NOT Museum Pass - pass expired yesterday). BOOK TIMED ENTRY AHEAD - small chapel, limited capacity. 45 min visit. ABSOLUTE MUST-SEE!",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.sainte-chapelle.fr/en",
+                "advanceTimeNeeded": "Book 1-2 weeks ahead for late afternoon slot"
+              },
+              "opening_hours": "09:00-17:00 (Oct-Mar), until 19:00 (Apr-Sep)",
+              "cost": "€11.50 (student)",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€0-7 (dome optional)"
+          "budget": "€11.50 (Sainte-Chapelle)"
         },
         {
           "name": "evening",
           "timeRange": "18:30-21:00",
           "start_time": "18:30",
           "end_time": "21:00",
-          "duration": "~2.5 hours",
-          "description": "Père-Lachaise Cemetery, dinner (CORE OPTIONS)",
+          "duration": "2.5 hours",
+          "description": "Optional Conciergerie (Marie Antoinette's cell), then Panthéon interior visit, dinner in Latin Quarter.",
           "activities": [
             {
               "order": 1,
-              "name": "Père-Lachaise Cemetery",
-              "link": "https://www.google.com/maps/search/Pere+Lachaise+Cemetery+Paris",
-              "duration": 90,
+              "name": "La Conciergerie",
+              "link": "https://www.google.com/maps/search/La+Conciergerie+Paris",
+              "duration": 45,
               "suggestedTime": "18:30",
-              "timeRestriction": "Open 08:00-18:00 Mon-Fri, 08:30-18:00 Sat, 09:00-18:00 Sun (Nov-Mar closes 17:30)",
-              "priority": "high",
-              "priceRange": null,
-              "tags": ["🆓", "👀", "⭐"],
-              "type": "cemetery",
-              "notes": "World's most visited cemetery. Graves of Jim Morrison, Oscar Wilde, Edith Piaf, Chopin, Molière. FREE entry. Bring cemetery map or use app. Check closing time for October.",
+              "timeRestriction": "Open 09:30-18:00 daily. Last entry 17:15.",
+              "priority": "low",
+              "priceRange": "€",
+              "tags": ["🎟️", "⏳", "☂️"],
+              "type": "museum/monument",
+              "notes": "OPTIONAL (time permitting). Former royal palace turned revolutionary prison. Marie Antoinette's cell, French Revolution history. Student ticket €9.50. SKIP if tired from Louvre or if Sainte-Chapelle runs late. Same building complex as Sainte-Chapelle.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": "08:00-18:00 (closes 17:30 Nov-Mar)",
+              "opening_hours": "09:30-18:00 (last entry 17:15)",
+              "cost": "€9.50 (student)",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Walk/Metro to Panthéon",
+              "link": "https://www.google.com/maps/dir/Sainte-Chapelle/Panthéon+Paris",
+              "duration": 15,
+              "suggestedTime": "19:00",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "15 min walk from Île de la Cité to Panthéon in Latin Quarter. Or metro Line 4 from Cité to Saint-Michel, then walk 10 min.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free (walk) or €2.15 (metro)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Panthéon (Interior)",
+              "link": "https://www.google.com/maps/search/Panthéon+Paris",
+              "duration": 60,
+              "suggestedTime": "19:15",
+              "timeRestriction": "Open 10:00-18:30 (Apr-Sep), 10:00-18:00 (Oct-Mar). Last entry 45 min before close.",
+              "priority": "high",
+              "priceRange": "€€",
+              "tags": ["🎟️", "⏳", "⭐", "☂️"],
+              "type": "monument",
+              "notes": "Neoclassical mausoleum (you saw exterior Day 1, now go inside!). Crypt contains tombs of French heroes: Voltaire, Rousseau, Victor Hugo, Marie Curie, Alexandre Dumas, Émile Zola. Foucault's Pendulum demonstrates Earth's rotation. Dome climb possible (extra fee). Student ticket €11.50. 60 min visit. CHECK CLOSING TIME - Oct hours are shorter!",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "10:00-18:00 (Oct-Mar)",
+              "cost": "€11.50 (student)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 4,
+              "name": "Latin Quarter Dinner",
+              "link": "https://www.google.com/maps/search/restaurants+Latin+Quarter+Paris",
+              "duration": 60,
+              "suggestedTime": "20:15",
+              "timeRestriction": "Dinner service 19:00-23:00",
+              "priority": "high",
+              "priceRange": "€€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "Dinner in Latin Quarter near Panthéon. Student-friendly bistros on Rue Mouffetard or around Sorbonne. Budget €18-28 for full meal.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "€18-28",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "€23-42 (€11.50 Panthéon + optional €9.50 Conciergerie + €18-28 dinner + possible metro)"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/St+Christopher's+Inn+Paris/Palais+Garnier/Louvre+Museum/Notre-Dame+Cathedral/Sainte-Chapelle/Panthéon/St+Christopher's+Inn+Paris",
+      "research_notes": {
+        "alternatives": [
+          {
+            "name": "Bourse de Commerce (Modern Art Museum)",
+            "reason_not_selected": "Pinault Collection contemporary art museum near Louvre. €12 student, 90 min. Would need to cut Louvre time or skip islands. Only if you LOVE modern art over Sainte-Chapelle.",
+            "when_to_add": "Afternoon instead of islands (not recommended unless modern art is priority)"
+          },
+          {
+            "name": "Centre Pompidou (Modern Art)",
+            "reason_not_selected": "Already noted exterior Day 1. Interior museum €15 student, 90 min. Too much for today given Louvre + Palais Garnier. Can add if you skip Panthéon.",
+            "when_to_add": "Evening instead of Panthéon"
+          },
+          {
+            "name": "Musée Picasso",
+            "reason_not_selected": "Le Marais (already did Day 1 evening). €14 student, 90 min. Would need to skip Palais Garnier or cut Louvre time. Le Marais is done - moving on to 1st arr today.",
+            "when_to_add": "Morning instead of Palais Garnier (not recommended)"
+          },
+          {
+            "name": "Musée Carnavalet (FREE Paris History Museum)",
+            "reason_not_selected": "Le Marais, free entry, 90 min. Already did Le Marais Day 1. Can add to morning if you skip Palais Garnier and want free option.",
+            "when_to_add": "Morning instead of Palais Garnier (saves €12)"
+          },
+          {
+            "name": "Père-Lachaise Cemetery (instead of Panthéon)",
+            "reason_not_selected": "Far east 20th arr, 90 min. Famous graves: Jim Morrison, Oscar Wilde, Chopin, Édith Piaf. Can SWAP with Panthéon if you prefer cemetery to crypt. Different vibe - outdoor, romantic decay vs neoclassical mausoleum.",
+            "when_to_add": "Evening instead of Panthéon (Metro Line 2 to Père Lachaise)"
+          },
+          {
+            "name": "Saint-Étienne-du-Mont Church",
+            "reason_not_selected": "Next to Panthéon, FREE, 30 min. Beautiful rood screen, St Geneviève's tomb. Add if time after Panthéon.",
+            "when_to_add": "Evening after Panthéon if you have 30 min"
+          }
+        ],
+        "sources": [
+          {
+            "name": "RESTRUCTURED_ITINERARY_PREVIEW.md",
+            "url": "local",
+            "type": "guide"
+          },
+          {
+            "name": "Alan's Paris Guide",
+            "url": "local",
+            "type": "guide"
+          }
+        ],
+        "notes": "Day 4 focused on 1st arrondissement (Louvre/islands core Paris) + Palais Garnier + Latin Quarter Panthéon. Museum Pass expired yesterday so today is individual tickets. Palais Garnier added per user request (NOT in Museum Pass, €12 student). Louvre viewing list set as WIP - needs to be populated based on user's specific art interests. Louvre Monday is strategic: avoids Sunday crowds, museum is open (closed Tue). Sainte-Chapelle is absolute must-see - arguably more stunning than any museum painting when sun shines through stained glass. Notre-Dame status uncertain (2019 fire, restoration ongoing - may or may not be open by Oct 2026). Conciergerie optional based on energy. Panthéon vs Père-Lachaise is personal choice: crypt vs cemetery. Budget: €12 Garnier + €17 Louvre + €11.50 Sainte-Chapelle + €11.50 Panthéon + optional €9.50 Conciergerie + meals = ~€75-95 day cost (heaviest museum day)."
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "dayNumber": 5,
+      "title": "Departure to Bruges",
+      "isArrivalDay": false,
+      "isDepartureDay": true,
+      "total_walking_distance": "~0.5 km (hostel to metro)",
+      "total_duration": "~1 hour",
+      "timeBlocks": [
+        {
+          "name": "early_morning",
+          "timeRange": "05:45-06:30",
+          "start_time": "05:45",
+          "end_time": "06:30",
+          "duration": "45 min",
+          "description": "Pack, check out, metro to Bercy bus station, board FlixBus to Bruges. Pure logistics day - no activities.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Check Out & Leave Hostel",
+              "link": "https://www.google.com/maps/search/St+Christopher's+Inn+Paris",
+              "duration": 10,
+              "suggestedTime": "05:45",
+              "timeRestriction": "Early departure - check out night before if possible",
+              "priority": "mandatory",
+              "priceRange": "free",
+              "tags": [],
+              "type": "accommodation",
+              "notes": "Wake 05:30, final pack, check out (or store luggage and check out night before). Leave hostel 05:45 with all bags.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
               "cost": "free",
               "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 2,
-              "name": "Dinner near Père-Lachaise or return to hotel area",
-              "link": "https://www.google.com/maps/search/restaurants+Pere+Lachaise+Paris",
-              "duration": 90,
-              "suggestedTime": "20:00",
-              "timeRestriction": null,
-              "priority": "high",
-              "priceRange": "€€",
-              "tags": ["🍽️"],
-              "type": "dining",
-              "notes": "Casual dinner in Ménilmontant/Oberkampf area or return to Montparnasse neighborhood.",
-              "bookingRequired": false,
-              "bookingDetails": null,
-              "opening_hours": null,
-              "cost": "€18-26",
-              "optional": false,
-              "secondaryPlaces": []
-            }
-          ],
-          "budget": "€18-26"
-        }
-      ],
-      "map_url": "https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Petit+Palais+Paris/Palais+Garnier+Paris/Passage+des+Panoramas+Paris/Rue+des+Abbesses+Paris/Villa+Leandre+Paris/Place+Dalida+Paris/Basilique+du+Sacre+Coeur+Paris/Place+du+Tertre+Paris/Pere+Lachaise+Cemetery+Paris/Hotel+Madrigal+Paris",
-      "research_notes": {
-        "alternatives": [
-          {
-            "name": "Studio 28 (Historic Cinema)",
-            "reason_considered": "Oldest cinema in Paris (1928). Charming art house theater in Montmartre.",
-            "notes": "Could catch a film if interested. Check showtimes."
-          },
-          {
-            "name": "Moulin de la Galette & La Maison Rose",
-            "reason_considered": "Historic windmill and pink café painted by Impressionists",
-            "notes": "On the Montmartre walk route. Quick photo stops."
-          },
-          {
-            "name": "Le Pure Café (Before Sunset film location)",
-            "reason_considered": "Café featured in Before Sunset film",
-            "notes": "Near Père-Lachaise. Could stop for coffee or aperitif."
-          },
-          {
-            "name": "Cour de l'Étoile-d'Or (Before Sunset film location)",
-            "reason_considered": "Courtyard from Celine's apartment in Before Sunset",
-            "notes": "11th arrondissement. For film fans only."
-          }
-        ],
-        "sources": [
-          {
-            "name": "User's Paris Itinerary Summary",
-            "url": null,
-            "type": "recommendation"
-          },
-          {
-            "name": "Alan por el mundo - Day 4",
-            "url": null,
-            "type": "video"
-          }
-        ],
-        "notes": "Monday. Montmartre requires significant hill climbing - consider fitness level. Funicular (metro ticket) can help. Père-Lachaise is far east, so factor in metro transit time (~30 min from Montmartre)."
-      }
-    },
-    {
-      "date": "2026-10-21",
-      "dayNumber": 5,
-      "title": "Literary Paris, Saint-Germain & Departure",
-      "isArrivalDay": false,
-      "isDepartureDay": true,
-      "total_walking_distance": "~3-5 km",
-      "total_duration": "~4-5 hours (before departure)",
-      "timeBlocks": [
-        {
-          "name": "morning",
-          "timeRange": "06:30-09:00",
-          "start_time": "06:30",
-          "end_time": "09:00",
-          "duration": "~2.5 hours",
-          "description": "Departure logistics (MANDATORY)",
-          "activities": [
-            {
-              "order": 1,
-              "name": "Hotel Check-out & Departure to Quai de Bercy",
-              "link": "https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Quai+de+Bercy+Bus+Station+Paris",
-              "duration": 75,
-              "suggestedTime": "05:15",
-              "timeRestriction": "FlixBus departs 06:30",
+              "name": "Metro to Bercy Bus Station",
+              "link": "https://www.google.com/maps/dir/St+Christopher's+Inn+Paris/Quai+de+Bercy+Paris",
+              "duration": 20,
+              "suggestedTime": "05:50",
+              "timeRestriction": "Metro Line 5 runs from ~05:30",
               "priority": "mandatory",
               "priceRange": "€",
               "tags": ["🎟️"],
               "type": "transport",
-              "notes": "CRITICAL: Leave hotel by 05:15. Take Metro Line 6 from Pasteur to Bercy (direct, 15 min). Arrive bus station by 06:00 latest. FlixBus to Bruges departs 06:30, arrives 11:10.",
+              "notes": "Metro Line 5 from Laumière to Quai de la Gare (direct, 15 min). Walk 5 min to Bercy Seine bus stop. ARRIVE 06:00-06:10 for 06:30 bus. MAJOR ADVANTAGE of St Christopher's location - only 15 min direct metro!",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Metro from ~05:30",
+              "cost": "€2.15",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Board FlixBus to Bruges",
+              "link": "https://www.omio.com/app/search-frontend/journey/bus/1476231933/E332A80B5BB4D4A1FABEB84B2003DA37F/2254340353070129751",
+              "duration": 280,
+              "suggestedTime": "06:30",
+              "timeRestriction": "Bus departs 06:30, arrives Bruges 11:10 (4h 40m)",
+              "priority": "mandatory",
+              "priceRange": "€€",
+              "tags": ["🎟️", "📅"],
+              "type": "transport",
+              "notes": "FlixBus from Paris Quai de Bercy (Bercy Seine stop) to Bruges Sint-Michiels Station West. 4h 40m, no transfers. MUST have booking confirmation. Arrive 20-30 min early. Sleep on bus!",
               "bookingRequired": true,
               "bookingDetails": {
-                "url": "https://www.omio.com/app/search-frontend/journey/bus/1476231933/E332A80B5BB4D4A1FABEB84B2003DA37F/2254340353070129751",
+                "url": "https://www.omio.com/",
                 "advanceTimeNeeded": "Already booked"
               },
-              "opening_hours": "Metro starts ~05:30",
-              "cost": "Included in bus ticket",
+              "opening_hours": null,
+              "cost": "Booked",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "€0 (metro on existing ticket)"
+          "budget": "€2.15 (metro only - bus already booked)"
         }
       ],
-      "map_url": "https://www.google.com/maps/dir/Hotel+Madrigal+Paris/Quai+de+Bercy+Bus+Station+Paris",
+      "map_url": "https://www.google.com/maps/dir/St+Christopher's+Inn+Paris/Quai+de+Bercy+Paris",
       "research_notes": {
         "alternatives": [
           {
-            "name": "Shakespeare and Company",
-            "reason_considered": "Iconic English-language bookstore on Left Bank",
-            "notes": "Would require staying later (opens 10:00). Not feasible with 06:30 bus departure."
+            "name": "Early Morning Montmartre Walk (04:00-06:00)",
+            "reason_not_selected": "Originally considered 4am wake-up for Montmartre sunrise before bus. REJECTED - too rushed, not enjoyable, misses the point of Montmartre experience. Moved Montmartre to Day 1 evening sunset instead - MUCH better!",
+            "when_to_add": "Don't. Already done Day 1 evening."
           },
           {
-            "name": "Jardin du Luxembourg",
-            "reason_considered": "Beautiful palace gardens",
-            "notes": "Not feasible on early departure day."
-          },
-          {
-            "name": "Saint-Germain-des-Prés",
-            "reason_considered": "Historic literary café district",
-            "notes": "Not feasible on early departure day."
-          },
-          {
-            "name": "Musée Carnavalet",
-            "reason_considered": "Free Paris history museum",
-            "notes": "Not feasible on early departure day."
+            "name": "Canal Saint-Martin Dawn Walk",
+            "reason_not_selected": "5 min from hostel, could do 05:00-05:30 before leaving. But with luggage and early wake, not recommended. Canal is better enjoyed casually another time.",
+            "when_to_add": "Only if you wake early naturally and want quiet moment before departure"
           }
         ],
         "sources": [
           {
-            "name": "User-provided transport details",
-            "url": "https://www.omio.com/app/search-frontend/journey/bus/1476231933/E332A80B5BB4D4A1FABEB84B2003DA37F/2254340353070129751",
-            "type": "official"
+            "name": "RESTRUCTURED_ITINERARY_PREVIEW.md",
+            "url": "local",
+            "type": "guide"
           }
         ],
-        "notes": "Wednesday departure day. 06:30 FlixBus means very early wake-up. No sightseeing possible. Focus entirely on departure logistics."
+        "notes": "Day 5 is pure departure logistics. NO activities - just efficient transit to bus station. St Christopher's Inn location is PERFECT for this - direct Line 5 metro to Bercy in 15 min vs 25 min from original Madrigal location. 06:30 FlixBus is early but allows full day arrival in Bruges (11:10 arrival). Sleep on bus. Budget: €2.15 metro only (bus pre-booked). SIMPLE departure day - no stress!"
       }
     }
   ],
@@ -1263,319 +1708,326 @@
       {
         "name_local": "Croissant",
         "name_english": "Croissant",
-        "description": "Buttery, flaky crescent-shaped pastry. Best eaten fresh in the morning from a boulangerie.",
-        "typical_cost": "€1.20-€2.50",
+        "description": "Buttery, flaky pastry. Best fresh in morning from boulangerie.",
+        "typical_cost": "€1.50-3",
         "meal_type": "snack",
         "seasonal": null
       },
       {
         "name_local": "Pain au chocolat",
         "name_english": "Chocolate croissant",
-        "description": "Flaky pastry with dark chocolate batons inside.",
-        "typical_cost": "€1.50-€2.80",
+        "description": "Flaky pastry with chocolate bars inside. Morning staple.",
+        "typical_cost": "€1.80-3.50",
         "meal_type": "snack",
         "seasonal": null
       },
       {
-        "name_local": "Baguette sandwich (jambon-beurre)",
-        "name_english": "Ham and butter baguette",
-        "description": "Simple but perfect: fresh baguette with quality ham and butter. The quintessential French lunch.",
-        "typical_cost": "€4.50-€7",
+        "name_local": "Croque-monsieur",
+        "name_english": "Grilled ham and cheese sandwich",
+        "description": "Toasted sandwich with ham, Gruyère cheese, béchamel sauce. Add fried egg on top for croque-madame.",
+        "typical_cost": "€8-12",
         "meal_type": "main",
         "seasonal": null
       },
       {
-        "name_local": "Crêpe",
-        "name_english": "Crêpe / Thin pancake",
-        "description": "Thin pancakes, sweet or savory. Popular street food and casual meal.",
-        "typical_cost": "€5-€10",
-        "meal_type": "snack",
-        "seasonal": null
-      },
-      {
-        "name_local": "Steak frites",
-        "name_english": "Steak with fries",
-        "description": "Classic French bistro dish. Beef steak with crispy fries and simple sauce.",
-        "typical_cost": "€16-€26",
+        "name_local": "Boeuf bourguignon",
+        "name_english": "Beef braised in red wine",
+        "description": "Classic Burgundy stew with beef, red wine, mushrooms, onions, carrots. Slow-cooked comfort food.",
+        "typical_cost": "€18-25",
         "meal_type": "main",
         "seasonal": null
       },
       {
         "name_local": "Coq au vin",
         "name_english": "Chicken braised in wine",
-        "description": "Traditional Burgundy dish: chicken slow-cooked in red wine with mushrooms, bacon, onions.",
-        "typical_cost": "€18-€25",
+        "description": "Chicken cooked in red wine with mushrooms, onions, bacon. Traditional bistro dish.",
+        "typical_cost": "€16-22",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Steak-frites",
+        "name_english": "Steak and fries",
+        "description": "Grilled steak with crispy fries. Simple but quintessentially French. Order 'saignant' (rare) or 'à point' (medium).",
+        "typical_cost": "€18-28",
         "meal_type": "main",
         "seasonal": null
       },
       {
         "name_local": "Escargots de Bourgogne",
         "name_english": "Burgundy snails",
-        "description": "Snails cooked in garlic-parsley butter. A French classic.",
-        "typical_cost": "€12-€18 (6-12 pieces)",
+        "description": "Snails cooked in garlic-parsley butter. Classic French appetizer. Not for everyone but worth trying!",
+        "typical_cost": "€10-15",
         "meal_type": "starter",
         "seasonal": null
       },
       {
-        "name_local": "Soupe à l'oignon",
+        "name_local": "Soupe à l'oignon gratinée",
         "name_english": "French onion soup",
-        "description": "Rich beef broth with caramelized onions, topped with toasted bread and melted Gruyère cheese.",
-        "typical_cost": "€8-€14",
+        "description": "Caramelized onion soup topped with toasted bread and melted Gruyère cheese.",
+        "typical_cost": "€8-12",
         "meal_type": "starter",
         "seasonal": null
       },
       {
         "name_local": "Crème brûlée",
-        "name_english": "Burnt cream / Caramelized custard",
-        "description": "Creamy vanilla custard with hard caramelized sugar top that cracks when tapped.",
-        "typical_cost": "€7-€11",
-        "meal_type": "dessert",
-        "seasonal": null
-      },
-      {
-        "name_local": "Macaron",
-        "name_english": "Macaron",
-        "description": "Delicate almond meringue sandwich cookies with ganache filling. Parisian specialty.",
-        "typical_cost": "€2-€3.50 each",
+        "name_english": "Burnt cream",
+        "description": "Rich custard dessert with caramelized sugar crust on top. Crack it with your spoon!",
+        "typical_cost": "€7-10",
         "meal_type": "dessert",
         "seasonal": null
       },
       {
         "name_local": "Tarte Tatin",
         "name_english": "Upside-down caramelized apple tart",
-        "description": "Classic French dessert: apples caramelized in butter and sugar, baked with pastry on top, then flipped.",
-        "typical_cost": "€8-€12",
+        "description": "Apples caramelized in butter and sugar, baked with pastry on top, then flipped. Served warm with cream or ice cream.",
+        "typical_cost": "€8-12",
         "meal_type": "dessert",
+        "seasonal": null
+      },
+      {
+        "name_local": "Macaron",
+        "name_english": "Macaron",
+        "description": "Delicate almond meringue cookies with ganache filling. Not the coconut macaroon! Ladurée and Pierre Hermé are famous shops.",
+        "typical_cost": "€2-3 each",
+        "meal_type": "snack",
+        "seasonal": null
+      },
+      {
+        "name_local": "Falafel (Rue des Rosiers)",
+        "name_english": "Falafel sandwich",
+        "description": "Not traditionally French but iconic in Le Marais Jewish quarter. L'As du Fallafel is world-famous. Chickpea fritters in pita with salad, tahini, fried eggplant.",
+        "typical_cost": "€8-12",
+        "meal_type": "main",
         "seasonal": null
       }
     ],
     "drinks_and_rituals": [
       {
-        "name_local": "Café / Café crème",
-        "name_english": "Espresso / Coffee with steamed milk",
-        "description": "French coffee culture. 'Un café' is espresso. 'Café crème' or 'café au lait' has milk. Typically enjoyed standing at the bar or sitting at a café.",
-        "typical_cost": "€1.50-€4.50",
-        "typical_time": "Morning or after meals"
+        "name_local": "Café / Café noir",
+        "name_english": "Espresso",
+        "description": "Standard coffee in France is espresso. Small, strong, black. Order at bar for cheaper price than sitting.",
+        "typical_cost": "€1.50-3 (bar) / €3-5 (table)",
+        "typical_time": "Morning, after meals"
+      },
+      {
+        "name_local": "Café crème",
+        "name_english": "Coffee with cream",
+        "description": "Espresso with steamed milk (similar to cappuccino). French typically only drink this at breakfast, never after lunch/dinner.",
+        "typical_cost": "€3-5",
+        "typical_time": "Breakfast only"
       },
       {
         "name_local": "Vin rouge / Vin blanc",
         "name_english": "Red wine / White wine",
-        "description": "French wine culture is integral. Order by glass (verre) or bottle. House wine (vin de maison) is usually good quality and affordable.",
-        "typical_cost": "€5-€9 per glass, €18-€35 per bottle",
-        "typical_time": "Lunch and dinner"
+        "description": "France is wine country! House wine (vin de la maison) is usually good quality and affordable. Order by glass (verre) or carafe.",
+        "typical_cost": "€5-8/glass, €15-25/carafe",
+        "typical_time": "Lunch, dinner"
       },
       {
-        "name_local": "Apéritif (Kir, Pastis, Champagne)",
+        "name_local": "Apéritif",
         "name_english": "Pre-dinner drink",
-        "description": "French ritual of having a light alcoholic drink before dinner to stimulate appetite. Kir (white wine + crème de cassis), Pastis (anise liqueur), or Champagne.",
-        "typical_cost": "€6-€12",
-        "typical_time": "17:00-19:00 (before dinner)"
+        "description": "French tradition of pre-dinner drinks. Kir (white wine + blackcurrant liqueur), pastis (anise spirit), or champagne. Often served with snacks (amuse-bouches).",
+        "typical_cost": "€6-10",
+        "typical_time": "Before dinner (18:00-20:00)"
       },
       {
         "name_local": "Chocolat chaud",
         "name_english": "Hot chocolate",
-        "description": "Thick, rich hot chocolate. Parisian hot chocolate is luxurious, almost like melted chocolate.",
-        "typical_cost": "€5-€8",
-        "typical_time": "Afternoon or cold days"
+        "description": "Thick, rich hot chocolate (almost drinkable pudding). Parisian specialty, especially at Angelina near Tuileries.",
+        "typical_cost": "€7-10",
+        "typical_time": "Afternoon, winter"
       }
     ],
     "restaurants": [
       {
         "name": "L'As du Fallafel",
-        "link": "https://www.google.com/maps/search/L+As+du+Fallafel+Paris",
-        "neighborhood": "Le Marais",
-        "cuisine": "Middle Eastern / Jewish",
+        "link": "https://www.google.com/maps/search/L'As+du+Fallafel+Paris",
+        "neighborhood": "Le Marais (Rue des Rosiers)",
+        "cuisine": "Middle Eastern / Israeli",
         "priceRange": "€",
-        "specialties": ["Falafel sandwich"],
-        "notes": "Famous falafel on Rue des Rosiers. Long lines but fast service. Closed Friday evening & Saturday (Sabbath)."
-      },
-      {
-        "name": "Paul (Bakery chain)",
-        "link": "https://www.google.com/maps/search/Paul+bakery+Paris",
-        "neighborhood": "Multiple locations citywide",
-        "cuisine": "Bakery / Café",
-        "priceRange": "€",
-        "specialties": ["Croissants", "Baguette sandwiches", "Quiche"],
-        "notes": "Reliable chain for quick breakfast or lunch. Good quality pastries and sandwiches."
+        "specialties": ["Falafel sandwich", "Shawarma"],
+        "notes": "World-famous falafel. Long lines but worth it. CLOSED Friday evening & all Saturday. €8-12 per person."
       },
       {
         "name": "La Maison d'Isabelle",
-        "link": "https://www.google.com/maps/search/La+Maison+d+Isabelle+Paris",
+        "link": "https://www.google.com/maps/search/La+Maison+d'Isabelle+Paris",
         "neighborhood": "Latin Quarter",
         "cuisine": "Bakery",
         "priceRange": "€",
-        "specialties": ["Croissants (reportedly best in Paris)", "Pain au chocolat"],
-        "notes": "Featured in Alan's guide as having the best croissant in Paris. Small bakery, expect lines."
+        "specialties": ["Croissants", "Pain au chocolat"],
+        "notes": "Recommended by Alan as 'best croissant in Paris'. Small bakery, arrive early."
       },
       {
-        "name": "Café Marly (Louvre)",
-        "link": "https://www.google.com/maps/search/Cafe+Marly+Louvre+Paris",
-        "neighborhood": "Louvre / 1st",
-        "cuisine": "French café",
-        "priceRange": "€€€",
-        "specialties": ["Coffee with pyramid view"],
-        "notes": "Elegant café inside Louvre courtyard. Pricey but iconic location."
+        "name": "Rue Cler Market Street",
+        "link": "https://www.google.com/maps/search/Rue+Cler+Paris",
+        "neighborhood": "7th Arrondissement (near Eiffel)",
+        "cuisine": "Market / Multiple",
+        "priceRange": "€-€€",
+        "specialties": ["Cheese", "Bread", "Prepared foods", "Cafés"],
+        "notes": "Pedestrian market street with food shops, bakeries, cafés. Great for picnic supplies or casual lunch."
+      },
+      {
+        "name": "Café de Flore",
+        "link": "https://www.google.com/maps/search/Café+de+Flore+Paris",
+        "neighborhood": "Saint-Germain-des-Prés",
+        "cuisine": "French Café",
+        "priceRange": "€€-€€€",
+        "specialties": ["Croissants", "Coffee", "People-watching"],
+        "notes": "Historic literary café (Sartre, Hemingway frequented). Expensive but iconic. €20-30 for breakfast."
+      },
+      {
+        "name": "Angelina Paris (Tuileries)",
+        "link": "https://www.google.com/maps/search/Angelina+Paris+Tuileries",
+        "neighborhood": "1st Arrondissement (Tuileries)",
+        "cuisine": "Café / Tea Room",
+        "priceRange": "€€",
+        "specialties": ["Hot chocolate (chocolat chaud)", "Mont-Blanc dessert"],
+        "notes": "Famous for incredibly thick hot chocolate. Touristy but delicious. Long lines afternoon - go early or late."
       }
     ],
-    "special_meal_formats": [
-      {
-        "name": "Formule / Menu du jour",
-        "description": "Fixed-price lunch menu (usually 2 or 3 courses) offered at many bistros. Excellent value and authentic experience.",
-        "typical_cost": "€14-€22",
-        "typical_time": "Lunch (12:00-14:30)"
-      },
-      {
-        "name": "Boulangerie breakfast",
-        "description": "Buy fresh croissants and pain au chocolat from a local bakery, eat in a park or by the Seine.",
-        "typical_cost": "€3-€6",
-        "typical_time": "Morning"
-      },
-      {
-        "name": "Picnic from Monoprix",
-        "description": "Buy cheese, bread, charcuterie, wine from supermarket (Monoprix, Franprix) and picnic in Luxembourg Gardens, Champ de Mars, or along Canal Saint-Martin.",
-        "typical_cost": "€10-€18 for 2",
-        "typical_time": "Lunch or dinner"
-      }
-    ],
+    "special_meal_formats": [],
     "tourist_traps_to_avoid": [
-      "Avoid restaurants with large picture menus in multiple languages near major monuments (Eiffel Tower, Notre-Dame, Champs-Élysées). They're overpriced and low quality.",
-      "Skip chain restaurants on Champs-Élysées - extremely expensive and touristy.",
-      "Don't pay for bottled water at cafés unless necessary - tap water (une carafe d'eau) is free and safe.",
-      "Avoid eating on Place du Tertre in Montmartre - very overpriced. Walk 2 blocks away for better value."
+      "Avoid restaurants with picture menus or aggressive touts on Champs-Élysées - overpriced and low quality",
+      "Skip the overpriced cafés directly facing Notre-Dame - walk one block away for 50% cheaper prices",
+      "Don't eat near major tourist sites (Eiffel Tower base, Louvre pyramid) - walk 5-10 min away for better value",
+      "Avoid eating dinner before 19:30 - you'll be marked as a tourist and service may be rushed",
+      "Skip branded macaron chains in train stations - go to actual Ladurée or Pierre Hermé boutiques, or local bakeries"
     ]
   },
   "logistics": {
     "public_transport": {
       "ticket_types": [
         {
-          "name": "t+ ticket (single journey)",
-          "cost": "€2.15",
-          "validity": "Valid for metro, bus, tram for 90 min (no round-trips, one-way only)",
-          "notes": "Buy at metro stations, vending machines, or tabacs. Can buy carnet of 10 for €17.35."
+          "name": "Navigo Easy Card",
+          "cost": "€2 card + pay-as-you-go",
+          "validity": "Reloadable card",
+          "zones": "Zones 1-5",
+          "notes": "Best for 2-4 days. Load t+ tickets (€2.15 each or €17.35 for 10). Shareable card."
         },
         {
-          "name": "Navigo Découverte (weekly pass)",
-          "cost": "€5 one-time card + €30.75 for weekly zones 1-5",
-          "validity": "Monday-Sunday unlimited travel in selected zones",
-          "notes": "Best value if staying 3+ days. Requires passport photo. Covers airport transport too (Orly, CDG)."
+          "name": "Navigo Week Pass (Passe Navigo Semaine)",
+          "cost": "€30 (Mon-Sun)",
+          "validity": "1 week (Mon 00:00 to Sun 23:59)",
+          "zones": "All zones 1-5",
+          "notes": "BEST VALUE if arriving early in week (Mon-Wed). Unlimited metro, bus, RER, tram. Requires photo. Since you arrive Friday, might not be worth it."
         },
         {
-          "name": "Paris Visite (tourist pass)",
-          "cost": "€13.95-€70.70 depending on days and zones",
+          "name": "Paris Visite Pass",
+          "cost": "€29.25 (3 days, zones 1-3) or €42.20 (3 days, zones 1-5)",
           "validity": "1, 2, 3, or 5 consecutive days",
-          "notes": "More expensive than Navigo. Only worthwhile if arriving mid-week and needing airport transfers."
+          "zones": "Zones 1-3 or 1-5",
+          "notes": "Tourist pass. Unlimited travel + some discounts. Zone 1-5 needed for Versailles. Compare with buying individual t+ tickets."
         },
         {
-          "name": "Orlybus",
-          "cost": "€9.50",
-          "validity": "One-way from Orly Airport to Denfert-Rochereau",
-          "notes": "Direct bus, 30 min journey, runs every 10-20 min."
+          "name": "Single Ticket (t+)",
+          "cost": "€2.15",
+          "validity": "90 min (transfers allowed on metro/RER within Paris, not on bus)",
+          "zones": "Zones 1-2 (central Paris)",
+          "notes": "Buy individually or carnet of 10 for €17.35 (€1.74 each). No need if you get week pass."
         }
       ],
       "where_to_buy": {
-        "metro_vending_machines": "Accept coins, cards (Visa/Mastercard with chip)",
-        "ticket_windows": "At major stations (English often spoken)",
-        "tabac_shops": "Tobacco shops sell single tickets and carnets",
-        "online": "Navigo pass can be loaded via app"
+        "metro_stations": "Ticket windows or vending machines (accept card, some accept cash)",
+        "FNAC_stores": "Navigo cards, Paris Visite passes, Museum Pass",
+        "tabac_shops": "t+ tickets, Navigo reloads",
+        "online": "RATP app for mobile tickets (not yet for all ticket types)"
       },
       "operating_hours": {
-        "metro": "~05:30-01:15 (until ~02:15 Fri/Sat)",
-        "buses": "05:30-00:30 (some night buses Noctilien)",
-        "notes": "Check RATP website or app for real-time schedules"
+        "metro": "~05:30-00:30 Sun-Thu, until ~01:30 Fri-Sat",
+        "RER": "~05:30-00:30 (lines vary)",
+        "buses": "~06:30-20:30 (some routes until 00:30), night buses (Noctilien) after"
       }
     },
     "bike_rentals": {
-      "velib_metropole": {
-        "cost": "€1 for 24h or €8 for 7 days (plus usage fees per 30 min)",
-        "notes": "Paris bike-share system. Requires credit card with chip. Stations throughout city. Mechanical (green) and electric (blue) bikes available. Electric bikes recommended for Montmartre hill."
-      },
-      "tourist_bike_shops": {
-        "examples": ["Bike About Tours", "Paris Bike Tour", "Donkey Republic (app-based)"],
-        "cost": "€10-€20 per day",
-        "notes": "Traditional bike rental if Vélib' system doesn't work for tourists. Check if hotel has partnerships."
-      }
+      "name": "Vélib' Métropole",
+      "cost": "€1.70/30min (pay-as-you-go) or €8 (7-day pass with 30min free rides)",
+      "link": "https://www.velib-metropole.fr/en",
+      "notes": "Best option for Paris! 1,400+ stations. E-bikes available (green bikes, cost extra €1/30min). Highly recommended for Day 2 royal Paris route. Flat areas: Latin Quarter, Le Marais, Seine riverside. Avoid biking up Montmartre hill (use funicular or walk)."
     },
     "emergency_contacts": {
-      "emergency_number": "112 (EU-wide)",
+      "emergency_number": "112 (EU universal emergency)",
       "police": "17",
-      "fire_ambulance": "18",
-      "english_speaking_police": "Tourist Police at 72-76 Rue de Lutèce, 75004 (near Notre-Dame)",
+      "fire_medical": "18 (SAMU)",
+      "hospital": "Hôpital Saint-Louis (near hostel): +33 1 42 49 49 49",
       "us_embassy": "+33 1 43 12 22 22",
-      "hospital": "Hôpital Hôtel-Dieu (near Notre-Dame): +33 1 42 34 82 34"
+      "tourist_police": "+33 1 53 71 53 71 (near Eiffel Tower)"
     },
     "practical_tips": [
-      "Buy Paris Museum Pass (€85 for 4 days) ASAP and book all timed entries online immediately.",
-      "Book Eiffel Tower tickets 2-4 weeks ahead (NOT covered by Museum Pass).",
-      "Metro Line 4 connects hotel to Gare du Nord directly (important for Brussels departure logistics if plans change).",
-      "Most museums closed on Mondays or Tuesdays - check before planning.",
-      "Restaurants expect you to ask for the bill (l'addition) - it won't come automatically.",
-      "Tipping: Service included in bill. Rounding up or leaving €1-2 per person is polite but optional.",
-      "Many smaller shops and cafés prefer cash. Carry €20-50 in cash daily.",
-      "Free public toilets are rare. Use cafés/museums (often need to purchase something)."
+      "Metro is fastest but can be crowded during rush hours (08:00-09:30, 17:30-19:30). Consider biking during these times.",
+      "Keep metro tickets until you exit - inspectors check and fine €50 for no ticket.",
+      "Pickpockets active on Line 1 (Louvre-Champs-Élysées) and Line 4 (Gare du Nord-Montparnasse). Keep valuables secure.",
+      "Many museums closed Mondays or Tuesdays - check before going. Louvre closed Tuesdays, Orsay closed Mondays.",
+      "Book Eiffel Tower stairs ticket NOW - 2-4 weeks ahead minimum. DO NOT wait!",
+      "Student ID (ISIC card or university ID) gets discounts at most museums (30-50% off).",
+      "Free museum entry for EU students under 26 at many national museums (Louvre, Orsay, etc.). Check each museum's policy.",
+      "Tap water (l'eau du robinet) is free at restaurants - don't pay for bottled water unless you want it.",
+      "Tipping not required (service included) but rounding up or leaving €1-2 for good service is appreciated.",
+      "Learn basic phrases: 'Bonjour' (hello), 'Merci' (thank you), 'Pardon' (excuse me), 'L'addition, s'il vous plaît' (the bill, please)."
     ]
   },
   "maps": {
-    "all_shared_locations": {
-      "url": "https://www.google.com/maps/dir/Arc+de+Triomphe,+Paris/Petit+Palais,+Paris/Pont+Alexandre+III,+Paris/Hôtel+de+la+Marine,+Paris/Jardin+des+Tuileries,+Paris/Musée+du+Louvre,+Paris/Eiffel+Tower,+Paris/Champ+de+Mars,+Paris/Trocadéro,+Paris/Cathédrale+Notre-Dame+de+Paris/Sainte-Chapelle,+Paris/Shakespeare+and+Company,+Paris/Panthéon,+Paris/Jardin+du+Luxembourg,+Paris/Musée+d'Orsay,+Paris/Les+Invalides,+Paris/Centre+Pompidou,+Paris/L'As+du+Fallafel,+Paris/Place+des+Vosges,+Paris/Musée+Carnavalet,+Paris/Père-Lachaise+Cemetery,+Paris/Villa+Léandre,+Paris/Place+Dalida,+Paris/Place+du+Tertre,+Paris/Basilique+du+Sacré-Cœur,+Paris",
-      "description": "All 25 shared locations from both itineraries (core + Alan's guide overlaps)"
+    "full_trip_overview": {
+      "url": "https://www.google.com/maps/dir/St+Christopher's+Inn+Paris/Shakespeare+and+Company/Jardin+du+Luxembourg/Sacré-Cœur/Place+des+Vosges/Jardin+des+Tuileries/Eiffel+Tower/Arc+de+Triomphe/Palace+of+Versailles/Musée+d'Orsay/Louvre+Museum/Notre-Dame+Cathedral/St+Christopher's+Inn+Paris",
+      "description": "Overview of all major stops across 5 days in Paris - from hostel through Latin Quarter, Montmartre, Le Marais, Royal Paris, Versailles, and back."
     }
   },
   "research_notes": {
     "sources": [
       {
-        "name": "User's Paris 5-Day Itinerary Summary",
-        "url": null,
-        "type": "recommendation"
+        "name": "RESTRUCTURED_ITINERARY_PREVIEW.md",
+        "url": "local",
+        "type": "guide"
       },
       {
-        "name": "Alan por el mundo - Guía de París 2024 (5 videos)",
-        "url": null,
-        "type": "video"
+        "name": "Alan's Paris Guide",
+        "url": "local",
+        "type": "guide"
       },
       {
-        "name": "User logistics: Hôtel Madrigal location assessment",
-        "url": "https://www.google.com/maps/place/Hotel+Madrigal/@48.8633069,2.3003136,13.27z",
-        "type": "recommendation"
+        "name": "Rick Steves Paris",
+        "url": "https://www.ricksteves.com/europe/france/paris",
+        "type": "guide"
       },
       {
-        "name": "Vueling flight BCN-ORY",
-        "url": "https://tickets.vueling.com/booking/selectFlight",
-        "type": "official"
-      },
-      {
-        "name": "FlixBus Paris-Bruges",
-        "url": "https://www.omio.com/app/search-frontend/journey/bus/1476231933/E332A80B5BB4D4A1FABEB84B2003DA37F/2254340353070129751",
-        "type": "official"
-      },
-      {
-        "name": "Paris Museum Pass official site",
-        "url": "https://www.parismuseumpass.com",
+        "name": "Paris Museum Pass Official Site",
+        "url": "https://www.parismuseumpass.fr/en",
         "type": "official"
       }
     ],
     "alternatives_considered": [
       {
-        "name": "Versailles",
-        "reason_not_selected": "Only 4 full days in Paris (one is departure day at 06:30). Versailles requires half-day minimum. Prioritized central Paris landmarks."
+        "name": "Hôtel Madrigal (original accommodation)",
+        "reason_not_selected": "Switched to St Christopher's Inn - closer to Bercy bus station (15 min vs 25 min), near Canal/Montmartre, social hostel atmosphere, cheaper. Better for Bruges departure and social vibe.",
+        "notes": "St Christopher's location in 19th saves 10 min on Day 5 departure and puts you near Montmartre (15 min metro)."
       },
       {
-        "name": "Musée Rodin",
-        "reason_not_selected": "Beautiful sculpture museum and gardens (Museum Pass included), but itinerary already full. Could swap with Petit Palais on Day 4."
+        "name": "4-Day Museum Pass (€62)",
+        "reason_not_selected": "2-Day Museum Pass (€55) is more efficient. Concentrated museum days on Sat-Sun (Days 2-3). Day 1 is arrival/free sites, Day 4 is Louvre + individual tickets, Day 5 is departure. Saves €30 vs trying to use 4-day pass with gaps.",
+        "notes": "2-day pass strategy covers: Hôtel de la Marine, Invalides, Arc de Triomphe (Day 2), Versailles, Orsay (Day 3). Louvre separate ticket Day 4 (€17 student)."
       },
       {
-        "name": "Catacombs",
-        "reason_not_selected": "Requires advance reservation weeks ahead and NOT covered by Museum Pass. Time-intensive with long underground walk."
+        "name": "Day 5 Early Morning Montmartre (04:00-06:00)",
+        "reason_not_selected": "Too rushed before 06:30 FlixBus. Moved Montmartre to Day 1 late afternoon/evening for sunset at Sacré-Cœur - much better experience and no 4am wake-up!",
+        "notes": "Day 5 now pure departure logistics (05:45 leave hostel → 06:00 at bus station)."
       },
       {
-        "name": "Latin Quarter literary walk",
-        "reason_not_selected": "Day 5 departure at 06:30 makes morning sightseeing impossible."
+        "name": "Le Marais on Day 4 (original plan)",
+        "reason_not_selected": "Moved Le Marais to Day 1 evening to free up Day 4 for Palais Garnier + Louvre + Islands (all central 1st arr.). Le Marais fits better on Day 1 - arrival day with energy for social neighborhood evening.",
+        "notes": "Day 4 now: Palais Garnier → Louvre (WIP list) → Île de la Cité (Sainte-Chapelle, Notre-Dame) → Panthéon interior."
       },
       {
-        "name": "Dinner cruise (Bateaux Mouches)",
-        "reason_not_selected": "€70-100+ per person. Romantic but adds significant cost. Not prioritized for solo/budget traveler."
+        "name": "Père-Lachaise Cemetery",
+        "reason_not_selected": "Far east (20th arr.), 90 min visit, doesn't fit Day 4 flow. Can swap with Panthéon if you prefer cemetery (Jim Morrison, Oscar Wilde, Chopin graves) over crypt (Voltaire, Rousseau, Hugo, Curie).",
+        "notes": "Optional alternative to Panthéon on Day 4 evening. Metro Line 2/3 to Père Lachaise station."
+      },
+      {
+        "name": "Before Sunset Film Locations (Le Pure Café, Cour de l'Étoile-d'Or)",
+        "reason_not_selected": "Niche interest, not core Paris sites. Can add to Day 1 or Day 4 Le Marais time if you're a film fan.",
+        "notes": "Le Pure Café is in 11th arr. near Bastille - 15 min walk from Place des Vosges."
       }
     ],
-    "notes": "Itinerary structured around Paris Museum Pass to maximize value (€85 covers 15+ planned entries worth €200+). Eiffel Tower is NOT covered by pass and requires separate advance booking. Day 5 is departure-only (06:30 bus). Actual sightseeing days: 3.5 days (Day 1 afternoon arrival, Days 2-4 full, Day 5 early departure). Focus on walking/metro/bike mobility from Hôtel Madrigal base near Montparnasse."
+    "notes": "Paris itinerary optimized for 4.5 days (arrive Fri 10:35, depart Mon 06:30). Strategy: 2-Day Museum Pass for Sat-Sun to hit Versailles + major monuments, separate Louvre ticket on Mon to avoid Sunday crowds and maximize time. Student discounts throughout (€14.50 Eiffel stairs, €17 Louvre, €11.50 Sainte-Chapelle, €11.50 Panthéon, €12 Palais Garnier). Total museum/monument costs ~€165-185. Accommodation change to St Christopher's Inn saves time for Bruges departure and provides social hostel experience + proximity to Montmartre/Canal Saint-Martin. Bike-friendly days: 1 (Latin Quarter), 2 (Royal Paris), 4 (Le Marais). Skip bikes for: Day 3 (Versailles RER), Day 5 (departure), Montmartre uphill (funicular or walk). Louvre viewing list set as WIP - to be added later based on specific interests."
   },
   "emoji_legend": {
     "cost_and_booking": {
@@ -1591,7 +2043,8 @@
       "⭐": "Top Highlight - Must-see priority spot",
       "📸": "Photo Spot - Prime viewpoint or aesthetic location",
       "☂️": "Indoor / Rainy Day - Fully indoor activity",
-      "🍽️": "Food/Dining"
+      "🍽️": "Food/Dining",
+      "🛍️": "Shopping"
     }
   }
 }

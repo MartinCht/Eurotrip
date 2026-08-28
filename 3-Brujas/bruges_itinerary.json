@@ -102,6 +102,7 @@
               "type": "monument",
               "notes": "Climb the 366 steps for iconic panoramic city views. UNESCO World Heritage Site.",
               "bookingRequired": false,
+              "bookingDetails": null,
               "optional": false,
               "opening_hours": "09:30-18:00 daily (last entry 17:00)"
             },
@@ -119,6 +120,7 @@
               "type": "cafe",
               "notes": "Grab your fresh, authentic Belgian waffle (gaufre). One of the best in Bruges.",
               "bookingRequired": false,
+              "bookingDetails": null,
               "optional": false
             },
             {
@@ -135,6 +137,7 @@
               "type": "tour",
               "notes": "Classic 40-minute boat tour of the canals. Multiple departure points around the city. Incredibly photogenic.",
               "bookingRequired": false,
+              "bookingDetails": null,
               "optional": false
             }
           ]
@@ -161,6 +164,7 @@
               "type": "shopping",
               "notes": "Grab snacks and water supplies for the bike ride.",
               "bookingRequired": false,
+              "bookingDetails": null,
               "optional": false
             },
             {
@@ -177,6 +181,7 @@
               "type": "cycling",
               "notes": "Rent your bike directly at the hostel and take the scenic 7 km canal-side path (Damsevaart canal) to the historic book town of Damme and back. Total ~14 km round trip. Flat, easy ride.",
               "bookingRequired": false,
+              "bookingDetails": null,
               "optional": false,
               "secondaryPlaces": [
                 {
@@ -242,6 +247,7 @@
               "type": "bar",
               "notes": "Unwind and enjoy a drink at the hostel's lively bar. Social atmosphere, Belgian beer selection.",
               "bookingRequired": false,
+              "bookingDetails": null,
               "optional": true
             },
             {
@@ -258,6 +264,7 @@
               "type": "walk",
               "notes": "Stroll through the beautifully illuminated medieval squares and empty canals. Markt square, Burg square, and canal bridges are magical at night.",
               "bookingRequired": false,
+              "bookingDetails": null,
               "optional": true
             }
           ]
@@ -295,6 +302,8 @@
       "title": "Departure Day",
       "isArrivalDay": false,
       "isDepartureDay": true,
+      "total_walking_distance": "minimal",
+      "total_duration": "~1-2 hours (departure logistics)",
       "timeBlocks": [
         {
           "name": "morning",
@@ -314,13 +323,42 @@
               "type": "transport",
               "notes": "Head to the station to catch your scheduled bus departure via Omio. Time TBD based on final booking.",
               "bookingRequired": false,
+              "bookingDetails": null,
               "optional": false
             }
           ]
         }
-      ]
+      ],
+      "map_url": "https://www.google.com/maps/dir/St.+Christopher's+Bruges+The+Bauhaus/Bruges+Railway+Station",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Departure day logistics only. Timing dependent on final bus booking to next destination."
+      }
     }
   ],
+  "budget_summary": {
+    "daily_estimates": {
+      "accommodation": "~20-40 EUR (hostel)",
+      "meals_per_day": {
+        "breakfast": "0 EUR (not included)",
+        "lunch_snacks": "15-25 EUR (waffle + supermarket)",
+        "dinner": "0-25 EUR (optional - hostel bar or restaurant)",
+        "total": "15-50 EUR per day"
+      },
+      "attractions_by_day": {
+        "day_1": "40-60 EUR (Belfry 14 EUR, Canal tour 12-15 EUR, Brewery tour 14 EUR)",
+        "day_2": "0 EUR (departure day)"
+      },
+      "transport": {
+        "flixbus_arrival": "Already booked from Paris",
+        "bike_rental": "0-15 EUR (may be included at hostel)",
+        "bus_departure": "TBD to next destination"
+      }
+    },
+    "total_1_day_estimate": "75-165 EUR",
+    "notes": "Range depends on: (1) accommodation choice and if already booked, (2) meal choices (hostel bar vs restaurants), (3) bike rental cost (free at hostel vs 10-15 EUR elsewhere), (4) optional activities and drinks. Minimum assumes hostel included bike and self-catering. Does not include FlixBus transport costs (already booked)."
+  },
   "food_recommendations": {
     "must_try_dishes": [
       {
