@@ -15,6 +15,7 @@
             --highlight: #fff9f0;
             --barcelona: #c25e00;
             --paris: #2c5aa0;
+            --london: #7b2d8e;
             --bruges: #d4af37;
             --amsterdam: #ff6b35;
             --berlin: #e63946;
@@ -210,6 +211,9 @@
         
         .paris { border-color: var(--paris); }
         .paris .timeline-dot { border-color: var(--paris); }
+        
+        .london { border-color: var(--london); }
+        .london .timeline-dot { border-color: var(--london); }
         
         .bruges { border-color: var(--bruges); }
         .bruges .timeline-dot { border-color: var(--bruges); }
@@ -445,10 +449,6 @@
     <div class="container">
         <header>
             <h1>🌍 European Adventure 2026</h1>
-            <p class="subtitle">A 30-Day Journey Across 9 Countries</p>
-            <p class="subtitle" style="font-size: 1.1rem; margin-top: 5px; color: var(--primary);">
-                Buenos Aires → Madrid → Buenos Aires
-            </p>
         </header>
         
         <div class="trip-summary">
@@ -460,7 +460,7 @@
                 </div>
                 <div class="summary-item">
                     <span>🌍</span>
-                    <span><strong>Countries:</strong> 9 (Spain, France, Belgium, Netherlands, Germany, Czech Republic, Austria, Italy)</span>
+                    <span><strong>Countries:</strong> 10 (Spain, France, United Kingdom, Belgium, Netherlands, Germany, Czech Republic, Austria, Italy)</span>
                 </div>
                 <div class="summary-item">
                     <span>📍</span>
@@ -523,7 +523,27 @@
                     </div>
                 </div>
 
-                <div class="transport-icon">🚌 Bus</div>
+                <div class="transport-icon">🚂 Eurostar</div>
+
+                <!-- London -->
+                <div class="timeline-item">
+                    <div class="timeline-content london">
+                        <div class="timeline-dot london"></div>
+                        <div class="timeline-connector"></div>
+                        <div class="city-header">
+                            <div class="city-name">London</div>
+                            <div class="city-flag">🇬🇧</div>
+                        </div>
+                        <div class="city-dates" style="color: var(--london);">October 21-24, 2026</div>
+                        <div class="city-duration">3 days • United Kingdom</div>
+                        <span class="city-status status-complete">✓ Confirmed</span>
+                        <div class="city-highlights">
+                            Onefam Waterloo • UK ETA required • Eurostar arrival from Paris • FlixBus onward to Bruges confirmed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transport-icon">🚌 FlixBus (Overnight)</div>
 
                 <!-- Bruges -->
                 <div class="timeline-item">
@@ -534,16 +554,16 @@
                             <div class="city-name">Bruges</div>
                             <div class="city-flag">🇧🇪</div>
                         </div>
-                        <div class="city-dates" style="color: var(--bruges);">October 21-22, 2026</div>
-                        <div class="city-duration">1 day • Belgium</div>
-                        <span class="city-status status-complete">✓ Complete</span>
+                        <div class="city-dates" style="color: var(--bruges);">October 25, 2026 (stopover)</div>
+                        <div class="city-duration">1 day, no overnight stay • Belgium</div>
+                        <span class="city-status status-complete">✓ Confirmed</span>
                         <div class="city-highlights">
-                            Medieval canals • Belfry tower • Belgian waffles • Chocolate • Damme bike trip • Beer culture
+                            Stopover between London and Amsterdam • Arrives 03:00, departs 16:10 • Belfry tower • Canal boat tour • Chez Albert waffles • De Halve Maan brewery • Carry-on stored in station locker
                         </div>
                     </div>
                 </div>
 
-                <div class="transport-icon">🚌 Bus/Train (TBD)</div>
+                <div class="transport-icon">🚌 FlixBus</div>
 
                 <!-- Amsterdam -->
                 <div class="timeline-item">
@@ -695,16 +715,29 @@
                 </div>
             </a>
             
-            <a href="3-Brujas/bruges_itinerary.html" class="destination-card">
+            <a href="3-Londres/london_itinerary.html" class="destination-card">
+                <div class="destination-header">
+                    <div class="destination-name">London</div>
+                    <div class="destination-flag">🇬🇧</div>
+                </div>
+                <div class="destination-dates">October 21-24, 2026</div>
+                <div class="destination-duration">3 days • United Kingdom</div>
+                <span class="city-status status-complete">✓ Confirmed</span>
+                <div class="destination-highlights">
+                    📍 Onefam Waterloo (Waterloo/Lambeth) • Eurostar from Paris • FlixBus onward to Bruges confirmed • UK ETA required
+                </div>
+            </a>
+            
+            <a href="4-Brujas/bruges_itinerary.html" class="destination-card">
                 <div class="destination-header">
                     <div class="destination-name">Bruges</div>
                     <div class="destination-flag">🇧🇪</div>
                 </div>
-                <div class="destination-dates">October 21-22, 2026</div>
-                <div class="destination-duration">1 day • Belgium</div>
-                <span class="city-status status-complete">✓ Complete</span>
+                <div class="destination-dates">October 25, 2026 (stopover)</div>
+                <div class="destination-duration">1 day, no overnight stay • Belgium</div>
+                <span class="city-status status-complete">✓ Confirmed</span>
                 <div class="destination-highlights">
-                    📍 Belfry tower • Canal boat tour • Chez Albert waffles • Damme cycling • De Halve Maan brewery • Night walk
+                    📍 Belfry tower • Canal boat tour • Chez Albert waffles • De Halve Maan brewery • Stopover between London and Amsterdam (FlixBus confirmed both legs)
                 </div>
             </a>
         </div>

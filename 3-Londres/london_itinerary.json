@@ -1,0 +1,66 @@
+{
+  "destination": "London",
+  "country": "United Kingdom",
+  "dates": {
+    "start": "2026-10-21",
+    "end": "2026-10-24"
+  },
+  "accommodation": {
+    "name": "Onefam Waterloo",
+    "address": "73 Lambeth Walk, London, SE11 6DX, England",
+    "neighborhood": "Waterloo / Lambeth",
+    "link": "https://www.google.com/maps/search/Onefam+Waterloo+73+Lambeth+Walk+London",
+    "phone": "+44 20 7582 3088",
+    "email": "waterloo@onefamhostels.com",
+    "checkIn": "2026-10-21",
+    "checkInTime": "15:30",
+    "checkOut": "2026-10-24",
+    "checkOutTime": "11:00",
+    "receptionHours": "07:30 - 23:30 (24/7 access with reservation)",
+    "bookingReference": "39493-579894766",
+    "bookingConfirmation": "2026-09-07",
+    "meals_included": [],
+    "ageRecommendation": "18-36 years (very social, party-style backpackers hostel)",
+    "cancellationPolicy": "Non-refundable rate. 2 full day cancellation policy would otherwise apply (last free cancellation day is 2 days before check-in).",
+    "facilities": "Shared, mixed, communal dorms with triple bunk beds. Historic building with stairs (no elevators). Maximum stay 7 nights per guest.",
+    "notes": "Onefam Waterloo (73 Lambeth Walk, SE11 6DX). Standard 12 Bed Mixed Dorm, 3 nights. Total: £87.94 (Paid online: €20.63, Balance at property: £71.23, taxes included in price). Near Waterloo Station in central London."
+  },
+  "transport": {
+    "arrival": {
+      "date": "2026-10-21",
+      "time": "09:00",
+      "from": "Paris Gare du Nord",
+      "to": "London St Pancras Int'l",
+      "provider": "Eurostar",
+      "transportType": "train",
+      "flightNumber": null,
+      "link": "https://www.eurostar.com",
+      "bookingReference": "2PX4VY",
+      "recommended_departure_from_accommodation": null,
+      "recommended_arrival_at_station": null,
+      "notes": "Eurostar direct train from Paris Gare du Nord (Coach 4 - Seat 93). Departs 07:32, arrives 09:00 (2h 28m). From St Pancras to Onefam Waterloo: Northern Line southbound to Kennington/Waterloo, or Piccadilly/Jubilee Line combination via Green Park/Westminster."
+    },
+    "departure": {
+      "date": "2026-10-24",
+      "time": "19:30",
+      "from": "London Victoria Coach Station",
+      "to": "Bruges Station",
+      "provider": "FlixBus",
+      "transportType": "bus",
+      "flightNumber": null,
+      "link": "https://www.flixbus.es/track/order/3392937119",
+      "bookingReference": "339 293 7119",
+      "recommended_departure_from_accommodation": null,
+      "recommended_arrival_at_station": "19:15",
+      "notes": "✅ CONFIRMED - FlixBus Route N814 (direction Amsterdam Sloterdijk), operated by FlixBus B.V. Departs London Victoria Coach Station (164 Buckingham Palace Road, SW1W9TP) at 19:30 on Sat Oct 24, arrives Bruges Station (Rijselstraat-Spoorwegstraat, 8200 Brugge) at 03:00 on Sun Oct 25. Seat 14D. Price: 40.98 EUR. Luggage: 1 small bag (7kg, 42x30x18cm) + 1 checked bag (20kg, 80x50x30cm). Arrive at least 15 min before departure (gates close 2 min prior). Bring valid passport/ID - travel to mainland Europe requires it. Station is wheelchair accessible."
+    }
+  },
+  "days": [],
+  "logistics": {
+    "emergency_contacts": {
+      "emergency_number": "999 (UK emergency) / 112 (EU universal)",
+      "police_non_emergency": "101",
+      "hostel_phone": "+44 20 7582 3088"
+    }
+  }
+}

@@ -6,15 +6,15 @@
     "end": "2026-10-21"
   },
   "accommodation": {
-    "name": "St Christopher's Inn Paris - Gare du Nord",
-    "address": "159 Rue de Crimée, 75019 Paris",
+    "name": "St Christopher's Inn Paris - Canal",
+    "address": "159 rue de Crimée, 75019 Paris, Francia",
     "neighborhood": "La Villette / 19th Arrondissement",
-    "link": "https://www.google.com/maps/search/St+Christopher's+Inn+Paris+Gare+du+Nord",
+    "link": "https://www.google.com/maps/search/St+Christopher's+Inn+Paris+Canal",
     "checkIn": "2026-10-17",
     "checkOut": "2026-10-21",
-    "bookingReference": null,
+    "bookingReference": "19865-579870507",
     "meals_included": [],
-    "notes": "Social hostel near Canal de l'Ourcq and Bassin de la Villette. Metro: Crimée (Line 7) or Laumière (Line 5). Direct Line 5 to Quai de Bercy bus station (15 min) - MUCH better than Madrigal for Bruges departure. Close to Canal Saint-Martin area. Hostel has bar, common areas, and social events. ~25-30 min to central Paris attractions. 15 min metro to Montmartre (Line 7 to Abbesses)."
+    "notes": "Hostel: St Christopher's Inn Paris - Canal (159 rue de Crimée, 75019 Paris). 12-Bed Mixed Dormitory. Total: €119.59 (Paid online: €21.52, Balance at property: €108.47 including €10.40 taxes). Social hostel near Canal de l'Ourcq. Metro: Crimée (Line 7) or Laumière (Line 5)."
   },
   "transport": {
     "arrival": {
@@ -24,26 +24,26 @@
       "to": "Paris Orly ORY",
       "provider": "Vueling",
       "transportType": "flight",
-      "flightNumber": "VY8017",
-      "link": "https://tickets.vueling.com/booking/selectFlight",
-      "bookingReference": null,
+      "flightNumber": "VY8002",
+      "link": "https://www.vueling.com",
+      "bookingReference": "THLN5S",
       "recommended_departure_from_accommodation": null,
       "recommended_arrival_at_station": null,
       "notes": "Flight arrives 10:35 at Orly. Take Orlybus to Denfert-Rochereau (€9.50, ~30 min), then Metro Line 4 to Gare du Nord, transfer to Line 5 to Laumière (~40 min metro). OR: RER B to Gare du Nord + walk. Total transit: 60-75 min. Estimated hostel arrival: 11:45-12:30."
     },
     "departure": {
       "date": "2026-10-21",
-      "time": "06:30",
-      "from": "Paris, Quai de Bercy (Bercy Seine)",
-      "to": "Bruges, Sint-Michiels Station West",
-      "provider": "FlixBus",
-      "transportType": "bus",
+      "time": "07:32",
+      "from": "Paris Gare du Nord",
+      "to": "London St Pancras Int'l",
+      "provider": "Eurostar",
+      "transportType": "train",
       "flightNumber": null,
-      "link": "https://www.omio.com/app/search-frontend/journey/bus/1476231933/E332A80B5BB4D4A1FABEB84B2003DA37F/2254340353070129751",
-      "bookingReference": null,
-      "recommended_departure_from_accommodation": "05:45",
-      "recommended_arrival_at_station": "06:00-06:10",
-      "notes": "FlixBus departs 06:30 from Quai de Bercy, arrives Bruges 11:10 (4h 40m, no transfers). Metro Line 5 from Laumière to Quai de la Gare (direct, 15 min). Allow 45 min from hostel to bus station. MAJOR ADVANTAGE of St Christopher's location vs Madrigal (which was 25 min)."
+      "link": "https://www.eurostar.com",
+      "bookingReference": "2PX4VY",
+      "recommended_departure_from_accommodation": "06:15",
+      "recommended_arrival_at_station": "06:30",
+      "notes": "Eurostar direct train to London St Pancras Int'l (Coach 4 - Seat 93). Departure at 07:32, arrives 09:00 (2h 28m). REMINDER: Complete Passenger Information (API) online and ensure you have your UK Electronic Travel Authorisation (ETA) before travel."
     }
   },
   "days": [

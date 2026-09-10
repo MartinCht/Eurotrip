@@ -7,23 +7,18 @@
   },
   "accommodation": {
     "name": "Onefam Batlló",
-    "address": "Carrer de Aragó 284, 08009 Barcelona",
-    "neighborhood": "Passeig de Gràcia, Eixample",
-    "link": "https://www.google.com/maps/search/Onefam+Batllo+Carrer+de+Arago+284+Barcelona",
+    "address": "Casanova 52, 08011 Barcelona, España",
+    "neighborhood": "Eixample / Passeig de Gràcia",
+    "link": "https://www.google.com/maps/search/Onefam+Batllo+Casanova+52+Barcelona",
     "email": "batllo@onefamhostels.com",
     "checkIn": "2026-10-14",
-    "checkInTime": "14:00 (from 2pm, limited check-in available after 12:00 am)",
+    "checkInTime": "14:00",
     "checkOut": "2026-10-17",
-    "checkOutTime": "11:00 (at 11 am)",
-    "receptionHours": "Limited reception between 12:00 am and 8:00 am",
-    "bookingReference": "famiglialambrecht@gmail.com",
+    "checkOutTime": "11:00",
+    "bookingReference": "312790-579684439",
     "bookingConfirmation": "2026-08-28",
-    "meals_included": ["breakfast", "dinner"],
-    "ageRecommendation": "18-45 years (social, party-oriented hostel for travelers who want to meet new people and enjoy nightlife)",
-    "cancellationPolicy": "Changes or cancellations must be made at least 2 full days before arrival by emailing to avoid late cancellation fee. Non-refundable bookings not entitled to refund.",
-    "facilities": "Mixed dorms and private rooms available",
-    "discount": "10% discount on next stay using code ONEFAMDIRECT when booking directly on website",
-    "notes": "Hostel located on famous Modernist avenue, walking distance from Casa Batlló and Casa Milà. Social atmosphere designed for young travelers."
+    "meals_included": [],
+    "notes": "Onefam Batlló (Casanova 52, 08011 Barcelona). 10-Bed Mixed Dormitory. Total: €126.44 (Paid online: €18.97, Balance at property: €127.27 including €19.80 city tax). Check-in from 2 PM. Check-out until 11 AM."
   },
   "transport": {
     "arrival": {
@@ -47,9 +42,9 @@
       "to": "Paris Orly ORY",
       "provider": "Vueling",
       "transportType": "flight",
-      "flightNumber": null,
+      "flightNumber": "VY8002",
       "link": "https://www.vueling.com",
-      "bookingReference": null,
+      "bookingReference": "THLN5S",
       "recommended_departure_from_accommodation": "06:15",
       "recommended_arrival_at_airport": "06:45-07:00",
       "notes": "Early morning departure. Metro and trains start at 05:00 on weekdays. R2 Nord from Passeig de Gràcia or Metro L9 Sud are viable at 06:15. Allow 2 hours before departure."
@@ -1507,6 +1502,24 @@
       }
     ],
     "notes": "Itinerary designed for 4-day stay (Oct 14-17, 2026) with: (1) Early arrival Day 1 (05:25 from Buenos Aires), intentionally lighter day due to jetlag, (2) Full Modernism/Gaudí day on Day 2 with emphasis on advance booking Sagrada Família, (3) Neighborhood/beach culture Day 3, (4) Early departure Day 4 to Paris (08:45). Accommodation provides breakfast and dinner, so lunch is main meal planning focus. Emphasizes authentic local experiences over tourist traps per Entrespacios guidance and user's trip-itinerary-generator skill preferences."
+  },
+  "general_requirements": {
+    "uk_eta": {
+      "status": "⚠️ REQUIRED",
+      "type": "Electronic Travel Authorisation (ETA)",
+      "country": "United Kingdom",
+      "link": "https://www.gov.uk/check-uk-visa/y/argentina/tourism",
+      "notes": "Required for Argentine passport holders entering the UK (London, Oct 21). Apply online before travel. Covers entry for tourism. Valid for multiple entries over 2 years or until passport expires. Processing time: typically a few days but apply at least 1 week before travel.",
+      "deadline": "Apply before October 21, 2026"
+    },
+    "travel_health_insurance": {
+      "status": "⚠️ REQUIRED",
+      "type": "Travel Health Insurance",
+      "coverage_areas": ["Schengen Area (Spain, France, Belgium)", "United Kingdom"],
+      "minimum_coverage": "€30,000 (Schengen requirement)",
+      "notes": "Required for Schengen entry (Spain, France, Belgium). Recommended for all destinations. Ensure coverage includes: medical emergencies, hospital stays, repatriation. UK does not mandate insurance but strongly recommended. Check if your country's health insurance covers you abroad (OSDE/Prepaid in Argentina). Consider purchasing separate travel insurance if not covered.",
+      "recommended_providers": ["Assist Card", "Intercamisas", "Previasa"]
+    }
   },
   "emoji_legend": {
     "cost_and_booking": {

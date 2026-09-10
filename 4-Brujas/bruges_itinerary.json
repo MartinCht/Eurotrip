@@ -1,0 +1,522 @@
+{
+  "destination": "Bruges",
+  "country": "Belgium",
+  "dates": {
+    "start": "2026-10-25",
+    "end": "2026-10-25"
+  },
+  "tripType": "One-day stopover between London and Amsterdam (depart London Oct 24 19:30, arrive Bruges 03:00 Oct 25, depart Bruges Oct 25 16:10 towards Amsterdam)",
+  "accommodation": {
+    "name": "N/A - Stopover day, no overnight stay",
+    "address": null,
+    "neighborhood": null,
+    "link": null,
+    "checkIn": null,
+    "checkOut": null,
+    "bookingReference": null,
+    "meals_included": [],
+    "notes": "NO accommodation in Bruges - confirmed. This is a one-day stopover between London (Oct 21-24) and Amsterdam - arriving overnight from London (03:00 Oct 25) and departing the same afternoon (16:10) towards Amsterdam. Carry-on luggage will be stored in a locker at Bruges Railway Station for the day (no hostel bag-drop needed)."
+  },
+  "transport": {
+    "arrival": {
+      "date": "2026-10-25",
+      "time": "03:00",
+      "from": "London Victoria Coach Station",
+      "to": "Bruges Station",
+      "provider": "FlixBus",
+      "transportType": "bus",
+      "link": "https://www.flixbus.es/track/order/3392937119",
+      "bookingReference": "339 293 7119",
+      "notes": "✅ CONFIRMED - FlixBus Route N814 (direction Amsterdam Sloterdijk), operated by FlixBus B.V. Departs London Victoria Coach Station at 19:30 on Sat Oct 24, arrives Bruges Station (Rijselstraat-Spoorwegstraat, 8200 Brugge) at 03:00 on Sun Oct 25. Seat 14D. Price: 40.98 EUR. Luggage: 1 small bag (7kg, 42x30x18cm) + 1 checked bag (20kg, 80x50x30cm)."
+    },
+    "departure": {
+      "date": "2026-10-25",
+      "time": "16:10",
+      "from": "Bruges Station",
+      "to": "Amsterdam Sloterdijk",
+      "provider": "FlixBus",
+      "transportType": "bus",
+      "link": "https://www.flixbus.es/track/order/3392937400",
+      "bookingReference": "339 293 7400",
+      "notes": "✅ CONFIRMED - FlixBus Route 802 (direction Amsterdam Sloterdijk), operated by FlixBus B.V. Departs Bruges Station at 16:10 on Sun Oct 25, arrives Amsterdam Sloterdijk (Platform Zone 1, Piarcoplein, 1043 DW Amsterdam) at 20:20 (~4h10m). Seat 20C. Price: 22.48 EUR. Buses depart from the international bus stop in the Kiss & Ride zone, south side of the train station. Luggage: 1 small bag (7kg) + 1 checked bag (20kg)."
+    }
+  },
+  "days": [
+    {
+      "date": "2026-10-25",
+      "dayNumber": 1,
+      "title": "Bruges Stopover: Dawn Canals, Medieval Heart & Beer (London → Bruges → Amsterdam)",
+      "isArrivalDay": true,
+      "isDepartureDay": true,
+      "total_walking_distance": "~4-5 km",
+      "total_duration": "~13 hours 10 min (03:00-16:10)",
+      "timeBlocks": [
+        {
+          "name": "night",
+          "timeRange": "03:00-06:00",
+          "start_time": "03:00",
+          "end_time": "06:00",
+          "duration": "~3 hours",
+          "description": "Early arrival. Most of the city is closed/asleep - use this time for a quiet, atmospheric walk through the empty illuminated medieval streets and canals, or rest at a 24h cafe near the station if available.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Overnight Bus Arrival at Bruges Station",
+              "link": "https://www.google.com/maps/search/Bruges+Railway+Station",
+              "duration": null,
+              "suggestedTime": "03:00",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": null,
+              "cost": "free",
+              "tags": ["🆓", "👀"],
+              "type": "transport",
+              "notes": "Transport CONFIRMED - FlixBus Route N814 from London, arrived 03:00 (Reservation 339 293 7119, Seat 14D). See transport.arrival for full details.",
+              "bookingRequired": false,
+              "optional": false
+            },
+            {
+              "order": 2,
+              "name": "Store Carry-On in Station Locker",
+              "link": "https://www.google.com/maps/search/Bruges+Railway+Station",
+              "duration": 15,
+              "suggestedTime": "03:15",
+              "timeRestriction": "Locker access hours TBD - confirm on arrival, may need to wait until staffed hours if 03:00 arrival is too early",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "cost": "3-6 EUR",
+              "tags": ["🎟️", "👀"],
+              "type": "logistics",
+              "notes": "No accommodation booked in Bruges - carry-on goes straight into a station locker so you can move freely for the day. If lockers aren't accessible at 03:00, keep the bag with you during the early morning walk until lockers open.",
+              "bookingRequired": false,
+              "optional": false
+            },
+            {
+              "order": 3,
+              "name": "Night Walk: Markt Square & Canals (Empty & Illuminated)",
+              "link": "https://www.google.com/maps/search/Markt+Bruges",
+              "duration": 90,
+              "suggestedTime": "03:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "cost": "free",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "walk",
+              "notes": "Rare chance to see Bruges completely empty and illuminated at night - very different vibe from daytime crowds. Markt square, Burg square, canal bridges.",
+              "bookingRequired": false,
+              "optional": true
+            },
+            {
+              "order": 4,
+              "name": "Coffee/Rest Stop Near Station",
+              "link": "https://www.google.com/maps/search/24+hour+cafe+Bruges+station",
+              "duration": 60,
+              "suggestedTime": "05:00",
+              "timeRestriction": "Limited options open this early - may need to wait near station",
+              "priority": "low",
+              "priceRange": "€",
+              "cost": "3-6 EUR",
+              "tags": ["🎟️", "👀"],
+              "type": "cafe",
+              "notes": "Very few places open at this hour in Bruges. Consider resting at the station or a 24h option if found. Research/confirm options closer to travel date.",
+              "bookingRequired": false,
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "morning",
+          "timeRange": "09:30-13:00",
+          "start_time": "09:30",
+          "end_time": "13:00",
+          "duration": "~3.5 hours",
+          "description": "City wakes up - Belfry climb, waffle, and canal boat tour",
+          "activities": [
+            {
+              "order": 5,
+              "name": "Belfry of Bruges (Belfort van Brugge)",
+              "link": "https://www.google.com/maps/search/Belfry+of+Bruges",
+              "duration": 60,
+              "suggestedTime": "09:30",
+              "timeRestriction": "Open 09:30-18:00 (last entry 17:00)",
+              "priority": "high",
+              "priceRange": "€€",
+              "cost": "14 EUR",
+              "tags": ["🎟️", "⏳", "⭐", "📸"],
+              "type": "monument",
+              "notes": "Climb the 366 steps for iconic panoramic city views. UNESCO World Heritage Site. Arrive right at opening to beat crowds since time is limited today.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "optional": false,
+              "opening_hours": "09:30-18:00 daily (last entry 17:00)"
+            },
+            {
+              "order": 6,
+              "name": "Chez Albert",
+              "link": "https://www.google.com/maps/search/Chez+Albert+Bruges",
+              "duration": 20,
+              "suggestedTime": "10:45",
+              "timeRestriction": "Open 10:00-18:00 (varies by season)",
+              "priority": "high",
+              "priceRange": "€",
+              "cost": "5-8 EUR",
+              "tags": ["🎟️", "👀", "🍽️", "📸"],
+              "type": "cafe",
+              "notes": "Grab your fresh, authentic Belgian waffle (gaufre). One of the best in Bruges.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "optional": false
+            },
+            {
+              "order": 7,
+              "name": "Canal Boat Tour",
+              "link": "https://www.google.com/maps/search/Boat+Tours+Bruges+Canals",
+              "duration": 40,
+              "suggestedTime": "11:15",
+              "timeRestriction": "Boats run 10:00-18:00 (March-November, weather dependent)",
+              "priority": "high",
+              "priceRange": "€€",
+              "cost": "12-15 EUR",
+              "tags": ["🎟️", "⏳", "⭐", "📸"],
+              "type": "tour",
+              "notes": "Classic 40-minute boat tour of the canals. Multiple departure points around the city. Incredibly photogenic.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "optional": false
+            }
+          ]
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "13:00-15:30",
+          "start_time": "13:00",
+          "end_time": "15:30",
+          "duration": "~2.5 hours",
+          "description": "Lunch and free time before heading back to catch the 16:10 FlixBus to Amsterdam",
+          "activities": [
+            {
+              "order": 8,
+              "name": "Lunch: Moules-Frites or Flemish Stew",
+              "link": "https://www.google.com/maps/search/restaurant+near+Markt+Bruges",
+              "duration": 60,
+              "suggestedTime": "13:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€€",
+              "cost": "18-25 EUR",
+              "tags": ["🎟️", "⏳", "🍽️"],
+              "type": "restaurant",
+              "notes": "Try Moules-frites or Stoofvlees (Flemish beef stew). Avoid restaurants directly on Markt square - walk one block for better prices.",
+              "bookingRequired": false,
+              "optional": false
+            },
+            {
+              "order": 9,
+              "name": "Free Time / Explore Bruges",
+              "link": "https://www.google.com/maps/search/Bruges+city+center",
+              "duration": 90,
+              "suggestedTime": "14:00",
+              "timeRestriction": null,
+              "priority": "low",
+              "priceRange": null,
+              "cost": "free",
+              "tags": ["🆓", "👀"],
+              "type": "leisure",
+              "notes": "Wander freely through the medieval streets, canals, and shops before heading to the station.",
+              "bookingRequired": false,
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "departure",
+          "timeRange": "15:30-16:10",
+          "start_time": "15:30",
+          "end_time": "16:10",
+          "duration": "~40 min",
+          "description": "Head to the station to catch the confirmed FlixBus to Amsterdam",
+          "activities": [
+            {
+              "order": 10,
+              "name": "Walk to Bruges Station & FlixBus Departure to Amsterdam",
+              "link": "https://www.google.com/maps/search/Bruges+Railway+Station",
+              "duration": 40,
+              "suggestedTime": "15:30",
+              "timeRestriction": "FlixBus departs 16:10 - arrive at least 15 min early (15:55)",
+              "priority": "mandatory",
+              "priceRange": null,
+              "cost": "free",
+              "tags": ["🆓", "👀"],
+              "type": "transport",
+              "notes": "✅ CONFIRMED - FlixBus Route 802 to Amsterdam Sloterdijk, departs 16:10 from the international bus stop in the Kiss & Ride zone (south side of Bruges train station). Reservation 339 293 7400, Seat 20C. Arrives Amsterdam Sloterdijk 20:20.",
+              "bookingRequired": false,
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Bruges+Railway+Station/Markt+Bruges/Belfry+of+Bruges/Chez+Albert+Bruges/Boat+Tours+Bruges/Bruges+Railway+Station",
+      "research_notes": {
+        "alternatives": [
+          {
+            "name": "Damme Bike Trip (14 km round trip)",
+            "reason_not_selected": "REMOVED from this schedule - not enough time in the compressed single-day stopover (03:00-16:10) alongside Belfry and canal tour. Was included in the original overnight plan.",
+            "when_to_add": "Only if you decide to arrive earlier / stay later."
+          },
+          {
+            "name": "Adornes Chapel (Jerusalem Chapel)",
+            "reason_not_selected": "Marked as optional by user originally; time constraints even greater now with single compressed day",
+            "notes": "15th-century chapel with Jerusalem architecture and lace museum"
+          },
+          {
+            "name": "Hostel Bar / Evening Activities",
+            "reason_not_selected": "No longer applicable - no overnight stay in Bruges, must catch the 16:10 FlixBus towards Amsterdam",
+            "notes": "Was part of original overnight itinerary evening/night blocks"
+          }
+        ],
+        "sources": [
+          "Alanxelmundo YouTube video mentions (menciones_videos_brujas.md)",
+          "User's specific activity requests",
+          "FlixBus boarding passes (Boarding-Pass-London-Bruges-3392937119.pdf, Boarding-Pass-Bruges-Amsterdam-3392937400.pdf) - confirmed transport for both legs"
+        ],
+        "notes": "SCHEDULE CONFIRMED. Original 2-day itinerary (overnight stay) condensed into a single stopover day between London and Amsterdam, now with BOTH transport legs booked and confirmed via FlixBus. Kept core highlights (Belfry, waffle, canal tour) and removed overnight-dependent items (Damme bike ride, hostel bar, night walk moved to early-morning arrival block instead) plus the brewery tour and chocolate stop (removed by user request). Afternoon now includes free time before the 16:10 FlixBus departure."
+      }
+    }
+  ],
+  "budget_summary": {
+    "daily_estimates": {
+      "accommodation": "0 EUR (stopover day, no overnight stay)",
+      "meals_per_day": {
+        "breakfast": "0 EUR (arrive too early, coffee stop ~3-6 EUR)",
+        "lunch_snacks": "15-25 EUR (waffle + lunch)",
+        "dinner": "0 EUR (heading to Amsterdam before dinner time)",
+        "total": "20-35 EUR"
+      },
+      "attractions_by_day": {
+        "day_1": "26-29 EUR (Belfry 14 EUR, Canal tour 12-15 EUR)"
+      },
+      "transport": {
+        "arrival_from_london": "40.98 EUR (FlixBus, confirmed - Reservation 339 293 7119)",
+        "departure_to_amsterdam": "22.48 EUR (FlixBus, confirmed - Reservation 339 293 7400)"
+      }
+    },
+    "total_1_day_estimate": "109-124 EUR (including confirmed transport: 63.46 EUR)",
+    "notes": "Since this is a stopover day with no accommodation cost, the estimate is lower than the original overnight plan. Both transport legs are now confirmed via FlixBus (total 63.46 EUR)."
+  },
+  "food_recommendations": {
+    "must_try_dishes": [
+      {
+        "name_local": "Gaufre / Wafel",
+        "name_english": "Belgian Waffle",
+        "description": "Authentic Belgian waffles - two types: Brussels waffle (light, rectangular) and Liège waffle (dense, sweet, caramelized). Best fresh from street vendors or specialty shops like Chez Albert.",
+        "typical_cost": "5-8 EUR",
+        "meal_type": "snack"
+      },
+      {
+        "name_local": "Moules-frites",
+        "name_english": "Mussels and Fries",
+        "description": "Classic Belgian dish of steamed mussels (often in white wine, cream, or beer) served with crispy fries. Bruges specialty given coastal proximity.",
+        "typical_cost": "18-25 EUR",
+        "meal_type": "main"
+      },
+      {
+        "name_local": "Stoofvlees / Carbonade Flamande",
+        "name_english": "Flemish Beef Stew",
+        "description": "Slow-cooked beef stew braised in Belgian beer with onions, often served with fries or bread.",
+        "typical_cost": "16-22 EUR",
+        "meal_type": "main"
+      },
+      {
+        "name_local": "Chocolat Belge",
+        "name_english": "Belgian Chocolate",
+        "description": "World-famous pralines and truffles. Bruges has many artisanal chocolatiers. Try the caramel praliné called 'Brujas' at Galler.",
+        "typical_cost": "3-10 EUR per piece/box",
+        "meal_type": "dessert"
+      }
+    ],
+    "drinks_and_rituals": [
+      {
+        "name_local": "Bière Belge / Belgisch Bier",
+        "name_english": "Belgian Beer",
+        "description": "Belgium produces over 1,500 different beers. In Bruges, try Brugse Zot (local blonde or brown ale from De Halve Maan), Trappist beers, or abbey ales. Served in brewery-specific glassware.",
+        "typical_cost": "4-8 EUR",
+        "typical_time": "Afternoon/evening"
+      },
+      {
+        "name_local": "Genever",
+        "name_english": "Belgian Gin",
+        "description": "Traditional Belgian juniper spirit, predecessor to Dutch gin. Often enjoyed as a digestif.",
+        "typical_cost": "5-8 EUR",
+        "typical_time": "After dinner"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Chez Albert",
+        "link": "https://www.google.com/maps/search/Chez+Albert+Bruges",
+        "neighborhood": "Near Markt",
+        "cuisine": "Belgian - Waffles",
+        "priceRange": "€",
+        "specialties": ["Authentic Belgian waffles", "Liège waffles"],
+        "notes": "Famous for fresh, authentic waffles. Recommended by locals and travel guides."
+      },
+      {
+        "name": "De Halve Maan Brewery",
+        "link": "https://www.google.com/maps/search/De+Halve+Maan+Brewery+Bruges",
+        "neighborhood": "Walplein",
+        "cuisine": "Belgian - Brewery/Pub",
+        "priceRange": "€€",
+        "specialties": ["Brugse Zot beer", "Brewery tour", "Traditional Belgian pub food"],
+        "notes": "Historic family brewery since 1856. Rooftop terrace with city views. Underground beer pipeline."
+      },
+      {
+        "name": "Bar 2be / The Beer Wall",
+        "link": "https://www.google.com/maps/search/2BE+Beer+Wall+Bruges",
+        "neighborhood": "Canalside",
+        "cuisine": "Belgian - Beer Bar",
+        "priceRange": "€€",
+        "specialties": ["Massive Belgian beer selection", "Canal-side terrace"],
+        "notes": "Famous bar with extensive Belgian beer menu. Great location by the canal. Not prioritized in the compressed stopover schedule but worth a quick stop if time allows."
+      }
+    ],
+    "special_meal_formats": [],
+    "tourist_traps_to_avoid": [
+      "Overpriced restaurants directly on Markt square - walk one block away for better prices",
+      "Pre-packaged 'Belgian' chocolates in tourist shops - seek out artisanal chocolatiers",
+      "Waffle stands with excessive toppings marketed to tourists - authentic waffles need minimal toppings"
+    ]
+  },
+  "logistics": {
+    "public_transport": {
+      "overview": "Bruges is compact and very walkable. Most attractions are within 15-20 minute walk from center.",
+      "ticket_types": [
+        {
+          "name": "City bus ticket",
+          "cost": "3 EUR (single journey)",
+          "validity": "1 hour",
+          "notes": "Rarely needed for tourists staying in city center"
+        }
+      ],
+      "where_to_buy": {
+        "bus_driver": "Cash or card accepted on board",
+        "ticket_machines": "At bus stops (limited availability)"
+      },
+      "operating_hours": {
+        "weekdays": "06:00-23:00",
+        "weekends": "07:00-23:00"
+      }
+    },
+    "luggage_storage": {
+      "confirmed_plan": "Carry-on will be stored in a locker at Bruges Railway Station for the day - no accommodation/hostel bag-drop needed.",
+      "options": [
+        "Bruges Railway Station lockers (primary plan) - confirm size/pricing on arrival, lockers may not open until early morning hours"
+      ],
+      "notes": "No hotel/hostel involved. Since arrival is at 03:00 and station lockers may not be accessible/staffed at that hour, confirm locker access hours in advance if possible. If lockers aren't accessible immediately at 03:00, carry the bag during the early morning walk (light packing recommended) until lockers open."
+    },
+    "emergency_contacts": {
+      "emergency_number": "112 (EU-wide emergency)",
+      "police": "101",
+      "medical": "112",
+      "tourist_information": "+32 50 44 46 46"
+    },
+    "practical_tips": [
+      "Bruges is very compact - most attractions are within walking distance",
+      "Canal boat tours run March-November, weather permitting",
+      "Belfry tower has 366 narrow steps - not suitable for those with mobility issues",
+      "October can be rainy - carry umbrella/rain jacket",
+      "Very few places open between 03:00-06:00 - plan for a quiet walk or rest near the station",
+      "Confirm luggage storage option in advance given the early arrival",
+      "Book both legs of transport (London→Bruges and Bruges→Amsterdam) as soon as possible given the unusual overnight timing"
+    ]
+  },
+  "maps": {
+    "full_day_route": {
+      "url": "https://www.google.com/maps/dir/Bruges+Railway+Station/Markt+Bruges/Belfry+of+Bruges/Chez+Albert+Bruges/Boat+Tours+Bruges/Bruges+Railway+Station",
+      "description": "Complete stopover-day route from station through all main activities and back"
+    },
+    "all_locations_list": {
+      "url": "https://www.google.com/maps/search/Belfry+of+Bruges+OR+Chez+Albert+OR+Markt+Bruges",
+      "description": "All key locations pinpointed without route"
+    }
+  },
+  "research_notes": {
+    "sources": [
+      {
+        "name": "Alanxelmundo - ¡Llegué a Brujas! Bélgica y Luxemburgo #9",
+        "url": "https://www.youtube.com/watch?v=mEs65s3unJE",
+        "type": "video"
+      },
+      {
+        "name": "Alanxelmundo - La ciudad más bonita de Europa | Bélgica y Luxemburgo #10",
+        "url": "https://www.youtube.com/watch?v=xtgY9rEDrZ0",
+        "type": "video"
+      },
+      {
+        "name": "User's explicit activity list and transport details",
+        "url": null,
+        "type": "recommendation"
+      }
+    ],
+    "alternatives_considered": [
+      {
+        "name": "Original 2-day itinerary (overnight stay 21-22 Oct via Paris FlixBus)",
+        "reason_not_selected": "Trip re-arranged: London added as a destination (21-24 Oct via Eurostar from Paris). Bruges converted from an overnight stop into a one-day stopover between London and Amsterdam (Oct 25), since the original transport/accommodation plan is no longer compatible with the new London stay.",
+        "notes": "Previous version of this file had FlixBus Paris→Bruges arrival and 2-night hostel stay. See git history for original plan if needed."
+      },
+      {
+        "name": "Bruges as a round-trip day-trip from London (returning to London same day)",
+        "reason_not_selected": "Corrected per user clarification: Bruges is a one-way stopover between London and Amsterdam, NOT a round-trip from London. Depart London Oct 24 afternoon, arrive Bruges ~03:00 Oct 25, depart Bruges afternoon Oct 25 towards Amsterdam.",
+        "notes": "Earlier draft of this file incorrectly modeled it as a round trip returning to London."
+      },
+      {
+        "name": "Damme bike trip",
+        "reason_not_selected": "Removed from single-day version - not enough time alongside Belfry and canal tour within the 03:00-16:10 window.",
+        "notes": "Could be added back if the stopover window is extended."
+      },
+      {
+        "name": "De Halve Maan Brewery Tour",
+        "reason_not_selected": "Removed by user request from the day itinerary.",
+        "notes": "Previously scheduled 14:00-14:45. General food/drink info about the brewery remains in food_recommendations for reference."
+      },
+      {
+        "name": "Chocolate Shop Stop",
+        "reason_not_selected": "Removed by user request from the day itinerary.",
+        "notes": "Previously scheduled 15:00-15:15."
+      },
+      {
+        "name": "Historium Bruges",
+        "reason_not_selected": "Time constraints with one-day itinerary; prioritized outdoor experiences",
+        "notes": "Immersive medieval Bruges experience mentioned by Alanxelmundo"
+      },
+      {
+        "name": "Groeninge Museum",
+        "reason_not_selected": "Limited time; no museum interest expressed by user",
+        "notes": "Flemish Primitives art collection"
+      },
+      {
+        "name": "Begijnhof (Beguinage)",
+        "reason_not_selected": "Time constraints; prioritized user's specific requests",
+        "notes": "Peaceful historic convent recommended by Alanxelmundo"
+      }
+    ],
+    "notes": "✅ SCHEDULE CONFIRMED (updated after booking both FlixBus legs). Bruges changed from a 2-day overnight stop to a one-day stopover between London and Amsterdam on Oct 25, arriving 03:00 and departing 16:10 (both confirmed via FlixBus boarding passes). Core highlights: Belfry, Chez Albert waffle, canal boat tour. Removed: Damme bike ride, hostel bar, late-night walk (replaced with early-morning arrival walk instead), De Halve Maan brewery tour, chocolate shop stop. REMAINING TO CONFIRM: Locker storage option/hours at Bruges Station for the day."
+  },
+  "emoji_legend": {
+    "cost_and_booking": {
+      "🆓": "Free - No admission fee",
+      "🎟️": "Paid - Requires ticket or entrance fee",
+      "📅": "Reservation Required - Must be booked in advance"
+    },
+    "visit_style": {
+      "👀": "See & Continue - Quick stop, exterior view, photo op (10-30 mins)",
+      "⏳": "Be There - Immersive visit, full experience (1-3+ hours)"
+    },
+    "special_markers": {
+      "⭐": "Top Highlight - Must-see priority spot",
+      "📸": "Photo Spot - Prime viewpoint or photogenic location",
+      "☂️": "Indoor / Rainy Day - Fully indoor activity",
+      "🍽️": "Food / Dining - Restaurant, cafe, or food experience"
+    }
+  }
+}
