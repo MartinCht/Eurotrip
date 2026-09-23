@@ -54,7 +54,7 @@ Read and follow `.agents/FOR_AGENTS.md` for complete instructions.
 **📅 Duration:** October 14 - November 12, 2026 (30 days)  
 **🏠 Return Flight:** Madrid to Buenos Aires on November 12, 2026
 
-> ⚠️ **DISCLAIMER:** Dates for Amsterdam, Berlin, Prague, Vienna, Italy, and Madrid below are **estimated** based on planned number of nights only. **Accommodation and transport for all of these destinations are still TBD (not booked)** as of this writing. Dates will shift if bookings require adjustments.
+> ⚠️ **DISCLAIMER:** Dates for Prague, Vienna, Italy, and Madrid below are **estimated** based on planned number of nights only. **Accommodation and transport for these destinations are still TBD (not booked)** as of this writing. Amsterdam and Berlin are both fully booked (accommodation + transport). Dates will shift if bookings require adjustments.
 
 ### Confirmed Destinations
 
@@ -64,16 +64,16 @@ Read and follow `.agents/FOR_AGENTS.md` for complete instructions.
 | 2 | **Paris** | France 🇫🇷 | Oct 17-21, 2026 | 4 | ✅ Complete |
 | 3 | **London** | United Kingdom 🇬🇧 | Oct 21-24, 2026 | 3 | ✅ Complete |
 | 4 | **Bruges** | Belgium 🇧🇪 | Oct 25, 2026 (stopover) | 0 (no overnight) | ✅ Complete |
+| 5 | **Amsterdam** | Netherlands 🇳🇱 | Oct 25-28, 2026 | 3 | ✅ Complete |
+| 6 | **Berlin** | Germany 🇩🇪 | Oct 28-30, 2026 | 2 | ✅ Complete |
 
 ### Planned Destinations (Estimated Dates - Accommodation/Transport TBD)
 
 | # | City | Country | Estimated Dates | Nights | Status |
 |---|------|---------|------------------|--------|--------|
-| 5 | **Amsterdam** | Netherlands 🇳🇱 | Oct 25-27, 2026 | 2 | ⚠️ Dates estimated, booking TBD |
-| 6 | **Berlin** | Germany 🇩🇪 | Oct 27-29, 2026 | 2 | ⚠️ Dates estimated, booking TBD |
-| 7 | **Prague** | Czech Republic 🇨🇿 | Oct 29 - Nov 2, 2026 | 4 | ⚠️ Dates estimated, booking TBD |
-| 8 | **Vienna** | Austria 🇦🇹 | Nov 2-4, 2026 | 2 | ⚠️ Dates estimated, booking TBD |
-| 9 | **Italy** | Italy 🇮🇹 | Nov 4-10, 2026 (approx.) | ~6 (cities/dates TBD) | ⏳ Planning (cities TBD) |
+| 7 | **Prague** | Czech Republic 🇨🇿 | Oct 30 - Nov 1, 2026 | 2 | ⚠️ Dates estimated, booking TBD |
+| 8 | **Vienna** | Austria 🇦🇹 | Nov 1-3, 2026 | 2 | ⚠️ Dates estimated, booking TBD |
+| 9 | **Italy** | Italy 🇮🇹 | Nov 3-10, 2026 (approx.) | ~7 (cities/dates TBD) | ⏳ Planning (cities TBD) |
 | 10 | **Madrid** | Spain 🇪🇸 | Nov 10-12, 2026 | 2 | ⚠️ Dates estimated, booking TBD |
 
 ### Trip Flow
@@ -89,15 +89,15 @@ London (Oct 21-24)
     ↓ FlixBus (overnight)
 Bruges (Oct 25, stopover)
     ↓ FlixBus
-Amsterdam (Oct 25-27) ⚠️ dates estimated, booking TBD
+Amsterdam (Oct 25-28) ✅ confirmed
+    ↓ DB ICE 141 (confirmed)
+Berlin (Oct 28-30) ✅ confirmed
     ↓ TBD
-Berlin (Oct 27-29) ⚠️ dates estimated, booking TBD
+Prague (Oct 30-Nov 1) ⚠️ dates estimated, booking TBD
     ↓ TBD
-Prague (Oct 29-Nov 2) ⚠️ dates estimated, booking TBD
+Vienna (Nov 1-3) ⚠️ dates estimated, booking TBD
     ↓ TBD
-Vienna (Nov 2-4) ⚠️ dates estimated, booking TBD
-    ↓ TBD
-Italy (Nov 4-10, approx.) ⚠️ cities/dates/booking TBD
+Italy (Nov 3-10, approx.) ⚠️ cities/dates/booking TBD
     ↓ TBD
 Madrid (Nov 10-12) ⚠️ dates estimated, booking TBD
     ↓ Flight (Nov 12)
@@ -296,11 +296,11 @@ Each destination gets a JSON file with:
 3. **Paris → London**: Eurostar, Oct 21, 07:32 Gare du Nord → 09:00 St Pancras
 4. **London → Bruges**: FlixBus N814, Oct 24 19:30 → Oct 25 03:00
 5. **Bruges → Amsterdam**: FlixBus 802, Oct 25, 16:10 → 20:20
-6. **Madrid → Buenos Aires**: Nov 12, 2026 (return flight home)
+6. **Amsterdam → Berlin**: DB ICE 141, Oct 28, 05:45 Amsterdam Centraal → 12:50 Berlin Hbf
+7. **Madrid → Buenos Aires**: Nov 12, 2026 (return flight home)
 
 ### To Be Booked ⚠️
 
-7. Amsterdam → Berlin
 8. Berlin → Prague
 9. Prague → Vienna
 10. Vienna → Italy
@@ -344,11 +344,11 @@ Each destination gets a JSON file with:
 
 ## 🎯 Next Steps
 
-### For Amsterdam (Current):
-Use the template at the top with Amsterdam details (Oct 25-27, estimated) and launch an agent. Accommodation and transport from Bruges still need to be booked.
+### For Prague (Current):
+Amsterdam and Berlin are both fully booked (accommodation + transport). Use the template at the top with Prague details (Oct 30-Nov 1, estimated) and launch an agent once transport from Berlin is confirmed.
 
 ### For Future Destinations:
-1. Book accommodation & transport for Amsterdam, Berlin, Prague, Vienna, Italy, and Madrid (dates above are estimated only)
+1. Book accommodation & transport for Prague, Vienna, Italy, and Madrid (dates above are estimated only)
 2. Decide exact cities/dates for Italy
 3. Update the timeline table above as bookings are confirmed
 4. Use the template to launch agents

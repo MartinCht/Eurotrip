@@ -1,0 +1,223 @@
+{
+  "destination": "Berlin",
+  "country": "Germany",
+  "dates": {
+    "start": "2026-10-28",
+    "end": "2026-10-30"
+  },
+  "accommodation": {
+    "name": "Sunflower Hostel",
+    "address": "Helsingforser Str. 17, 10243 Berlin, Germany",
+    "neighborhood": "Friedrichshain",
+    "link": "https://www.google.com/maps/search/Sunflower+Hostel+Helsingforser+Str+17+Berlin",
+    "phone": "+49 30 44044250",
+    "email": "hostel@sunflower-hostel.de",
+    "checkIn": "2026-10-28",
+    "checkInTime": null,
+    "checkOut": "2026-10-30",
+    "checkOutTime": null,
+    "bookingReference": "732-580193650",
+    "bookingConfirmation": "2026-09-23",
+    "meals_included": [],
+    "paymentStatus": {
+      "roomTotal": "45.45 EUR",
+      "paidOnline": "52.07 USD (full non-refundable amount)",
+      "balancePayableAtProperty": "0 EUR (room paid in full)",
+      "cityTaxPayableAtProperty": "3.41 EUR",
+      "grandTotal": "~48.86 EUR equivalent",
+      "note": "Non-refundable rate, paid in full online (52.07 USD charged, room total was 45.45 EUR). Only the 7.5% Berlin city tax (3.41 EUR) remains payable directly to the property on arrival. Refundable key card/sheets deposit also required at check-in."
+    },
+    "notes": "Basic 6 Bed Mixed Dorm, 1 guest, 2 nights (28-30 Oct 2026). Non-refundable rate. House rules: age 18+, no children, no pets, no smoking, curfew 05:00-07:00 (front door locked during this window). Refundable deposit needed for key card and sheets."
+  },
+  "transport": {
+    "arrival": {
+      "date": "2026-10-28",
+      "time": "12:50",
+      "from": "Amsterdam Centraal",
+      "to": "Berlin Hbf",
+      "provider": "Deutsche Bahn (DB)",
+      "transportType": "train",
+      "flightNumber": "ICE 141",
+      "link": "https://www.bahn.de",
+      "bookingReference": "183777145830",
+      "recommended_departure_from_accommodation": null,
+      "recommended_arrival_at_station": null,
+      "notes": "✅ CONFIRMED - Arrives Berlin Hbf 12:50. From Berlin Hbf to Sunflower Hostel (Helsingforser Str. 17, Friedrichshain): take S-Bahn from Hauptbahnhof top floor, any S-train heading East reaches 'Warschauer Str.' after 5 stops. Exit station onto the bridge, turn right to the traffic lights, cross and turn into Helsingforser Straße (between 'Veganz' and the railway tracks), walk to number 17.",
+      "bookingDetails": null
+    },
+    "departure": {
+      "date": "2026-10-30",
+      "time": null,
+      "from": "Berlin",
+      "to": "Prague",
+      "provider": null,
+      "transportType": null,
+      "flightNumber": null,
+      "link": null,
+      "bookingReference": null,
+      "recommended_departure_from_accommodation": null,
+      "recommended_arrival_at_station": null,
+      "notes": "⚠️ TBD - Not yet booked. Checkout from Sunflower Hostel on 2026-10-30 (note front-door curfew 05:00-07:00 if departing very early)."
+    }
+  },
+  "days": [
+    {
+      "date": "2026-10-28",
+      "dayNumber": 1,
+      "title": "Arrival Day - TBD (research pending)",
+      "isArrivalDay": true,
+      "isDepartureDay": false,
+      "total_walking_distance": "",
+      "total_duration": "",
+      "timeBlocks": [
+        {
+          "name": "afternoon",
+          "timeRange": "12:50-15:00",
+          "start_time": "12:50",
+          "end_time": "15:00",
+          "duration": "~2 hours",
+          "description": "Arrival from Amsterdam via DB ICE at Berlin Hbf, transfer to hostel (Friedrichshain), check-in, settle in.",
+          "activities": [],
+          "budget": ""
+        }
+      ],
+      "map_url": "",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Full day itinerary not yet researched."
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "dayNumber": 2,
+      "title": "TBD (research pending)",
+      "isArrivalDay": false,
+      "isDepartureDay": false,
+      "total_walking_distance": "",
+      "total_duration": "",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "HH:MM-HH:MM",
+          "start_time": "",
+          "end_time": "",
+          "duration": "",
+          "description": "",
+          "activities": [],
+          "budget": ""
+        },
+        {
+          "name": "lunch",
+          "timeRange": "HH:MM-HH:MM",
+          "start_time": "",
+          "end_time": "",
+          "duration": "",
+          "description": "",
+          "activities": [],
+          "budget": ""
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "HH:MM-HH:MM",
+          "start_time": "",
+          "end_time": "",
+          "duration": "",
+          "description": "",
+          "activities": [],
+          "budget": ""
+        },
+        {
+          "name": "evening",
+          "timeRange": "HH:MM-HH:MM",
+          "start_time": "",
+          "end_time": "",
+          "duration": "",
+          "description": "",
+          "activities": [],
+          "budget": ""
+        }
+      ],
+      "map_url": "",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": ""
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "dayNumber": 3,
+      "title": "Departure Day to Prague - TBD",
+      "isArrivalDay": false,
+      "isDepartureDay": true,
+      "total_walking_distance": "",
+      "total_duration": "",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "HH:MM-HH:MM",
+          "start_time": "",
+          "end_time": "",
+          "duration": "",
+          "description": "Check out. Departure transport to Prague TBD. Note: front door has a curfew/lockout window 05:00-07:00 - plan accordingly if departing very early.",
+          "activities": [],
+          "budget": ""
+        }
+      ],
+      "map_url": "",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Berlin → Prague transport not yet booked."
+      }
+    }
+  ],
+  "food_recommendations": {
+    "must_try_dishes": [],
+    "drinks_and_rituals": [],
+    "restaurants": [],
+    "special_meal_formats": [],
+    "tourist_traps_to_avoid": []
+  },
+  "logistics": {
+    "public_transport": {
+      "ticket_types": [],
+      "where_to_buy": {},
+      "operating_hours": {}
+    },
+    "bike_rentals": {},
+    "emergency_contacts": {},
+    "practical_tips": [
+      "Sunflower Hostel front door has a curfew/lockout window 05:00-07:00 - plan late nights/early departures around this."
+    ]
+  },
+  "maps": {
+    "example_curated_map": {
+      "url": "",
+      "description": ""
+    }
+  },
+  "research_notes": {
+    "sources": [],
+    "alternatives_considered": [],
+    "notes": "Skeleton created from confirmed Sunflower Hostel booking and DB ICE 141 arrival ticket. Day-by-day activities, food recommendations, and logistics still need full research. Departure transport to Prague still TBD."
+  },
+  "emoji_legend": {
+    "cost_and_booking": {
+      "🆓": "Free - No admission fee",
+      "🎟️": "Paid - Requires ticket or entrance fee",
+      "📅": "Reservation Required - Must be booked in advance"
+    },
+    "visit_style": {
+      "👀": "See & Continue - Quick stop, exterior view, photo op (10-30 mins)",
+      "⏳": "Be There - Immersive visit, full tour, extended stay (1-3+ hours)"
+    },
+    "special_markers": {
+      "⭐": "Top Highlight - Must-see priority spot",
+      "📸": "Photo Spot - Prime viewpoint or aesthetic location",
+      "☂️": "Indoor / Rainy Day - Fully indoor activity",
+      "🍽️": "Food/Dining"
+    }
+  }
+}
