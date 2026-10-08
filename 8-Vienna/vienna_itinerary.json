@@ -1,0 +1,821 @@
+{
+  "destination": "Vienna",
+  "country": "Austria",
+  "dates": {
+    "start": "2026-11-01",
+    "end": "2026-11-03"
+  },
+  "accommodation": {
+    "name": "St Christopher's Vienna",
+    "address": "Columbusgasse 16, 10. Bezirk, Favoriten, Wien, 1100, Austria",
+    "neighborhood": "Favoriten / near Wien Hbf & Keplerplatz",
+    "link": "https://www.google.com/maps/search/St+Christopher's+Vienna+Columbusgasse+16",
+    "checkIn": "2026-11-01",
+    "checkInTime": "15:00",
+    "checkOut": "2026-11-03",
+    "checkOutTime": "11:00",
+    "bookingReference": "71974",
+    "bookingConfirmation": "St Christopher's Vienna (Mews)",
+    "meals_included": [],
+    "notes": "✅ CONFIRMED - 6 Bed Dorm En Suite. 2 nights (Nov 1-3, 2026). Total EUR 38.97 (incl. city tax and Hostelworld deposit adjustment). Free cancellation until 2026-10-31 12:00 AM. Location: Columbusgasse 16, 10. Bezirk (near Wien Hbf)."
+  },
+  "transport": {
+    "arrival": {
+      "date": "2026-11-01",
+      "time": "14:49",
+      "from": "Praha hl.n.",
+      "to": "Wien Hbf",
+      "provider": "ÖBB / EuroCity + RailJet",
+      "transportType": "train",
+      "flightNumber": "EC 115 / RJ 251",
+      "link": "https://www.oebb.at",
+      "bookingReference": "0661 4954 1113 4079",
+      "recommended_departure_from_accommodation": null,
+      "recommended_arrival_at_station": null,
+      "notes": "✅ CONFIRMED - Sparschiene Komfort, 2nd class, EUR 23.00. Departs Praha hl.n. 10:08 on EC 115, changes at Pardubice hl.n. (27-min layover), continues on RJ 251, arrives Wien Hbf (Bahnsteige 3-12) 14:49 (~4h41m total). Seat reservations: EC 115 Wagen 346 window seat 95; RJ 251 Wagen 256 window seat 115. Arrives ~45 min earlier than originally planned (14:49 vs ~15:30), giving extra daylight before the ~16:45 sunset - comfortable buffer for check-in and the Prater evening walk. Note: this train departs Prague BEFORE the 11:00 hostel checkout deadline, so pack the night before."
+    },
+    "departure": {
+      "date": "2026-11-03",
+      "time": "13:45",
+      "from": "Vienna (VIE)",
+      "to": "Venice/Treviso (TSF)",
+      "provider": "Ryanair",
+      "transportType": "flight",
+      "flightNumber": "FR 51",
+      "link": "https://www.ryanair.com",
+      "bookingReference": "QYWZ9E",
+      "recommended_departure_from_accommodation": "~10:30-11:00 (allow time for airport transfer + check-in)",
+      "recommended_arrival_at_station": "~12:00 (VIE airport, 2h+ before departure recommended)",
+      "notes": "✅ CONFIRMED - Ryanair FR 51, departs Vienna (VIE) 13:45, arrives Venice/Treviso (TSF) 15:00. Seat 18A, Priority & 2 carry-on bags included. Price 38.91 EUR. Passenger: Martin Lambrecht. ⚠️ This departure time means the Schönbrunn morning visit needs to wrap up with enough buffer to get to VIE airport (~45 min from city center via CAT/train) and through security. Ryanair requires mobile boarding pass via app - no printed passes accepted."
+    }
+  },
+  "days": [
+    {
+      "date": "2026-11-01",
+      "dayNumber": 1,
+      "title": "Arrival Day - Prater by Night (Sun/Allerheiligen)",
+      "isArrivalDay": true,
+      "isDepartureDay": false,
+      "total_walking_distance": "~3-4 km",
+      "total_duration": "~5 hours (after arrival)",
+      "timeBlocks": [
+        {
+          "name": "afternoon",
+          "timeRange": "14:49-16:30",
+          "start_time": "14:49",
+          "end_time": "16:30",
+          "duration": "~1.5 hours",
+          "description": "Arrival from Prague (Wien Hbf 14:49), check-in at St Christopher's Vienna, buy transport pass.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Arrival & Check-in at St Christopher's Vienna",
+              "link": "https://www.google.com/maps/search/St+Christophers+Vienna+Columbusgasse+16",
+              "duration": 45,
+              "suggestedTime": "15:15",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "accommodation",
+              "notes": "Not yet booked - reserve ahead. Near Westbahnhof (U3/U6).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "TBD (not booked)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Buy 72-Hour Wiener Linien Transport Pass",
+              "link": "https://www.wienerlinien.at",
+              "duration": 10,
+              "suggestedTime": "16:00",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Buy via WienMobil app - covers all metro/tram/bus for the full stay. Cheaper than individual tickets after ~3 rides/day.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "~17.10 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "~17.10 EUR (transport pass)"
+        },
+        {
+          "name": "evening",
+          "timeRange": "16:30-20:30",
+          "start_time": "16:30",
+          "end_time": "20:30",
+          "duration": "~3.5 hours",
+          "description": "Prater by night (Riesenrad lit up), then Stephansplatz walk and dinner.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Prater & Riesenrad (Giant Ferris Wheel)",
+              "link": "https://www.google.com/maps/search/Prater+Vienna",
+              "duration": 90,
+              "suggestedTime": "17:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "€-€€",
+              "tags": ["🆓", "🎟️", "👀", "⭐", "📸"],
+              "type": "park/amusement",
+              "notes": "Chosen deliberately as an evening activity - the Riesenrad is lit up and running at night, making darkness work in its favor rather than against it. Walk the park for free, or ride the wheel for the view. Public transport: U1/U2 to Praterstern, 2 stops.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Evening hours vary seasonally, check before going",
+              "cost": "free to walk, ~14 EUR for Riesenrad ride",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Stephansplatz & St. Stephen's Cathedral (exterior, night)",
+              "link": "https://www.google.com/maps/search/Stephansplatz+Vienna",
+              "duration": 30,
+              "suggestedTime": "19:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "📸"],
+              "type": "landmark",
+              "notes": "Iconic Gothic cathedral, multi-colored tile roof. Exterior view at night; free entry to back section only (skipping interior/paid areas this trip).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 exterior",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Dinner (recommendation, not fixed)",
+              "link": "https://www.google.com/maps/search/Figlmuller+Backerstrasse+Vienna",
+              "duration": 90,
+              "suggestedTime": "19:45",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€-€€€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "See food_recommendations.restaurants for options - Figlmüller (classic schnitzel, reservation recommended) or SPAR Gourmet (Kärntner Ring 2) for a cheap hot schnitzel sandwich if keeping costs down.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "8-25 EUR depending on choice",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "14-40 EUR (Riesenrad optional + dinner)"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Wien+Hbf/St+Christophers+Vienna+Columbusgasse+16/Prater+Wien/Stephansplatz+Wien",
+      "research_notes": {
+        "alternatives": [
+          {
+            "name": "Schönbrunn Palace (Day 1 evening)",
+            "reason_not_selected": "Sunset on Nov 1 is ~16:45; an evening arrival leaves too little daylight to enjoy the gardens/Gloriette walk properly. Moved to Day 3 morning instead, when it benefits from full daylight."
+          }
+        ],
+        "sources": [
+          {
+            "name": "[DISCOUNTS!] Complete Vienna Guide + 2 Night Itinerary (Tim, mindtrip)",
+            "type": "guide"
+          }
+        ],
+        "notes": "Nov 1, 2026 is both a Sunday and Allerheiligen (All Saints' Day) - a public holiday in Austria. Most retail shops closed; restaurants and tourist sites generally open but worth double-checking hours."
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "dayNumber": 2,
+      "title": "Parliament, Graben & Kohlmarkt, Karlskirche, State Opera",
+      "isArrivalDay": false,
+      "isDepartureDay": false,
+      "total_walking_distance": "~5-6 km",
+      "total_duration": "~9-10 hours",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "09:00-12:30",
+          "start_time": "09:00",
+          "end_time": "12:30",
+          "duration": "~3.5 hours",
+          "description": "Free guided Parliament tour (book exact slot online in advance), then stroll Graben and Kohlmarkt to the Hofburg.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Austrian Parliament - Guided Tour",
+              "link": "https://www.google.com/maps/search/Austrian+Parliament+Building+Vienna",
+              "duration": 60,
+              "suggestedTime": "09:30",
+              "timeRestriction": "Reserve exact slot online in advance - fills up",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": ["🆓", "📅", "⏳", "⭐"],
+              "type": "guided tour",
+              "notes": "Free guided tours, offered in multiple languages - book online ahead. Airport-style security check, bring passport (required). After the tour, go up to the terrace for views toward the Hofburg.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.parlament.gv.at",
+                "advanceTimeNeeded": "Book as early as possible - slots fill up"
+              },
+              "opening_hours": "Check official site for tour times",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Graben & Kohlmarkt",
+              "link": "https://www.google.com/maps/search/Graben+Kohlmarkt+Vienna",
+              "duration": 60,
+              "suggestedTime": "11:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "street/shopping",
+              "notes": "Preferred over Rathaus/Votive Church - lively pedestrian streets with real movement and energy (shops open on Monday), Plague Column on Graben, elegant Kohlmarkt leading straight to the Hofburg gates.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free (window shopping)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Hofburg (exterior) & St. Michael's Church",
+              "link": "https://www.google.com/maps/search/Hofburg+St+Michaels+Church+Vienna",
+              "duration": 30,
+              "suggestedTime": "12:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "☂️"],
+              "type": "palace/church",
+              "notes": "Hofburg exterior only (skipping paid interior/Sisi Museum this trip). St. Michael's Church is free entry, right at the Hofburg gate, easy to combine.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free (aside from optional shopping)"
+        },
+        {
+          "name": "lunch",
+          "timeRange": "12:30-14:00",
+          "start_time": "12:30",
+          "end_time": "14:00",
+          "duration": "~1.5 hours",
+          "description": "Lunch recommendation - not fixed, pick based on mood/budget.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Lunch (recommendation, not fixed)",
+              "link": "https://www.google.com/maps/search/SPAR+Gourmet+Karntner+Ring+Vienna",
+              "duration": 60,
+              "suggestedTime": "12:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€-€€€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "See food_recommendations.restaurants - SPAR Gourmet (cheap hot schnitzel sandwiches, ~5-8 EUR) if keeping costs down, or a sit-down at Figlmüller if not done the night before.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "5-25 EUR depending on choice",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "5-25 EUR"
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "14:00-17:00",
+          "start_time": "14:00",
+          "end_time": "17:00",
+          "duration": "~3 hours",
+          "description": "Karlskirche visit (booked online in advance).",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Karlskirche (St. Charles's Church)",
+              "link": "https://www.google.com/maps/search/Karlskirche+Vienna",
+              "duration": 60,
+              "suggestedTime": "14:30",
+              "timeRestriction": "Tickets online only - no door sales",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "📸"],
+              "type": "church",
+              "notes": "Go inside - altar and ceiling are spectacular, ticket includes rooftop terrace access via lift for great city views. Also check the small architectural model/tiny museum on the way up. MUST buy tickets online in advance.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.karlskirche.at",
+                "advanceTimeNeeded": "Book before arrival - no door sales"
+              },
+              "opening_hours": "Check official site",
+              "cost": "~8-9 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "~8-9 EUR"
+        },
+        {
+          "name": "evening",
+          "timeRange": "17:00-20:30",
+          "start_time": "17:00",
+          "end_time": "20:30",
+          "duration": "~3.5 hours",
+          "description": "Vienna State Opera guided tour, then Stephansplatz at night and dinner/dessert.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Vienna State Opera - Guided Tour",
+              "link": "https://www.google.com/maps/search/Vienna+State+Opera",
+              "duration": 45,
+              "suggestedTime": "17:00",
+              "timeRestriction": "Multiple tour times daily - check schedule",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
+              "type": "guided tour",
+              "notes": "One of the world's most prestigious opera houses, neo-Renaissance façade, lavish marble/gold interior. Guided tours available in multiple languages, giving a glimpse into the building's history and backstage.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.wiener-staatsoper.at",
+                "advanceTimeNeeded": "Book ahead, several tour times per day"
+              },
+              "opening_hours": "Check official site",
+              "cost": "~11-13 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Stephansplatz at Night (revisit)",
+              "link": "https://www.google.com/maps/search/Stephansplatz+Vienna",
+              "duration": 20,
+              "suggestedTime": "18:00",
+              "timeRestriction": null,
+              "priority": "low",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "📸"],
+              "type": "landmark",
+              "notes": "Optional second pass by the cathedral on the way to dinner.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 exterior",
+              "cost": "free",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Dinner & Dessert (recommendation, not fixed)",
+              "link": "https://www.google.com/maps/search/Demel+Kohlmarkt+Vienna",
+              "duration": 120,
+              "suggestedTime": "18:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€-€€€",
+              "tags": ["🍽️", "⭐"],
+              "type": "meal",
+              "notes": "See food_recommendations for dessert cafe options (Demel or Gerstner recommended over the touristy Café Sacher queue) and dinner spots.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "15-40 EUR depending on choice",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "~11-13 EUR (Opera tour) + 15-40 EUR (dinner/dessert)"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/St+Christophers+Vienna+Columbusgasse+16/Austrian+Parliament+Building+Vienna/Graben+Vienna/Kohlmarkt+Vienna/Karlskirche+Vienna/Vienna+State+Opera/St+Christophers+Vienna+Columbusgasse+16",
+      "research_notes": {
+        "alternatives": [
+          {
+            "name": "Rathaus & Votive Church",
+            "reason_not_selected": "User prefers Graben/Kohlmarkt (lively, shops open, more movement/energy) over these two 'look and move on' exteriors."
+          },
+          {
+            "name": "Albertina",
+            "reason_not_selected": "Explicitly skipped by user - not interested in this museum."
+          }
+        ],
+        "sources": [
+          {
+            "name": "[DISCOUNTS!] Complete Vienna Guide + 2 Night Itinerary (Tim, mindtrip)",
+            "type": "guide"
+          }
+        ],
+        "notes": "This is the main activity day - all three priority bookings (Parliament, Karlskirche, Opera) are scheduled here since Nov 2 is a regular Monday (Nov 1 being a Sunday/holiday made it the safer choice for paid/reserved activities)."
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "dayNumber": 3,
+      "title": "Schönbrunn Morning & Departure",
+      "isArrivalDay": false,
+      "isDepartureDay": true,
+      "total_walking_distance": "~3-4 km",
+      "total_duration": "~6 hours (before departure)",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "07:30-10:00",
+          "start_time": "07:30",
+          "end_time": "10:00",
+          "duration": "~2.5 hours",
+          "description": "Schönbrunn Palace gardens and Gloriette (exterior/grounds only), then back to the hostel to checkout. Shortened slightly from the original plan to leave a comfortable buffer for the 13:45 flight.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Schönbrunn Palace Gardens & Gloriette",
+              "link": "https://www.google.com/maps/search/Schonbrunn+Palace+Vienna",
+              "duration": 120,
+              "suggestedTime": "07:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": null,
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "palace/gardens",
+              "notes": "Deliberately scheduled as the LAST-day morning activity for full daylight (benefits from being seen in daylight rather than evening). Take U4/U1 from Favoriten area (~25-30 min). Walk the vast, beautifully maintained gardens with ornate fountains. Steep but worthwhile climb up to the Gloriette for sweeping views over the palace and city. Skipping the interior (expensive, time-consuming) per the guide's own recommendation - exterior and gardens are the real highlight. Shortened to ~2 hours (from the original 2.5h) to leave room for the confirmed 13:45 flight.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Gardens typically open from early morning",
+              "cost": "free (gardens; palace interior not visited)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Checkout from St Christopher's Vienna",
+              "link": "https://www.google.com/maps/place/St+Christophers+Vienna+Columbusgasse+16",
+              "duration": 20,
+              "suggestedTime": "09:50",
+              "timeRestriction": "Hostel check-out by 11:00 at the latest",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "logistics",
+              "notes": "Pack and check out. Allow ~25-30 min to get back from Schönbrunn.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free"
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "10:00-13:45",
+          "start_time": "10:00",
+          "end_time": "13:45",
+          "duration": "~3.75 hours",
+          "description": "Transfer to Vienna International Airport (VIE) and confirmed Ryanair FR 51 departure to Venice/Treviso.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Transfer to Vienna International Airport (VIE)",
+              "link": "https://www.google.com/maps/dir/St+Christophers+Vienna+Columbusgasse+16/Vienna+International+Airport",
+              "duration": 45,
+              "suggestedTime": "10:00",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "From Favoriten, take the S7 (Schnellbahn) or a taxi/Uber to VIE (~30-45 min depending on route). CAT (City Airport Train) runs from Wien Mitte if more convenient. Arrive with plenty of buffer for a 13:45 departure.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "4-30 EUR depending on mode (S7 cheapest, taxi priciest)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Ryanair FR 51 to Venice/Treviso (TSF)",
+              "link": "https://www.ryanair.com",
+              "duration": 75,
+              "suggestedTime": "13:45",
+              "timeRestriction": "Departure 13:45, mobile boarding pass required (Ryanair app - no printed passes accepted)",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "flight",
+              "notes": "✅ CONFIRMED - Ryanair FR 51, Vienna (VIE) → Venice/Treviso (TSF). Departs 13:45, arrives 15:00. Seat 18A, Priority & 2 carry-on bags included. Booking ref QYWZ9E. Price 38.91 EUR. Download Ryanair app for the digital boarding pass before arriving at the airport.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "38.91 EUR (already booked)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "4-30 EUR (airport transfer only)"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/St+Christophers+Vienna+Columbusgasse+16/Schonbrunn+Palace+Vienna/St+Christophers+Vienna+Columbusgasse+16/Vienna+International+Airport",
+      "research_notes": {
+        "alternatives": [
+          {
+            "name": "Belvedere Palace",
+            "reason_not_selected": "Guide notes it's smaller/less impressive than Schönbrunn and grounds weren't in great condition; Schönbrunn prioritized instead given only one 'palace morning' slot available."
+          }
+        ],
+        "sources": [
+          {
+            "name": "[DISCOUNTS!] Complete Vienna Guide + 2 Night Itinerary (Tim, mindtrip)",
+            "type": "guide"
+          }
+        ],
+        "notes": "Schönbrunn moved here (from original Day 1 evening idea) specifically for daylight - gardens and the Gloriette climb are much better experienced in the morning light. Departure transport to Italy is now CONFIRMED (Ryanair FR 51, QYWZ9E, 13:45 to Venice/Treviso) - the morning was tightened slightly (Schönbrunn visit shortened to ~2h) to leave a comfortable buffer for the airport transfer and security."
+      }
+    }
+  ],
+  "food_recommendations": {
+    "must_try_dishes": [
+      {
+        "name_local": "Wiener Schnitzel",
+        "name_english": "Viennese Schnitzel",
+        "description": "Breaded, pan-fried veal or pork cutlet, tenderized thin and fried to a light, crispy texture. The definitive Vienna dish.",
+        "typical_cost": "18-25 EUR",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Sachertorte",
+        "name_english": "Sacher Cake",
+        "description": "Dense chocolate cake layered with apricot jam, covered in glossy chocolate icing. Contested origin between Hotel Sacher (\"Original Sachertorte\", two apricot layers) and Demel (\"Eduard-Sacher-Torte\", one layer).",
+        "typical_cost": "6-9 EUR (slice + coffee)",
+        "meal_type": "dessert",
+        "seasonal": null
+      },
+      {
+        "name_local": "Sisi Torte",
+        "name_english": "Sisi Cake",
+        "description": "Marzipan and raspberry jam cake topped with smooth white fondant, named after Empress Elisabeth (\"Sisi\"). Signature dessert at Gerstner.",
+        "typical_cost": "6-8 EUR",
+        "meal_type": "dessert",
+        "seasonal": null
+      },
+      {
+        "name_local": "Melange",
+        "name_english": "Viennese Melange",
+        "description": "The most iconic Viennese coffee house drink, similar to a cappuccino - espresso with steamed milk and foam.",
+        "typical_cost": "4-6 EUR",
+        "meal_type": "drink",
+        "seasonal": null
+      },
+      {
+        "name_local": "Spinatknödel",
+        "name_english": "Spinach Dumplings",
+        "description": "Homemade spinach dumplings, a classic Viennese specialty found alongside schnitzel on traditional menus (e.g., Figlmüller).",
+        "typical_cost": "10-15 EUR",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Shakshuka",
+        "name_english": "Eggs in Tomato Sauce",
+        "description": "Eggs poached in a spiced tomato sauce - recommended specifically at ULRICH cafe.",
+        "typical_cost": "10-14 EUR",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Cookie-Croissant",
+        "name_english": "Cookie Croissant",
+        "description": "Modern French-inspired pastry hybrid - flaky croissant with a cookie-dough layer, signature item at CRO bakery.",
+        "typical_cost": "3-5 EUR",
+        "meal_type": "snack",
+        "seasonal": null
+      }
+    ],
+    "drinks_and_rituals": [
+      {
+        "name_local": "Kaffeehauskultur",
+        "name_english": "Viennese Coffee House Culture",
+        "description": "Historic coffee houses (Café Sacher, Demel, Gerstner) were gathering places for writers/artists/thinkers (Freud, Klimt, Schiele, Kafka). Order a Melange and linger - no pressure to rush.",
+        "typical_cost": "4-9 EUR per coffee/pastry",
+        "typical_time": "Any time, popular mid-morning or afternoon"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Figlmüller - Restaurant Bäckerstraße",
+        "link": "https://www.google.com/maps/search/Figlmuller+Backerstrasse+Vienna",
+        "neighborhood": "Innere Stadt",
+        "cuisine": "Austrian/German",
+        "priceRange": "€€",
+        "typical_cost_per_person": "20-30 EUR",
+        "specialties": ["Wiener Schnitzel", "Veal schnitzel", "Chicken cordon bleu", "Spinach dumplings"],
+        "notes": "Established 1905, THE place for schnitzel in Vienna. Reservation recommended due to popularity."
+      },
+      {
+        "name": "SPAR Gourmet",
+        "link": "https://www.google.com/maps/search/SPAR+Gourmet+Karntner+Ring+Vienna",
+        "neighborhood": "Kärntner Ring",
+        "cuisine": "Grocery/deli",
+        "priceRange": "€",
+        "typical_cost_per_person": "5-8 EUR",
+        "specialties": ["Hot schnitzel sandwiches", "Sandwiches", "Desserts (vegan-tagged options available)"],
+        "notes": "Not a joke - genuinely great for cheap, convenient on-the-go lunches between attractions. Self-checkout, cash and card."
+      },
+      {
+        "name": "Demel",
+        "link": "https://www.google.com/maps/search/Demel+Kohlmarkt+Vienna",
+        "neighborhood": "Kohlmarkt",
+        "cuisine": "German/Patisserie",
+        "priceRange": "€€",
+        "typical_cost_per_person": "8-12 EUR (cake + coffee)",
+        "specialties": ["Eduard-Sacher-Torte (their version of Sachertorte)", "Pastries"],
+        "notes": "Founded 1786, former court confectioner. Watch pastry chefs through a glass window. Recommended over the touristy Café Sacher queue."
+      },
+      {
+        "name": "Gerstner K. u. K. Hofzuckerbäcker",
+        "link": "https://www.google.com/maps/search/Gerstner+Karntner+Strasse+Vienna",
+        "neighborhood": "Kärntner Straße",
+        "cuisine": "Austrian/Patisserie",
+        "priceRange": "€€",
+        "typical_cost_per_person": "8-12 EUR (cake + coffee)",
+        "specialties": ["Sisi Cake", "House coffee"],
+        "notes": "Open since 1847, one of the city's oldest patisseries, served Emperor Franz Joseph I."
+      },
+      {
+        "name": "URBAN's Lounge Restaurant",
+        "link": "https://www.google.com/maps/search/URBANs+Lounge+Restaurant+Vienna",
+        "neighborhood": "Sonnwendviertel",
+        "cuisine": "Italian/International",
+        "priceRange": "€€",
+        "typical_cost_per_person": "18-28 EUR (10-14 EUR with The Fork app discount)",
+        "specialties": ["International menu", "Vegetarian/vegan options"],
+        "notes": "High quality in a great location. Book through The Fork app for discounts (up to 50% seen)."
+      },
+      {
+        "name": "Pizza Mari",
+        "link": "https://www.google.com/maps/search/Pizza+Mari+Leopoldsgasse+Vienna",
+        "neighborhood": "Leopoldstadt",
+        "cuisine": "Italian/Neapolitan pizza",
+        "priceRange": "€€",
+        "typical_cost_per_person": "12-18 EUR",
+        "specialties": ["Margherita", "Marinara", "Torta Caprese"],
+        "notes": "Imports ingredients directly from Naples. Indoor or outdoor Schanigarten seating in warmer months."
+      },
+      {
+        "name": "CRO",
+        "link": "https://www.google.com/maps/search/CRO+Lugeck+Vienna",
+        "neighborhood": "Lugeck, Innere Stadt",
+        "cuisine": "French/Bakery",
+        "priceRange": "€",
+        "typical_cost_per_person": "4-8 EUR",
+        "specialties": ["Croissants", "Cookie-croissant", "Coffee"],
+        "notes": "Cozy French-inspired bakery cafe, good for breakfast/snack. Outdoor seating for people-watching."
+      },
+      {
+        "name": "Ramasuri",
+        "link": "https://www.google.com/maps/search/Ramasuri+Praterstrasse+Vienna",
+        "neighborhood": "Leopoldstadt",
+        "cuisine": "European/Brunch",
+        "priceRange": "€€",
+        "typical_cost_per_person": "14-20 EUR",
+        "specialties": ["Eggs Benedict", "Brunch dishes"],
+        "notes": "Local favorite for breakfast/brunch, laid-back vibe, outdoor seating."
+      },
+      {
+        "name": "ULRICH",
+        "link": "https://www.google.com/maps/search/ULRICH+Sankt-Ulrichs-Platz+Vienna",
+        "neighborhood": "Neubau",
+        "cuisine": "Cafe/Seasonal",
+        "priceRange": "€€",
+        "typical_cost_per_person": "14-20 EUR",
+        "specialties": ["Shakshuka", "Seasonal menu (meat and vegetarian)"],
+        "notes": "Stylish, minimalist interior, menu changes with the seasons."
+      },
+      {
+        "name": "Freyja - the croissant story",
+        "link": "https://www.google.com/maps/search/Freyja+Alser+Strasse+Vienna",
+        "neighborhood": "Josefstadt",
+        "cuisine": "Bakery",
+        "priceRange": "€",
+        "typical_cost_per_person": "3-6 EUR",
+        "specialties": ["Seasonal pastries (e.g., pumpkin in fall)", "Croissants"],
+        "notes": "Modern bakery, Scandinavian-inspired minimalist design, elevated Viennese pastry-making."
+      }
+    ],
+    "special_meal_formats": [
+      "The Fork app - book restaurants for 30-50% off food bill in Vienna; confirm discount is applied before paying"
+    ],
+    "tourist_traps_to_avoid": [
+      "Horse-and-carriage rides around St Stephen's Cathedral - extremely high prices, inauthentic experience, documented animal welfare concerns",
+      "Café Sacher - historic and famous but often long queues; Demel or Gerstner recommended as better-value alternatives for the same style of cake"
+    ]
+  },
+  "average_food_budget_reference": {
+    "note": "Rough daily food budget guide for Vienna (per person)",
+    "breakfast": "4-8 EUR (bakery/cafe) up to 14-20 EUR (brunch spot like Ramasuri)",
+    "lunch": "5-8 EUR (SPAR Gourmet/on-the-go) up to 18-28 EUR (sit-down restaurant)",
+    "dinner": "20-30 EUR (schnitzel at Figlmüller) up to 12-18 EUR (casual pizza)",
+    "snacks_and_drinks": "4-9 EUR per coffee/pastry (Kaffeehauskultur)",
+    "daily_total_estimate": "~35-60 EUR/day eating casually/mid-range, more if doing sit-down dinners at places like Figlmüller regularly"
+  },
+  "logistics": {
+    "public_transport": {
+      "ticket_types": [
+        "Single ticket (80 min, cross-mode) - ~2.40 EUR",
+        "24-hour pass - ~8 EUR",
+        "48-hour pass - ~14.10 EUR",
+        "72-hour pass - ~17.10 EUR (recommended for this trip)",
+        "7-day pass (Wochenkarte) - ~17.10 EUR but Mon-Sun only, not ideal for a Sun-Tue stay"
+      ],
+      "where_to_buy": {
+        "app": "WienMobil app - buy, display, and validate digital tickets instantly, no manual validation needed"
+      },
+      "operating_hours": {
+        "standard": "~05:00 to midnight for most of the network",
+        "night": "Night buses every 30 min until ~05:00; Fri/Sat nights the metro runs all night with trains every 15 min"
+      }
+    },
+    "bike_rentals": {
+      "system": "Citybike Wien / WienMobil Rad",
+      "cost": "First hour free, then ~1 EUR/hour",
+      "notes": "Good option for the Ringstrasse loop on Day 2 if preferred over tram/metro."
+    },
+    "emergency_contacts": {},
+    "practical_tips": [
+      "Nov 1, 2026 is Allerheiligen (All Saints' Day), a public holiday - most retail shops closed, but restaurants and tourist attractions generally open.",
+      "Vienna is extremely card-friendly - Apple Pay/cards accepted almost everywhere. Carry a small amount of cash only for public toilets or rare cash-only spots.",
+      "If withdrawing cash, use BAWAG, Erste Bank, or Raiffeisenbank ATMs (no operator fees) - avoid bright-orange Euronet ATMs (high fees, poor conversion).",
+      "When paying by card, always choose to pay in EUR, not your home currency.",
+      "Tipping is modest - if a service charge is already on the bill, no extra tip expected; otherwise round up to the nearest ten.",
+      "English is very widely spoken - German is not a barrier for tourists.",
+      "Karlskirche and other sights may require online-only ticket purchase - no door sales, so book before arrival."
+    ]
+  },
+  "maps": {
+    "example_curated_map": {
+      "url": "",
+      "description": ""
+    }
+  },
+  "research_notes": {
+    "sources": [
+      {
+        "name": "[DISCOUNTS!] Complete Vienna Guide + 2 Night Itinerary (Tim, mindtrip)",
+        "url": "",
+        "type": "guide"
+      },
+      {
+        "name": "A Foodie's Guide to Vienna: Must-Try Spots You Can't Miss (The Creation, mindtrip)",
+        "url": "",
+        "type": "guide"
+      }
+    ],
+    "alternatives_considered": [
+      "Albertina - explicitly skipped per user preference (not interested in art museums this trip)",
+      "Rathaus & Votive Church - dropped in favor of a livelier Graben/Kohlmarkt stroll",
+      "Belvedere Palace - considered for Day 3 but Schönbrunn prioritized given only one 'palace morning' slot"
+    ],
+    "notes": "Accommodation (St Christopher's Vienna) is ✅ CONFIRMED. Arrival transport (Prague→Vienna) is confirmed (EC 115 + RJ 251). Departure transport (Vienna→Venice/Treviso) is ✅ CONFIRMED (Ryanair FR 51, QYWZ9E, 13:45). Meal slots throughout are recommendations only, not fixed reservations - pick based on mood/budget from the food_recommendations list above."
+  },
+  "emoji_legend": {
+    "cost_and_booking": {
+      "🆓": "Free - No admission fee",
+      "🎟️": "Paid - Requires ticket or entrance fee",
+      "📅": "Reservation Required - Must be booked in advance"
+    },
+    "visit_style": {
+      "👀": "See & Continue - Quick stop, exterior view, photo op (10-30 mins)",
+      "⏳": "Be There - Immersive visit, full tour, extended stay (1-3+ hours)"
+    },
+    "special_markers": {
+      "⭐": "Top Highlight - Must-see priority spot",
+      "📸": "Photo Spot - Prime viewpoint or aesthetic location",
+      "☂️": "Indoor / Rainy Day - Fully indoor activity",
+      "🍽️": "Food/Dining"
+    }
+  }
+}

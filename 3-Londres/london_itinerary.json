@@ -55,8 +55,741 @@
       "notes": "✅ CONFIRMED - FlixBus Route N814 (direction Amsterdam Sloterdijk), operated by FlixBus B.V. Departs London Victoria Coach Station (164 Buckingham Palace Road, SW1W9TP) at 19:30 on Sat Oct 24, arrives Bruges Station (Rijselstraat-Spoorwegstraat, 8200 Brugge) at 03:00 on Sun Oct 25. Seat 14D. Price: 40.98 EUR. Luggage: 1 small bag (7kg, 42x30x18cm) + 1 checked bag (20kg, 80x50x30cm). Arrive at least 15 min before departure (gates close 2 min prior). Bring valid passport/ID - travel to mainland Europe requires it. Station is wheelchair accessible."
     }
   },
-  "days": [],
+  "days": [
+    {
+      "date": "2026-10-21",
+      "dayNumber": 1,
+      "title": "Arrival & Free Tour of the Hostel",
+      "isArrivalDay": true,
+      "isDepartureDay": false,
+      "total_walking_distance": "~2-3 km",
+      "total_duration": "~5.5 hours (flexible)",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "09:00-11:00",
+          "start_time": "09:00",
+          "end_time": "11:00",
+          "duration": "~2 hours",
+          "description": "Arrival via Eurostar at St Pancras and transfer to the hostel for the early check-in.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Arrival at St Pancras & Transfer to Hostel",
+              "link": "https://www.google.com/maps/dir/London+St+Pancras+International/Onefam+Waterloo+London",
+              "duration": 45,
+              "suggestedTime": "09:00",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": [],
+              "type": "logistics",
+              "notes": "Arrive via Eurostar from Paris. Head to Onefam Waterloo (Northern Line to Kennington/Waterloo, or Jubilee Line via Westminster). ✅ Check-in arranged for 11:00 (earlier than the hostel's standard 15:30).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "3-6 GBP (tube fare)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "3-6 GBP"
+        },
+        {
+          "name": "late_morning",
+          "timeRange": "11:00-11:30",
+          "start_time": "11:00",
+          "end_time": "11:30",
+          "duration": "~30 min",
+          "description": "Check in and set up the free tour with reception.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Check-in at Onefam Waterloo & Set Up the Free Tour",
+              "link": "https://www.google.com/maps/search/Onefam+Waterloo+73+Lambeth+Walk+London",
+              "duration": 30,
+              "suggestedTime": "11:00",
+              "timeRestriction": "✅ Early check-in arranged for 11:00",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "accommodation",
+              "notes": "Check in, settle into the dorm, and ask reception for the exact day/time of the hostel's free walking tour - sign up on the spot if there's a slot available.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "Already paid (balance £71.23 due at property)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0"
+        },
+        {
+          "name": "afternoon_evening",
+          "timeRange": "11:30-21:00",
+          "start_time": "11:30",
+          "end_time": "21:00",
+          "duration": "~9.5 hours (flexible)",
+          "description": "Free roaming (Imperial War Museum) and the hostel's Free Tour grouped together - exact tour time is unknown, so fit the museum visit and lunch around whenever reception says it starts.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Free Tour of the Hostel ⭐",
+              "link": "https://www.google.com/maps/search/Onefam+Waterloo+73+Lambeth+Walk+London",
+              "duration": 120,
+              "suggestedTime": "⚠️ Time TBD - confirm exact schedule at reception",
+              "timeRestriction": "⚠️ NOT CONFIRMED - exact day/time unknown until asked at check-in",
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐"],
+              "type": "guided tour",
+              "notes": "Hostel-organized free walking tour - a good way to get orientated and meet other travelers. Exact time is unconfirmed; ask reception at check-in and build everything else in this block around it (could be afternoon or evening).",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": null,
+                "advanceTimeNeeded": "Confirm and sign up in person at reception on arrival"
+              },
+              "opening_hours": null,
+              "cost": "free (tip-based)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Imperial War Museum London ⭐",
+              "link": "https://www.google.com/maps/search/Imperial+War+Museum+London",
+              "duration": 180,
+              "suggestedTime": "Fit in before/after the tour, whenever that ends up being",
+              "timeRestriction": "Open daily 10:00-18:00 - last entry ~17:00, so slot this in before the museum closes regardless of when the tour lands",
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "⏳"],
+              "type": "museum",
+              "notes": "Free general admission, ~10-15 min walk from Onefam Waterloo (Lambeth Road). WWI/WWII galleries, Holocaust Galleries, and a Spitfire/tank display in the atrium. Since it closes at 18:00, do this first if the tour turns out to be in the evening, or afterward if the tour is in the morning/midday.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "10:00-18:00 daily",
+              "cost": "free (general admission)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Lunch/Dinner (Flexible)",
+              "link": "https://www.google.com/maps/search/restaurants+near+Imperial+War+Museum+London",
+              "duration": 60,
+              "suggestedTime": "Whenever it fits between the museum and the tour",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "Lunch or dinner around Lambeth/Elephant & Castle/Waterloo, slotted in wherever there's a gap once the tour time is known.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "10-20 GBP",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "10-20 GBP"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/London+St+Pancras+International/Onefam+Waterloo+London/Imperial+War+Museum+London",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Day 1 kept intentionally light and flexible: arrive, check in early (11:00), ask reception for the free tour's actual schedule, then fit the Imperial War Museum visit and a meal around it - grouped into one open-ended block since the tour time isn't known yet. British Museum moved to Day 4 instead."
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "dayNumber": 2,
+      "title": "City of London: St Paul's, Monument, Tower Bridge & Tower of London",
+      "isArrivalDay": false,
+      "isDepartureDay": false,
+      "total_walking_distance": "~6-7 km",
+      "total_duration": "~8 hours",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "09:00-12:00",
+          "start_time": "09:00",
+          "end_time": "12:00",
+          "duration": "~3 hours",
+          "description": "St Paul's Cathedral and the Monument to the Great Fire of London.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "St Paul's Cathedral ⭐",
+              "link": "https://www.google.com/maps/search/St+Pauls+Cathedral+London",
+              "duration": 120,
+              "suggestedTime": "09:00",
+              "timeRestriction": "Closed to tourists on Sundays (services only)",
+              "priority": "high",
+              "priceRange": "€€",
+              "tags": ["🎟️", "⭐", "📸", "⏳"],
+              "type": "church",
+              "notes": "Iconic dome designed by Christopher Wren. Climb to the Whispering Gallery and Golden Gallery for sweeping city views.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Check official site",
+              "cost": "~25-30 GBP",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Monument to the Great Fire of London (Exterior Only)",
+              "link": "https://www.google.com/maps/search/Monument+to+the+Great+Fire+of+London",
+              "duration": 20,
+              "suggestedTime": "11:15",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "landmark",
+              "notes": "Wren-designed column commemorating the Great Fire of 1666. Viewing from outside only - skipping the paid 311-step climb to the top.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 exterior",
+              "cost": "free (exterior only, no climb)",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "~25-30 GBP"
+        },
+        {
+          "name": "lunch",
+          "timeRange": "12:00-13:30",
+          "start_time": "12:00",
+          "end_time": "13:30",
+          "duration": "~1.5 hours",
+          "description": "Lunch at Borough Market.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Borough Market ⭐ 🍽️",
+              "link": "https://www.google.com/maps/search/Borough+Market+London",
+              "duration": 90,
+              "suggestedTime": "12:00",
+              "timeRestriction": "Closed Sundays and Mondays (check schedule)",
+              "priority": "high",
+              "priceRange": "€€",
+              "tags": ["⭐", "🍽️", "📸"],
+              "type": "market / meal",
+              "notes": "One of London's oldest and most famous food markets - amazing street food stalls, artisan cheese, and baked goods near London Bridge.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Tue-Sat, check official schedule",
+              "cost": "10-20 GBP",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "10-20 GBP"
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "13:30-18:00",
+          "start_time": "13:30",
+          "end_time": "18:00",
+          "duration": "~4.5 hours",
+          "description": "Tower Bridge, St Dunstan in the East Church Garden, and the Tower of London.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Tower Bridge ⭐",
+              "link": "https://www.google.com/maps/search/Tower+Bridge+London",
+              "duration": 45,
+              "suggestedTime": "13:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓-€€",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "landmark",
+              "notes": "Iconic Victorian bascule bridge over the Thames. Free to cross and photograph; optional paid Tower Bridge Exhibition with glass floor walkway.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 exterior",
+              "cost": "free (exterior) or ~12 GBP (exhibition)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "St Dunstan in the East Church Garden",
+              "link": "https://www.google.com/maps/search/St+Dunstan+in+the+East+Church+Garden+London",
+              "duration": 30,
+              "suggestedTime": "14:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "garden / ruins",
+              "notes": "Hidden gem - a peaceful public garden built within the ruins of a WWII-bombed church, covered in climbing ivy and greenery.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Daylight hours",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Tower of London (Exterior Sights Only)",
+              "link": "https://www.google.com/maps/search/Tower+of+London",
+              "duration": 45,
+              "suggestedTime": "15:15",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "landmark",
+              "notes": "Historic castle and former prison on the Thames. Viewing the walls, moat, and Traitors' Gate from outside only - skipping the paid interior (Crown Jewels, Beefeater tour).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 exterior",
+              "cost": "free (exterior only, no entry)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Onefam+Waterloo+London/St+Pauls+Cathedral+London/Monument+to+the+Great+Fire+of+London/Borough+Market+London/Tower+Bridge+London/St+Dunstan+in+the+East+Church+Garden+London/Tower+of+London",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Day 2 is the City of London day: St Paul's Cathedral, the Monument (exterior only), Borough Market for lunch, Tower Bridge, St Dunstan in the East Church Garden, and the Tower of London (exterior/sights only, no paid entry)."
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "dayNumber": 3,
+      "title": "Westminster: Big Ben, London Eye, Parks, Buckingham Palace & Free Abbey Evensong",
+      "isArrivalDay": false,
+      "isDepartureDay": false,
+      "total_walking_distance": "~6-7 km",
+      "total_duration": "~8.5 hours",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "09:00-12:00",
+          "start_time": "09:00",
+          "end_time": "12:00",
+          "duration": "~3 hours",
+          "description": "Big Ben, St James's Park, and Buckingham Palace.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Big Ben (Elizabeth Tower) ⭐",
+              "link": "https://www.google.com/maps/search/Big+Ben+London",
+              "duration": 30,
+              "suggestedTime": "09:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "landmark",
+              "notes": "Iconic clock tower at the Houses of Parliament. Exterior view/photo stop (interior tours require separate advance booking).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 exterior",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "St James's Park ⭐",
+              "link": "https://www.google.com/maps/search/St+James's+Park+London",
+              "duration": 60,
+              "suggestedTime": "09:45",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "park",
+              "notes": "Elegant royal park with a scenic lake, pelicans, and classic views of Buckingham Palace and Westminster.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "05:00-24:00",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Buckingham Palace ⭐",
+              "link": "https://www.google.com/maps/search/Buckingham+Palace+London",
+              "duration": 45,
+              "suggestedTime": "11:00",
+              "timeRestriction": "Changing of the Guard schedule varies - check official site",
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "palace",
+              "notes": "Official residence of the British monarch. Exterior/gates view (palace interior tours only open seasonally and require separate booking). Check if Changing of the Guard is scheduled.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 exterior",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free"
+        },
+        {
+          "name": "lunch",
+          "timeRange": "12:00-13:30",
+          "start_time": "12:00",
+          "end_time": "13:30",
+          "duration": "~1.5 hours",
+          "description": "Lunch near Westminster/South Bank, then the London Eye (sights only).",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Lunch near South Bank",
+              "link": "https://www.google.com/maps/search/South+Bank+London+restaurants",
+              "duration": 45,
+              "suggestedTime": "12:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "Quick lunch along the South Bank before the London Eye.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "10-20 GBP",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "London Eye (Sights Only, No Ride)",
+              "link": "https://www.google.com/maps/search/London+Eye",
+              "duration": 30,
+              "suggestedTime": "13:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "attraction",
+              "notes": "Giant Ferris wheel on the South Bank - viewed and photographed from the ground along the Thames path. Skipping the paid ride up.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 exterior",
+              "cost": "free (exterior view only, no ride)",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "10-20 GBP"
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "14:00-16:30",
+          "start_time": "14:00",
+          "end_time": "16:30",
+          "duration": "~2.5 hours",
+          "description": "Hyde Park, before heading back to Westminster Abbey for Evensong.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Hyde Park ⭐",
+              "link": "https://www.google.com/maps/search/Hyde+Park+London",
+              "duration": 120,
+              "suggestedTime": "14:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "park",
+              "notes": "One of London's largest Royal Parks - Serpentine Lake, Speakers' Corner, and wide open green space for a relaxed afternoon stroll.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "05:00-24:00",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free"
+        },
+        {
+          "name": "evening",
+          "timeRange": "16:40-17:45",
+          "start_time": "16:40",
+          "end_time": "17:45",
+          "duration": "~1 hour",
+          "description": "Free entry into Westminster Abbey by attending Evensong.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Westminster Abbey - Free Entry via Evensong ⭐",
+              "link": "https://www.google.com/maps/search/Westminster+Abbey+London",
+              "duration": 60,
+              "suggestedTime": "16:45 (for 17:00 service)",
+              "timeRestriction": "Evensong is typically held on weekdays around 17:00 (Fridays sometimes spoken, not sung) - CONFIRM the exact day's schedule on the official site before relying on this, as times/days shift seasonally and for special events.",
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "church service",
+              "notes": "Research finding: Westminster Abbey offers FREE entry to anyone attending a church service, including the daily sung Evensong (choir service), instead of paying the ~£27-30 sightseeing ticket. Arrive 15-20 min early and queue at the correct door (ask staff/check site for current entrance - typically the North Door). You won't get the full self-guided tour access (roped-off areas during worship), but you do get to sit inside the historic Quire and Sanctuary and hear the famous choir - arguably a more atmospheric experience than the daytime tour queue. ⚠️ Verify the exact schedule close to the travel date, as service days/times can change.",
+              "bookingRequired": false,
+              "bookingDetails": {
+                "url": "https://www.westminster-abbey.org/visit-us/daily-services",
+                "advanceTimeNeeded": "No booking needed - just arrive early (15-20 min) and check that day's service schedule online first"
+              },
+              "opening_hours": "Check official 'Daily Services' page for exact times",
+              "cost": "free (service attendance only, not a full sightseeing tour)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Onefam+Waterloo+London/Big+Ben+London/St+James's+Park+London/Buckingham+Palace+London/London+Eye/Hyde+Park+London/Westminster+Abbey+London",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [
+          {
+            "name": "Westminster Abbey official site - Daily Services page",
+            "url": "https://www.westminster-abbey.org/visit-us/daily-services",
+            "type": "official site (general knowledge, not independently re-verified for Oct 2026 dates)"
+          }
+        ],
+        "notes": "Day 3 reordered so Westminster Abbey is visited for FREE by attending Evensong in the early evening (~17:00) instead of paying for the daytime sightseeing ticket (~£27-30). Big Ben, St James's Park, and Buckingham Palace moved to the morning; London Eye is now sights-only (no ride); Hyde Park fills the afternoon before heading back for the service. ⚠️ Evensong schedule should be double-checked on the official site closer to the trip, since exact days/times vary and are occasionally cancelled for special events."
+      }
+    },
+    {
+      "date": "2026-10-24",
+      "dayNumber": 4,
+      "title": "British Museum, Notting Hill & Departure to Bruges",
+      "isArrivalDay": false,
+      "isDepartureDay": true,
+      "total_walking_distance": "~4-5 km",
+      "total_duration": "~6 hours",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "09:00-11:30",
+          "start_time": "09:00",
+          "end_time": "11:30",
+          "duration": "~2.5 hours",
+          "description": "British Museum (moved here from Day 1), before heading across town to Notting Hill.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "British Museum ⭐",
+              "link": "https://www.google.com/maps/search/British+Museum+London",
+              "duration": 150,
+              "suggestedTime": "09:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "⏳"],
+              "type": "museum",
+              "notes": "World-class collection (Rosetta Stone, Egyptian mummies, Parthenon sculptures). Free entry. Pack bags before leaving the hostel so there's no need to return before checkout.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "10:00-17:00 (check official site)",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free"
+        },
+        {
+          "name": "late_morning",
+          "timeRange": "11:30-14:00",
+          "start_time": "11:30",
+          "end_time": "14:00",
+          "duration": "~2.5 hours",
+          "description": "Cross town to Notting Hill (Central Line, ~25-30 min).",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Notting Hill ⭐",
+              "link": "https://www.google.com/maps/search/Notting+Hill+London",
+              "duration": 120,
+              "suggestedTime": "11:30",
+              "timeRestriction": "Portobello Road Market is best on Saturdays",
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "neighborhood",
+              "notes": "Colorful pastel townhouses, Portobello Road Market (antiques, vintage, street food), and a laid-back, picturesque West London vibe.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free (to wander)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0-20 GBP (optional market shopping)"
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "14:00-18:30",
+          "start_time": "14:00",
+          "end_time": "18:30",
+          "duration": "~4.5 hours",
+          "description": "Lunch, pack up, check out, and transfer to London Victoria Coach Station for the 19:30 FlixBus departure.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Check Out & Transfer to Victoria Coach Station",
+              "link": "https://www.google.com/maps/dir/Onefam+Waterloo+London/London+Victoria+Coach+Station",
+              "duration": 45,
+              "suggestedTime": "18:00",
+              "timeRestriction": "Arrive at least 15 min before 19:30 departure",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Pack up and check out from Onefam Waterloo (bags should already be packed from the morning). Head to London Victoria Coach Station (164 Buckingham Palace Road) for the 19:30 FlixBus N814 to Bruges.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free-10 GBP (transfer)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "FlixBus N814 to Bruges Station",
+              "link": "https://www.flixbus.es/track/order/3392937119",
+              "duration": 450,
+              "suggestedTime": "19:30",
+              "timeRestriction": "Departure 19:30, gates close 2 min prior",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "bus",
+              "notes": "✅ CONFIRMED - FlixBus N814 (direction Amsterdam Sloterdijk), seat 14D. Departs 19:30, arrives Bruges Station 03:00 (Oct 25). Booking ref 339 293 7119. Bring passport/ID.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "40.98 EUR (already booked)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "10-20 GBP (lunch + transfer)"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Onefam+Waterloo+London/British+Museum+London/Notting+Hill+London/London+Victoria+Coach+Station",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Day 4 now covers the British Museum (moved from Day 1) in the morning, Notting Hill before lunch, then checkout and the confirmed 19:30 FlixBus departure to Bruges. Pack bags before leaving the hostel in the morning since there won't be time to return before heading to Victoria Coach Station."
+      }
+    }
+  ],
+  "food_recommendations": {
+    "must_try_dishes": [
+      {
+        "name_local": "Fish and Chips",
+        "name_english": "Fish and Chips",
+        "description": "Battered and deep-fried white fish (cod or haddock) with thick-cut chips. The classic British takeaway, best from a proper chippy rather than a tourist-trap pub.",
+        "typical_cost": "8-15 GBP",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Sunday Roast",
+        "name_english": "Sunday Roast",
+        "description": "Roasted meat (beef, chicken, or lamb) with Yorkshire pudding, roast potatoes, vegetables, and gravy. Classic pub tradition, typically only served on Sundays.",
+        "typical_cost": "15-22 GBP",
+        "meal_type": "main",
+        "seasonal": "Sundays only"
+      },
+      {
+        "name_local": "Full English Breakfast",
+        "name_english": "Full English Breakfast",
+        "description": "Eggs, bacon, sausage, baked beans, grilled tomato, mushrooms, and toast. A hearty way to start the day, found at cafes ('greasy spoons') everywhere.",
+        "typical_cost": "8-14 GBP",
+        "meal_type": "breakfast",
+        "seasonal": null
+      },
+      {
+        "name_local": "Chicken Tikka Masala",
+        "name_english": "Chicken Tikka Masala",
+        "description": "London's beloved curry-house staple - grilled chicken in a creamy spiced tomato sauce. A product of British-Indian fusion, found at curry houses across the city (Brick Lane is famous for this).",
+        "typical_cost": "10-18 GBP",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Borough Market Street Food",
+        "name_english": "Borough Market Street Food",
+        "description": "Everything from raclette and salt beef sandwiches to fresh oysters and artisan baked goods - the best way to sample a wide range of food in one place.",
+        "typical_cost": "6-12 GBP per item",
+        "meal_type": "snack/lunch",
+        "seasonal": null
+      },
+      {
+        "name_local": "Afternoon Tea",
+        "name_english": "Afternoon Tea",
+        "description": "Finger sandwiches, scones with clotted cream and jam, and pastries, served with a pot of tea. A quintessentially British experience, though pricier at famous hotels.",
+        "typical_cost": "25-60 GBP (budget cafes) to 80+ GBP (luxury hotels)",
+        "meal_type": "snack",
+        "seasonal": null
+      }
+    ],
+    "drinks_and_rituals": [
+      {
+        "name_local": "Pub Pint",
+        "name_english": "A Pint at the Pub",
+        "description": "Classic British ale, lager, or cider at a traditional pub - as much a social ritual as a drink.",
+        "typical_cost": "5-7 GBP per pint",
+        "typical_time": "Any time, especially evenings"
+      },
+      {
+        "name_local": "Builder's Tea",
+        "name_english": "English Breakfast Tea",
+        "description": "Strong black tea with milk, the everyday staple drink found everywhere from cafes to hostels.",
+        "typical_cost": "2-4 GBP",
+        "typical_time": "Any time"
+      }
+    ],
+    "restaurants": [],
+    "special_meal_formats": [
+      "Pub lunch/dinner deals - many pubs offer set menus or '2 meals for X GBP' deals on weekdays",
+      "Supermarket meal deals (Tesco, Sainsbury's, Boots) - sandwich + snack + drink combo, usually 3.5-5 GBP, a cheap and quick lunch option"
+    ],
+    "tourist_traps_to_avoid": [
+      "Restaurants directly on/around Leicester Square and Covent Garden - inflated prices for mediocre food aimed at tourists",
+      "Pre-packaged 'Fish and Chips' at major tourist landmarks (e.g., right next to the London Eye or Tower Bridge) - better quality and value a few streets away"
+    ]
+  },
+  "average_food_budget_reference": {
+    "note": "Rough daily food budget guide for London (per person), covering the ~3-4 full days on the ground",
+    "breakfast": "3-10 GBP (pastry/coffee on the go to a sit-down Full English)",
+    "lunch": "8-15 GBP (sandwich/market stall to a casual sit-down)",
+    "dinner": "12-22 GBP (pub meal to mid-range restaurant)",
+    "snacks_and_drinks": "5-10 GBP (coffee, pub pint, or market snack)",
+    "daily_total_estimate": "~30-55 GBP/day on food if eating casually/mid-range, more if doing Afternoon Tea or sit-down dinners regularly"
+  },
   "logistics": {
+    "public_transport": {
+      "ticket_types": [],
+      "where_to_buy": {},
+      "operating_hours": {}
+    },
+    "bike_rentals": {},
     "emergency_contacts": {
       "emergency_number": "999 (UK emergency) / 112 (EU universal)",
       "police_non_emergency": "101",

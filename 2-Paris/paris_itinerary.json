@@ -1846,6 +1846,7 @@
         "neighborhood": "Le Marais (Rue des Rosiers)",
         "cuisine": "Middle Eastern / Israeli",
         "priceRange": "€",
+        "typical_cost_per_person": "8-12 EUR",
         "specialties": ["Falafel sandwich", "Shawarma"],
         "notes": "World-famous falafel. Long lines but worth it. CLOSED Friday evening & all Saturday. €8-12 per person."
       },
@@ -1855,6 +1856,7 @@
         "neighborhood": "Latin Quarter",
         "cuisine": "Bakery",
         "priceRange": "€",
+        "typical_cost_per_person": "3-8 EUR (per pastry/snack)",
         "specialties": ["Croissants", "Pain au chocolat"],
         "notes": "Recommended by Alan as 'best croissant in Paris'. Small bakery, arrive early."
       },
@@ -1864,6 +1866,7 @@
         "neighborhood": "7th Arrondissement (near Eiffel)",
         "cuisine": "Market / Multiple",
         "priceRange": "€-€€",
+        "typical_cost_per_person": "5-15 EUR (depends on what you buy)",
         "specialties": ["Cheese", "Bread", "Prepared foods", "Cafés"],
         "notes": "Pedestrian market street with food shops, bakeries, cafés. Great for picnic supplies or casual lunch."
       },
@@ -1873,6 +1876,7 @@
         "neighborhood": "Saint-Germain-des-Prés",
         "cuisine": "French Café",
         "priceRange": "€€-€€€",
+        "typical_cost_per_person": "20-30 EUR (breakfast), more for a full meal",
         "specialties": ["Croissants", "Coffee", "People-watching"],
         "notes": "Historic literary café (Sartre, Hemingway frequented). Expensive but iconic. €20-30 for breakfast."
       },
@@ -1882,6 +1886,7 @@
         "neighborhood": "1st Arrondissement (Tuileries)",
         "cuisine": "Café / Tea Room",
         "priceRange": "€€",
+        "typical_cost_per_person": "12-18 EUR (hot chocolate + pastry)",
         "specialties": ["Hot chocolate (chocolat chaud)", "Mont-Blanc dessert"],
         "notes": "Famous for incredibly thick hot chocolate. Touristy but delicious. Long lines afternoon - go early or late."
       }
@@ -1894,6 +1899,14 @@
       "Avoid eating dinner before 19:30 - you'll be marked as a tourist and service may be rushed",
       "Skip branded macaron chains in train stations - go to actual Ladurée or Pierre Hermé boutiques, or local bakeries"
     ]
+  },
+  "average_food_budget_reference": {
+    "note": "Rough daily food budget guide for Paris (per person)",
+    "breakfast": "2-8 EUR (boulangerie pastry/coffee) up to 20-30 EUR (sit-down cafe like Café de Flore)",
+    "lunch": "8-15 EUR (falafel/market street food/bakery) up to 20-30 EUR (bistro)",
+    "dinner": "18-30 EUR (bistro classics like steak-frites or boeuf bourguignon)",
+    "snacks_and_drinks": "2-10 EUR (pastry, macaron, coffee, glass of wine)",
+    "daily_total_estimate": "~35-60 EUR/day eating casually/mid-range, more if doing iconic cafes (Café de Flore, Angelina) regularly"
   },
   "logistics": {
     "public_transport": {

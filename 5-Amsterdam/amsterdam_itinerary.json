@@ -91,115 +91,267 @@
     {
       "date": "2026-10-26",
       "dayNumber": 2,
-      "title": "TBD (research pending)",
+      "title": "Free Tour / Canal Tour, Albert Cuyp Market, De Pijp & Vondelpark",
       "isArrivalDay": false,
       "isDepartureDay": false,
-      "total_walking_distance": "",
-      "total_duration": "",
+      "total_walking_distance": "~6-7 km",
+      "total_duration": "~8 hours",
       "timeBlocks": [
         {
           "name": "morning",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
+          "timeRange": "09:30-12:00",
+          "start_time": "09:30",
+          "end_time": "12:00",
+          "duration": "~2.5 hours",
+          "description": "Free walking tour or canal tour organized through the hostel.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Free Tour of the Hostel / Canal Tour",
+              "link": "https://www.google.com/maps/search/Onefam+Amstel+Sarphatipark+58+Amsterdam",
+              "duration": 150,
+              "suggestedTime": "09:30",
+              "timeRestriction": "Check hostel reception for exact schedule/booking",
+              "priority": "high",
+              "priceRange": "🆓-€",
+              "tags": ["⭐", "📅", "⏳"],
+              "type": "guided tour",
+              "notes": "Hostel-organized free walking tour or canal boat tour - ask reception for schedule and sign up in advance.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": null,
+                "advanceTimeNeeded": "Sign up at hostel reception the day before"
+              },
+              "opening_hours": null,
+              "cost": "free (tip-based) or ~15-20 EUR for canal boat tour",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0-20 EUR"
         },
         {
           "name": "lunch",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
+          "timeRange": "12:00-13:30",
+          "start_time": "12:00",
+          "end_time": "13:30",
+          "duration": "~1.5 hours",
+          "description": "Lunch at Albert Cuyp Market.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Lunch at Albert Cuyp Market ⭐ 🍽️",
+              "link": "https://www.google.com/maps/search/Albert+Cuyp+Market+Amsterdam",
+              "duration": 90,
+              "suggestedTime": "12:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "€",
+              "tags": ["⭐", "🍽️", "📸"],
+              "type": "market / meal",
+              "notes": "Amsterdam's largest and most famous street market - try stroopwafels, herring, or fries while browsing stalls.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Mon-Sat, daytime",
+              "cost": "5-15 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "5-15 EUR"
         },
         {
           "name": "afternoon",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
+          "timeRange": "13:30-17:00",
+          "start_time": "13:30",
+          "end_time": "17:00",
+          "duration": "~3.5 hours",
+          "description": "De Pijp neighborhood wander, near the hostel.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "De Pijp Neighborhood (Wander) ⭐",
+              "link": "https://www.google.com/maps/search/De+Pijp+Amsterdam",
+              "duration": 120,
+              "suggestedTime": "13:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "neighborhood",
+              "notes": "Trendy, multicultural neighborhood where the hostel is located - boutique shops, cafes, and a lively local vibe.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free"
         },
         {
           "name": "evening",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
+          "timeRange": "17:00-20:00",
+          "start_time": "17:00",
+          "end_time": "20:00",
+          "duration": "~3 hours",
+          "description": "Relaxed evening walk through Vondelpark.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Vondelpark ⭐",
+              "link": "https://www.google.com/maps/search/Vondelpark+Amsterdam",
+              "duration": 120,
+              "suggestedTime": "17:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "park",
+              "notes": "Amsterdam's most famous park - relaxed walk, locals picnicking, cyclists, and open-air performances in summer.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free"
         }
       ],
-      "map_url": "",
+      "map_url": "https://www.google.com/maps/dir/Onefam+Amstel+Amsterdam/Albert+Cuyp+Market+Amsterdam/De+Pijp+Amsterdam/Vondelpark+Amsterdam",
       "research_notes": {
         "alternatives": [],
         "sources": [],
-        "notes": ""
+        "notes": "Day 2 focused on the hostel's own neighborhood (De Pijp) and nearby highlights: free/canal tour, Albert Cuyp Market, and Vondelpark."
       }
     },
     {
       "date": "2026-10-27",
       "dayNumber": 3,
-      "title": "TBD (research pending)",
+      "title": "Jordaan, Dam Square & Red Light District",
       "isArrivalDay": false,
       "isDepartureDay": false,
-      "total_walking_distance": "",
-      "total_duration": "",
+      "total_walking_distance": "~5-6 km",
+      "total_duration": "~6 hours",
       "timeBlocks": [
         {
           "name": "morning",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
+          "timeRange": "09:30-12:00",
+          "start_time": "09:30",
+          "end_time": "12:00",
+          "duration": "~2.5 hours",
+          "description": "Wander through the Jordaan neighborhood.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Jordaan (Wander) ⭐",
+              "link": "https://www.google.com/maps/search/Jordaan+Amsterdam",
+              "duration": 150,
+              "suggestedTime": "09:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "neighborhood",
+              "notes": "Charming historic neighborhood with narrow streets, canals, boutique shops, art galleries, and cozy cafes.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free"
         },
         {
           "name": "lunch",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
+          "timeRange": "12:00-13:00",
+          "start_time": "12:00",
+          "end_time": "13:00",
+          "duration": "~1 hour",
+          "description": "Pass through Dam Square on the way to the Red Light District.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Dam Square (Pass)",
+              "link": "https://www.google.com/maps/search/Dam+Square+Amsterdam",
+              "duration": 30,
+              "suggestedTime": "12:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "landmark",
+              "notes": "Central square with the Royal Palace and National Monument - quick stop/photo op on the way.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 exterior",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Lunch near Dam Square",
+              "link": "https://www.google.com/maps/search/restaurants+near+Dam+Square+Amsterdam",
+              "duration": 30,
+              "suggestedTime": "12:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "Quick lunch near Dam Square before heading to the Red Light District.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "8-15 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "8-15 EUR"
         },
         {
           "name": "afternoon",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
-        },
-        {
-          "name": "evening",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
+          "timeRange": "13:00-15:00",
+          "start_time": "13:00",
+          "end_time": "15:00",
+          "duration": "~2 hours",
+          "description": "Wander through the Red Light District (De Wallen).",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Red Light District (De Wallen) ⭐",
+              "link": "https://www.google.com/maps/search/De+Wallen+Red+Light+District+Amsterdam",
+              "duration": 90,
+              "suggestedTime": "13:00",
+              "timeRestriction": "Best experienced by daylight or early evening; respectful behavior expected (no photos of window workers)",
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "neighborhood",
+              "notes": "Amsterdam's oldest neighborhood, known for its narrow medieval canal-side streets, the Oude Kerk (Old Church), and infamous window-lit red light windows. Also a great area for browsing quirky bars and coffeeshops.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free (to wander)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "~16 EUR"
         }
       ],
-      "map_url": "",
+      "map_url": "https://www.google.com/maps/dir/Onefam+Amstel+Amsterdam/Jordaan+Amsterdam/Dam+Square+Amsterdam/De+Wallen+Red+Light+District+Amsterdam",
       "research_notes": {
         "alternatives": [],
         "sources": [],
-        "notes": ""
+        "notes": "Day 3 covers the Jordaan neighborhood, Dam Square, and the Red Light District (De Wallen)."
       }
     },
     {
@@ -289,11 +441,119 @@
     }
   ],
   "food_recommendations": {
-    "must_try_dishes": [],
-    "drinks_and_rituals": [],
-    "restaurants": [],
-    "special_meal_formats": [],
-    "tourist_traps_to_avoid": []
+    "must_try_dishes": [
+      {
+        "name_local": "Stroopwafel",
+        "name_english": "Syrup Waffle",
+        "description": "Two thin waffle layers with a caramel syrup filling - best fresh and warm from a market stall (Albert Cuyp Market is famous for this).",
+        "typical_cost": "1-4 EUR",
+        "meal_type": "snack",
+        "seasonal": null
+      },
+      {
+        "name_local": "Bitterballen",
+        "name_english": "Dutch Meat Croquettes",
+        "description": "Deep-fried breaded balls filled with a thick meat ragout, served with mustard. Classic Dutch bar snack.",
+        "typical_cost": "6-9 EUR (per portion of ~6)",
+        "meal_type": "snack",
+        "seasonal": null
+      },
+      {
+        "name_local": "Haring",
+        "name_english": "Dutch Raw Herring",
+        "description": "Raw, lightly salted herring, traditionally eaten plain or with onions and pickles, often from a street stall.",
+        "typical_cost": "3-6 EUR",
+        "meal_type": "snack",
+        "seasonal": null
+      },
+      {
+        "name_local": "Patat met",
+        "name_english": "Fries with Sauce",
+        "description": "Thick-cut Dutch fries, traditionally served 'met' (with mayonnaise), or with peanut sauce/onions (patat speciaal/oorlog).",
+        "typical_cost": "3-6 EUR",
+        "meal_type": "snack",
+        "seasonal": null
+      },
+      {
+        "name_local": "Appeltaart",
+        "name_english": "Dutch Apple Pie",
+        "description": "Dense, cinnamon-spiced apple pie, usually served warm with whipped cream (slagroom) at a cafe.",
+        "typical_cost": "5-8 EUR (slice + coffee)",
+        "meal_type": "dessert",
+        "seasonal": null
+      },
+      {
+        "name_local": "Poffertjes",
+        "name_english": "Mini Dutch Pancakes",
+        "description": "Small, fluffy pancakes served with butter and powdered sugar - a popular sweet snack.",
+        "typical_cost": "6-10 EUR",
+        "meal_type": "snack/dessert",
+        "seasonal": null
+      }
+    ],
+    "drinks_and_rituals": [
+      {
+        "name_local": "Nederlands Bier",
+        "name_english": "Dutch Beer",
+        "description": "Heineken and Amstel are both Amsterdam-born, but look for local craft breweries too. Often served with a generous foam head.",
+        "typical_cost": "4-7 EUR",
+        "typical_time": "Any time"
+      },
+      {
+        "name_local": "Jenever",
+        "name_english": "Dutch Gin",
+        "description": "The precursor to modern gin, traditionally served chilled in a small tulip-shaped glass, often at a proeverij (tasting house).",
+        "typical_cost": "5-8 EUR",
+        "typical_time": "Evening"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Albert Cuyp Market Food Stalls",
+        "link": "https://www.google.com/maps/search/Albert+Cuyp+Market+Amsterdam",
+        "neighborhood": "De Pijp",
+        "cuisine": "Street food / Market",
+        "priceRange": "€",
+        "typical_cost_per_person": "5-15 EUR",
+        "specialties": ["Stroopwafels", "Herring", "Fries", "Fresh produce"],
+        "notes": "Amsterdam's largest and most famous street market - great for a casual, cheap meal while browsing."
+      },
+      {
+        "name": "Foodhallen",
+        "link": "https://www.google.com/maps/search/Foodhallen+Amsterdam",
+        "neighborhood": "Oud-West",
+        "cuisine": "Indoor food hall / International",
+        "priceRange": "€€",
+        "typical_cost_per_person": "10-20 EUR",
+        "specialties": ["Variety of international food stalls", "Craft beer and cocktails"],
+        "notes": "Trendy indoor food market in a converted tram depot - great variety under one roof."
+      },
+      {
+        "name": "Winkel 43",
+        "link": "https://www.google.com/maps/search/Winkel+43+Amsterdam",
+        "neighborhood": "Jordaan",
+        "cuisine": "Cafe / Dutch Apple Pie",
+        "priceRange": "€",
+        "typical_cost_per_person": "5-8 EUR",
+        "specialties": ["Famous Dutch apple pie (appeltaart)"],
+        "notes": "Widely regarded as having the best apple pie in Amsterdam - expect a queue, especially on weekends."
+      }
+    ],
+    "special_meal_formats": [
+      "Rijsttafel (Indonesian 'rice table') - a multi-dish Indonesian feast, a legacy of Dutch colonial history, typically 25-40 EUR per person at a dedicated Indonesian restaurant"
+    ],
+    "tourist_traps_to_avoid": [
+      "Restaurants directly on Damrak or around Dam Square - inflated prices for mediocre, tourist-oriented food",
+      "'Dutch Pancake House' chains near major landmarks - better and cheaper pancake spots exist a few streets away"
+    ]
+  },
+  "average_food_budget_reference": {
+    "note": "Rough daily food budget guide for Amsterdam (per person)",
+    "breakfast": "4-9 EUR (bakery/cafe)",
+    "lunch": "7-15 EUR (market stall, casual cafe)",
+    "dinner": "15-25 EUR (casual restaurant, food hall)",
+    "snacks_and_drinks": "3-9 EUR (stroopwafel, bitterballen, beer)",
+    "daily_total_estimate": "~30-50 EUR/day eating casually/mid-range"
   },
   "logistics": {
     "public_transport": {

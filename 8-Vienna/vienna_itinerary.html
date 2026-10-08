@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vienna Itinerary | 2026-11-01 to 2026-11-03</title>
+    <style>
+        :root {
+            --primary: #8b1538;
+            --secondary: #1a1a2e;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #dee2e6;
+            --highlight: #fcf1f3;
+            --success: #27ae60;
+            --info: #3498db;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid var(--primary);
+        }
+        
+        h1 {
+            color: var(--secondary);
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .trip-meta {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #666;
+            font-size: 1rem;
+            padding: 8px 16px;
+            background: var(--highlight);
+            border-radius: 8px;
+        }
+        
+        .meta-item strong {
+            color: var(--primary);
+        }
+        
+        .section {
+            margin: 40px 0;
+        }
+        
+        h2 {
+            color: var(--secondary);
+            font-size: 2rem;
+            margin: 40px 0 25px 0;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin: 25px 0 15px 0;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+            margin: 20px 0;
+        }
+        
+        .card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--primary);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        .card h4 {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 4px;
+            background: var(--success);
+            color: #fff;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .day-block {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+        
+        .day-header {
+            background: var(--primary);
+            color: #fff;
+            padding: 18px 25px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .map-btn {
+            background: #ffffff;
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .map-btn:hover {
+            background: #fdf2f4;
+        }
+        
+        .day-content {
+            padding: 25px;
+        }
+        
+        .time-block {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        
+        .time-block:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .time-range {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .activity-item {
+            background: var(--highlight);
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin: 12px 0;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .activity-title {
+            font-weight: 600;
+            color: var(--secondary);
+            font-size: 1.05rem;
+            margin-bottom: 5px;
+        }
+        
+        .activity-details {
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        .tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        
+        .tag {
+            background: #e2e8f0;
+            color: #333;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .food-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .food-name {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media(max-width: 768px) {
+            .container { padding: 15px; }
+            h1 { font-size: 2.2rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Master Itinerary</a>
+        
+        <header>
+            <h1>🇦🇹 Vienna, Austria</h1>
+            <p class="subtitle">Imperial Palaces, Historic Cafes, and Classic Architecture</p>
+            <div class="trip-meta">
+                <div class="meta-item">📅 <strong>Dates:</strong> Nov 1 - Nov 3, 2026 (2 nights)</div>
+                <div class="meta-item">🏨 <strong>Accommodation:</strong> St Christopher's Vienna</div>
+                <div class="meta-item">✈️ <strong>Departure Flight:</strong> Ryanair FR 51 to Venice/Treviso (Confirmed)</div>
+            </div>
+        </header>
+
+        <!-- ACCOMMODATION & TRANSPORT -->
+        <div class="section">
+            <h2>🏨 Accommodation & Logistics</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>🏨 St Christopher's Vienna <span class="badge">Confirmed</span></h4>
+                    <p><strong>Address:</strong> Columbusgasse 16, 10. Bezirk, Favoriten, 1100 Vienna</p>
+                    <p><strong>Dates:</strong> Nov 1 - Nov 3, 2026 (2 nights, 1 guest)</p>
+                    <p><strong>Room:</strong> 6 Bed Dorm En Suite</p>
+                    <p><strong>Booking Ref:</strong> <code>71974</code></p>
+                    <p><strong>Check-in / Check-out:</strong> 15:00 / 11:00 (luggage storage available from 07:00)</p>
+                    <p><strong>Cost:</strong> EUR 38.97 total (paid online/Hostelworld, incl. city tax)</p>
+                </div>
+                <div class="card">
+                    <h4>✈️ Arrival & Departure Transport <span class="badge">Confirmed</span></h4>
+                    <p><strong>Prague → Vienna (Nov 1):</strong> ÖBB EC 115 + RJ 251. Departs Praha hl.n. 10:08, changes at Pardubice hl.n., arrives Wien Hbf 14:49 (~4h41m). Booking ref: <code>0661 4954 1113 4079</code> (EUR 23.00).</p>
+                    <p><strong>Vienna → Venice/Treviso (Nov 3):</strong> Ryanair FR 51. Departs Vienna (VIE) 13:45, arrives Treviso (TSF) 15:00. Seat 18A, booking ref: <code>QYWZ9E</code> (EUR 38.91).</p>
+                    <p><strong>Local Transport:</strong> 72-Hour Wiener Linien Pass (~€17.10 via WienMobil app) for unlimited metro/tram/bus.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY BY DAY ITINERARY -->
+        <div class="section">
+            <h2>🗺️ Day-by-Day Itinerary</h2>
+
+            <!-- DAY 1 -->
+            <div class="day-block">
+                <div class="day-header">
+                    <span>Day 1: Arrival & Prater by Night (Sun, Nov 1)</span>
+                    <a href="https://www.google.com/maps/dir/Wien+Hbf/Columbusgasse+16+Vienna/Prater+Vienna/Stephansplatz+Vienna" target="_blank" class="map-btn">📍 View Route Map</a>
+                </div>
+                <div class="day-content">
+                    <div class="time-block">
+                        <div class="time-range">14:49 - 16:30 | Arrival & Check-in</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Arrival at Wien Hbf & Check-in at St Christopher's Vienna</div>
+                            <div class="activity-details">Arrive from Prague at 14:49. Head to St Christopher's Vienna (Columbusgasse 16, near Wien Hbf / Keplerplatz) to check in and drop bags. Buy 72-hour Wiener Linien transport pass via WienMobil app (~€17.10).</div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">16:30 - 20:30 | Prater & Stephansplatz</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Prater Amusement Park & Riesenrad (Giant Ferris Wheel) ⭐</div>
+                            <div class="activity-details">Walk through the historic Prater amusement park at night when the iconic Riesenrad is lit up. Free to walk; ~€14 to ride the wheel for panoramic night views. Take U1/U2 to Praterstern.</div>
+                            <div class="tags"><span class="tag">👀 See & Continue</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Stephansplatz & St. Stephen's Cathedral (Exterior, Night)</div>
+                            <div class="activity-details">Gothic cathedral with its multi-colored tile roof, illuminated at night. Free entry to back section.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">👀 See & Continue</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Dinner (Optional)</div>
+                            <div class="activity-details">Recommended: Figlmüller (classic schnitzel, reservation suggested) or SPAR Gourmet for a quick hot schnitzel sandwich.</div>
+                            <div class="tags"><span class="tag">🍽️ Dining</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 2 -->
+            <div class="day-block">
+                <div class="day-header">
+                    <span>Day 2: Parliament, Graben, Karlskirche & Opera (Mon, Nov 2)</span>
+                    <a href="https://www.google.com/maps/dir/Columbusgasse+16+Vienna/Austrian+Parliament+Building+Vienna/Graben+Vienna/Kohlmarkt+Vienna/Karlskirche+Vienna/Vienna+State+Opera" target="_blank" class="map-btn">📍 View Route Map</a>
+                </div>
+                <div class="day-content">
+                    <div class="time-block">
+                        <div class="time-range">09:00 - 12:30 | Parliament & Imperial Stroll</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Austrian Parliament - Guided Tour ⭐ 📅</div>
+                            <div class="activity-details">Free guided tour of the neo-classical Parliament building. Airport-style security, bring passport. Book exact slot online in advance.</div>
+                            <div class="tags"><span class="tag">🆓 Free Admission</span> <span class="tag">📅 Reservation Required</span> <span class="tag">⭐ Top Highlight</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Graben & Kohlmarkt ⭐</div>
+                            <div class="activity-details">Stroll through Vienna's most elegant pedestrian streets, past the Plague Column on Graben to the grand gates of the Hofburg Palace.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">14:00 - 17:00 | Karlskirche</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Karlskirche (St. Charles's Church) ⭐ 🎟️ 📅</div>
+                            <div class="activity-details">Spectacular Baroque church. Ticket includes rooftop terrace access via lift for stunning city views. ⚠️ Must buy tickets online in advance (no door sales).</div>
+                            <div class="tags"><span class="tag">🎟️ Paid (~€8-9)</span> <span class="tag">📅 Reservation Required</span> <span class="tag">⭐ Top Highlight</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">17:00 - 20:30 | State Opera & Evening Cafe</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Vienna State Opera - Guided Tour ⭐ 🎟️ 📅</div>
+                            <div class="activity-details">Guided tour of the world-famous neo-Renaissance opera house interior (lavish marble, grand staircase, auditorium). Book ahead. (~€11-13).</div>
+                            <div class="tags"><span class="tag">🎟️ Paid (~€11-13)</span> <span class="tag">📅 Reservation Required</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">☂️ Indoor</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Coffee & Pastry at Demel or Gerstner</div>
+                            <div class="activity-details">Experience traditional Viennese coffee house culture with a Melange and a slice of Sacher or Sisi cake.</div>
+                            <div class="tags"><span class="tag">🍽️ Dining</span> <span class="tag">⭐ Top Highlight</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 3 -->
+            <div class="day-block">
+                <div class="day-header">
+                    <span>Day 3: Schönbrunn Gardens & Departure to Venice/Treviso (Tue, Nov 3)</span>
+                    <a href="https://www.google.com/maps/dir/St+Christophers+Vienna+Columbusgasse+16/Schonbrunn+Palace+Vienna/St+Christophers+Vienna+Columbusgasse+16/Vienna+International+Airport" target="_blank" class="map-btn">📍 View Route Map</a>
+                </div>
+                <div class="day-content">
+                    <div class="time-block">
+                        <div class="time-range">07:30 - 10:00 | Schönbrunn Palace Gardens & Gloriette, Checkout</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Schönbrunn Palace Gardens & Gloriette ⭐</div>
+                            <div class="activity-details">Walk the magnificent palace gardens in morning daylight and climb up to the Gloriette for sweeping city views. Palace interior is skipped to focus on the free, scenic grounds. ⚠️ Shortened to ~2 hours (from the original 2.5h) to leave a comfortable buffer for the confirmed 13:45 flight.</div>
+                            <div class="tags"><span class="tag">🆓 Free (Gardens)</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Checkout from St Christopher's Vienna</div>
+                            <div class="activity-details">Pack and check out by 11:00 at the latest. Allow ~25-30 min to get back from Schönbrunn.</div>
+                            <div class="tags"><span class="tag">🎒 Logistics</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">10:00 - 13:45 | Airport Transfer & Flight to Venice/Treviso</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Transfer to Vienna International Airport (VIE)</div>
+                            <div class="activity-details">From Favoriten, take the S7 (Schnellbahn) or a taxi/Uber to VIE (~30-45 min), or the CAT from Wien Mitte if more convenient. Arrive with plenty of buffer for a 13:45 departure.</div>
+                            <div class="tags"><span class="tag">🎟️ 4-30 EUR</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Ryanair FR 51 to Venice/Treviso (TSF) ✅</div>
+                            <div class="activity-details">Departs Vienna (VIE) 13:45, arrives Treviso (TSF) 15:00. Seat 18A, Priority & 2 carry-on bags included. Booking ref <code>QYWZ9E</code> (EUR 38.91). ⚠️ Mobile boarding pass required via the Ryanair app - no printed passes accepted.</div>
+                            <div class="tags"><span class="tag">✈️ Flight Confirmed</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOD RECOMMENDATIONS -->
+        <div class="section">
+            <h2>🍽️ Must-Try Food & Cafes</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-name">Wiener Schnitzel</div>
+                    <p>Breaded, pan-fried veal or pork cutlet. The definitive Vienna dish. Recommended at <strong>Figlmüller</strong>.</p>
+                    <p><strong>~18-25 EUR</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Sachertorte / Sisi Torte</div>
+                    <p>Dense chocolate cake with apricot jam. Try <strong>Demel</strong> or <strong>Gerstner</strong> to avoid long Café Sacher queues.</p>
+                    <p><strong>~6-9 EUR (slice + coffee)</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Viennese Melange</div>
+                    <p>Espresso with steamed milk and foam, the classic coffee house drink to enjoy during Kaffeehauskultur.</p>
+                    <p><strong>~4-6 EUR</strong></p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">Recommended Restaurants</h3>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-name">Figlmüller - Bäckerstraße</div>
+                    <p>THE place for schnitzel in Vienna since 1905. Reservation recommended.</p>
+                    <p><strong>~20-30 EUR</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">SPAR Gourmet</div>
+                    <p>Cheap, convenient hot schnitzel sandwiches and on-the-go lunches.</p>
+                    <p><strong>~5-8 EUR</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Demel / Gerstner</div>
+                    <p>Historic patisseries, cake + coffee, better value than the Café Sacher queue.</p>
+                    <p><strong>~8-12 EUR</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">URBAN's Lounge Restaurant</div>
+                    <p>Italian/International, book via The Fork app for up to 50% off.</p>
+                    <p><strong>~18-28 EUR (10-14 EUR with discount)</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Pizza Mari</div>
+                    <p>Neapolitan pizza with ingredients imported from Naples.</p>
+                    <p><strong>~12-18 EUR</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">CRO / Freyja</div>
+                    <p>Cozy French-inspired and Scandinavian-style bakeries for breakfast/snacks.</p>
+                    <p><strong>~3-8 EUR</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Ramasuri / ULRICH</div>
+                    <p>Local brunch/cafe favorites - Eggs Benedict and shakshuka.</p>
+                    <p><strong>~14-20 EUR</strong></p>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 20px;">
+                <h4>📊 Rough Daily Food Budget (per person)</h4>
+                <p><strong>Breakfast:</strong> 4-8 EUR (bakery) up to 14-20 EUR (brunch) · <strong>Lunch:</strong> 5-8 EUR (SPAR) up to 18-28 EUR (sit-down) · <strong>Dinner:</strong> 20-30 EUR (schnitzel) or 12-18 EUR (pizza) · <strong>Snacks/Drinks:</strong> 4-9 EUR (coffee/pastry)</p>
+                <p style="margin-top: 8px;"><strong>Daily total estimate:</strong> ~35-60 EUR/day eating casually/mid-range.</p>
+            </div>
+        </div>
+
+        <!-- PRACTICAL TIPS -->
+        <div class="section">
+            <h2>💡 Practical Tips</h2>
+            <ul>
+                <li><strong>Public Holiday Note:</strong> Nov 1 is <em>Allerheiligen</em> (All Saints' Day) in Austria - most retail shops are closed, but restaurants and tourist sights remain open.</li>
+                <li><strong>Transport App:</strong> Use the <strong>WienMobil app</strong> to buy a 72-hour pass (€17.10) for instant digital validation across all trams, buses, and metro lines.</li>
+                <li><strong>Card Payments:</strong> Vienna is extremely card-friendly (Apple Pay/cards accepted everywhere). Carry minimal cash only for public toilets.</li>
+                <li><strong>Advance Bookings:</strong> Karlskirche tickets must be bought online in advance (no door sales). Book Parliament and State Opera slots ahead.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

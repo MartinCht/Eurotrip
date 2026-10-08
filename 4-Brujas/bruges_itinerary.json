@@ -358,6 +358,7 @@
         "neighborhood": "Near Markt",
         "cuisine": "Belgian - Waffles",
         "priceRange": "€",
+        "typical_cost_per_person": "5-8 EUR (waffle + topping)",
         "specialties": ["Authentic Belgian waffles", "Liège waffles"],
         "notes": "Famous for fresh, authentic waffles. Recommended by locals and travel guides."
       },
@@ -367,6 +368,7 @@
         "neighborhood": "Walplein",
         "cuisine": "Belgian - Brewery/Pub",
         "priceRange": "€€",
+        "typical_cost_per_person": "14-18 EUR (brewery tour incl. beer); 4-8 EUR per beer; 15-25 EUR for pub food",
         "specialties": ["Brugse Zot beer", "Brewery tour", "Traditional Belgian pub food"],
         "notes": "Historic family brewery since 1856. Rooftop terrace with city views. Underground beer pipeline."
       },
@@ -376,6 +378,7 @@
         "neighborhood": "Canalside",
         "cuisine": "Belgian - Beer Bar",
         "priceRange": "€€",
+        "typical_cost_per_person": "5-9 EUR per beer (some rare bottles pricier)",
         "specialties": ["Massive Belgian beer selection", "Canal-side terrace"],
         "notes": "Famous bar with extensive Belgian beer menu. Great location by the canal. Not prioritized in the compressed stopover schedule but worth a quick stop if time allows."
       }

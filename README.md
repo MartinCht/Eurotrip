@@ -50,11 +50,11 @@ Read and follow `.agents/FOR_AGENTS.md` for complete instructions.
 
 ## 🗓️ Your Trip Timeline
 
-**🌍 Full Journey:** Buenos Aires → Barcelona → Paris → London → Bruges → Amsterdam → Berlin → Prague → Vienna → Italy → Madrid → Buenos Aires  
+**🌍 Full Journey:** Buenos Aires → Barcelona → Paris → London → Bruges → Amsterdam → Berlin → Prague → Vienna → Italy → Madrid → Rosario  
 **📅 Duration:** October 14 - November 12, 2026 (30 days)  
-**🏠 Return Flight:** Madrid to Buenos Aires on November 12, 2026
+**🏠 Return Flight:** Madrid to Rosario (via World2Fly 2W2075) on November 12, 2026 - ✅ CONFIRMED (note: return lands in Rosario, not Buenos Aires)
 
-> ⚠️ **DISCLAIMER:** Dates for Prague, Vienna, Italy, and Madrid below are **estimated** based on planned number of nights only. **Accommodation and transport for these destinations are still TBD (not booked)** as of this writing. Amsterdam and Berlin are both fully booked (accommodation + transport). Dates will shift if bookings require adjustments.
+> ⚠️ **DISCLAIMER:** Dates for Italy and Madrid below are **estimated** based on planned number of nights only. Amsterdam, Berlin, Prague, and Vienna are all fully booked (accommodation + transport). Vienna's departure flight to Italy (Treviso/Venice) IS confirmed, but everything from Treviso onward through Rome is a total blank ("black hole") - no cities, accommodation, or internal transport defined. The Rome→Madrid flight is also not booked yet. Dates will shift if bookings require adjustments.
 
 ### Confirmed Destinations
 
@@ -66,15 +66,15 @@ Read and follow `.agents/FOR_AGENTS.md` for complete instructions.
 | 4 | **Bruges** | Belgium 🇧🇪 | Oct 25, 2026 (stopover) | 0 (no overnight) | ✅ Complete |
 | 5 | **Amsterdam** | Netherlands 🇳🇱 | Oct 25-28, 2026 | 3 | ✅ Complete |
 | 6 | **Berlin** | Germany 🇩🇪 | Oct 28-30, 2026 | 2 | ✅ Complete |
+| 7 | **Prague** | Czech Republic 🇨🇿 | Oct 30 - Nov 1, 2026 | 2 | ✅ Complete |
+| 8 | **Vienna** | Austria 🇦🇹 | Nov 1-3, 2026 | 2 | ✅ Complete |
 
 ### Planned Destinations (Estimated Dates - Accommodation/Transport TBD)
 
 | # | City | Country | Estimated Dates | Nights | Status |
 |---|------|---------|------------------|--------|--------|
-| 7 | **Prague** | Czech Republic 🇨🇿 | Oct 30 - Nov 1, 2026 | 2 | ⚠️ Dates estimated, booking TBD |
-| 8 | **Vienna** | Austria 🇦🇹 | Nov 1-3, 2026 | 2 | ⚠️ Dates estimated, booking TBD |
-| 9 | **Italy** | Italy 🇮🇹 | Nov 3-10, 2026 (approx.) | ~7 (cities/dates TBD) | ⏳ Planning (cities TBD) |
-| 10 | **Madrid** | Spain 🇪🇸 | Nov 10-12, 2026 | 2 | ⚠️ Dates estimated, booking TBD |
+| 9 | **Italy** (Treviso/Venice → ??? → Rome) | Italy 🇮🇹 | Nov 3-10, 2026 (approx.) | ~7 (cities/dates TBD) | ✅ Arrival flight confirmed (Treviso); 🕳️ everything else undefined |
+| 10 | **Madrid** | Spain 🇪🇸 | Nov 10-12, 2026 | 2 | ⚠️ Hostel selected (Onefam Sungate, not booked); arrival flight candidate (Ryanair FR 9601, ~€110) pending |
 
 ### Trip Flow
 
@@ -92,16 +92,18 @@ Bruges (Oct 25, stopover)
 Amsterdam (Oct 25-28) ✅ confirmed
     ↓ DB ICE 141 (confirmed)
 Berlin (Oct 28-30) ✅ confirmed
-    ↓ TBD
-Prague (Oct 30-Nov 1) ⚠️ dates estimated, booking TBD
-    ↓ TBD
-Vienna (Nov 1-3) ⚠️ dates estimated, booking TBD
-    ↓ TBD
-Italy (Nov 3-10, approx.) ⚠️ cities/dates/booking TBD
-    ↓ TBD
-Madrid (Nov 10-12) ⚠️ dates estimated, booking TBD
-    ↓ Flight (Nov 12)
-Buenos Aires (Return Home)
+    ↓ DB RJ 171 (confirmed)
+Prague (Oct 30-Nov 1) ✅ confirmed
+    ↓ ÖBB EC 115 + RJ 251 (confirmed)
+Vienna (Nov 1-3) ✅ confirmed
+    ↓ Ryanair FR 51 (confirmed, 13:45→15:00)
+Treviso/Venice (Nov 3) ✅ arrival confirmed
+    ↓ 🕳️ TBD - black hole, nothing planned
+Italy (Nov 3-10, approx.) 🕳️ cities/dates/booking TBD, ends in Rome
+    ↓ TBD (Rome → Madrid flight candidate: Ryanair FR 9601, ~€110, shopping for better fare)
+Madrid (Nov 10-12) ⚠️ hostel selected (Onefam Sungate, not booked), arrival flight pending
+    ↓ World2Fly 2W2075 (confirmed, 10:25→19:00)
+Rosario (Return Home) ✅ confirmed - NOTE: lands in Rosario, not Buenos Aires
 ```
 
 ---
@@ -297,14 +299,15 @@ Each destination gets a JSON file with:
 4. **London → Bruges**: FlixBus N814, Oct 24 19:30 → Oct 25 03:00
 5. **Bruges → Amsterdam**: FlixBus 802, Oct 25, 16:10 → 20:20
 6. **Amsterdam → Berlin**: DB ICE 141, Oct 28, 05:45 Amsterdam Centraal → 12:50 Berlin Hbf
-7. **Madrid → Buenos Aires**: Nov 12, 2026 (return flight home)
+7. **Berlin → Prague**: DB RJ 171, Oct 30, 07:28 Berlin Hbf → 11:25 Praha hl.n.
+8. **Prague → Vienna**: ÖBB EC 115 + RJ 251, Nov 1, 10:08 Praha hl.n. → 14:49 Wien Hbf (via Pardubice)
+9. **Vienna → Treviso/Venice**: Ryanair FR 51, Nov 3, 13:45 VIE → 15:00 TSF
+10. **Madrid → Rosario**: World2Fly 2W2075, Nov 12, 10:25 MAD → 19:00 ROS (return home - note: lands in Rosario, not Buenos Aires)
 
 ### To Be Booked ⚠️
 
-8. Berlin → Prague
-9. Prague → Vienna
-10. Vienna → Italy
-11. Italy → Madrid
+11. Italy internal transport (Treviso/Venice → ... → Rome) - cities/route undefined
+12. Rome → Madrid - candidate flight Ryanair FR 9601 (~€110, shopping for a better fare/date before booking)
 
 ---
 
@@ -344,15 +347,17 @@ Each destination gets a JSON file with:
 
 ## 🎯 Next Steps
 
-### For Prague (Current):
-Amsterdam and Berlin are both fully booked (accommodation + transport). Use the template at the top with Prague details (Oct 30-Nov 1, estimated) and launch an agent once transport from Berlin is confirmed.
+### For Italy / Madrid (Current):
+Amsterdam, Berlin, Prague, and Vienna are all fully booked (accommodation + transport). Vienna→Treviso/Venice flight is confirmed, as is the Madrid→Rosario return flight. Madrid now has a full day-by-day plan (`9- Madrid/madrid_itinerary.json`) and a selected hostel (Onefam Sungate), but it's not booked yet, and the Rome→Madrid flight is still just a candidate (Ryanair FR 9601, ~€110 - shopping for a better fare). Still need: cities/accommodation/internal transport for Italy (the "black hole" between Treviso and Rome).
 
 ### For Future Destinations:
-1. Book accommodation & transport for Prague, Vienna, Italy, and Madrid (dates above are estimated only)
-2. Decide exact cities/dates for Italy
-3. Update the timeline table above as bookings are confirmed
-4. Use the template to launch agents
-5. Review and track progress
+1. Decide exact cities/route for Italy (arrival is Treviso/Venice, must end in Rome for the eventual Rome→Madrid flight)
+2. Book accommodation & internal transport for Italy
+3. Book the Rome→Madrid flight once a better fare/date is found (or confirm FR 9601 if no better option appears)
+4. Book Onefam Sungate in Madrid via the Cloudbeds link
+5. Update the timeline table above as bookings are confirmed
+6. Use the template to launch agents
+7. Review and track progress
 
 ---
 

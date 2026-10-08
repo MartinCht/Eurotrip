@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>London Itinerary | Oct 21-24, 2026</title>
+    <title>London Itinerary | 2026-10-21 to 2026-10-24</title>
     <style>
         :root {
             --primary: #7b2d8e;
-            --secondary: #4a1a54;
-            --bg-color: #fafbfc;
+            --secondary: #1a1a2e;
+            --bg-color: #f8f9fa;
             --card-bg: #ffffff;
             --text-color: #333333;
-            --border-color: #d4dae0;
+            --border-color: #dee2e6;
             --highlight: #f5eef8;
             --success: #27ae60;
             --info: #3498db;
+            --warning: #f39c12;
+            --danger: #e74c3c;
         }
         
         * {
@@ -32,41 +34,51 @@
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
         
         header {
             text-align: center;
             margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid var(--primary);
+            padding-bottom: 30px;
+            border-bottom: 4px solid var(--primary);
         }
         
         h1 {
             color: var(--secondary);
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 20px;
         }
         
         .trip-meta {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin-top: 15px;
+            gap: 35px;
+            margin-top: 20px;
             flex-wrap: wrap;
         }
         
         .meta-item {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             color: #666;
-            font-size: 0.95rem;
+            font-size: 1rem;
+            padding: 8px 16px;
+            background: var(--highlight);
+            border-radius: 8px;
         }
         
         .meta-item strong {
@@ -79,246 +91,510 @@
         
         h2 {
             color: var(--secondary);
-            font-size: 1.8rem;
-            margin: 30px 0 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--border-color);
+            font-size: 2rem;
+            margin: 40px 0 25px 0;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--primary);
         }
         
         h3 {
             color: var(--primary);
-            font-size: 1.3rem;
-            margin: 20px 0 12px 0;
+            font-size: 1.4rem;
+            margin: 25px 0 15px 0;
         }
         
-        h4 {
-            color: var(--secondary);
-            font-size: 1.1rem;
-            margin: 15px 0 10px 0;
-        }
-        
-        .info-box {
-            background: #f0f7ff;
-            border-left: 4px solid var(--info);
-            padding: 20px;
-            border-radius: 0 8px 8px 0;
-            margin: 20px 0;
-        }
-        
-        .warning-box {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 20px;
-            border-radius: 0 8px 8px 0;
-            margin: 20px 0;
-        }
-        
-        .tbd-box {
-            background: #fdecea;
-            border-left: 4px solid #e74c3c;
-            padding: 20px;
-            border-radius: 0 8px 8px 0;
-            margin: 20px 0;
-        }
-        
-        .success-box {
-            background: #eafaf1;
-            border-left: 4px solid var(--success);
-            padding: 20px;
-            border-radius: 0 8px 8px 0;
-            margin: 20px 0;
-        }
-        
-        .logistics-grid {
+        .grid-2 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+            margin: 20px 0;
+        }
+        
+        .card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--primary);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        .card h4 {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 4px;
+            background: var(--success);
+            color: #fff;
+        }
+
+        .badge-warning {
+            background: var(--warning);
+            color: #333;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .day-block {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+        
+        .day-header {
+            background: var(--primary);
+            color: #fff;
+            padding: 18px 25px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .map-btn {
+            background: #ffffff;
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .map-btn:hover {
+            background: #f5eef8;
+        }
+        
+        .day-content {
+            padding: 25px;
+        }
+        
+        .time-block {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        
+        .time-block:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .time-range {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .activity-item {
+            background: var(--highlight);
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin: 12px 0;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .activity-title {
+            font-weight: 600;
+            color: var(--secondary);
+            font-size: 1.05rem;
+            margin-bottom: 5px;
+        }
+        
+        .activity-details {
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        .tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        
+        .tag {
+            background: #e2e8f0;
+            color: #333;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             margin: 20px 0;
         }
         
-        .logistics-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
+        .food-card {
+            background: #fff;
             border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
         }
         
-        .logistics-card h4 {
-            margin-top: 0;
+        .food-name {
+            font-weight: 700;
             color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
         }
         
-        ul.simple-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        ul.simple-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        
-        ul.simple-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .map-link {
+        .back-link {
             display: inline-block;
-            margin-top: 15px;
-            background: var(--primary);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 6px;
+            margin-bottom: 25px;
+            color: var(--primary);
             text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: all 0.2s;
+            font-weight: 600;
         }
         
-        .map-link:hover {
-            background: #5c2169;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(123, 45, 142, 0.3);
+        .back-link:hover {
+            text-decoration: underline;
         }
         
-        .footer {
-            margin-top: 60px;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #777;
-            border-top: 1px solid var(--border-color);
-            padding-top: 30px;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .trip-meta {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .logistics-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media print {
-            body {
-                background: white;
-            }
-            
-            .container {
-                box-shadow: none;
-            }
-            
-            .map-link {
-                display: none;
-            }
+        @media(max-width: 768px) {
+            .container { padding: 15px; }
+            h1 { font-size: 2.2rem; }
+            .grid-2 { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <header>
-        <h1>🇬🇧 London Itinerary</h1>
-        <div class="trip-meta">
-            <div class="meta-item">
-                <span>📅</span>
-                <span><strong>Dates:</strong> October 21-24, 2026</span>
-            </div>
-            <div class="meta-item">
-                <span>🗓️</span>
-                <span><strong>Duration:</strong> 3 nights</span>
-            </div>
-            <div class="meta-item">
-                <span>🏠</span>
-                <span><strong>Stay:</strong> Onefam Waterloo</span>
-            </div>
-        </div>
-    </header>
-
-    <div class="tbd-box">
-        <h4>⚠️ UK ELECTRONIC TRAVEL AUTHORISATION (ETA) REQUIRED</h4>
-        <p>Argentine passport holders need to apply for a UK ETA before entering the country. Apply online before October 21, 2026 - processing typically takes a few days but apply at least 1 week ahead. See <a href="https://www.gov.uk/check-uk-visa/y/argentina/tourism" target="_blank">gov.uk/check-uk-visa</a>. (Full general requirements, including Travel Health Insurance, documented in <code>1-Barcelona/barcelona_itinerary.json</code>.)</p>
-    </div>
-
-    <!-- ACCOMMODATION -->
-    <section class="section">
-        <h2>🏠 Accommodation</h2>
-        <div class="info-box">
-            <h3>Onefam Waterloo</h3>
-            <p><strong>Address:</strong> 73 Lambeth Walk, London, SE11 6DX, England</p>
-            <p><strong>Neighborhood:</strong> Waterloo / Lambeth</p>
-            <p><strong>Check-in:</strong> 2026-10-21 (from 15:30) | <strong>Check-out:</strong> 2026-10-24 (by 11:00)</p>
-            <p><strong>Reception Hours:</strong> 07:30 - 23:30 (24/7 access with reservation)</p>
-            <p><strong>Booking Reference:</strong> 39493-579894766</p>
-            <p><strong>Phone:</strong> +44 20 7582 3088 · <strong>Email:</strong> waterloo@onefamhostels.com</p>
-            <p><a href="https://www.google.com/maps/search/Onefam+Waterloo+73+Lambeth+Walk+London" target="_blank">📍 View on Google Maps</a></p>
-            <p style="margin-top: 10px;"><strong>Notes:</strong> Standard 12 Bed Mixed Dorm, 3 nights. Total: £87.94 (Paid online: €20.63, Balance at property: £71.23, taxes included in price). Near Waterloo Station in central London. Age policy 18-36 years, very social/party-style hostel. Shared, mixed, communal dorms with triple bunk beds. Historic building with stairs (no elevators). Non-refundable rate.</p>
-        </div>
-    </section>
-
-    <!-- TRANSPORT -->
-    <section class="section">
-        <h2>✈️ Transport</h2>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Master Itinerary</a>
         
-        <div class="success-box">
-            <h4>Arrival: October 21, 2026</h4>
-            <p><strong>Eurostar</strong> Paris Gare du Nord → London St Pancras Int'l</p>
-            <p><strong>Departure:</strong> 07:32 · <strong>Arrival:</strong> 09:00 (2h 28m, direct)</p>
-            <p><strong>Booking Reference:</strong> 2PX4VY (Coach 4 - Seat 93)</p>
-            <p><a href="https://www.eurostar.com" target="_blank">🔗 Eurostar</a></p>
-            <p style="margin-top: 10px;"><strong>Notes:</strong> From St Pancras to Onefam Waterloo: Northern Line southbound to Kennington/Waterloo, or Piccadilly/Jubilee Line combination via Green Park/Westminster.</p>
-        </div>
-        
-        <div class="success-box">
-            <h4>Departure: October 24, 2026 - ✅ CONFIRMED</h4>
-            <p><strong>FlixBus (Route N814)</strong> London Victoria Coach Station → Bruges Station</p>
-            <p><strong>Departure:</strong> 19:30 · <strong>Arrival:</strong> 03:00 (Oct 25)</p>
-            <p><strong>Booking Reference:</strong> 339 293 7119 · <strong>Seat:</strong> 14D · <strong>Price:</strong> 40.98 EUR</p>
-            <p><strong>Departure Station:</strong> 164 Buckingham Palace Road, SW1W9TP London (direction Amsterdam Sloterdijk)</p>
-            <p><a href="https://www.flixbus.es/track/order/3392937119" target="_blank">🔗 Track your journey</a></p>
-            <p style="margin-top: 10px;"><strong>Notes:</strong> Arrive at least 15 min before departure (gates close 2 min prior). Bring valid passport/ID for travel to mainland Europe. Station is wheelchair accessible. Luggage: 1 small bag (7kg) + 1 checked bag (20kg).</p>
-        </div>
-    </section>
+        <header>
+            <h1>🇬🇧 London, United Kingdom</h1>
+            <p class="subtitle">Royal Palaces, Historic Towers, and Iconic Riverside Landmarks</p>
+            <div class="trip-meta">
+                <div class="meta-item">📅 <strong>Dates:</strong> Oct 21 - Oct 24, 2026 (3 nights)</div>
+                <div class="meta-item">🏨 <strong>Accommodation:</strong> Onefam Waterloo</div>
+                <div class="meta-item">🚆 <strong>Transport:</strong> Eurostar (Paris → London) & FlixBus (London → Bruges)</div>
+            </div>
+        </header>
 
-    <!-- DAYS - NOT YET PLANNED -->
-    <section class="section">
-        <h2>📍 Daily Itinerary</h2>
-        <div class="warning-box">
-            <h4>Itinerary Not Yet Planned</h4>
-            <p>The day-by-day activity plan for London (Oct 21-24) hasn't been created yet. Accommodation and transport are confirmed - once you're ready, activities, food recommendations, and logistics can be added following the same framework as Barcelona and Paris.</p>
+        <!-- ACCOMMODATION & TRANSPORT -->
+        <div class="section">
+            <h2>🏨 Accommodation & Logistics</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>🏨 Onefam Waterloo <span class="badge">Confirmed</span></h4>
+                    <p><strong>Address:</strong> 73 Lambeth Walk, London, SE11 6DX (Waterloo / Lambeth)</p>
+                    <p><strong>Dates:</strong> Oct 21 - Oct 24, 2026 (3 nights, 1 guest)</p>
+                    <p><strong>Room:</strong> Standard 12 Bed Mixed Dorm</p>
+                    <p><strong>Booking Ref:</strong> <code>39493-579894766</code></p>
+                    <p><strong>Check-in / Check-out:</strong> 15:30 / 11:00 (Reception 07:30-23:30)</p>
+                    <p><strong>Cost:</strong> £87.94 total. €20.63 paid online; <strong>£71.23 due at the property</strong>.</p>
+                </div>
+                <div class="card">
+                    <h4>🚆 Transport Connections <span class="badge">Confirmed</span></h4>
+                    <p><strong>Paris → London (Oct 21):</strong> Eurostar. Departs Paris Gare du Nord 07:32, arrives St Pancras 09:00 (Coach 4, Seat 93). Ref: <code>2PX4VY</code>.</p>
+                    <p><strong>London → Bruges (Oct 24):</strong> FlixBus N814. Departs Victoria Coach Station 19:30, arrives Bruges Station 03:00. Ref: <code>339 293 7119</code> (Seat 14D, EUR 40.98).</p>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <!-- LOGISTICS -->
-    <section class="section">
-        <h2>🧭 Logistics</h2>
-        <div class="logistics-grid">
-            <div class="logistics-card">
-                <h4>🚨 Emergency Contacts</h4>
-                <ul class="simple-list">
-                    <li>Emergency: 999 (UK) / 112 (EU universal)</li>
-                    <li>Police (non-emergency): 101</li>
-                    <li>Hostel phone: +44 20 7582 3088</li>
+        <!-- UK ETA NOTICE -->
+        <div class="section">
+            <div class="card" style="border-left-color: var(--warning);">
+                <h4>⚠️ UK Electronic Travel Authorisation (ETA)</h4>
+                <p>Argentine passport holders need a UK ETA before entering the country. Apply online at least 1 week ahead of Oct 21, 2026 - see <a href="https://www.gov.uk/check-uk-visa/y/argentina/tourism" target="_blank">gov.uk/check-uk-visa</a>.</p>
+            </div>
+        </div>
+
+        <!-- DAY BY DAY ITINERARY -->
+        <div class="section">
+            <h2>🗺️ Day-by-Day Itinerary</h2>
+
+            <!-- DAY 1 -->
+            <div class="day-block">
+                <div class="day-header">
+                    <span>Day 1: Arrival, Early Check-in & Free Tour / Museum (Flexible) (Wed, Oct 21)</span>
+                    <a href="https://www.google.com/maps/dir/London+St+Pancras+International/Onefam+Waterloo+London/Imperial+War+Museum+London" target="_blank" class="map-btn">📍 View Route Map</a>
+                </div>
+                <div class="day-content">
+                    <div class="time-block">
+                        <div class="time-range">09:00 - 11:00 | Arrival & Transfer to Hostel</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Arrival at St Pancras & Transfer to Hostel</div>
+                            <div class="activity-details">Arrive via Eurostar from Paris at 09:00. Head straight to Onefam Waterloo (Northern Line to Kennington/Waterloo, or Jubilee Line via Westminster). ✅ Check-in arranged for 11:00 (earlier than the hostel's standard 15:30).</div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">11:00 - 11:30 | Check-in & Set Up the Free Tour</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Check-in at Onefam Waterloo & Set Up the Free Tour</div>
+                            <div class="activity-details">Check in, settle into the dorm, and ask reception for the exact day/time of the hostel's free walking tour - sign up on the spot if there's a slot available.</div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">11:30 - 21:00 | Free Tour & Imperial War Museum (Flexible - Grouped Together)</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Free Tour of the Hostel ⭐</div>
+                            <div class="activity-details">Hostel-organized free walking tour - a good way to get orientated and meet other travelers. ⚠️ Exact time is <strong>not confirmed</strong>; ask reception at check-in and build everything else in this block around it (could be afternoon or evening).</div>
+                            <div class="tags"><span class="tag">🆓 Free (tip-based)</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">⚠️ Time TBD</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Imperial War Museum London ⭐</div>
+                            <div class="activity-details">Free general admission, ~10-15 min walk from Onefam Waterloo (Lambeth Road). WWI/WWII galleries, Holocaust Galleries, and a Spitfire/tank display in the atrium. Closes at 18:00 (last entry ~17:00) - do this first if the tour ends up being in the evening, or afterward if the tour lands earlier in the day.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">⏳ Closes 18:00</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Lunch/Dinner (Flexible)</div>
+                            <div class="activity-details">Lunch or dinner around Lambeth/Elephant & Castle/Waterloo, slotted in wherever there's a gap once the tour time is known.</div>
+                            <div class="tags"><span class="tag">🍽️ Dining (~10-20 GBP)</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 2 -->
+            <div class="day-block">
+                <div class="day-header">
+                    <span>Day 2: City of London - St Paul's, Monument, Borough Market, Tower Bridge & Tower of London (Thu, Oct 22)</span>
+                    <a href="https://www.google.com/maps/dir/Onefam+Waterloo+London/St+Pauls+Cathedral+London/Monument+to+the+Great+Fire+of+London/Borough+Market+London/Tower+Bridge+London/St+Dunstan+in+the+East+Church+Garden+London/Tower+of+London" target="_blank" class="map-btn">📍 View Route Map</a>
+                </div>
+                <div class="day-content">
+                    <div class="time-block">
+                        <div class="time-range">09:00 - 12:00 | St Paul's Cathedral & Monument</div>
+                        <div class="activity-item">
+                            <div class="activity-title">St Paul's Cathedral ⭐</div>
+                            <div class="activity-details">Iconic dome designed by Christopher Wren. Climb to the Whispering Gallery and Golden Gallery for sweeping city views. (Closed to tourists on Sundays.)</div>
+                            <div class="tags"><span class="tag">🎟️ Paid (~£25-30)</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Monument to the Great Fire of London (Exterior Only)</div>
+                            <div class="activity-details">Wren-designed column commemorating the Great Fire of 1666. Viewing from outside only - skipping the paid 311-step climb to the top.</div>
+                            <div class="tags"><span class="tag">🆓 Free (exterior, no climb)</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">12:00 - 13:30 | Lunch at Borough Market</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Borough Market ⭐ 🍽️</div>
+                            <div class="activity-details">One of London's oldest and most famous food markets - amazing street food stalls, artisan cheese, and baked goods near London Bridge.</div>
+                            <div class="tags"><span class="tag">⭐ Top Highlight</span> <span class="tag">🍽️ Food/Dining</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">13:30 - 18:00 | Tower Bridge, St Dunstan's Garden & Tower of London</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Tower Bridge ⭐</div>
+                            <div class="activity-details">Iconic Victorian bascule bridge over the Thames. Free to cross and photograph; optional paid exhibition with glass floor walkway.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">St Dunstan in the East Church Garden</div>
+                            <div class="activity-details">Hidden gem - a peaceful public garden built within the ruins of a WWII-bombed church, covered in climbing ivy and greenery.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Tower of London (Exterior Sights Only)</div>
+                            <div class="activity-details">Historic castle and former prison on the Thames. Viewing the walls, moat, and Traitors' Gate from outside only - skipping the paid interior (Crown Jewels, Beefeater tour).</div>
+                            <div class="tags"><span class="tag">🆓 Free (exterior, no entry)</span> <span class="tag">⭐ Top Highlight</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 3 -->
+            <div class="day-block">
+                <div class="day-header">
+                    <span>Day 3: Westminster - Big Ben, London Eye, Parks, Buckingham Palace & Free Abbey Evensong (Fri, Oct 23)</span>
+                    <a href="https://www.google.com/maps/dir/Onefam+Waterloo+London/Big+Ben+London/St+James's+Park+London/Buckingham+Palace+London/London+Eye/Hyde+Park+London/Westminster+Abbey+London" target="_blank" class="map-btn">📍 View Route Map</a>
+                </div>
+                <div class="day-content">
+                    <div class="time-block">
+                        <div class="time-range">09:00 - 12:00 | Big Ben, St James's Park & Buckingham Palace</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Big Ben (Elizabeth Tower) ⭐</div>
+                            <div class="activity-details">Iconic clock tower at the Houses of Parliament. Exterior view/photo stop.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">St James's Park ⭐</div>
+                            <div class="activity-details">Elegant royal park with a scenic lake, pelicans, and classic views of Buckingham Palace and Westminster.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Buckingham Palace ⭐</div>
+                            <div class="activity-details">Official residence of the British monarch. Exterior/gates view - check if Changing of the Guard is scheduled.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">12:00 - 13:30 | Lunch & London Eye (Sights Only)</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Lunch near South Bank</div>
+                            <div class="activity-details">Quick lunch along the South Bank before the London Eye.</div>
+                            <div class="tags"><span class="tag">🍽️ Dining</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">London Eye (Sights Only, No Ride)</div>
+                            <div class="activity-details">Giant Ferris wheel on the South Bank - viewed and photographed from the ground along the Thames path. Skipping the paid ride up.</div>
+                            <div class="tags"><span class="tag">🆓 Free (view only, no ride)</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">14:00 - 16:30 | Hyde Park</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Hyde Park ⭐</div>
+                            <div class="activity-details">One of London's largest Royal Parks - Serpentine Lake, Speakers' Corner, and wide open green space for a relaxed afternoon stroll.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">16:40 - 17:45 | Westminster Abbey - Free Entry via Evensong</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Westminster Abbey - Free Entry via Evensong ⭐</div>
+                            <div class="activity-details"><strong>Research finding:</strong> Westminster Abbey offers FREE entry to anyone attending a church service, including the daily sung Evensong (choir service), instead of paying the ~£27-30 sightseeing ticket. Arrive 15-20 min early and queue at the correct door (typically the North Door - confirm with staff/site). You won't get the full self-guided tour access, but you do get to sit inside the historic Quire and Sanctuary and hear the famous choir. ⚠️ Evensong is typically held on weekdays around 17:00 (Fridays sometimes spoken, not sung) - <strong>confirm the exact day's schedule on the <a href="https://www.westminster-abbey.org/visit-us/daily-services" target="_blank">official Daily Services page</a> before relying on this</strong>, as times/days shift seasonally and for special events.</div>
+                            <div class="tags"><span class="tag">🆓 Free (service only, not full tour)</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">⚠️ Verify schedule</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 4 -->
+            <div class="day-block">
+                <div class="day-header">
+                    <span>Day 4: British Museum, Notting Hill & Departure to Bruges (Sat, Oct 24)</span>
+                    <a href="https://www.google.com/maps/dir/Onefam+Waterloo+London/British+Museum+London/Notting+Hill+London/London+Victoria+Coach+Station" target="_blank" class="map-btn">📍 View Route Map</a>
+                </div>
+                <div class="day-content">
+                    <div class="time-block">
+                        <div class="time-range">09:00 - 11:30 | British Museum</div>
+                        <div class="activity-item">
+                            <div class="activity-title">British Museum ⭐</div>
+                            <div class="activity-details">World-class collection (Rosetta Stone, Egyptian mummies, Parthenon sculptures). Free entry. Pack bags before leaving the hostel so there's no need to return before checkout.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">⏳ Immersive Visit</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">11:30 - 14:00 | Notting Hill</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Notting Hill ⭐</div>
+                            <div class="activity-details">Colorful pastel townhouses, Portobello Road Market (antiques, vintage, street food), and a laid-back, picturesque West London vibe. (Market best on Saturdays.) Reached via Central Line, ~25-30 min from the British Museum.</div>
+                            <div class="tags"><span class="tag">🆓 Free to wander</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">18:00 - 19:30 | Checkout & Departure to Bruges</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Check Out & FlixBus N814 to Bruges</div>
+                            <div class="activity-details">Pack up and check out from Onefam Waterloo (bags should already be packed from the morning). Head to London Victoria Coach Station (164 Buckingham Palace Road) for the 19:30 FlixBus N814 to Bruges, arriving 03:00 (Oct 25).</div>
+                            <div class="tags"><span class="tag">🎟️ Bus Confirmed</span> <span class="tag">🎒 Logistics</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOD & BUDGET -->
+        <div class="section">
+            <h2>🍽️ Food & Average Prices</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-name">Fish and Chips</div>
+                    <p>Battered fried fish with chips - the classic British takeaway. Best from a proper chippy, not a tourist-trap pub.</p>
+                    <p><strong>~8-15 GBP</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Sunday Roast</div>
+                    <p>Roasted meat, Yorkshire pudding, potatoes, veg, and gravy - classic pub tradition, Sundays only.</p>
+                    <p><strong>~15-22 GBP</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Full English Breakfast</div>
+                    <p>Eggs, bacon, sausage, beans, toast - found at "greasy spoon" cafes everywhere.</p>
+                    <p><strong>~8-14 GBP</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Chicken Tikka Masala</div>
+                    <p>London's beloved curry-house staple, especially around Brick Lane.</p>
+                    <p><strong>~10-18 GBP</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Borough Market Street Food</div>
+                    <p>Raclette, salt beef sandwiches, oysters, baked goods - sample a bit of everything in one place.</p>
+                    <p><strong>~6-12 GBP per item</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Afternoon Tea</div>
+                    <p>Finger sandwiches, scones, and pastries with tea - a quintessentially British experience.</p>
+                    <p><strong>~25-60 GBP (budget), 80+ GBP (luxury hotels)</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Pub Pint</div>
+                    <p>A pint of ale, lager, or cider - as much a social ritual as a drink.</p>
+                    <p><strong>~5-7 GBP</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Supermarket Meal Deal</div>
+                    <p>Sandwich + snack + drink combo at Tesco/Sainsbury's/Boots - cheapest lunch option.</p>
+                    <p><strong>~3.5-5 GBP</strong></p>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 20px;">
+                <h4>📊 Rough Daily Food Budget (per person)</h4>
+                <p><strong>Breakfast:</strong> 3-10 GBP · <strong>Lunch:</strong> 8-15 GBP · <strong>Dinner:</strong> 12-22 GBP · <strong>Snacks/Drinks:</strong> 5-10 GBP</p>
+                <p style="margin-top: 8px;"><strong>Daily total estimate:</strong> ~30-55 GBP/day eating casually/mid-range (more if doing Afternoon Tea or sit-down dinners regularly).</p>
+            </div>
+            <div class="card" style="border-left-color: var(--danger); margin-top: 20px;">
+                <h4>⚠️ Tourist Traps to Avoid</h4>
+                <ul>
+                    <li>Restaurants directly on/around Leicester Square and Covent Garden - inflated prices for mediocre food.</li>
+                    <li>Pre-packaged "Fish and Chips" right next to major landmarks (London Eye, Tower Bridge) - better quality and value a few streets away.</li>
                 </ul>
             </div>
         </div>
-    </section>
 
-    <div class="footer">
-        <p>Part of the Eurotrip 2026 Planning Framework</p>
-        <p style="margin-top: 8px;">Full structured data available in <code>london_itinerary.json</code></p>
+        <!-- PRACTICAL TIPS -->
+        <div class="section">
+            <h2>💡 Practical Tips</h2>
+            <ul>
+                <li><strong>Free Tour Timing:</strong> The hostel's free walking tour schedule isn't confirmed - ask at reception right at check-in and build the Imperial War Museum visit/meals around it.</li>
+                <li><strong>Imperial War Museum:</strong> It closes at 18:00 (last entry ~17:00) - it's free, so fit it in whenever works best around the tour, with no cost risk if plans shift.</li>
+                <li><strong>UK ETA Required:</strong> Argentine passport holders must apply for a UK ETA online at least 1 week before arrival.</li>
+                <li><strong>Westminster Abbey Evensong:</strong> Attending the daily service gets you in for free instead of the ~£27-30 ticket, but you must <strong>verify the exact day/time on the official site</strong> before the trip - schedules shift and the free-entry rule only covers the service itself, not a full self-guided tour.</li>
+                <li><strong>Exterior-Only Sights:</strong> The Monument, Tower of London, and London Eye are all being visited from the outside only in this plan - no paid entry/climb/ride.</li>
+                <li><strong>St Paul's Cathedral:</strong> Closed to tourists on Sundays (services only) - plan accordingly if dates shift.</li>
+                <li><strong>Hostel Balance:</strong> Remember £71.23 is still due at Onefam Waterloo upon arrival.</li>
+            </ul>
+        </div>
     </div>
-</div>
-
 </body>
 </html>

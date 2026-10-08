@@ -1,0 +1,534 @@
+{
+  "destination": "Prague",
+  "country": "Czech Republic",
+  "dates": {
+    "start": "2026-10-30",
+    "end": "2026-11-01"
+  },
+  "accommodation": {
+    "name": "Onefam Home",
+    "address": "22, Hybernská 1008, Prague, Praha 110 00",
+    "neighborhood": "New Town (Nové Město), near Náměstí Republiky",
+    "link": "https://www.google.com/maps/search/Onefam+Home+Hybernska+1008+Prague",
+    "phone": "+420222212720",
+    "email": "home@onefamhostels.com",
+    "checkIn": "2026-10-30",
+    "checkInTime": "15:00",
+    "checkOut": "2026-11-01",
+    "checkOutTime": "11:00",
+    "bookingReference": "4516996859709",
+    "bookingConfirmation": "2026-09-24",
+    "meals_included": [],
+    "paymentStatus": {
+      "roomTotal": "CZK 2,089.28 (subtotal)",
+      "cityTax": "CZK 100.00",
+      "vat": "CZK 250.72 (12%)",
+      "grandTotal": "CZK 2,440.00",
+      "paidOnline": "CZK 2,440.00 (fully paid)",
+      "balancePayableAtProperty": "CZK 0.00",
+      "note": "Fully paid (CZK 2,440.00 total incl. city tax and VAT). Added to GASTOS.md."
+    },
+    "notes": "8 Bed Shared Dorm (Non-Refundable), 1 guest, 2 nights (30 Oct - 1 Nov 2026). Check-in 15:00, check-out 11:00. Age restriction 18-40. City tax not included, 50 CZK/person/night (matches the CZK 100 line item for 2 nights). Cancellations only accepted by email, at least 2 full days before arrival for standard rate (this booking is non-refundable so no free cancellation applies)."
+  },
+  "transport": {
+    "arrival": {
+      "date": "2026-10-30",
+      "time": "11:25",
+      "from": "Berlin Hbf",
+      "to": "Praha hl.n.",
+      "provider": "Deutsche Bahn (DB) / Omio",
+      "transportType": "train",
+      "flightNumber": "RJ 171",
+      "link": "https://www.omio.com",
+      "bookingReference": "629543863359",
+      "recommended_departure_from_accommodation": null,
+      "recommended_arrival_at_station": null,
+      "notes": "✅ CONFIRMED - Railjet RJ 171, departs Berlin Hbf 07:28, arrives Praha hl.n. 11:25 (~4h, via Dresden/Bad Schandau/Ústí nad Labem). Price 39.99 EUR, booked via Omio. Non-refundable, seat-bound. From Praha hl.n. to Onefam Home (Hybernská 1008): short walk (~10 min) or tram. Check-in at Onefam Home from 15:00, so there's a gap after arrival - consider luggage storage at the station or an early bag-drop request."
+    },
+    "departure": {
+      "date": "2026-11-01",
+      "time": "10:08",
+      "from": "Praha hl.n.",
+      "to": "Wien Hbf",
+      "provider": "ÖBB / EuroCity + RailJet",
+      "transportType": "train",
+      "flightNumber": "EC 115 / RJ 251",
+      "link": "https://www.oebb.at",
+      "bookingReference": "0661 4954 1113 4079",
+      "recommended_departure_from_accommodation": "09:15-09:30",
+      "recommended_arrival_at_station": "09:45",
+      "notes": "✅ CONFIRMED - Sparschiene Komfort, 2nd class, EUR 23.00. Departs Praha hl.n. 10:08 on EC 115, arrives Pardubice hl.n. 11:09, change to RJ 251 (departs 11:36), arrives Wien Hbf (Bahnsteige 3-12) 14:49. Total journey ~4h41m, 27-min layover at Pardubice. Seat reservations: EC 115 Wagen 346 window seat 95 (Abteilwagen); RJ 251 Wagen 256 window seat 115 (Grossraumwagen). ⚠️ Departs BEFORE the 11:00 Onefam Home checkout deadline - pack the night before and check out early (~09:15-09:30) to make this train comfortably."
+    }
+  },
+  "days": [
+    {
+      "date": "2026-10-30",
+      "dayNumber": 1,
+      "title": "Arrival Day, City Center Free Walk & Klementinum",
+      "isArrivalDay": true,
+      "isDepartureDay": false,
+      "total_walking_distance": "~4-5 km",
+      "total_duration": "~5 hours",
+      "timeBlocks": [
+        {
+          "name": "afternoon",
+          "timeRange": "11:25-15:00",
+          "start_time": "11:25",
+          "end_time": "15:00",
+          "duration": "~3.5 hours",
+          "description": "Arrival from Berlin via RJ 171 at Praha hl.n. (11:25). Head to Onefam Home (Hybernská 1008) to drop off bags before check-in time (15:00), or explore the nearby Old Town.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Arrival & Bag Drop at Onefam Home",
+              "link": "https://www.google.com/maps/search/Onefam+Home+Hybernska+1008+Prague",
+              "duration": 45,
+              "suggestedTime": "11:45",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "accommodation",
+              "notes": "Drop bags at hostel. Check-in is officially at 15:00.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "Already paid (CZK 2,440)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0"
+        },
+        {
+          "name": "evening",
+          "timeRange": "15:00-20:00",
+          "start_time": "15:00",
+          "end_time": "20:00",
+          "duration": "~5 hours",
+          "description": "Check-in at Onefam Home, then free walk through the city center, Klementinum guided tour, Old Town Square and surroundings.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Free Walk through Prague City Center",
+              "link": "https://www.google.com/maps/search/Old+Town+Square+Prague",
+              "duration": 90,
+              "suggestedTime": "15:15",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "walking tour",
+              "notes": "Casual stroll through the historic heart of Prague, taking in the gothic and baroque architecture.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Klementinum - Guided Tour",
+              "link": "https://www.google.com/maps/search/Klementinum+Prague",
+              "duration": 60,
+              "suggestedTime": "16:45",
+              "timeRestriction": "Guided tour required - book in advance",
+              "priority": "mandatory",
+              "priceRange": "€€",
+              "tags": ["🎟️", "📅", "⏳", "⭐"],
+              "type": "guided tour",
+              "notes": "Famous Baroque library, astronomical tower, and Meridian hall. Must book guide in advance.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.klementinum.com",
+                "advanceTimeNeeded": "Book online ahead"
+              },
+              "opening_hours": "Check official site",
+              "cost": "~15-20 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Old Town Square & Surroundings (Staroměstské náměstí)",
+              "link": "https://www.google.com/maps/search/Old+Town+Square+Prague",
+              "duration": 90,
+              "suggestedTime": "18:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "landmark",
+              "notes": "Astronomical Clock (Orloj), Church of Our Lady before Týn, and vibrant square atmosphere.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 exterior",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "~15-20 EUR (Klementinum tour)"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Praha+hl.n./Onefam+Home+Prague/Klementinum+Prague/Old+Town+Square+Prague",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Day 1 focused on hostel check-in, city center walk, Klementinum tour, and Old Town Square."
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "dayNumber": 2,
+      "title": "Farmers Market, Charles Bridge, Lennon Wall, Prague Castle & Free Roaming",
+      "isArrivalDay": false,
+      "isDepartureDay": false,
+      "total_walking_distance": "~8-10 km",
+      "total_duration": "~8-10 hours",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "09:00-13:00",
+          "start_time": "09:00",
+          "end_time": "13:00",
+          "duration": "~4 hours",
+          "description": "Farmers market along the river, Charles Bridge, and Malá Strana.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Náplavka Farmers' Market (Farmářské tržiště Náplavka)",
+              "link": "https://www.google.com/maps/search/Naplavka+Farmers+Market+Prague",
+              "duration": 90,
+              "suggestedTime": "09:00",
+              "timeRestriction": "Best on Saturday mornings",
+              "priority": "high",
+              "priceRange": "€",
+              "tags": ["⭐", "🍽️", "📸"],
+              "type": "market",
+              "notes": "Vibrant Saturday farmers market along the Vltava river embankment. Great local snacks, coffee, pastries, and atmosphere.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Saturday mornings",
+              "cost": "5-15 EUR (food/snacks)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Charles Bridge (Karlův most)",
+              "link": "https://www.google.com/maps/search/Charles+Bridge+Prague",
+              "duration": 60,
+              "suggestedTime": "11:00",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "landmark",
+              "notes": "Historic Gothic bridge lined with Baroque statues, street musicians, and artists.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "5-15 EUR (market food)"
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "13:00-18:00",
+          "start_time": "13:00",
+          "end_time": "18:00",
+          "duration": "~5 hours",
+          "description": "Lennon Wall, Prague Castle, lunch at Café Šternberk, and historic areas.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Lennon Wall (Lennonova zeď)",
+              "link": "https://www.google.com/maps/search/Lennon+Wall+Prague",
+              "duration": 30,
+              "suggestedTime": "13:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "📸"],
+              "type": "landmark",
+              "notes": "John Lennon-inspired graffiti wall filled with Beatles lyrics and peace art in Malá Strana.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Prague Castle (Pražský hrad) & St. Vitus Cathedral",
+              "link": "https://www.google.com/maps/search/Prague+Castle",
+              "duration": 150,
+              "suggestedTime": "13:45",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€-€€",
+              "tags": ["🎟️", "👀", "⭐", "📸"],
+              "type": "castle",
+              "notes": "Massive ancient castle complex, St. Vitus Cathedral, Golden Lane. Exterior grounds free; interior tickets optional.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Castle complex open daily",
+              "cost": "free (grounds) or ~15-20 EUR (interiors)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Lunch at Café Šternberk - Mezi řádky",
+              "link": "https://www.google.com/maps/place/Caf%C3%A9+%C5%A0ternberk+-+Mezi+%C5%99%C3%A1dky/@50.090473,14.3953186,18.95z/data=!4m9!1m2!2m1!1sSternberg+Palace!3m5!1s0x470b95b7678ceba7:0xd6cd8bf1db44edcd!8m2!3d50.0904807!4d14.3963857!16s%2Fg%2F11t7_dhd5y",
+              "duration": 60,
+              "suggestedTime": "16:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€€",
+              "tags": ["🍽️", "⭐"],
+              "type": "meal",
+              "notes": "Cozy cafe located right near Prague Castle (Šternberg Palace) for coffee, pastries, or a light lunch break.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "10-20 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "10-20 EUR"
+        },
+        {
+          "name": "evening",
+          "timeRange": "18:00-23:00",
+          "start_time": "18:00",
+          "end_time": "23:00",
+          "duration": "~5 hours",
+          "description": "Free roaming cycling/park time and hostel social night.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Free Roaming: Cycling or Park Time (Letná Park / Vltava Trail)",
+              "link": "https://www.google.com/maps/search/Letna+Park+Prague",
+              "duration": 120,
+              "suggestedTime": "18:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "📸", "⭐"],
+              "type": "park / recreation",
+              "notes": "Free roaming, cycling along the Vltava river trail or relaxing in Letná Park with panoramic city views at night.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free (or bike rental fee)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Hostel Night Plan / Social Event at Onefam Home",
+              "link": "https://www.google.com/maps/search/Onefam+Home+Prague",
+              "duration": 120,
+              "suggestedTime": "20:30",
+              "timeRestriction": null,
+              "priority": "low",
+              "priceRange": "€",
+              "tags": [],
+              "type": "social",
+              "notes": "Join Onefam Home's nightly hostel activity or social event.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "Free or drink cost",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0-15 EUR"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Onefam+Home+Prague/Naplavka+Prague/Charles+Bridge/Lennon+Wall/Prague+Castle/Letna+Park",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Day 2 includes Náplavka Farmers Market, Charles Bridge, Lennon Wall, Prague Castle, dinner, evening park/cycling, and hostel social night."
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "dayNumber": 3,
+      "title": "Departure Day to Vienna (EC 115 / RJ 251)",
+      "isArrivalDay": false,
+      "isDepartureDay": true,
+      "total_walking_distance": "minimal",
+      "total_duration": "~5.5 hours (travel)",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "09:15-10:08",
+          "start_time": "09:15",
+          "end_time": "10:08",
+          "duration": "~1 hour",
+          "description": "Early check out from Onefam Home (before the 11:00 deadline) to catch the 10:08 train, travel to Praha hl.n.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Check Out & Transport to Praha hl.n.",
+              "link": "https://www.google.com/maps/dir/Hybernska+1008+Prague/Praha+hlavni+nadrazi",
+              "duration": 30,
+              "suggestedTime": "09:15",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Onefam Home is ~10 min walk or short tram/metro ride from Praha hl.n. Pack the night before since the train departs before the normal 11:00 checkout deadline.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free-3 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "EC 115 to Pardubice hl.n., then RJ 251 to Wien Hbf",
+              "link": "https://www.oebb.at",
+              "duration": 281,
+              "suggestedTime": "10:08",
+              "timeRestriction": "Departure 10:08, seat-bound (Sparschiene Komfort, non-refundable)",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "train",
+              "notes": "✅ CONFIRMED - EC 115 Praha hl.n. → Pardubice hl.n. (10:08-11:09, Wagen 346, window seat 95), 27-min layover, then RJ 251 Pardubice → Wien Hbf (11:36-14:49, Wagen 256, window seat 115). Total ~4h41m. Booking ref 0661 4954 1113 4079. Bring photo ID.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "23.00 EUR (already booked)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "free-3 EUR (transfer to station only)"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Hybernska+1008+Prague/Praha+hlavni+nadrazi",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Prague → Vienna transport confirmed (EC 115 + RJ 251 via Pardubice, booking 0661 4954 1113 4079)."
+      }
+    }
+  ],
+  "food_recommendations": {
+    "must_try_dishes": [
+      {
+        "name_local": "Svíčková na smetaně",
+        "name_english": "Marinated Sirloin in Cream Sauce",
+        "description": "Tender beef tenderloin served in a rich, sweet and savory root vegetable cream sauce with cranberries and bread dumplings.",
+        "typical_cost": "15-22 EUR",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Guláš",
+        "name_english": "Czech Goulash",
+        "description": "Rich, slow-cooked beef stew seasoned with onions and paprika, served with bread dumplings (knedlíky).",
+        "typical_cost": "12-18 EUR",
+        "meal_type": "main",
+        "seasonal": null
+      }
+    ],
+    "drinks_and_rituals": [
+      {
+        "name_local": "České pivo",
+        "name_english": "Czech Beer (Pilsner Urquell)",
+        "description": "World-renowned crisp Czech lager, often cheaper than water in Prague pubs.",
+        "typical_cost": "2-4 EUR",
+        "typical_time": "Anytime"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Café Šternberk - Mezi řádky",
+        "link": "https://www.google.com/maps/place/Caf%C3%A9+%C5%A0ternberk+-+Mezi+%C5%99%C3%A1dky/@50.090473,14.3953186,18.95z/data=!4m9!1m2!2m1!1sSternberg+Palace!3m5!1s0x470b95b7678ceba7:0xd6cd8bf1db44edcd!8m2!3d50.0904807!4d14.3963857!16s%2Fg%2F11t7_dhd5y",
+        "neighborhood": "Hradčany (near Prague Castle / Šternberg Palace)",
+        "cuisine": "Cafe / Bakery / Light meals",
+        "priceRange": "€€",
+        "typical_cost_per_person": "10-20 EUR",
+        "specialties": ["Coffee", "Pastries", "Light lunch"],
+        "notes": "Cozy cafe located right near the Prague Castle area (Šternberg Palace), perfect for a coffee or lunch break."
+      },
+      {
+        "name": "Restaurant St. Martin",
+        "link": "https://www.google.com/maps/search/Restaurant+St.+Martin+Prague",
+        "neighborhood": "Historic Center",
+        "cuisine": "Traditional Czech",
+        "priceRange": "€€",
+        "typical_cost_per_person": "15-25 EUR",
+        "specialties": ["Czech goulash", "Roasted duck", "Traditional soups"],
+        "notes": "Charming restaurant serving authentic Czech cuisine in a historic setting."
+      }
+    ],
+    "special_meal_formats": [],
+    "tourist_traps_to_avoid": []
+  },
+  "average_food_budget_reference": {
+    "note": "Rough daily food budget guide for Prague (per person)",
+    "breakfast": "3-8 EUR (bakery/cafe)",
+    "lunch": "6-15 EUR (market food, casual cafe)",
+    "dinner": "12-25 EUR (traditional Czech restaurant)",
+    "snacks_and_drinks": "2-5 EUR (Czech beer is famously cheap, often cheaper than water)",
+    "daily_total_estimate": "~25-45 EUR/day eating casually/mid-range - Prague is one of the more affordable cities on this trip"
+  },
+  "logistics": {
+    "public_transport": {
+      "ticket_types": [],
+      "where_to_buy": {},
+      "operating_hours": {}
+    },
+    "bike_rentals": {},
+    "emergency_contacts": {},
+    "practical_tips": [
+      "Age restriction 18-40 at Onefam Home Prague - bring photo ID at check-in.",
+      "City tax (50 CZK/person/night) and the full non-refundable balance (CZK 2,440.00) are payable at the property - confirm whether it will be pre-charged to the card before arrival."
+    ]
+  },
+  "maps": {
+    "example_curated_map": {
+      "url": "",
+      "description": ""
+    }
+  },
+  "research_notes": {
+    "sources": [],
+    "alternatives_considered": [],
+    "notes": "Skeleton created from confirmed Onefam Home reservation and confirmed RJ 171 arrival ticket from Berlin. Day-by-day activities, food recommendations, and logistics still need full research. Prague→Vienna departure transport confirmed (EC 115 + RJ 251)."
+  },
+  "emoji_legend": {
+    "cost_and_booking": {
+      "🆓": "Free - No admission fee",
+      "🎟️": "Paid - Requires ticket or entrance fee",
+      "📅": "Reservation Required - Must be booked in advance"
+    },
+    "visit_style": {
+      "👀": "See & Continue - Quick stop, exterior view, photo op (10-30 mins)",
+      "⏳": "Be There - Immersive visit, full tour, extended stay (1-3+ hours)"
+    },
+    "special_markers": {
+      "⭐": "Top Highlight - Must-see priority spot",
+      "📸": "Photo Spot - Prime viewpoint or aesthetic location",
+      "☂️": "Indoor / Rainy Day - Fully indoor activity",
+      "🍽️": "Food/Dining"
+    }
+  }
+}

@@ -1184,6 +1184,7 @@
         "neighborhood": "Various",
         "cuisine": "Catalan/Spanish",
         "priceRange": "€-€€€",
+        "typical_cost_per_person": "10-40+ EUR depending on spot (vermut bars cheaper, sit-down restaurants pricier)",
         "specialties": ["Traditional Catalan dishes", "Authentic vermut bars", "Non-touristy spots"],
         "notes": "Official Entrespacios map with 20+ vetted historic bars and restaurants across Barcelona neighborhoods. Use this as primary restaurant guide."
       }

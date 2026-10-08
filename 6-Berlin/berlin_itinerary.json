@@ -47,138 +47,445 @@
     },
     "departure": {
       "date": "2026-10-30",
-      "time": null,
-      "from": "Berlin",
-      "to": "Prague",
-      "provider": null,
-      "transportType": null,
-      "flightNumber": null,
-      "link": null,
-      "bookingReference": null,
+      "time": "07:28",
+      "from": "Berlin Hbf",
+      "to": "Praha hl.n.",
+      "provider": "Deutsche Bahn (DB) / Omio",
+      "transportType": "train",
+      "flightNumber": "RJ 171",
+      "link": "https://www.omio.com",
+      "bookingReference": "629543863359",
       "recommended_departure_from_accommodation": null,
-      "recommended_arrival_at_station": null,
-      "notes": "⚠️ TBD - Not yet booked. Checkout from Sunflower Hostel on 2026-10-30 (note front-door curfew 05:00-07:00 if departing very early)."
+      "recommended_arrival_at_station": "06:50-07:00",
+      "notes": "✅ CONFIRMED - Super Sparpreis Europa (2nd class), non-refundable, seat-bound to RJ 171 (Railjet). Departs Berlin Hbf 07:28, arrives Praha hl.n. 11:25 (~4h) via Dresden/Bad Schandau/Ústí nad Labem. Price: 39.99 EUR, booked via Omio. Ticket valid 30.10.2026 00:00 - 01.11.2026 03:00. Note front-door curfew at Sunflower Hostel is 05:00-07:00, so checking out this early should be fine (curfew ends right around departure prep time) but confirm the door isn't locked when leaving. Bring printed or app-loaded ticket + photo ID."
     }
   },
   "days": [
     {
       "date": "2026-10-28",
       "dayNumber": 1,
-      "title": "Arrival Day - TBD (research pending)",
+      "title": "Check-in & Bike Tour: East Side Gallery, RAW-Gelände, Watergate & Tempelhofer Feld",
       "isArrivalDay": true,
       "isDepartureDay": false,
-      "total_walking_distance": "",
-      "total_duration": "",
+      "total_walking_distance": "minimal (by bike)",
+      "total_duration": "~5 hours",
       "timeBlocks": [
         {
           "name": "afternoon",
-          "timeRange": "12:50-15:00",
+          "timeRange": "12:50-15:30",
           "start_time": "12:50",
-          "end_time": "15:00",
-          "duration": "~2 hours",
-          "description": "Arrival from Amsterdam via DB ICE at Berlin Hbf, transfer to hostel (Friedrichshain), check-in, settle in.",
-          "activities": [],
-          "budget": ""
+          "end_time": "15:30",
+          "duration": "~2.5 hours",
+          "description": "Arrival from Amsterdam via ICE 141 at Berlin Hbf (12:50), transfer to Sunflower Hostel (Friedrichshain), check-in, and get bikes ready.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Check-in at Sunflower Hostel",
+              "link": "https://www.google.com/maps/search/Sunflower+Hostel+Helsingforser+Str+17+Berlin",
+              "duration": 45,
+              "suggestedTime": "13:30",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "accommodation",
+              "notes": "Check in, settle in, pay city tax (3.41 EUR) and key deposit.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "Already paid online (52.07 USD)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "3.41 EUR (city tax)"
+        },
+        {
+          "name": "late_afternoon",
+          "timeRange": "15:30-20:00",
+          "start_time": "15:30",
+          "end_time": "20:00",
+          "duration": "~4.5 hours",
+          "description": "Bike tour of Berlin highlights: East Side Gallery, RAW-Gelände, Watergate, and Tempelhofer Feld (weather permitting).",
+          "activities": [
+            {
+              "order": 1,
+              "name": "East Side Gallery ⭐",
+              "link": "https://www.google.com/maps/search/East+Side+Gallery+Berlin",
+              "duration": 60,
+              "suggestedTime": "15:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "👀", "⭐", "📸"],
+              "type": "landmark",
+              "notes": "Open-air gallery painted directly on the longest remaining section of the Berlin Wall along the Spree river.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7 open-air",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "RAW-Gelände",
+              "link": "https://www.google.com/maps/search/RAW-Gelande+Berlin",
+              "duration": 60,
+              "suggestedTime": "16:45",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["👀", "⭐", "📸"],
+              "type": "culture / alternative",
+              "notes": "Alternative cultural center in Friedrichshain filled with street art, skate parks, open-air bars, and industrial charm.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Watergate (Passing by / Spree view)",
+              "link": "https://www.google.com/maps/search/Watergate+Berlin",
+              "duration": 15,
+              "suggestedTime": "17:45",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "tags": ["👀", "📸"],
+              "type": "landmark",
+              "notes": "World-famous electronic music club right on the Spree river with a panoramic glass waterfront view.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free (exterior view)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 4,
+              "name": "Tempelhofer Feld (Weather Permitting)",
+              "link": "https://www.google.com/maps/search/Tempelhofer+Feld+Berlin",
+              "duration": 90,
+              "suggestedTime": "18:15",
+              "timeRestriction": "Daylight dependent",
+              "priority": "medium",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "park",
+              "notes": "Massive former airport field turned public park. Perfect for cycling down the wide open runways if weather is good.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Sunrise to sunset",
+              "cost": "free",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "Free (bike rental/sharing)"
         }
       ],
-      "map_url": "",
+      "map_url": "https://www.google.com/maps/dir/Helsingforser+Str+17+Berlin/East+Side+Gallery+Berlin/RAW-Gelande+Berlin/Watergate+Berlin/Tempelhofer+Feld+Berlin",
       "research_notes": {
         "alternatives": [],
         "sources": [],
-        "notes": "Full day itinerary not yet researched."
+        "notes": "Day 1 covers check-in at Sunflower Hostel and a bike tour of East Side Gallery, RAW-Gelände, Watergate, and Tempelhofer Feld."
       }
     },
     {
       "date": "2026-10-29",
       "dayNumber": 2,
-      "title": "TBD (research pending)",
+      "title": "GuruWalk Free Walking Tour, Lunch, Tiergarten & City Center Wander",
       "isArrivalDay": false,
       "isDepartureDay": false,
-      "total_walking_distance": "",
-      "total_duration": "",
+      "total_walking_distance": "~6-8 km",
+      "total_duration": "~6-7 hours",
       "timeBlocks": [
         {
           "name": "morning",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
+          "timeRange": "10:00-13:00",
+          "start_time": "10:00",
+          "end_time": "13:00",
+          "duration": "~3 hours",
+          "description": "GuruWalk Free Walking Tour through the heart of Berlin.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "GuruWalk - Free Tour por el corazón de Berlín ⭐ 📅",
+              "link": "https://www.guruwalk.com/es/walks/38344-free-tour-por-el-corazon-de-berlin",
+              "duration": 180,
+              "suggestedTime": "10:00",
+              "timeRestriction": "Book in advance online",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["⭐", "📅", "⏳"],
+              "type": "guided tour",
+              "notes": "Free walking tour exploring the heart of Berlin (Brandenburg Gate, Checkpoint Charlie, Memorial to the Murdered Jews of Europe, etc.). Tip-based.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": "https://www.guruwalk.com/es/walks/38344-free-tour-por-el-corazon-de-berlin",
+                "advanceTimeNeeded": "Book ahead online"
+              },
+              "opening_hours": "Check schedule",
+              "cost": "Tip-based (~10-15 EUR recommended)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "10-15 EUR (tip)"
         },
         {
           "name": "lunch",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
+          "timeRange": "13:00-14:30",
+          "start_time": "13:00",
+          "end_time": "14:30",
+          "duration": "~1.5 hours",
+          "description": "Lunch in the city center after the walking tour.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Lunch in Berlin Center",
+              "link": "https://www.google.com/maps/search/Berlin+center+restaurants",
+              "duration": 90,
+              "suggestedTime": "13:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "Grab lunch near the city center or Friedrichstraße area (Currywurst, Döner Kebab, or local cafe).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "10-20 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "10-20 EUR"
         },
         {
           "name": "afternoon",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
-        },
-        {
-          "name": "evening",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "",
-          "activities": [],
-          "budget": ""
+          "timeRange": "14:30-18:00",
+          "start_time": "14:30",
+          "end_time": "18:00",
+          "duration": "~3.5 hours",
+          "description": "Wander through Tiergarten park and the city center.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Tiergarten Park & Victory Column (Siegessäule) ⭐",
+              "link": "https://www.google.com/maps/search/Tiergarten+Berlin",
+              "duration": 120,
+              "suggestedTime": "14:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "park",
+              "notes": "Berlin's massive inner-city park. Peaceful walking trails, lakes, and the Victory Column at the center.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0"
         }
       ],
-      "map_url": "",
+      "map_url": "https://www.google.com/maps/dir/Alexanderplatz+Berlin/Brandenburg+Gate/Checkpoint+Charlie/Tiergarten+Berlin",
       "research_notes": {
         "alternatives": [],
         "sources": [],
-        "notes": ""
+        "notes": "Day 2 features the GuruWalk free tour through the heart of Berlin, lunch, and an afternoon wander through Tiergarten park."
       }
     },
     {
       "date": "2026-10-30",
       "dayNumber": 3,
-      "title": "Departure Day to Prague - TBD",
+      "title": "Departure Day to Prague (RJ 171)",
       "isArrivalDay": false,
       "isDepartureDay": true,
-      "total_walking_distance": "",
-      "total_duration": "",
+      "total_walking_distance": "minimal",
+      "total_duration": "~4 hours (travel)",
       "timeBlocks": [
         {
           "name": "morning",
-          "timeRange": "HH:MM-HH:MM",
-          "start_time": "",
-          "end_time": "",
-          "duration": "",
-          "description": "Check out. Departure transport to Prague TBD. Note: front door has a curfew/lockout window 05:00-07:00 - plan accordingly if departing very early.",
-          "activities": [],
-          "budget": ""
+          "timeRange": "06:15-07:28",
+          "start_time": "06:15",
+          "end_time": "07:28",
+          "duration": "~1.25 hours",
+          "description": "Check out from Sunflower Hostel, travel to Berlin Hbf for 07:28 RJ 171 departure to Prague. Note: front door curfew is 05:00-07:00, should be lifted by the time of departure but confirm the night before.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Check Out & Transport to Berlin Hbf",
+              "link": "https://www.google.com/maps/dir/Helsingforser+Str+17+Berlin/Berlin+Hauptbahnhof",
+              "duration": 45,
+              "suggestedTime": "06:15",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "From Sunflower Hostel (Friedrichshain) to Berlin Hbf: S-Bahn from Warschauer Str. heading West, or taxi/Uber (~15-20 min). Allow buffer given the front door curfew (05:00-07:00).",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "3-15 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "RJ 171 to Praha hl.n.",
+              "link": "https://www.omio.com",
+              "duration": 237,
+              "suggestedTime": "07:28",
+              "timeRestriction": "Departure 07:28, seat-bound (non-refundable, non-changeable)",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "train",
+              "notes": "✅ CONFIRMED - Railjet RJ 171, booked via Omio (order 629543863359). Route via Dresden/Bad Schandau/Ústí nad Labem. Arrives Praha hl.n. 11:25 (~4h). Bring photo ID.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "39.99 EUR (already booked)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "3-15 EUR (transfer to station only)"
         }
       ],
-      "map_url": "",
+      "map_url": "https://www.google.com/maps/dir/Helsingforser+Str+17+Berlin/Berlin+Hauptbahnhof",
       "research_notes": {
         "alternatives": [],
         "sources": [],
-        "notes": "Berlin → Prague transport not yet booked."
+        "notes": "Berlin → Prague transport confirmed (RJ 171, Omio order 629543863359)."
       }
     }
   ],
   "food_recommendations": {
-    "must_try_dishes": [],
-    "drinks_and_rituals": [],
-    "restaurants": [],
-    "special_meal_formats": [],
-    "tourist_traps_to_avoid": []
+    "must_try_dishes": [
+      {
+        "name_local": "Currywurst",
+        "name_english": "Curry Sausage",
+        "description": "Sliced bratwurst smothered in curry-spiced ketchup, served with fries. Berlin's definitive street food, invented here in 1949.",
+        "typical_cost": "3-6 EUR",
+        "meal_type": "snack/lunch",
+        "seasonal": null
+      },
+      {
+        "name_local": "Döner Kebab",
+        "name_english": "Döner Kebab",
+        "description": "Turkish-German invention - grilled meat, vegetables, and sauce in flatbread. Berlin is considered its birthplace outside Turkey.",
+        "typical_cost": "4-7 EUR",
+        "meal_type": "lunch/dinner",
+        "seasonal": null
+      },
+      {
+        "name_local": "Schnitzel",
+        "name_english": "Schnitzel",
+        "description": "Breaded, pan-fried pork or veal cutlet, common across German beer halls and traditional restaurants.",
+        "typical_cost": "12-20 EUR",
+        "meal_type": "main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Berliner Pfannkuchen",
+        "name_english": "Berliner (Jelly Donut)",
+        "description": "Fried dough pastry filled with jam, dusted with powdered sugar. Confusingly just called 'Pfannkuchen' in Berlin itself.",
+        "typical_cost": "1.50-3 EUR",
+        "meal_type": "snack/dessert",
+        "seasonal": null
+      },
+      {
+        "name_local": "Brezel",
+        "name_english": "Pretzel",
+        "description": "Classic soft German pretzel, often eaten with butter or mustard.",
+        "typical_cost": "2-4 EUR",
+        "meal_type": "snack",
+        "seasonal": null
+      },
+      {
+        "name_local": "Eisbein",
+        "name_english": "Pork Knuckle",
+        "description": "Braised or roasted pork knuckle, usually served with sauerkraut and potatoes. Hearty traditional German dish.",
+        "typical_cost": "15-22 EUR",
+        "meal_type": "main",
+        "seasonal": null
+      }
+    ],
+    "drinks_and_rituals": [
+      {
+        "name_local": "Berliner Weisse",
+        "name_english": "Berlin White Beer",
+        "description": "Tart, cloudy wheat beer, traditionally served with a shot of woodruff (green) or raspberry (red) syrup to balance the sourness.",
+        "typical_cost": "4-6 EUR",
+        "typical_time": "Any time, especially summer"
+      },
+      {
+        "name_local": "Deutsches Bier",
+        "name_english": "German Beer",
+        "description": "Pilsner, Helles, or craft options - Berlin has a thriving beer garden and brewery culture.",
+        "typical_cost": "3.50-6 EUR",
+        "typical_time": "Any time"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Curry 36",
+        "link": "https://www.google.com/maps/search/Curry+36+Berlin",
+        "neighborhood": "Kreuzberg",
+        "cuisine": "Currywurst / Street Food",
+        "priceRange": "€",
+        "typical_cost_per_person": "4-7 EUR",
+        "specialties": ["Currywurst", "Pommes"],
+        "notes": "One of Berlin's most famous currywurst stands, open late, always a line but moves fast."
+      },
+      {
+        "name": "Mustafa's Gemüse Kebap",
+        "link": "https://www.google.com/maps/search/Mustafa's+Gemuse+Kebap+Berlin",
+        "neighborhood": "Kreuzberg (Mehringdamm)",
+        "cuisine": "Döner / Turkish",
+        "priceRange": "€",
+        "typical_cost_per_person": "5-8 EUR",
+        "specialties": ["Vegetable döner kebab"],
+        "notes": "Famously long queues for this grilled-vegetable döner - worth the wait if you have time."
+      },
+      {
+        "name": "Markthalle Neun",
+        "link": "https://www.google.com/maps/search/Markthalle+Neun+Berlin",
+        "neighborhood": "Kreuzberg",
+        "cuisine": "Food hall / International",
+        "priceRange": "€€",
+        "typical_cost_per_person": "8-18 EUR",
+        "specialties": ["Street Food Thursday market", "Local produce", "International stalls"],
+        "notes": "Historic market hall with a famous weekly Street Food Thursday event - great variety."
+      }
+    ],
+    "special_meal_formats": [
+      "Imbiss (street food stand) culture - quick, cheap, and found on nearly every corner, especially for currywurst and döner"
+    ],
+    "tourist_traps_to_avoid": [
+      "Restaurants directly on Unter den Linden or near Checkpoint Charlie - inflated prices for average food",
+      "'Bavarian' beer halls aimed squarely at tourists in the city center - Berlin's own beer/food culture is different from Munich's and usually better value"
+    ]
+  },
+  "average_food_budget_reference": {
+    "note": "Rough daily food budget guide for Berlin (per person)",
+    "breakfast": "3-8 EUR (bakery/cafe)",
+    "lunch": "4-8 EUR (currywurst/döner stand)",
+    "dinner": "12-22 EUR (schnitzel/traditional restaurant)",
+    "snacks_and_drinks": "2-6 EUR (pretzel, beer)",
+    "daily_total_estimate": "~25-45 EUR/day eating casually/mid-range - Berlin is one of the more affordable Western European capitals"
   },
   "logistics": {
     "public_transport": {
@@ -201,7 +508,7 @@
   "research_notes": {
     "sources": [],
     "alternatives_considered": [],
-    "notes": "Skeleton created from confirmed Sunflower Hostel booking and DB ICE 141 arrival ticket. Day-by-day activities, food recommendations, and logistics still need full research. Departure transport to Prague still TBD."
+    "notes": "Skeleton created from confirmed Sunflower Hostel booking and DB ICE 141 arrival ticket. Day-by-day activities, food recommendations, and logistics still need full research. Departure transport to Prague confirmed (RJ 171)."
   },
   "emoji_legend": {
     "cost_and_booking": {

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prague Itinerary | 2026-10-30 to 2026-11-01</title>
+    <style>
+        :root {
+            --primary: #457b9d;
+            --secondary: #1a1a2e;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #dee2e6;
+            --highlight: #f0f4f8;
+            --success: #27ae60;
+            --info: #3498db;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid var(--primary);
+        }
+        
+        h1 {
+            color: var(--secondary);
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .trip-meta {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #666;
+            font-size: 1rem;
+            padding: 8px 16px;
+            background: var(--highlight);
+            border-radius: 8px;
+        }
+        
+        .meta-item strong {
+            color: var(--primary);
+        }
+        
+        .section {
+            margin: 40px 0;
+        }
+        
+        h2 {
+            color: var(--secondary);
+            font-size: 2rem;
+            margin: 40px 0 25px 0;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin: 25px 0 15px 0;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+            margin: 20px 0;
+        }
+        
+        .card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--primary);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        .card h4 {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 4px;
+            background: var(--success);
+            color: #fff;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .day-block {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+        
+        .day-header {
+            background: var(--primary);
+            color: #fff;
+            padding: 18px 25px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .map-btn {
+            background: #ffffff;
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .map-btn:hover {
+            background: #f0f4f8;
+        }
+        
+        .day-content {
+            padding: 25px;
+        }
+        
+        .time-block {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        
+        .time-block:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .time-range {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .activity-item {
+            background: var(--highlight);
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin: 12px 0;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .activity-title {
+            font-weight: 600;
+            color: var(--secondary);
+            font-size: 1.05rem;
+            margin-bottom: 5px;
+        }
+        
+        .activity-details {
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        .tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        
+        .tag {
+            background: #e2e8f0;
+            color: #333;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .food-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .food-name {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media(max-width: 768px) {
+            .container { padding: 15px; }
+            h1 { font-size: 2.2rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Master Itinerary</a>
+        
+        <header>
+            <h1>🇨🇿 Prague, Czech Republic</h1>
+            <p class="subtitle">Gothic Spires, Charles Bridge, and Historic Squares</p>
+            <div class="trip-meta">
+                <div class="meta-item">📅 <strong>Dates:</strong> Oct 30 - Nov 1, 2026 (2 nights)</div>
+                <div class="meta-item">🏨 <strong>Accommodation:</strong> Onefam Home (Paid)</div>
+                <div class="meta-item">🚂 <strong>Transport:</strong> DB RJ 171 (Berlin → Prague) & ÖBB (Prague → Vienna)</div>
+            </div>
+        </header>
+
+        <!-- ACCOMMODATION & TRANSPORT -->
+        <div class="section">
+            <h2>🏨 Accommodation & Logistics</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>🏨 Onefam Home Prague <span class="badge">Confirmed & Paid</span></h4>
+                    <p><strong>Address:</strong> 22, Hybernská 1008, Prague, Praha 110 00 (New Town)</p>
+                    <p><strong>Dates:</strong> Oct 30 - Nov 1, 2026 (2 nights, 1 guest)</p>
+                    <p><strong>Room:</strong> 8 Bed Shared Dorm (Non-Refundable)</p>
+                    <p><strong>Booking Ref:</strong> <code>4516996859709</code></p>
+                    <p><strong>Check-in / Check-out:</strong> 15:00 / 11:00 (Age restriction 18-40)</p>
+                    <p><strong>Cost:</strong> CZK 2,440.00 total (fully paid online)</p>
+                </div>
+                <div class="card">
+                    <h4>🚂 Transport Connections <span class="badge">Confirmed</span></h4>
+                    <p><strong>Berlin → Prague (Oct 30):</strong> DB RJ 171. Departs Berlin Hbf 07:28, arrives Praha hl.n. 11:25 (~4h). Ref: <code>629543863359</code> (EUR 39.99).</p>
+                    <p><strong>Prague → Vienna (Nov 1):</strong> ÖBB EC 115 + RJ 251. Departs Praha hl.n. 10:08, arrives Wien Hbf 14:49. Ref: <code>0661 4954 1113 4079</code> (EUR 23.00).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY BY DAY ITINERARY -->
+        <div class="section">
+            <h2>🗺️ Day-by-Day Itinerary</h2>
+
+            <!-- DAY 1 -->
+            <div class="day-block">
+                <div class="day-header">
+                    <span>Day 1: Arrival, City Center Walk & Klementinum (Fri, Oct 30)</span>
+                    <a href="https://www.google.com/maps/dir/Praha+hlavni+nadrazi/Hybernska+1008+Prague/Klementinum+Prague/Old+Town+Square+Prague" target="_blank" class="map-btn">📍 View Route Map</a>
+                </div>
+                <div class="day-content">
+                    <div class="time-block">
+                        <div class="time-range">11:25 - 15:00 | Arrival & Bag Drop</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Arrival via RJ 171 & Drop Bags at Onefam Home</div>
+                            <div class="activity-details">Arrive at Praha hl.n. at 11:25. Walk or take tram to Onefam Home (Hybernská 1008) to drop bags before check-in (15:00).</div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">15:00 - 20:00 | Check-in, City Center Walk & Klementinum</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Free Walk through Prague City Center</div>
+                            <div class="activity-details">Explore the charming streets of the New Town and Old Town.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">👀 See & Continue</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Klementinum - Guided Tour ⭐ 📅</div>
+                            <div class="activity-details">Tour the breathtaking Baroque library, astronomical tower, and meridian hall. ⚠️ Book guide in advance.</div>
+                            <div class="tags"><span class="tag">🎟️ Paid (~€15-20)</span> <span class="tag">📅 Reservation Required</span> <span class="tag">⭐ Top Highlight</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Old Town Square & Surroundings (Staroměstské náměstí) ⭐</div>
+                            <div class="activity-details">See the historic Astronomical Clock (Orloj), Týn Church, and soak in the vibrant atmosphere.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 2 -->
+            <div class="day-block">
+                <div class="day-header">
+                    <span>Day 2: Farmers Market, Charles Bridge, Castle & Free Roaming (Sat, Oct 31)</span>
+                    <a href="https://www.google.com/maps/dir/Hybernska+1008+Prague/Naplavka+Prague/Charles+Bridge/Lennon+Wall/Prague+Castle/Sternberg+Palace+Prague/Letna+Park+Prague" target="_blank" class="map-btn">📍 View Route Map</a>
+                </div>
+                <div class="day-content">
+                    <div class="time-block">
+                        <div class="time-range">09:00 - 13:00 | Farmers Market & Charles Bridge</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Náplavka Farmers' Market ⭐ 🍽️</div>
+                            <div class="activity-details">Vibrant Saturday morning market along the Vltava river embankment. Great local breakfast snacks, coffee, and pastries.</div>
+                            <div class="tags"><span class="tag">⭐ Top Highlight</span> <span class="tag">🍽️ Food/Dining</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Charles Bridge (Karlův most) ⭐</div>
+                            <div class="activity-details">Stroll across the iconic Gothic bridge lined with Baroque statues and street artists.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">13:00 - 18:00 | Lennon Wall, Prague Castle & Lunch</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Lennon Wall (Lennonova zeď)</div>
+                            <div class="activity-details">Visit the iconic John Lennon-inspired graffiti wall in Malá Strana.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Prague Castle (Pražský hrad) & St. Vitus Cathedral ⭐</div>
+                            <div class="activity-details">Explore the vast castle complex, Gothic cathedral, and Golden Lane. Grounds are free; interior tickets optional.</div>
+                            <div class="tags"><span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Lunch at Café Šternberk - Mezi řádky ⭐ 🍽️</div>
+                            <div class="activity-details">Cozy cafe located right near Prague Castle (Šternberg Palace) for coffee, pastries, or a light lunch break.</div>
+                            <div class="tags"><span class="tag">🍽️ Dining</span> <span class="tag">⭐ Top Highlight</span></div>
+                        </div>
+                    </div>
+                    <div class="time-block">
+                        <div class="time-range">18:00 - 23:00 | Free Roaming (Cycling / Park) & Hostel Night Plan</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Free Roaming: Cycling or Park Time (Letná Park / Vltava Trail) ⭐</div>
+                            <div class="activity-details">Evening cycling along the Vltava river trail or relaxing in Letná Park with panoramic city views at night.</div>
+                            <div class="tags"><span class="tag">🆓 Free</span> <span class="tag">⭐ Top Highlight</span> <span class="tag">📸 Photo Spot</span></div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">Hostel Social Night at Onefam Home</div>
+                            <div class="activity-details">Join the evening social activities organized by the hostel.</div>
+                            <div class="tags"><span class="tag">🍻 Social</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 3 -->
+            <div class="day-block">
+                <div class="day-header">
+                    <span>Day 3: Departure to Vienna (Sun, Nov 1)</span>
+                    <a href="https://www.google.com/maps/dir/Hybernska+1008+Prague/Praha+hlavni+nadrazi" target="_blank" class="map-btn">📍 View Route Map</a>
+                </div>
+                <div class="day-content">
+                    <div class="time-block">
+                        <div class="time-range">09:15 - 10:08 | Early Checkout & Train to Vienna</div>
+                        <div class="activity-item">
+                            <div class="activity-title">Check Out & ÖBB EC 115 / RJ 251 to Vienna</div>
+                            <div class="activity-details">Early checkout from Onefam Home (train departs 10:08, before normal 11:00 checkout). Travel to Praha hl.n. for train to Vienna.</div>
+                            <div class="tags"><span class="tag">🎟️ Train Confirmed</span> <span class="tag">🎒 Logistics</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOD RECOMMENDATIONS -->
+        <div class="section">
+            <h2>🍽️ Recommended Food & Cafes</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-name">Café Šternberk - Mezi řádky</div>
+                    <p>Cozy cafe near Prague Castle (Šternberg Palace), perfect for coffee, pastries, and lunch during castle exploration.</p>
+                    <p><strong>~10-20 EUR per person</strong></p>
+                </div>
+                <div class="food-card">
+                    <div class="food-name">Restaurant St. Martin</div>
+                    <p>Charming traditional Czech restaurant serving authentic local dishes like goulash and roasted duck.</p>
+                    <p><strong>~15-25 EUR per person</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOD BUDGET -->
+        <div class="section">
+            <h2>📊 Rough Daily Food Budget (per person)</h2>
+            <div class="card">
+                <p><strong>Breakfast:</strong> 3-8 EUR (bakery/cafe) · <strong>Lunch:</strong> 6-15 EUR (market food, casual cafe) · <strong>Dinner:</strong> 12-25 EUR (traditional Czech restaurant) · <strong>Snacks/Drinks:</strong> 2-5 EUR</p>
+                <p style="margin-top: 8px;"><strong>Daily total estimate:</strong> ~25-45 EUR/day eating casually/mid-range - Prague is one of the more affordable cities on this trip.</p>
+            </div>
+        </div>
+
+        <!-- PRACTICAL TIPS -->
+        <div class="section">
+            <h2>💡 Practical Tips</h2>
+            <ul>
+                <li><strong>Age Restriction:</strong> Onefam Home Prague has an 18-40 age limit; carry photo ID.</li>
+                <li><strong>Klementinum Booking:</strong> Book your guided library and tower tour in advance online.</li>
+                <li><strong>Saturday Market:</strong> Náplavka Farmers' Market is best experienced on Saturday morning (Day 2).</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,598 @@
+{
+  "destination": "Madrid",
+  "country": "Spain",
+  "dates": {
+    "start": "2026-11-10",
+    "end": "2026-11-12"
+  },
+  "accommodation": {
+    "name": "Onefam Sungate",
+    "address": "Calle del Carmen 16, 2nd floor, 28013 Madrid, Spain",
+    "neighborhood": "Centro (Sol / Gran Vía area)",
+    "link": "https://hotels.cloudbeds.com/en/reservation/z8sPX5/?currency=eur",
+    "phone": "+34 910 23 68 06",
+    "email": "sungate@onefamhostels.com",
+    "checkIn": "2026-11-10",
+    "checkInTime": "15:00",
+    "checkOut": "2026-11-12",
+    "checkOutTime": "11:00",
+    "bookingReference": null,
+    "bookingConfirmation": null,
+    "meals_included": [],
+    "paymentStatus": {
+      "note": "⚠️ NOT YET BOOKED - hostel selected (Onefam Sungate via Cloudbeds), but reservation not yet confirmed/paid. Book via the Cloudbeds link to lock in the room and price."
+    },
+    "notes": "⚠️ SELECTED, NOT YET BOOKED. Prime inner-city location in Centro, next to Madrid's historical sights, main attractions, nightlife, and shopping area (walking distance to Gran Vía, Puerta del Sol). No bunk beds in dorms - all equipped with A/C and lockers. Age recommendation 18-45. Amenities include baggage storage, laundry service, 24h front desk/check-in, shared kitchen, and hostel-organized walking tours. Multiple room types available (Double Private, Twin Private, 3/4/5/6 Bed Dorms Mixed/Female) - confirm exact room type and price when booking."
+  },
+  "transport": {
+    "arrival": {
+      "date": "2026-11-10",
+      "time": null,
+      "from": "Rome (estimated, pending Italy itinerary)",
+      "to": "Madrid",
+      "provider": null,
+      "transportType": null,
+      "flightNumber": null,
+      "link": null,
+      "bookingReference": null,
+      "recommended_departure_from_accommodation": null,
+      "recommended_arrival_at_station": null,
+      "notes": "⚠️ TBD - Not yet booked. Depends on finalizing the Italy itinerary (currently a 'black hole' from Treviso/Venice to Rome). Recommend booking a flight that arrives early-to-mid afternoon on Nov 10 to leave time for hostel check-in and the evening free tour/wander."
+    },
+    "departure": {
+      "date": "2026-11-12",
+      "time": "10:25",
+      "from": "Madrid (Barajas, MAD)",
+      "to": "Rosario (Fisherton, ROS)",
+      "provider": "World2Fly",
+      "transportType": "flight",
+      "flightNumber": "2W2075",
+      "link": null,
+      "bookingReference": "VMKLKQ",
+      "recommended_departure_from_accommodation": "~07:30-08:00 (allow time for airport transfer + check-in for long-haul flight)",
+      "recommended_arrival_at_station": "~08:30 (MAD airport, ~2h before departure recommended for international flight)",
+      "notes": "✅ CONFIRMED - World2Fly 2W2075, departs Madrid Barajas 10:25, arrives Rosario (Fisherton) 19:00 (12h35m flight). Transaction ref 2R4J1LNOPW. ⚠️ Lands in Rosario, NOT Buenos Aires. Checkout from Onefam Sungate is 11:00, but with a 10:25 flight you'll need to leave well before that - pack the night before."
+    }
+  },
+  "days": [
+    {
+      "date": "2026-11-10",
+      "dayNumber": 1,
+      "title": "Arrival, Free Tour Setup & City Wander",
+      "isArrivalDay": true,
+      "isDepartureDay": false,
+      "total_walking_distance": "~4-5 km",
+      "total_duration": "~5-6 hours (flexible)",
+      "timeBlocks": [
+        {
+          "name": "afternoon",
+          "timeRange": "arrival-16:00",
+          "start_time": "",
+          "end_time": "16:00",
+          "duration": "varies with flight arrival",
+          "description": "Arrival and transfer to Onefam Sungate (central Madrid, Centro neighborhood), check in and ask reception about the free walking tour.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Check-in at Onefam Sungate & Ask About the Free Tour",
+              "link": "https://hotels.cloudbeds.com/en/reservation/z8sPX5/?currency=eur",
+              "duration": 30,
+              "suggestedTime": "15:00 or later",
+              "timeRestriction": "Official check-in time 15:00",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "accommodation",
+              "notes": "Check in, settle into the room, and ask reception for the exact day/time of the hostel's free walking tour (the hostel lists 'Walking Tours' and 'Tour Assistance' as amenities) - sign up on the spot if there's a slot available.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "⚠️ Not yet booked - book via Cloudbeds link",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "0"
+        },
+        {
+          "name": "evening",
+          "timeRange": "16:00-21:00",
+          "start_time": "16:00",
+          "end_time": "21:00",
+          "duration": "~5 hours (flexible)",
+          "description": "Free Tour of the hostel and wander through central Madrid - grouped together since the exact tour time is unknown, similar to the London/Vienna approach.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Free Tour of the Hostel ⭐",
+              "link": "https://hotels.cloudbeds.com/en/reservation/z8sPX5/?currency=eur",
+              "duration": 120,
+              "suggestedTime": "⚠️ Time TBD - confirm exact schedule at reception",
+              "timeRestriction": "⚠️ NOT CONFIRMED - exact day/time unknown until asked at check-in",
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐"],
+              "type": "guided tour",
+              "notes": "Hostel-organized free walking tour - Onefam Sungate is centrally located in Centro, right next to Madrid's historical sights, main attractions, and nightlife, so the tour likely covers Sol, Gran Vía, and the surrounding historic core.",
+              "bookingRequired": true,
+              "bookingDetails": {
+                "url": null,
+                "advanceTimeNeeded": "Confirm and sign up in person at reception on arrival"
+              },
+              "opening_hours": null,
+              "cost": "free (tip-based)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Wander Through Central Madrid (Sol, Gran Vía, Plaza Mayor)",
+              "link": "https://www.google.com/maps/search/Puerta+del+Sol+Madrid",
+              "duration": 150,
+              "suggestedTime": "Fit in before/after the tour",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": ["🆓", "⭐", "📸"],
+              "type": "neighborhood",
+              "notes": "Casual first-night stroll through Puerta del Sol, Gran Vía (Madrid's 'Broadway', lit up at night), and Plaza Mayor - all within easy walking distance of the hostel. Great for getting oriented before tomorrow's shopping day.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "24/7",
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Dinner (Flexible)",
+              "link": "https://www.google.com/maps/search/tapas+Madrid+Centro",
+              "duration": 60,
+              "suggestedTime": "Whenever it fits",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "Tapas dinner somewhere around Centro/La Latina - pick based on wherever the tour/wander ends up.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "12-20 EUR",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "12-20 EUR"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Onefam+Sungate+Madrid/Puerta+del+Sol+Madrid/Gran+Via+Madrid/Plaza+Mayor+Madrid",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Day 1 kept light and flexible, mirroring the London/Vienna approach: arrive, check in, ask reception about the free tour's actual schedule, then fit in a casual wander through central Madrid around it. Full shopping day saved for Day 2."
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "dayNumber": 2,
+      "title": "Full Shopping Day - Cheap, Good Quality Clothes",
+      "isArrivalDay": false,
+      "isDepartureDay": false,
+      "total_walking_distance": "~5-7 km",
+      "total_duration": "~9-10 hours",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "09:00-13:00",
+          "start_time": "09:00",
+          "end_time": "13:00",
+          "duration": "~4 hours",
+          "description": "Early start at Gran Vía and Fuencarral - Madrid's main shopping corridors, good mix of affordable chains and quality finds.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Gran Vía Shopping ⭐",
+              "link": "https://www.google.com/maps/search/Gran+Via+Madrid",
+              "duration": 120,
+              "suggestedTime": "09:00",
+              "timeRestriction": "Most shops open 10:00",
+              "priority": "high",
+              "priceRange": "€-€€",
+              "tags": ["⭐", "📸"],
+              "type": "shopping",
+              "notes": "Madrid's main shopping avenue - Zara, Primark, H&M, Mango, Bershka, and other Spanish/European chains known for decent quality at low prices. Start early to beat the crowds.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "10:00-21:00 (most stores)",
+              "cost": "variable (budget for clothes shopping)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Calle de Fuencarral",
+              "link": "https://www.google.com/maps/search/Calle+de+Fuencarral+Madrid",
+              "duration": 90,
+              "suggestedTime": "11:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "€-€€",
+              "tags": ["⭐"],
+              "type": "shopping",
+              "notes": "Trendy pedestrian shopping street north of Gran Vía (Malasaña/Chueca area) - mix of streetwear brands, independent boutiques, and more affordable alternative fashion than the touristy core.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "10:00-21:00 (most stores)",
+              "cost": "variable",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "variable (shopping budget)"
+        },
+        {
+          "name": "lunch",
+          "timeRange": "13:00-14:30",
+          "start_time": "13:00",
+          "end_time": "14:30",
+          "duration": "~1.5 hours",
+          "description": "Lunch break around Malasaña or Chueca before continuing to the outlet/market area.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Lunch in Malasaña/Chueca",
+              "link": "https://www.google.com/maps/search/restaurants+Malasana+Madrid",
+              "duration": 60,
+              "suggestedTime": "13:00",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "Quick lunch break (menú del día is a great cheap option, usually 10-15 EUR for 2-3 courses) before continuing shopping.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "10-15 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "10-15 EUR"
+        },
+        {
+          "name": "afternoon",
+          "timeRange": "14:30-19:00",
+          "start_time": "14:30",
+          "end_time": "19:00",
+          "duration": "~4.5 hours",
+          "description": "Continue shopping - secondhand/vintage options for good quality at lower prices, plus El Corte Inglés for a one-stop department store option.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "El Corte Inglés (Callao/Preciados)",
+              "link": "https://www.google.com/maps/search/El+Corte+Ingles+Preciados+Madrid",
+              "duration": 90,
+              "suggestedTime": "14:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€€-€€€",
+              "tags": [],
+              "type": "shopping",
+              "notes": "Spain's major department store chain - wider range of brands and quality levels under one roof, useful if a specific item is proving hard to find on the street shops. Can be pricier than the chain stores, but good for quality basics/outerwear on sale.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "10:00-22:00",
+              "cost": "variable",
+              "optional": true,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Mercado de Fuencarral / Vintage & Secondhand Shops",
+              "link": "https://www.google.com/maps/search/Mercado+de+Fuencarral+Madrid",
+              "duration": 90,
+              "suggestedTime": "16:00",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "€",
+              "tags": ["⭐"],
+              "type": "shopping",
+              "notes": "Alternative/vintage indoor market with secondhand and independent streetwear stalls - good source of unique, well-made pieces at lower prices than retail. Malasaña also has several standalone vintage/thrift shops worth a browse.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "11:00-21:00",
+              "cost": "variable (often cheaper than chain retail)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
+              "name": "Primark Gran Vía (Flagship Store)",
+              "link": "https://www.google.com/maps/search/Primark+Gran+Via+Madrid",
+              "duration": 60,
+              "suggestedTime": "17:45",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€",
+              "tags": [],
+              "type": "shopping",
+              "notes": "One of the largest Primark stores in Europe, housed in a historic building on Gran Vía - extremely cheap basics, worth a stop if hunting for budget essentials.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "10:00-22:00",
+              "cost": "variable (typically very cheap)",
+              "optional": true,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "variable (shopping budget)"
+        },
+        {
+          "name": "evening",
+          "timeRange": "19:00-21:00",
+          "start_time": "19:00",
+          "end_time": "21:00",
+          "duration": "~2 hours",
+          "description": "Wind down with dinner and pack purchases before the early flight the next morning.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Dinner & Pack for Early Departure",
+              "link": "https://www.google.com/maps/search/restaurants+Centro+Madrid",
+              "duration": 90,
+              "suggestedTime": "19:30",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": "€€",
+              "tags": ["🍽️"],
+              "type": "meal",
+              "notes": "Relaxed dinner back near the hostel, then pack everything (including new clothes) that night since the flight home departs early at 10:25 the next morning.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "15-25 EUR",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "15-25 EUR"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Onefam+Sungate+Madrid/Gran+Via+Madrid/Calle+de+Fuencarral+Madrid/El+Corte+Ingles+Preciados+Madrid/Mercado+de+Fuencarral+Madrid",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Full day dedicated to shopping as requested - starts early (09:00) at Gran Vía/Fuencarral for the main chain stores, then El Corte Inglés and vintage/secondhand options in the afternoon for better quality finds at lower prices, with Primark as an optional cheap-basics stop. Pack new purchases the night before given the early 10:25 flight on Day 3."
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "dayNumber": 3,
+      "title": "Departure to Rosario",
+      "isArrivalDay": false,
+      "isDepartureDay": true,
+      "total_walking_distance": "minimal",
+      "total_duration": "~14 hours (incl. flight)",
+      "timeBlocks": [
+        {
+          "name": "morning",
+          "timeRange": "07:30-10:25",
+          "start_time": "07:30",
+          "end_time": "10:25",
+          "duration": "~3 hours",
+          "description": "Early checkout and transfer to Madrid Barajas Airport for the confirmed 10:25 flight home.",
+          "activities": [
+            {
+              "order": 1,
+              "name": "Check Out & Transfer to Madrid Barajas (MAD)",
+              "link": "https://www.google.com/maps/dir/Onefam+Sungate+Madrid/Adolfo+Suarez+Madrid-Barajas+Airport",
+              "duration": 45,
+              "suggestedTime": "07:30",
+              "timeRestriction": "Checkout officially 11:00, but must leave much earlier for the flight",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": ["🎟️"],
+              "type": "transport",
+              "notes": "Metro Line 8 from Nuevos Ministerios (or a taxi) to the airport, ~30-40 min depending on terminal. Pack the night before since you'll be leaving well before normal checkout time.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "5-30 EUR depending on mode",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "World2Fly 2W2075 to Rosario (ROS)",
+              "link": null,
+              "duration": 755,
+              "suggestedTime": "10:25",
+              "timeRestriction": "Departure 10:25, long-haul international flight - arrive with plenty of buffer for check-in/security",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": [],
+              "type": "flight",
+              "notes": "✅ CONFIRMED - World2Fly 2W2075, departs Madrid Barajas 10:25, arrives Rosario (Fisherton) 19:00 (12h35m). Booking ref VMKLKQ, transaction 2R4J1LNOPW. ⚠️ Lands in Rosario, NOT Buenos Aires.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "664.80 USD (already booked)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "5-30 EUR (airport transfer only)"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/Onefam+Sungate+Madrid/Adolfo+Suarez+Madrid-Barajas+Airport",
+      "research_notes": {
+        "alternatives": [],
+        "sources": [],
+        "notes": "Departure transport confirmed (World2Fly 2W2075, VMKLKQ). This is the final leg of the entire trip, ending in Rosario rather than Buenos Aires."
+      }
+    }
+  ],
+  "food_recommendations": {
+    "must_try_dishes": [
+      {
+        "name_local": "Bocadillo de calamares",
+        "name_english": "Fried Squid Sandwich",
+        "description": "Madrid's iconic street food - crispy fried squid rings in a baguette, a Plaza Mayor classic.",
+        "typical_cost": "4-7 EUR",
+        "meal_type": "snack/lunch",
+        "seasonal": null
+      },
+      {
+        "name_local": "Cocido Madrileño",
+        "name_english": "Madrid Chickpea Stew",
+        "description": "Hearty chickpea stew with meats and vegetables, traditionally served in courses (soup, then chickpeas/veg, then meats).",
+        "typical_cost": "15-22 EUR",
+        "meal_type": "main",
+        "seasonal": "Especially popular in colder months (good timing for November)"
+      },
+      {
+        "name_local": "Tortilla Española",
+        "name_english": "Spanish Omelette",
+        "description": "Thick potato and egg omelette, served as a tapa or full plate, found everywhere from bars to markets.",
+        "typical_cost": "3-8 EUR (tapa) / 8-14 EUR (full plate)",
+        "meal_type": "tapa/main",
+        "seasonal": null
+      },
+      {
+        "name_local": "Churros con Chocolate",
+        "name_english": "Churros with Hot Chocolate",
+        "description": "Fried dough sticks dipped in thick hot chocolate - classic breakfast or late-night snack, famously at Chocolatería San Ginés.",
+        "typical_cost": "4-7 EUR",
+        "meal_type": "breakfast/snack",
+        "seasonal": null
+      },
+      {
+        "name_local": "Menú del Día",
+        "name_english": "Menu of the Day",
+        "description": "Fixed-price lunch menu (starter + main + dessert/coffee + drink), common at local restaurants on weekdays - great value.",
+        "typical_cost": "10-15 EUR",
+        "meal_type": "lunch",
+        "seasonal": null
+      }
+    ],
+    "drinks_and_rituals": [
+      {
+        "name_local": "Caña",
+        "name_english": "Small Draft Beer",
+        "description": "The standard small beer pour in Madrid, often comes with a free tapa at traditional bars.",
+        "typical_cost": "2-4 EUR",
+        "typical_time": "Any time, especially evening"
+      },
+      {
+        "name_local": "Vermut (Vermouth)",
+        "name_english": "Vermouth Hour",
+        "description": "Pre-lunch aperitif tradition, often on draft ('de grifo'), served with olives.",
+        "typical_cost": "3-6 EUR",
+        "typical_time": "Midday/pre-lunch (around 13:00)"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Mercado de San Miguel",
+        "link": "https://www.google.com/maps/search/Mercado+de+San+Miguel+Madrid",
+        "neighborhood": "Centro (near Plaza Mayor)",
+        "cuisine": "Gourmet food market / Tapas",
+        "priceRange": "€€",
+        "typical_cost_per_person": "10-25 EUR",
+        "specialties": ["Tapas", "Jamón ibérico", "Seafood", "Wine by the glass"],
+        "notes": "Historic iron-and-glass market turned gourmet food hall - touristy but a great variety of small bites in one place, very close to the hostel."
+      },
+      {
+        "name": "Chocolatería San Ginés",
+        "link": "https://www.google.com/maps/search/Chocolateria+San+Gines+Madrid",
+        "neighborhood": "Centro",
+        "cuisine": "Churros / Dessert",
+        "priceRange": "€",
+        "typical_cost_per_person": "4-7 EUR",
+        "specialties": ["Churros con chocolate"],
+        "notes": "Madrid institution open 24 hours since 1894 - famous for the best churros con chocolate in the city."
+      },
+      {
+        "name": "Casa Labra",
+        "link": "https://www.google.com/maps/search/Casa+Labra+Madrid",
+        "neighborhood": "Centro (near Sol)",
+        "cuisine": "Traditional Tapas Bar",
+        "priceRange": "€",
+        "typical_cost_per_person": "8-15 EUR",
+        "specialties": ["Bacalao (cod) tapas", "Croquetas"],
+        "notes": "Historic tapas bar since 1860, famous for its fried cod tapas - cheap, authentic, and steps from Puerta del Sol."
+      }
+    ],
+    "special_meal_formats": [
+      "Menú del día - fixed-price weekday lunch deal, one of the best value meals in Madrid (10-15 EUR for 2-3 courses + drink)"
+    ],
+    "tourist_traps_to_avoid": [
+      "Restaurants directly on Plaza Mayor - inflated prices for mediocre food; walk a block or two away for much better value",
+      "Overpriced sangria pitchers marketed to tourists near major landmarks - ask locals or check reviews before ordering"
+    ]
+  },
+  "average_food_budget_reference": {
+    "note": "Rough daily food budget guide for Madrid (per person)",
+    "breakfast": "3-7 EUR (churros/bakery)",
+    "lunch": "10-15 EUR (menú del día)",
+    "dinner": "15-25 EUR (tapas or sit-down restaurant)",
+    "snacks_and_drinks": "2-6 EUR (caña, vermut, tapa)",
+    "daily_total_estimate": "~30-50 EUR/day eating casually/mid-range"
+  },
+  "logistics": {
+    "public_transport": {
+      "ticket_types": [
+        "Single ticket - ~1.50-2 EUR",
+        "10-trip Metrobús ticket - ~12.20 EUR (shareable, good value for short stays)"
+      ],
+      "where_to_buy": {
+        "machines": "Ticket machines at any Metro station, cash or card"
+      },
+      "operating_hours": {
+        "standard": "06:00 to 01:30"
+      }
+    },
+    "bike_rentals": {},
+    "emergency_contacts": {
+      "emergency_number": "112 (EU universal)",
+      "hostel_phone": "+34 910 23 68 06"
+    },
+    "practical_tips": [
+      "⚠️ Book Onefam Sungate via the Cloudbeds link to confirm the room and lock in the price - currently only selected, not booked.",
+      "⚠️ Vienna→Italy→Madrid routing still has a gap: the arrival transport into Madrid (from Rome, pending Italy itinerary) is not yet booked.",
+      "Shopping day: Gran Vía and Fuencarral open around 10:00 - arriving right at opening maximizes time before afternoon crowds.",
+      "The departure flight (10:25) is early relative to the 11:00 checkout - pack the night before Day 2 ends.",
+      "El Corte Inglés and Primark both accept tax-free shopping refunds for non-EU residents - keep receipts if buying higher-value items."
+    ]
+  },
+  "maps": {
+    "example_curated_map": {
+      "url": "",
+      "description": ""
+    }
+  },
+  "research_notes": {
+    "sources": [],
+    "alternatives_considered": [],
+    "notes": "Skeleton built around the confirmed World2Fly return flight (Madrid→Rosario) and the selected (not yet booked) Onefam Sungate hostel. Day 1 is arrival + free tour + city wander; Day 2 is a full dedicated shopping day for cheap, good-quality clothes (Gran Vía, Fuencarral, vintage/secondhand, El Corte Inglés, Primark); Day 3 is the confirmed departure. Arrival transport into Madrid is still TBD pending the Italy routing decision."
+  },
+  "emoji_legend": {
+    "cost_and_booking": {
+      "🆓": "Free - No admission fee",
+      "🎟️": "Paid - Requires ticket or entrance fee",
+      "📅": "Reservation Required - Must be booked in advance"
+    },
+    "visit_style": {
+      "👀": "See & Continue - Quick stop, exterior view, photo op (10-30 mins)",
+      "⏳": "Be There - Immersive visit, full tour, extended stay (1-3+ hours)"
+    },
+    "special_markers": {
+      "⭐": "Top Highlight - Must-see priority spot",
+      "📸": "Photo Spot - Prime viewpoint or aesthetic location",
+      "☂️": "Indoor / Rainy Day - Fully indoor activity",
+      "🍽️": "Food/Dining"
+    }
+  }
+}
