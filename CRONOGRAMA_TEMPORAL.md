@@ -1,7 +1,7 @@
 # 🗓️ Cronograma Temporal Reordenado - Eurotrip
 
-> ✅ **CONFIRMADO (Barcelona → Venecia/Treviso)** - Transporte y alojamiento reservados en toda la cadena hasta la llegada a Italia (Treviso/Venecia), incluyendo St Christopher's Vienna y el vuelo de regreso Madrid→Rosario.
-> 🕳️ **"AGUJERO NEGRO" (Italia)** - Desde la llegada a Treviso/Venecia (3 Nov) hasta el vuelo Roma→Madrid (sin reservar, fecha ~10 Nov estimada), no hay NADA definido: ciudades, alojamiento y transporte interno de Italia todos TBD.
+> ✅ **CONFIRMADO (Barcelona → Madrid, TODO: transporte y alojamiento)** - Absolutamente todo está reservado en TODA la cadena, incluyendo St Christopher's Vienna, Roma→Madrid (Ryanair FR9601), Onefam Madrid y el vuelo de regreso Madrid→Rosario. El único hueco restante en todo el viaje es Italia (ver abajo).
+> 🕳️ **"AGUJERO NEGRO" (Italia)** - Desde la llegada a Treviso/Venecia (3 Nov) hasta el vuelo Roma→Madrid confirmado (10 Nov), no hay NADA definido en el medio: ciudades, alojamiento y transporte interno de Italia todos TBD. Al menos ahora el final (Roma, 10 Nov) está fijo.
 
 ---
 
@@ -23,8 +23,8 @@
 | 6 | 🇩🇪 **Berlín** | 28-30 Oct | 2 | Sunflower Hostel | ✅ Confirmado |
 | 7 | 🇨🇿 **Praga** | 30 Oct-1 Nov | 2 | Onefam Home | ✅ Confirmado (transporte de salida pendiente) |
 | 8 | 🇦🇹 **Viena** | 1-3 Nov | 2 | St Christopher's Vienna | ✅ Confirmado |
-| 9 | 🇮🇹 **Italia** (Treviso/Venecia → ???→ Roma) | 3-10 Nov (aprox., ciudades TBD) | ~7 | ⚠️ TBD | ✅ Vuelo de llegada confirmado (Treviso); resto 🕳️ sin definir |
-| 10 | 🇪🇸 **Madrid** | 10-12 Nov (estimado) | 2 | Onefam Sungate (elegido, no reservado) | ⚠️ Vuelo de llegada (Roma→Madrid) pendiente de reservar |
+| 9 | 🇮🇹 **Italia** (Treviso/Venecia → ???→ Roma) | 3-10 Nov (aprox., ciudades TBD) | ~7 | ⚠️ TBD | ✅ Vuelos de llegada y salida confirmados (Treviso y Roma); resto 🕳️ sin definir |
+| 10 | 🇪🇸 **Madrid** | 10-12 Nov | 2 | Onefam Madrid | ✅ Confirmado (transporte y alojamiento) |
 
 ---
 
@@ -54,13 +54,13 @@
 | 02 Nov | 🇦🇹 Viena | St Christopher's Vienna, 2 noches (1-3 Nov) |
 | 03 Nov | 🇦🇹 Viena → 🇮🇹 Venecia/Treviso | Vuelo Ryanair FR 51, sale Vienna (VIE) 13:45 → llega Treviso (TSF) 15:00 ✅ CONFIRMADO. Checkout St Christopher's Vienna antes de las 11:00 |
 | 04-09 Nov | 🇮🇹 Italia 🕳️ | **"Agujero negro":** ciudades (más allá de Treviso/Venecia), fechas exactas, alojamiento y transporte internos hasta llegar a Roma - todo sin definir |
-| 10 Nov | 🇮🇹 Roma → 🇪🇸 Madrid ⚠️ | Candidato: Ryanair FR 9601 (~€110, considerado caro, buscando mejor fecha/tarifa antes de reservar). Llegada: check-in en Onefam Sungate (Centro), buscar free tour del hostel y caminata por Sol/Gran Vía/Plaza Mayor |
+| 10 Nov | 🇮🇹 Roma → 🇪🇸 Madrid | Vuelo Ryanair FR9601, sale Roma Fiumicino (FCO) 09:00 → llega Madrid (MAD) 11:35 ✅ CONFIRMADO (EUR 104,49, booking CYDFRE). Llegada: check-in en Onefam Madrid (Montserrat, 9), buscar free tour del hostel y caminata por Sol/Gran Vía/Plaza Mayor |
 | 11 Nov | 🇪🇸 Madrid | **Día completo de compras** (ropa barata y de buena calidad): Gran Vía, Calle Fuencarral, mercadillo/vintage, El Corte Inglés, Primark |
 | 12 Nov | 🇪🇸 Madrid → 🇦🇷 Rosario | Vuelo World2Fly 2W2075, sale Madrid Barajas 10:25 → llega Rosario Fisherton 19:00 (12h35m) ✅ CONFIRMADO |
 
 ---
 
-## ✅ Transporte Confirmado (Barcelona → Venecia/Treviso, + Vuelo de Regreso)
+## ✅ Transporte Confirmado (Barcelona → Madrid, Todos los Vuelos/Trenes)
 
 | Tramo | Fecha/Hora | Proveedor | Reserva | Precio |
 |-------|-----------|-----------|---------|--------|
@@ -72,19 +72,19 @@
 | Amsterdam → Berlín | 28 Oct, 05:45-12:50 | DB ICE 141 | 183777145830 | EUR 65,49 |
 | Berlín → Praga | 30 Oct, 07:28-11:25 | DB RJ 171 (Omio) | 629543863359 | EUR 39,99 |
 | Praga → Viena | 1 Nov, 10:08-14:49 | ÖBB EC 115 + RJ 251 (vía Pardubice) | 0661 4954 1113 4079 | EUR 23,00 |
-| **Viena → Venecia/Treviso** | **3 Nov, 13:45-15:00** | **Ryanair FR 51** | **QYWZ9E** | **EUR 38,91** |
-| **Madrid → Rosario** ⚠️ | **12 Nov, 10:25-19:00 (12h35m)** | **World2Fly 2W2075** | **VMKLKQ** | **USD 664,80** |
+| Viena → Venecia/Treviso | 3 Nov, 13:45-15:00 | Ryanair FR 51 | QYWZ9E | EUR 38,91 |
+| **Roma → Madrid** | **10 Nov, 09:00-11:35** | **Ryanair FR9601** | **CYDFRE** | **EUR 104,49** |
+| Madrid → Rosario ⚠️ | 12 Nov, 10:25-19:00 (12h35m) | World2Fly 2W2075 | VMKLKQ | USD 664,80 |
 
 ⚠️ **Importante:** El vuelo de regreso aterriza en **Rosario (Fisherton, ROS)**, no en Buenos Aires como el vuelo de ida (Buenos Aires → Barcelona). Confirmar logística de último tramo (Rosario es la ciudad de origen/destino final, no Buenos Aires).
 
-## ⚠️ Transporte Pendiente (Treviso/Italia → Madrid)
+## 🕳️ Único Tramo Sin Definir: Italia (Treviso/Venecia → Roma)
 
 | Tramo | Fecha Estimada | Estado |
 |-------|----------------|--------|
 | Italia (interno, Treviso/Venecia → Roma) | 3-10 Nov | ⚠️ TBD - sin ciudades/itinerario definido |
-| Roma → Madrid | 10 Nov | ⚠️ TBD - sin reservar |
 
-🕳️ **"Agujero negro" en Italia:** Del 3 de noviembre (llegada a Treviso/Venecia) hasta la fecha del vuelo Roma→Madrid (sin reservar aún) no hay NADA definido: ni ciudades a visitar, ni fechas exactas, ni alojamiento, ni transporte interno. Es el tramo menos planificado de todo el viaje.
+🕳️ **"Agujero negro" en Italia:** Ahora que TODOS los vuelos están confirmados (incluyendo Roma→Madrid el 10 Nov), el único hueco real es lo que pasa EN MEDIO: del 3 de noviembre (llegada a Treviso/Venecia) hasta el 10 de noviembre (salida desde Roma Fiumicino), no hay NADA definido - ni ciudades a visitar, ni fechas exactas, ni alojamiento, ni transporte interno. Es el único tramo sin planificar de todo el viaje.
 
 ---
 
@@ -145,32 +145,38 @@ Ver `8-Vienna/vienna_itinerary.json` para el itinerario completo día por día. 
 
 ---
 
-## 🏨 Alojamiento Madrid (Elegido, NO reservado)
+## 🏨 Alojamiento Madrid (Confirmado)
 
 | Campo | Detalle |
 |-------|---------|
-| Hostel | Onefam Sungate |
-| Dirección | Calle del Carmen 16, 2do piso, 28013 Madrid (Centro) |
-| Ubicación | Zona Centro, junto a Gran Vía y Puerta del Sol |
-| Fechas | 10-12 Nov 2026, 2 noches (estimado) |
+| Hostel | Onefam Madrid |
+| Dirección | Montserrat, 9, Madrid 28015 |
+| Ubicación | Conde Duque / Argüelles (cerca de Centro) |
+| Fechas | 10-12 Nov 2026, 2 noches, 1 huésped |
+| Habitación | Bed in 3 Bed Dorm Ensuite (No Reembolsable) |
+| Reserva | 3856344534112 |
 | Check-in/out | 15:00 / 11:00 |
-| Reserva | https://hotels.cloudbeds.com/en/reservation/z8sPX5/?currency=eur |
-| Estado | ⚠️ Elegido pero reserva pendiente - reservar vía Cloudbeds para fijar precio/habitación |
-| Amenidades | Sin camas cuckette, A/C y lockers en todas las habitaciones, free walking tours organizados por el hostel |
+| Precio | EUR 51,52 total (subtotal EUR 46,84 + IVA EUR 4,68) |
+| Pagado online | EUR 0,00 - **saldo completo pendiente en el hostel** (efectivo o tarjeta, +4% recargo con tarjeta) |
+| Teléfono | +34 914 47 29 92 · madrid@onefamhostels.com |
 
-## ✈️ Vuelo Roma→Madrid (Candidato, NO reservado)
+⚠️ No se registró ningún cargo a la tarjeta todavía (Amount Paid: EUR 0.00), por lo que este gasto **no** se agregó a `GASTOS.md`. Al llegar o si se pre-cobra la tarjeta, avisar para registrarlo.
+
+## ✈️ Vuelo Roma→Madrid (Confirmado)
 
 | Campo | Detalle |
 |-------|---------|
-| Vuelo candidato | Ryanair FR 9601 |
-| Precio visto | ~€110 (considerado alto para la ruta) |
-| Estado | ⚠️ Comparando antes de reservar: tarifa sin extras, fechas ±1-2 días, aeropuerto Fiumicino vs Ciampino, otras aerolíneas (Vueling/Iberia/Volotea) |
-| Nota | Como el itinerario de Italia todavía no está definido, se puede dejar que la fecha más barata determine el día exacto de salida desde Roma |
+| Vuelo | Ryanair FR9601 |
+| Ruta | Roma (Fiumicino, FCO) → Madrid (MAD) |
+| Fecha/Hora | 10 Nov 2026, sale 09:00 → llega 11:35 |
+| Reserva | CYDFRE |
+| Precio | EUR 104,49 (incluye 10kg de equipaje facturado) |
+| Estado | ✅ Reservado - se decidió reservar pese al precio algo alto, ya que esto fija un punto de referencia clave para terminar de planificar el "agujero negro" de Italia |
 
 ## 🎫 Plan Madrid (itinerario armado)
 
 Ver `9- Madrid/madrid_itinerary.json` para el itinerario completo día por día. Resumen:
-- **Día 1 (10 Nov)**: Llegada, check-in en Onefam Sungate, buscar el free tour del hostel, caminata nocturna por Sol/Gran Vía/Plaza Mayor
+- **Día 1 (10 Nov)**: Llegada, check-in en Onefam Madrid, buscar el free tour del hostel, caminata nocturna por Sol/Gran Vía/Plaza Mayor
 - **Día 2 (11 Nov)**: Día completo de compras (ropa barata y de buena calidad) - Gran Vía, Calle Fuencarral, mercadillo/vintage en Mercado de Fuencarral, El Corte Inglés, Primark
 - **Día 3 (12 Nov)**: Checkout temprano, vuelo de regreso confirmado a Rosario (World2Fly 2W2075, 10:25)
 
@@ -187,9 +193,9 @@ Ver `9- Madrid/madrid_itinerary.json` para el itinerario completo día por día.
 7. ~~**Alojamiento de Viena**~~ - ✅ Confirmado (St Christopher's Vienna, ver detalle arriba)
 8. ~~**Vuelo de regreso (Madrid→Rosario)**~~ - ✅ Confirmado (World2Fly 2W2075, 12 Nov, 10:25-19:00, booking VMKLKQ)
 9. ~~**Transporte Viena→Italia**~~ - ✅ Confirmado (Ryanair FR 51, 3 Nov, 13:45-15:00 a Treviso/Venecia, booking QYWZ9E)
-10. **Definir itinerario de Italia (Treviso/Venecia → Roma)** - 🕳️ "Agujero negro": no hay ciudades, fechas exactas, alojamiento ni transporte interno definidos entre la llegada a Treviso (3 Nov) y la salida desde Roma
-11. **Reservar vuelo Roma→Madrid** - Candidato Ryanair FR 9601 (~€110, considerado caro) - comparando fechas/aeropuertos/aerolíneas antes de reservar (ver detalle abajo)
-12. **Reservar alojamiento de Madrid** - Onefam Sungate elegido (Centro, cerca de Gran Vía/Sol) pero no reservado - reservar vía Cloudbeds
+10. ~~**Vuelo Roma→Madrid**~~ - ✅ Confirmado (Ryanair FR9601, 10 Nov, 09:00-11:35, booking CYDFRE)
+11. ~~**Alojamiento de Madrid**~~ - ✅ Confirmado (Onefam Madrid, Montserrat 9, booking 3856344534112; saldo pendiente en el hostel)
+12. **Definir itinerario de Italia (Treviso/Venecia → Roma)** - 🕳️ ÚNICO "agujero negro" que queda en todo el viaje: no hay ciudades, fechas exactas, alojamiento ni transporte interno definidos entre la llegada a Treviso (3 Nov) y la salida desde Roma (10 Nov) - ahora con ambos extremos fijos, es más fácil de resolver
 
 ---
 

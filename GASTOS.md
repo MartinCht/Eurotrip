@@ -9,11 +9,11 @@
 
 | Categoría | Cantidad de Consumos | Total USD |
 |-----------|----------------------|-----------|
-| ✈️ Traslados | 10 | 1.572,11 |
+| ✈️ Traslados | 11 | 1.684,96 |
 | 🏠 Alojamiento | 10 | 633,90 |
 | 🛡️ Seguro | 1 | 77,93 |
 | 📄 Documentación/Visados | 1 | 27,83 |
-| **TOTAL** | **22** | **2.311,77** |
+| **TOTAL** | **23** | **2.424,62** |
 
 ---
 
@@ -23,6 +23,7 @@
 |-------|-----------|----------|------|--------|---------------|-----------------|-----------|-------|
 | 05-Ago-26 | ✈️ Traslados | FLYLEVEL | ESP | USD | 469,00 | 00769 | 469,00 | Vuelo LEVEL (Buenos Aires → Barcelona) |
 | 26-Ago-26 | ✈️ Traslados | WORLD 2 FLY | ESP | USD | 664,80 | VMKLKQ | 664,80 | Vuelo de regreso 2W2075 Madrid (Barajas) → Rosario (Fisherton) (12/11/2026, 10:25-19:00, 12h35m). Transacción 2R4J1LNOPW |
+| 08-Oct-26 | ✈️ Traslados | RYANAIR | ITA | EUR | 104,49 | CYDFRE | 112,85 | Vuelo FR9601 Roma (Fiumicino) → Madrid (10/11/2026, 09:00-11:35). Incluye 10kg de equipaje facturado. TC aprox: 1,08 EUR/USD |
 | 07-Sep-26 | ✈️ Traslados | VUELING | ESP | EUR | 99,99 | THLN5S | 107,99 | Vuelo VY8002 BCN→ORY (17/10/2026, incl. valija). TC aprox: 1,08 EUR/USD |
 | 07-Sep-26 | ✈️ Traslados | EUROSTAR | GBR | EUR | 75,00 | 2PX4VY | 81,00 | Tren Paris Gare du Nord → London St Pancras (21/10/2026). TC aprox: 1,08 EUR/USD |
 | 07-Sep-26 | ✈️ Traslados | FLIXBUS | GBR | EUR | 40,98 | 339 293 7119 | 44,26 | Bus London Victoria → Bruges Station (24-25/10/2026, nocturno). TC aprox: 1,08 EUR/USD |

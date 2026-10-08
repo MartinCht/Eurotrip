@@ -6,38 +6,43 @@
     "end": "2026-11-12"
   },
   "accommodation": {
-    "name": "Onefam Sungate",
-    "address": "Calle del Carmen 16, 2nd floor, 28013 Madrid, Spain",
-    "neighborhood": "Centro (Sol / Gran Vía area)",
-    "link": "https://hotels.cloudbeds.com/en/reservation/z8sPX5/?currency=eur",
-    "phone": "+34 910 23 68 06",
-    "email": "sungate@onefamhostels.com",
+    "name": "Onefam Madrid",
+    "address": "Montserrat, 9, Madrid 28015, Spain",
+    "neighborhood": "Conde Duque / Argüelles (near Centro)",
+    "link": "https://www.google.com/maps/search/Montserrat+9+Madrid",
+    "phone": "+34 914 47 29 92",
+    "email": "madrid@onefamhostels.com",
     "checkIn": "2026-11-10",
     "checkInTime": "15:00",
     "checkOut": "2026-11-12",
     "checkOutTime": "11:00",
-    "bookingReference": null,
-    "bookingConfirmation": null,
+    "bookingReference": "3856344534112",
+    "bookingConfirmation": "2026-10-08",
     "meals_included": [],
     "paymentStatus": {
-      "note": "⚠️ NOT YET BOOKED - hostel selected (Onefam Sungate via Cloudbeds), but reservation not yet confirmed/paid. Book via the Cloudbeds link to lock in the room and price."
+      "roomTotal": "EUR 46.84 (subtotal)",
+      "vat": "EUR 4.68",
+      "grandTotal": "EUR 51.52",
+      "paidOnline": "EUR 0.00",
+      "balancePayableAtProperty": "EUR 51.52 (full amount, cash or credit card - 4% surcharge if paying by card)",
+      "note": "✅ CONFIRMED - Non-refundable rate. Nothing charged online yet, full EUR 51.52 balance due at the property. ⚠️ Booking becomes non-refundable once checked in."
     },
-    "notes": "⚠️ SELECTED, NOT YET BOOKED. Prime inner-city location in Centro, next to Madrid's historical sights, main attractions, nightlife, and shopping area (walking distance to Gran Vía, Puerta del Sol). No bunk beds in dorms - all equipped with A/C and lockers. Age recommendation 18-45. Amenities include baggage storage, laundry service, 24h front desk/check-in, shared kitchen, and hostel-organized walking tours. Multiple room types available (Double Private, Twin Private, 3/4/5/6 Bed Dorms Mixed/Female) - confirm exact room type and price when booking."
+    "notes": "✅ CONFIRMED. Bed in 3 Bed Dorm Ensuite (Non-Refundable), 1 guest, 2 nights (10-12 Nov 2026). Check-in 15:00, check-out 11:00. Cancellations only accepted by email, at least 2 full days before arrival (this booking is non-refundable so no free cancellation applies). Paying by credit card at the property incurs a 4% surcharge - consider paying cash."
   },
   "transport": {
     "arrival": {
       "date": "2026-11-10",
-      "time": null,
-      "from": "Rome (estimated, pending Italy itinerary)",
-      "to": "Madrid",
-      "provider": null,
-      "transportType": null,
-      "flightNumber": null,
-      "link": null,
-      "bookingReference": null,
+      "time": "09:00",
+      "from": "Rome (Fiumicino, FCO)",
+      "to": "Madrid (MAD)",
+      "provider": "Ryanair",
+      "transportType": "flight",
+      "flightNumber": "FR9601",
+      "link": "https://www.ryanair.com",
+      "bookingReference": "CYDFRE",
       "recommended_departure_from_accommodation": null,
-      "recommended_arrival_at_station": null,
-      "notes": "⚠️ TBD - Not yet booked. Depends on finalizing the Italy itinerary (currently a 'black hole' from Treviso/Venice to Rome). Recommend booking a flight that arrives early-to-mid afternoon on Nov 10 to leave time for hostel check-in and the evening free tour/wander."
+      "recommended_arrival_at_station": "~07:00 (FCO airport, 2h before departure recommended)",
+      "notes": "✅ CONFIRMED - Ryanair FR9601, departs Rome Fiumicino (FCO) 09:00, arrives Madrid (MAD) 11:35. 10kg checked bag included. Price 104.49 EUR. Passenger: Martin Lambrecht. Mobile boarding pass required via Ryanair app. Arrives mid-morning, leaving the full afternoon/evening free for check-in, the hostel's free tour, and the city wander."
     },
     "departure": {
       "date": "2026-11-12",
@@ -51,7 +56,7 @@
       "bookingReference": "VMKLKQ",
       "recommended_departure_from_accommodation": "~07:30-08:00 (allow time for airport transfer + check-in for long-haul flight)",
       "recommended_arrival_at_station": "~08:30 (MAD airport, ~2h before departure recommended for international flight)",
-      "notes": "✅ CONFIRMED - World2Fly 2W2075, departs Madrid Barajas 10:25, arrives Rosario (Fisherton) 19:00 (12h35m flight). Transaction ref 2R4J1LNOPW. ⚠️ Lands in Rosario, NOT Buenos Aires. Checkout from Onefam Sungate is 11:00, but with a 10:25 flight you'll need to leave well before that - pack the night before."
+      "notes": "✅ CONFIRMED - World2Fly 2W2075, departs Madrid Barajas 10:25, arrives Rosario (Fisherton) 19:00 (12h35m flight). Transaction ref 2R4J1LNOPW. ⚠️ Lands in Rosario, NOT Buenos Aires. Checkout from Onefam Madrid is 11:00, but with a 10:25 flight you'll need to leave well before that - pack the night before."
     }
   },
   "days": [
@@ -66,16 +71,35 @@
       "timeBlocks": [
         {
           "name": "afternoon",
-          "timeRange": "arrival-16:00",
-          "start_time": "",
+          "timeRange": "11:35-16:00",
+          "start_time": "11:35",
           "end_time": "16:00",
-          "duration": "varies with flight arrival",
-          "description": "Arrival and transfer to Onefam Sungate (central Madrid, Centro neighborhood), check in and ask reception about the free walking tour.",
+          "duration": "~4.5 hours",
+          "description": "Arrival via Ryanair FR9601 at Madrid (MAD) 11:35, transfer to Onefam Madrid (central Madrid, Centro neighborhood), check in and ask reception about the free walking tour.",
           "activities": [
             {
               "order": 1,
-              "name": "Check-in at Onefam Sungate & Ask About the Free Tour",
-              "link": "https://hotels.cloudbeds.com/en/reservation/z8sPX5/?currency=eur",
+              "name": "Arrival at Madrid (MAD) & Transfer to Hostel",
+              "link": "https://www.google.com/maps/dir/Adolfo+Suarez+Madrid-Barajas+Airport/Onefam+Madrid+Montserrat+9",
+              "duration": 45,
+              "suggestedTime": "11:35",
+              "timeRestriction": null,
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": [],
+              "type": "logistics",
+              "notes": "Arrive via Ryanair FR9601 from Rome Fiumicino. Metro Line 8 from the airport to Nuevos Ministerios, then connect toward Conde Duque/Argüelles (~35-45 min total), or taxi directly to Montserrat, 9.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "5-30 EUR depending on mode",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Check-in at Onefam Madrid & Ask About the Free Tour",
+              "link": "https://www.google.com/maps/search/Onefam+Madrid+Montserrat+9",
               "duration": 30,
               "suggestedTime": "15:00 or later",
               "timeRestriction": "Official check-in time 15:00",
@@ -83,16 +107,16 @@
               "priceRange": null,
               "tags": [],
               "type": "accommodation",
-              "notes": "Check in, settle into the room, and ask reception for the exact day/time of the hostel's free walking tour (the hostel lists 'Walking Tours' and 'Tour Assistance' as amenities) - sign up on the spot if there's a slot available.",
+              "notes": "Check in, settle into the room, and ask reception for the exact day/time of the hostel's free walking tour - sign up on the spot if there's a slot available. With an 11:35 arrival, there's a gap before the 15:00 check-in - ask about early luggage storage.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
-              "cost": "⚠️ Not yet booked - book via Cloudbeds link",
+              "cost": "Already confirmed (EUR 51.52 due at property)",
               "optional": false,
               "secondaryPlaces": []
             }
           ],
-          "budget": "0"
+          "budget": "5-30 EUR"
         },
         {
           "name": "evening",
@@ -105,7 +129,7 @@
             {
               "order": 1,
               "name": "Free Tour of the Hostel ⭐",
-              "link": "https://hotels.cloudbeds.com/en/reservation/z8sPX5/?currency=eur",
+              "link": "https://www.google.com/maps/search/Onefam+Madrid+Montserrat+9",
               "duration": 120,
               "suggestedTime": "⚠️ Time TBD - confirm exact schedule at reception",
               "timeRestriction": "⚠️ NOT CONFIRMED - exact day/time unknown until asked at check-in",
@@ -113,7 +137,7 @@
               "priceRange": "🆓",
               "tags": ["🆓", "⭐"],
               "type": "guided tour",
-              "notes": "Hostel-organized free walking tour - Onefam Sungate is centrally located in Centro, right next to Madrid's historical sights, main attractions, and nightlife, so the tour likely covers Sol, Gran Vía, and the surrounding historic core.",
+              "notes": "Hostel-organized free walking tour - Onefam Madrid (Montserrat, 9) is in the Conde Duque/Argüelles area, a short walk/metro ride from Centro, so the tour likely covers Gran Vía, Sol, and the surrounding historic core.",
               "bookingRequired": true,
               "bookingDetails": {
                 "url": null,
@@ -166,7 +190,7 @@
           "budget": "12-20 EUR"
         }
       ],
-      "map_url": "https://www.google.com/maps/dir/Onefam+Sungate+Madrid/Puerta+del+Sol+Madrid/Gran+Via+Madrid/Plaza+Mayor+Madrid",
+      "map_url": "https://www.google.com/maps/dir/Onefam+Madrid+Montserrat+9/Puerta+del+Sol+Madrid/Gran+Via+Madrid/Plaza+Mayor+Madrid",
       "research_notes": {
         "alternatives": [],
         "sources": [],
@@ -360,7 +384,7 @@
           "budget": "15-25 EUR"
         }
       ],
-      "map_url": "https://www.google.com/maps/dir/Onefam+Sungate+Madrid/Gran+Via+Madrid/Calle+de+Fuencarral+Madrid/El+Corte+Ingles+Preciados+Madrid/Mercado+de+Fuencarral+Madrid",
+      "map_url": "https://www.google.com/maps/dir/Onefam+Madrid+Montserrat+9/Gran+Via+Madrid/Calle+de+Fuencarral+Madrid/El+Corte+Ingles+Preciados+Madrid/Mercado+de+Fuencarral+Madrid",
       "research_notes": {
         "alternatives": [],
         "sources": [],
@@ -387,7 +411,7 @@
             {
               "order": 1,
               "name": "Check Out & Transfer to Madrid Barajas (MAD)",
-              "link": "https://www.google.com/maps/dir/Onefam+Sungate+Madrid/Adolfo+Suarez+Madrid-Barajas+Airport",
+              "link": "https://www.google.com/maps/dir/Onefam+Madrid+Montserrat+9/Adolfo+Suarez+Madrid-Barajas+Airport",
               "duration": 45,
               "suggestedTime": "07:30",
               "timeRestriction": "Checkout officially 11:00, but must leave much earlier for the flight",
@@ -426,7 +450,7 @@
           "budget": "5-30 EUR (airport transfer only)"
         }
       ],
-      "map_url": "https://www.google.com/maps/dir/Onefam+Sungate+Madrid/Adolfo+Suarez+Madrid-Barajas+Airport",
+      "map_url": "https://www.google.com/maps/dir/Onefam+Madrid+Montserrat+9/Adolfo+Suarez+Madrid-Barajas+Airport",
       "research_notes": {
         "alternatives": [],
         "sources": [],
@@ -557,11 +581,10 @@
     "bike_rentals": {},
     "emergency_contacts": {
       "emergency_number": "112 (EU universal)",
-      "hostel_phone": "+34 910 23 68 06"
+      "hostel_phone": "+34 914 47 29 92"
     },
     "practical_tips": [
-      "⚠️ Book Onefam Sungate via the Cloudbeds link to confirm the room and lock in the price - currently only selected, not booked.",
-      "⚠️ Vienna→Italy→Madrid routing still has a gap: the arrival transport into Madrid (from Rome, pending Italy itinerary) is not yet booked.",
+      "✅ All of Madrid is now fully confirmed: accommodation (Onefam Madrid), arrival flight (Ryanair FR9601), and departure flight (World2Fly 2W2075). Non-refundable rate - paying by card at the property incurs a 4% surcharge, consider cash.",
       "Shopping day: Gran Vía and Fuencarral open around 10:00 - arriving right at opening maximizes time before afternoon crowds.",
       "The departure flight (10:25) is early relative to the 11:00 checkout - pack the night before Day 2 ends.",
       "El Corte Inglés and Primark both accept tax-free shopping refunds for non-EU residents - keep receipts if buying higher-value items."
@@ -576,7 +599,7 @@
   "research_notes": {
     "sources": [],
     "alternatives_considered": [],
-    "notes": "Skeleton built around the confirmed World2Fly return flight (Madrid→Rosario) and the selected (not yet booked) Onefam Sungate hostel. Day 1 is arrival + free tour + city wander; Day 2 is a full dedicated shopping day for cheap, good-quality clothes (Gran Vía, Fuencarral, vintage/secondhand, El Corte Inglés, Primark); Day 3 is the confirmed departure. Arrival transport into Madrid is still TBD pending the Italy routing decision."
+    "notes": "Built around the confirmed Ryanair FR9601 arrival (Rome FCO → Madrid, Nov 10), the confirmed Onefam Madrid accommodation (Montserrat, 9, booking 3856344534112), and the confirmed World2Fly return flight (Madrid→Rosario, Nov 12). Day 1 is arrival + free tour + city wander; Day 2 is a full dedicated shopping day for cheap, good-quality clothes (Gran Vía, Fuencarral, vintage/secondhand, El Corte Inglés, Primark); Day 3 is the confirmed departure. Madrid is now 100% confirmed - accommodation, arrival, and departure."
   },
   "emoji_legend": {
     "cost_and_booking": {
