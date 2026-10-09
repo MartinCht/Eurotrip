@@ -212,43 +212,24 @@
           "start_time": "09:00",
           "end_time": "13:00",
           "duration": "~4 hours",
-          "description": "Early start at Gran Vía and Fuencarral - Madrid's main shopping corridors, good mix of affordable chains and quality finds.",
+          "description": "Full morning dedicated to Gran Vía - Madrid's main shopping corridor, good mix of affordable chains and quality finds.",
           "activities": [
             {
               "order": 1,
               "name": "Gran Vía Shopping ⭐",
               "link": "https://www.google.com/maps/search/Gran+Via+Madrid",
-              "duration": 120,
+              "duration": 240,
               "suggestedTime": "09:00",
               "timeRestriction": "Most shops open 10:00",
               "priority": "high",
               "priceRange": "€-€€",
               "tags": ["⭐", "📸"],
               "type": "shopping",
-              "notes": "Madrid's main shopping avenue - Zara, Primark, H&M, Mango, Bershka, and other Spanish/European chains known for decent quality at low prices. Start early to beat the crowds.",
+              "notes": "Madrid's main shopping avenue - Zara, Primark, H&M, Mango, Bershka, and other Spanish/European chains known for decent quality at low prices. Start early to beat the crowds. Take the full morning to browse at a relaxed pace.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": "10:00-21:00 (most stores)",
               "cost": "variable (budget for clothes shopping)",
-              "optional": false,
-              "secondaryPlaces": []
-            },
-            {
-              "order": 2,
-              "name": "Calle de Fuencarral",
-              "link": "https://www.google.com/maps/search/Calle+de+Fuencarral+Madrid",
-              "duration": 90,
-              "suggestedTime": "11:00",
-              "timeRestriction": null,
-              "priority": "high",
-              "priceRange": "€-€€",
-              "tags": ["⭐"],
-              "type": "shopping",
-              "notes": "Trendy pedestrian shopping street north of Gran Vía (Malasaña/Chueca area) - mix of streetwear brands, independent boutiques, and more affordable alternative fashion than the touristy core.",
-              "bookingRequired": false,
-              "bookingDetails": null,
-              "opening_hours": "10:00-21:00 (most stores)",
-              "cost": "variable",
               "optional": false,
               "secondaryPlaces": []
             }
@@ -261,7 +242,7 @@
           "start_time": "13:00",
           "end_time": "14:30",
           "duration": "~1.5 hours",
-          "description": "Lunch break around Malasaña or Chueca before continuing to the outlet/market area.",
+          "description": "Lunch break around Malasaña or Chueca before continuing to the market/department store area.",
           "activities": [
             {
               "order": 1,
@@ -291,20 +272,20 @@
           "start_time": "14:30",
           "end_time": "19:00",
           "duration": "~4.5 hours",
-          "description": "Continue shopping - secondhand/vintage options for good quality at lower prices, plus El Corte Inglés for a one-stop department store option.",
+          "description": "El Corte Inglés for department-store basics, then an extended visit to Mercado de Fuencarral - the day's secondhand/vintage highlight - and Primark to close out.",
           "activities": [
             {
               "order": 1,
               "name": "El Corte Inglés (Callao/Preciados)",
               "link": "https://www.google.com/maps/search/El+Corte+Ingles+Preciados+Madrid",
-              "duration": 90,
+              "duration": 60,
               "suggestedTime": "14:30",
               "timeRestriction": null,
               "priority": "medium",
               "priceRange": "€€-€€€",
               "tags": [],
               "type": "shopping",
-              "notes": "Spain's major department store chain - wider range of brands and quality levels under one roof, useful if a specific item is proving hard to find on the street shops. Can be pricier than the chain stores, but good for quality basics/outerwear on sale.",
+              "notes": "Spain's major department store chain - wider range of brands and quality levels under one roof, useful if a specific item is proving hard to find elsewhere. Can be pricier, but good for quality basics/outerwear on sale. Ask for a tax-free form at checkout if your purchase qualifies (refund goes to card).",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": "10:00-22:00",
@@ -314,16 +295,16 @@
             },
             {
               "order": 2,
-              "name": "Mercado de Fuencarral / Vintage & Secondhand Shops",
+              "name": "Mercado de Fuencarral - Vintage & Secondhand ⭐",
               "link": "https://www.google.com/maps/search/Mercado+de+Fuencarral+Madrid",
-              "duration": 90,
-              "suggestedTime": "16:00",
+              "duration": 150,
+              "suggestedTime": "15:30",
               "timeRestriction": null,
               "priority": "high",
               "priceRange": "€",
               "tags": ["⭐"],
               "type": "shopping",
-              "notes": "Alternative/vintage indoor market with secondhand and independent streetwear stalls - good source of unique, well-made pieces at lower prices than retail. Malasaña also has several standalone vintage/thrift shops worth a browse.",
+              "notes": "Alternative/vintage indoor market with secondhand and independent streetwear stalls - good source of unique, well-made pieces at lower prices than retail. Extended time slot (2.5 hours) to browse properly - this is the day's shopping highlight. Malasaña also has several standalone vintage/thrift shops worth a browse nearby.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": "11:00-21:00",
@@ -336,7 +317,7 @@
               "name": "Primark Gran Vía (Flagship Store)",
               "link": "https://www.google.com/maps/search/Primark+Gran+Via+Madrid",
               "duration": 60,
-              "suggestedTime": "17:45",
+              "suggestedTime": "18:00",
               "timeRestriction": null,
               "priority": "medium",
               "priceRange": "€",
@@ -372,7 +353,7 @@
               "priceRange": "€€",
               "tags": ["🍽️"],
               "type": "meal",
-              "notes": "Relaxed dinner back near the hostel, then pack everything (including new clothes) that night since the flight home departs early at 10:25 the next morning.",
+              "notes": "Relaxed dinner back near the hostel, then pack everything (including new clothes) that night since the flight home departs early the next morning. Keep all tax-free forms and the purchased items easily accessible in your carry-on for the DIVA validation at the airport - don't bury them in checked luggage.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
@@ -384,11 +365,16 @@
           "budget": "15-25 EUR"
         }
       ],
-      "map_url": "https://www.google.com/maps/dir/Onefam+Madrid+Montserrat+9/Gran+Via+Madrid/Calle+de+Fuencarral+Madrid/El+Corte+Ingles+Preciados+Madrid/Mercado+de+Fuencarral+Madrid",
+      "map_url": "https://www.google.com/maps/dir/Onefam+Madrid+Montserrat+9/Gran+Via+Madrid/El+Corte+Ingles+Preciados+Madrid/Mercado+de+Fuencarral+Madrid",
       "research_notes": {
-        "alternatives": [],
+        "alternatives": [
+          {
+            "name": "Calle de Fuencarral (street shopping)",
+            "reason_not_selected": "Removed to simplify the day and give Mercado de Fuencarral's vintage/secondhand stalls a proper, unhurried 2.5-hour visit instead of splitting attention across two similarly-named stops."
+          }
+        ],
         "sources": [],
-        "notes": "Full day dedicated to shopping as requested - starts early (09:00) at Gran Vía/Fuencarral for the main chain stores, then El Corte Inglés and vintage/secondhand options in the afternoon for better quality finds at lower prices, with Primark as an optional cheap-basics stop. Pack new purchases the night before given the early 10:25 flight on Day 3."
+        "notes": "Full day dedicated to shopping as requested - full morning at Gran Vía for the main chain stores, then El Corte Inglés, an extended visit to Mercado de Fuencarral (the day's highlight for quality secondhand finds), and Primark as an optional cheap-basics stop. Pack new purchases the night before given the early flight on Day 3, and keep tax-free forms + purchases accessible for airport validation."
       }
     },
     {
@@ -398,28 +384,28 @@
       "isArrivalDay": false,
       "isDepartureDay": true,
       "total_walking_distance": "minimal",
-      "total_duration": "~14 hours (incl. flight)",
+      "total_duration": "~14.5 hours (incl. flight)",
       "timeBlocks": [
         {
           "name": "morning",
-          "timeRange": "07:30-10:25",
-          "start_time": "07:30",
+          "timeRange": "07:00-10:25",
+          "start_time": "07:00",
           "end_time": "10:25",
-          "duration": "~3 hours",
-          "description": "Early checkout and transfer to Madrid Barajas Airport for the confirmed 10:25 flight home.",
+          "duration": "~3.5 hours",
+          "description": "Early checkout, transfer to Madrid Barajas Airport, and tax-free (DIVA) validation before the confirmed 10:25 flight home.",
           "activities": [
             {
               "order": 1,
               "name": "Check Out & Transfer to Madrid Barajas (MAD)",
               "link": "https://www.google.com/maps/dir/Onefam+Madrid+Montserrat+9/Adolfo+Suarez+Madrid-Barajas+Airport",
               "duration": 45,
-              "suggestedTime": "07:30",
+              "suggestedTime": "07:00",
               "timeRestriction": "Checkout officially 11:00, but must leave much earlier for the flight",
               "priority": "mandatory",
               "priceRange": "€",
               "tags": ["🎟️"],
               "type": "transport",
-              "notes": "Metro Line 8 from Nuevos Ministerios (or a taxi) to the airport, ~30-40 min depending on terminal. Pack the night before since you'll be leaving well before normal checkout time.",
+              "notes": "Metro Line 8 from Nuevos Ministerios (or a taxi) to the airport, ~30-40 min depending on terminal. Pack the night before since you'll be leaving well before normal checkout time. Moved 30 min earlier than a standard transfer to make room for the DIVA tax-free stamp.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
@@ -429,6 +415,25 @@
             },
             {
               "order": 2,
+              "name": "Tax-Free (DIVA) Validation",
+              "link": "https://www.agenciatributaria.es",
+              "duration": 25,
+              "suggestedTime": "07:45",
+              "timeRestriction": "Must be done BEFORE checking in luggage/exiting the EU, with purchased items accessible (not yet packed in checked bags)",
+              "priority": "mandatory",
+              "priceRange": null,
+              "tags": ["🎟️"],
+              "type": "logistics",
+              "notes": "Self-service DIVA kiosk, located in the departures area before check-in/security at Madrid-Barajas. Scan passport + the tax-free form barcode (Global Blue/Planet) from each qualifying store (El Corte Inglés, and others if the purchase met the minimum threshold - verify current amount, historically ~€90.16 per store/day in Spain). Refund will be processed to card - no need to visit a separate cash refund counter. Budget ~15-20 min if no queue, up to 25-30 min with a morning queue. Keep items reachable in carry-on in case customs asks to see them.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free (validation only; refund arrives later to card)",
+              "optional": false,
+              "secondaryPlaces": []
+            },
+            {
+              "order": 3,
               "name": "World2Fly 2W2075 to Rosario (ROS)",
               "link": null,
               "duration": 755,
@@ -438,7 +443,7 @@
               "priceRange": null,
               "tags": [],
               "type": "flight",
-              "notes": "✅ CONFIRMED - World2Fly 2W2075, departs Madrid Barajas 10:25, arrives Rosario (Fisherton) 19:00 (12h35m). Booking ref VMKLKQ, transaction 2R4J1LNOPW. ⚠️ Lands in Rosario, NOT Buenos Aires.",
+              "notes": "✅ CONFIRMED - World2Fly 2W2075, departs Madrid Barajas 10:25, arrives Rosario (Fisherton) 19:00 (12h35m). Booking ref VMKLKQ. ⚠️ Lands in Rosario, NOT Buenos Aires.",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
@@ -454,7 +459,7 @@
       "research_notes": {
         "alternatives": [],
         "sources": [],
-        "notes": "Departure transport confirmed (World2Fly 2W2075, VMKLKQ). This is the final leg of the entire trip, ending in Rosario rather than Buenos Aires."
+        "notes": "Departure transport confirmed (World2Fly 2W2075, VMKLKQ). Checkout/transfer moved from 07:30 to 07:00 to fit a ~20-30 min DIVA tax-free validation step before check-in/security - refund goes to card, no cash-counter stop needed. This is the final leg of the entire trip, ending in Rosario rather than Buenos Aires."
       }
     }
   ],
@@ -585,7 +590,7 @@
     },
     "practical_tips": [
       "✅ All of Madrid is now fully confirmed: accommodation (Onefam Madrid), arrival flight (Ryanair FR9601), and departure flight (World2Fly 2W2075). Non-refundable rate - paying by card at the property incurs a 4% surcharge, consider cash.",
-      "Shopping day: Gran Vía and Fuencarral open around 10:00 - arriving right at opening maximizes time before afternoon crowds.",
+      "Shopping day: Gran Vía shops open around 10:00 and Mercado de Fuencarral from 11:00 - arriving right at Gran Vía's opening maximizes time before afternoon crowds.",
       "The departure flight (10:25) is early relative to the 11:00 checkout - pack the night before Day 2 ends.",
       "El Corte Inglés and Primark both accept tax-free shopping refunds for non-EU residents - keep receipts if buying higher-value items."
     ]
@@ -599,7 +604,7 @@
   "research_notes": {
     "sources": [],
     "alternatives_considered": [],
-    "notes": "Built around the confirmed Ryanair FR9601 arrival (Rome FCO → Madrid, Nov 10), the confirmed Onefam Madrid accommodation (Montserrat, 9, booking 3856344534112), and the confirmed World2Fly return flight (Madrid→Rosario, Nov 12). Day 1 is arrival + free tour + city wander; Day 2 is a full dedicated shopping day for cheap, good-quality clothes (Gran Vía, Fuencarral, vintage/secondhand, El Corte Inglés, Primark); Day 3 is the confirmed departure. Madrid is now 100% confirmed - accommodation, arrival, and departure."
+    "notes": "Built around the confirmed Ryanair FR9601 arrival (Rome FCO → Madrid, Nov 10), the confirmed Onefam Madrid accommodation (Montserrat, 9, booking 3856344534112), and the confirmed World2Fly return flight (Madrid→Rosario, Nov 12). Day 1 is arrival + free tour + city wander; Day 2 is a full dedicated shopping day for cheap, good-quality clothes (Gran Vía, Mercado de Fuencarral vintage/secondhand, El Corte Inglés, Primark); Day 3 is the confirmed departure with added DIVA tax-free validation. Madrid is now 100% confirmed - accommodation, arrival, and departure."
   },
   "emoji_legend": {
     "cost_and_booking": {
