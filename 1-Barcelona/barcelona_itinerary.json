@@ -30,10 +30,10 @@
       "transportType": "flight",
       "flightNumber": "LL2602",
       "link": "https://www.flylevel.com",
-      "bookingReference": null,
+      "bookingReference": "JL6FE",
       "recommended_departure_from_accommodation": null,
-      "recommended_arrival_at_airport": null,
-      "notes": "Long-haul overnight flight from Buenos Aires. Arrive early morning. Airport transport options: R2 Nord train (4.90 EUR, 26 mins to Passeig de Gràcia), Metro L9 Sud (5.90 EUR), Aerobús (7.45 EUR), or taxi (30-40 EUR)."
+      "recommended_arrival_at_airport": "07:50 (4h before departure for bag drop, though 0 checked bags on this ticket - carry-on only)",
+      "notes": "✅ BOARDING PASS CONFIRMED - Departs Buenos Aires EZE Tue 13 Oct 2026, 11:50, Terminal P. Arrives Barcelona BCN 05:25 (+1 day, i.e. 14 Oct). Seat 33C, Boarding Group 3, SEQ 052. Gate closes 11:30 (20 min before departure); boarding begins 60 min before departure. ⚠️ 0 checked bags on this ticket - carry-on only (max 56x45x25cm, 10kg). Long-haul overnight flight from Buenos Aires. Arrive early morning. Airport transport options: R2 Nord train (4.90 EUR, 26 mins to Passeig de Gràcia), Metro L9 Sud (5.90 EUR), Aerobús (7.45 EUR), or taxi (30-40 EUR)."
     },
     "departure": {
       "date": "2026-10-17",

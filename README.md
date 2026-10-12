@@ -293,7 +293,7 @@ Each destination gets a JSON file with:
 
 ### Confirmed Transport
 
-1. **Buenos Aires → Barcelona**: LEVEL LL2602, Oct 14, 05:25 arrival at BCN
+1. **Buenos Aires → Barcelona**: LEVEL LL2602, departs Oct 13 11:50 EZE, arrives Oct 14 05:25 BCN (ref JL6FE)
 2. **Barcelona → Paris**: Vueling VY8002, Oct 17, 08:45 BCN → 10:35 ORY
 3. **Paris → London**: Eurostar, Oct 21, 07:32 Gare du Nord → 09:00 St Pancras
 4. **London → Bruges**: FlixBus N814, Oct 24 19:30 → Oct 25 03:00

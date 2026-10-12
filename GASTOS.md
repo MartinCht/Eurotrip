@@ -21,7 +21,7 @@
 
 | Fecha | Categoría | Comercio | País | Moneda | Monto Origen | Cupón / Reserva | Monto USD | Notas |
 |-------|-----------|----------|------|--------|---------------|-----------------|-----------|-------|
-| 05-Ago-26 | ✈️ Traslados | FLYLEVEL | ESP | USD | 469,00 | 00769 | 469,00 | Vuelo LEVEL (Buenos Aires → Barcelona) |
+| 05-Ago-26 | ✈️ Traslados | FLYLEVEL | ESP | USD | 469,00 | JL6FE | 469,00 | Vuelo LL2602 Buenos Aires (EZE) → Barcelona (BCN) (13-14/10/2026, 11:50-05:25+1). Asiento 33C, Grupo de embarque 3. Sin equipaje facturado (solo carry-on) |
 | 26-Ago-26 | ✈️ Traslados | WORLD 2 FLY | ESP | USD | 664,80 | VMKLKQ | 664,80 | Vuelo de regreso 2W2075 Madrid (Barajas) → Rosario (Fisherton) (12/11/2026, 10:25-19:00, 12h35m). Transacción 2R4J1LNOPW |
 | 08-Oct-26 | ✈️ Traslados | RYANAIR | ITA | EUR | 104,49 | CYDFRE | 112,85 | Vuelo FR9601 Roma (Fiumicino) → Madrid (10/11/2026, 09:00-11:35). Incluye 10kg de equipaje facturado. TC aprox: 1,08 EUR/USD |
 | 07-Sep-26 | ✈️ Traslados | VUELING | ESP | EUR | 99,99 | THLN5S | 107,99 | Vuelo VY8002 BCN→ORY (17/10/2026, incl. valija). TC aprox: 1,08 EUR/USD |

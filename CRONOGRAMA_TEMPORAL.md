@@ -32,7 +32,7 @@
 
 | Fecha | Ubicación | Notas |
 |-------|-----------|-------|
-| 14 Oct | 🇪🇸 Barcelona (llegada 05:25) | Vuelo LEVEL desde Buenos Aires |
+| 14 Oct | 🇪🇸 Barcelona (llegada 05:25) | Vuelo LEVEL LL2602 desde Buenos Aires (sale 13 Oct 11:50 EZE, llega 14 Oct 05:25 BCN) ✅ CONFIRMADO (ref JL6FE) |
 | 15 Oct | 🇪🇸 Barcelona | |
 | 16 Oct | 🇪🇸 Barcelona | |
 | 17 Oct | 🇪🇸 Barcelona → 🇫🇷 París | Vueling VY8002, 08:45 BCN → 10:35 ORY |
@@ -64,7 +64,7 @@
 
 | Tramo | Fecha/Hora | Proveedor | Reserva | Precio |
 |-------|-----------|-----------|---------|--------|
-| Buenos Aires → Barcelona | 14 Oct, 05:25 | LEVEL LL2602 | 00769 | USD 469,00 |
+| Buenos Aires → Barcelona | 13-14 Oct, 11:50-05:25 (+1) | LEVEL LL2602 | JL6FE | USD 469,00 |
 | Barcelona → París | 17 Oct, 08:45-10:35 | Vueling VY8002 | THLN5S | EUR 99,99 |
 | París → Londres | 21 Oct, 07:32-09:00 | Eurostar | 2PX4VY | EUR 75,00 |
 | Londres → Bruges | 24 Oct 19:30 → 25 Oct 03:00 | FlixBus N814 | 339 293 7119 | EUR 40,98 |
