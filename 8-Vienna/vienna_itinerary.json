@@ -78,11 +78,11 @@
               "priceRange": null,
               "tags": [],
               "type": "accommodation",
-              "notes": "Not yet booked - reserve ahead. Near Westbahnhof (U3/U6).",
+              "notes": "✅ CONFIRMED - booking ref #71974, 6 Bed Dorm En Suite, 2 nights (Nov 1-3). Near Westbahnhof area (Columbusgasse 16, 10. Bezirk, Favoriten).",
               "bookingRequired": false,
               "bookingDetails": null,
               "opening_hours": null,
-              "cost": "TBD (not booked)",
+              "cost": "Already paid (booking #71974)",
               "optional": false,
               "secondaryPlaces": []
             },
@@ -95,7 +95,9 @@
               "timeRestriction": null,
               "priority": "mandatory",
               "priceRange": "€",
-              "tags": ["🎟️"],
+              "tags": [
+                "🎟️"
+              ],
               "type": "transport",
               "notes": "Buy via WienMobil app - covers all metro/tram/bus for the full stay. Cheaper than individual tickets after ~3 rides/day.",
               "bookingRequired": false,
@@ -125,7 +127,13 @@
               "timeRestriction": null,
               "priority": "high",
               "priceRange": "€-€€",
-              "tags": ["🆓", "🎟️", "👀", "⭐", "📸"],
+              "tags": [
+                "🆓",
+                "🎟️",
+                "👀",
+                "⭐",
+                "📸"
+              ],
               "type": "park/amusement",
               "notes": "Chosen deliberately as an evening activity - the Riesenrad is lit up and running at night, making darkness work in its favor rather than against it. Walk the park for free, or ride the wheel for the view. Public transport: U1/U2 to Praterstern, 2 stops.",
               "bookingRequired": false,
@@ -144,7 +152,11 @@
               "timeRestriction": null,
               "priority": "medium",
               "priceRange": null,
-              "tags": ["🆓", "👀", "📸"],
+              "tags": [
+                "🆓",
+                "👀",
+                "📸"
+              ],
               "type": "landmark",
               "notes": "Iconic Gothic cathedral, multi-colored tile roof. Exterior view at night; free entry to back section only (skipping interior/paid areas this trip).",
               "bookingRequired": false,
@@ -163,7 +175,9 @@
               "timeRestriction": null,
               "priority": "medium",
               "priceRange": "€-€€€",
-              "tags": ["🍽️"],
+              "tags": [
+                "🍽️"
+              ],
               "type": "meal",
               "notes": "See food_recommendations.restaurants for options - Figlmüller (classic schnitzel, reservation recommended) or SPAR Gourmet (Kärntner Ring 2) for a cheap hot schnitzel sandwich if keeping costs down.",
               "bookingRequired": false,
@@ -209,25 +223,27 @@
           "start_time": "09:00",
           "end_time": "12:30",
           "duration": "~3.5 hours",
-          "description": "Free guided Parliament tour (book exact slot online in advance), then stroll Graben and Kohlmarkt to the Hofburg.",
+          "description": "CONFIRMED Parliament tour at 09:45 (bring passport!), then stroll Graben and Kohlmarkt to the Hofburg.",
           "activities": [
             {
               "order": 1,
               "name": "Austrian Parliament - Guided Tour",
               "link": "https://www.google.com/maps/search/Austrian+Parliament+Building+Vienna",
               "duration": 60,
-              "suggestedTime": "09:30",
-              "timeRestriction": "Reserve exact slot online in advance - fills up",
+              "suggestedTime": "09:45",
+              "timeRestriction": "CONFIRMED - registered 02/11/2026 at 09:45",
               "priority": "mandatory",
               "priceRange": null,
-              "tags": ["🆓", "📅", "⏳", "⭐"],
+              "tags": [
+                "🆓",
+                "📅",
+                "⏳",
+                "⭐"
+              ],
               "type": "guided tour",
-              "notes": "Free guided tours, offered in multiple languages - book online ahead. Airport-style security check, bring passport (required). After the tour, go up to the terrace for views toward the Hofburg.",
-              "bookingRequired": true,
-              "bookingDetails": {
-                "url": "https://www.parlament.gv.at",
-                "advanceTimeNeeded": "Book as early as possible - slots fill up"
-              },
+              "notes": "✅ CONFIRMED - registered under Martin Lambrecht (famiglialambrecht@gmail.com), group registration made 15/10/2026. Free guided tour. REQUIRED: valid photo ID (passport) for all adults, scanned and temporarily held at security - airport-style security check (personal + baggage). Appropriate clothing requested. Review 'What items are prohibited in the Parliament building' before arrival. After the tour, go up to the terrace for views toward the Hofburg.",
+              "bookingRequired": false,
+              "bookingDetails": null,
               "opening_hours": "Check official site for tour times",
               "cost": "free",
               "optional": false,
@@ -242,7 +258,12 @@
               "timeRestriction": null,
               "priority": "high",
               "priceRange": null,
-              "tags": ["🆓", "👀", "⭐", "📸"],
+              "tags": [
+                "🆓",
+                "👀",
+                "⭐",
+                "📸"
+              ],
               "type": "street/shopping",
               "notes": "Preferred over Rathaus/Votive Church - lively pedestrian streets with real movement and energy (shops open on Monday), Plague Column on Graben, elegant Kohlmarkt leading straight to the Hofburg gates.",
               "bookingRequired": false,
@@ -261,7 +282,11 @@
               "timeRestriction": null,
               "priority": "medium",
               "priceRange": null,
-              "tags": ["🆓", "👀", "☂️"],
+              "tags": [
+                "🆓",
+                "👀",
+                "☂️"
+              ],
               "type": "palace/church",
               "notes": "Hofburg exterior only (skipping paid interior/Sisi Museum this trip). St. Michael's Church is free entry, right at the Hofburg gate, easy to combine.",
               "bookingRequired": false,
@@ -291,7 +316,9 @@
               "timeRestriction": null,
               "priority": "medium",
               "priceRange": "€-€€€",
-              "tags": ["🍽️"],
+              "tags": [
+                "🍽️"
+              ],
               "type": "meal",
               "notes": "See food_recommendations.restaurants - SPAR Gourmet (cheap hot schnitzel sandwiches, ~5-8 EUR) if keeping costs down, or a sit-down at Figlmüller if not done the night before.",
               "bookingRequired": false,
@@ -306,77 +333,106 @@
         },
         {
           "name": "afternoon",
-          "timeRange": "14:00-17:00",
+          "timeRange": "14:00-15:30",
           "start_time": "14:00",
-          "end_time": "17:00",
-          "duration": "~3 hours",
-          "description": "Karlskirche visit (booked online in advance).",
+          "end_time": "15:30",
+          "duration": "1.5 hours",
+          "description": "CONFIRMED Vienna State Opera guided tour (Spanish) at 14:30, then Karlskirche exterior pass-by on the way back.",
           "activities": [
             {
               "order": 1,
-              "name": "Karlskirche (St. Charles's Church)",
-              "link": "https://www.google.com/maps/search/Karlskirche+Vienna",
-              "duration": 60,
-              "suggestedTime": "14:30",
-              "timeRestriction": "Tickets online only - no door sales",
+              "name": "Transit to Vienna State Opera",
+              "link": "https://www.google.com/maps/dir/Karlskirche+Vienna/Vienna+State+Opera",
+              "duration": 15,
+              "suggestedTime": "14:00",
+              "timeRestriction": "Arrive by 14:15 - 15 min before the 14:30 tour start, no late admission",
               "priority": "mandatory",
               "priceRange": "€",
-              "tags": ["🎟️", "📅", "⏳", "⭐", "📸"],
-              "type": "church",
-              "notes": "Go inside - altar and ceiling are spectacular, ticket includes rooftop terrace access via lift for great city views. Also check the small architectural model/tiny museum on the way up. MUST buy tickets online in advance.",
-              "bookingRequired": true,
-              "bookingDetails": {
-                "url": "https://www.karlskirche.at",
-                "advanceTimeNeeded": "Book before arrival - no door sales"
-              },
-              "opening_hours": "Check official site",
-              "cost": "~8-9 EUR",
+              "tags": [
+                "🎟️"
+              ],
+              "type": "transport",
+              "notes": "Short walk or metro from the Parliament/Graben area to the Opera (Opernring). Arrive at the Operngasse entrance by 14:15.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free (walk) or €2.40 metro",
               "optional": false,
               "secondaryPlaces": []
-            }
-          ],
-          "budget": "~8-9 EUR"
-        },
-        {
-          "name": "evening",
-          "timeRange": "17:00-20:30",
-          "start_time": "17:00",
-          "end_time": "20:30",
-          "duration": "~3.5 hours",
-          "description": "Vienna State Opera guided tour, then Stephansplatz at night and dinner/dessert.",
-          "activities": [
+            },
             {
-              "order": 1,
+              "order": 2,
               "name": "Vienna State Opera - Guided Tour",
               "link": "https://www.google.com/maps/search/Vienna+State+Opera",
               "duration": 45,
-              "suggestedTime": "17:00",
-              "timeRestriction": "Multiple tour times daily - check schedule",
+              "suggestedTime": "14:30",
+              "timeRestriction": "CONFIRMED timed entry 14:30 (2:30pm) on 02/11/2026. Arrive 15 min early - no late admission, no refunds.",
               "priority": "mandatory",
               "priceRange": "€",
-              "tags": ["🎟️", "📅", "⏳", "⭐", "☂️"],
+              "tags": [
+                "🎟️",
+                "📅",
+                "⏳",
+                "⭐",
+                "☂️"
+              ],
               "type": "guided tour",
-              "notes": "One of the world's most prestigious opera houses, neo-Renaissance façade, lavish marble/gold interior. Guided tours available in multiple languages, giving a glimpse into the building's history and backstage.",
-              "bookingRequired": true,
-              "bookingDetails": {
-                "url": "https://www.wiener-staatsoper.at",
-                "advanceTimeNeeded": "Book ahead, several tour times per day"
-              },
+              "notes": "✅ CONFIRMED - Guided Tour in SPANISH, booking #6126138 (order 5487371), €18.00. Meeting point: guided tour entrance, Ringstraße corner Operngasse. ARRIVE 15 MIN EARLY (by 14:15) - strict timing, late arrivals forfeit the booking with no refund. One of the world's most prestigious opera houses, neo-Renaissance façade, lavish marble/gold interior.",
+              "bookingRequired": false,
+              "bookingDetails": null,
               "opening_hours": "Check official site",
               "cost": "~11-13 EUR",
               "optional": false,
               "secondaryPlaces": []
             },
             {
-              "order": 2,
+              "order": 3,
+              "name": "Karlskirche (St. Charles's Church)",
+              "link": "https://www.google.com/maps/search/Karlskirche+Vienna",
+              "duration": 10,
+              "suggestedTime": "15:15",
+              "timeRestriction": null,
+              "priority": "medium",
+              "priceRange": null,
+              "tags": [
+                "🆓",
+                "👀",
+                "📸"
+              ],
+              "type": "church",
+              "notes": "EXTERIOR ONLY (per user decision) - viewing the Baroque façade and dome from outside, no interior ticket. Quick stop on the way from the Opera.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": "Check official site",
+              "cost": "free (exterior only)",
+              "optional": false,
+              "secondaryPlaces": []
+            }
+          ],
+          "budget": "€18.00 (already paid - Opera tour) + free (Karlskirche exterior)"
+        },
+        {
+          "name": "evening",
+          "timeRange": "16:00-19:30",
+          "start_time": "16:00",
+          "end_time": "19:30",
+          "duration": "3.5 hours",
+          "description": "Free time/rest, then Stephansplatz at night and dinner/dessert.",
+          "activities": [
+            {
+              "order": 1,
               "name": "Stephansplatz at Night (revisit)",
               "link": "https://www.google.com/maps/search/Stephansplatz+Vienna",
               "duration": 20,
-              "suggestedTime": "18:00",
+              "suggestedTime": "17:30",
               "timeRestriction": null,
               "priority": "low",
               "priceRange": null,
-              "tags": ["🆓", "👀", "📸"],
+              "tags": [
+                "🆓",
+                "👀",
+                "📸"
+              ],
               "type": "landmark",
               "notes": "Optional second pass by the cathedral on the way to dinner.",
               "bookingRequired": false,
@@ -387,15 +443,18 @@
               "secondaryPlaces": []
             },
             {
-              "order": 3,
+              "order": 2,
               "name": "Dinner & Dessert (recommendation, not fixed)",
               "link": "https://www.google.com/maps/search/Demel+Kohlmarkt+Vienna",
               "duration": 120,
-              "suggestedTime": "18:30",
+              "suggestedTime": "18:00",
               "timeRestriction": null,
               "priority": "medium",
               "priceRange": "€-€€€",
-              "tags": ["🍽️", "⭐"],
+              "tags": [
+                "🍽️",
+                "⭐"
+              ],
               "type": "meal",
               "notes": "See food_recommendations for dessert cafe options (Demel or Gerstner recommended over the touristy Café Sacher queue) and dinner spots.",
               "bookingRequired": false,
@@ -427,7 +486,7 @@
             "type": "guide"
           }
         ],
-        "notes": "This is the main activity day - all three priority bookings (Parliament, Karlskirche, Opera) are scheduled here since Nov 2 is a regular Monday (Nov 1 being a Sunday/holiday made it the safer choice for paid/reserved activities)."
+        "notes": "All three priority items now CONFIRMED with real booking details: Austrian Parliament (free tour, registered 09:45, bring passport), Vienna State Opera guided tour in Spanish (€18, booking #6126138, 14:30 - STRICT timing, arrive 15 min early), and Klementinum equivalent elsewhere. Karlskirche downgraded to exterior-only per user decision (no longer entering/no ticket). Day re-timed: Parliament morning, Opera + Karlskirche early afternoon (confirmed slot drives the schedule), free time/dinner evening."
       }
     },
     {
@@ -456,7 +515,12 @@
               "timeRestriction": null,
               "priority": "high",
               "priceRange": null,
-              "tags": ["🆓", "👀", "⭐", "📸"],
+              "tags": [
+                "🆓",
+                "👀",
+                "⭐",
+                "📸"
+              ],
               "type": "palace/gardens",
               "notes": "Deliberately scheduled as the LAST-day morning activity for full daylight (benefits from being seen in daylight rather than evening). Take U4/U1 from Favoriten area (~25-30 min). Walk the vast, beautifully maintained gardens with ornate fountains. Steep but worthwhile climb up to the Gloriette for sweeping views over the palace and city. Skipping the interior (expensive, time-consuming) per the guide's own recommendation - exterior and gardens are the real highlight. Shortened to ~2 hours (from the original 2.5h) to leave room for the confirmed 13:45 flight.",
               "bookingRequired": false,
@@ -505,7 +569,9 @@
               "timeRestriction": null,
               "priority": "mandatory",
               "priceRange": "€",
-              "tags": ["🎟️"],
+              "tags": [
+                "🎟️"
+              ],
               "type": "transport",
               "notes": "From Favoriten, take the S7 (Schnellbahn) or a taxi/Uber to VIE (~30-45 min depending on route). CAT (City Airport Train) runs from Wien Mitte if more convenient. Arrive with plenty of buffer for a 13:45 departure.",
               "bookingRequired": false,
@@ -632,7 +698,12 @@
         "cuisine": "Austrian/German",
         "priceRange": "€€",
         "typical_cost_per_person": "20-30 EUR",
-        "specialties": ["Wiener Schnitzel", "Veal schnitzel", "Chicken cordon bleu", "Spinach dumplings"],
+        "specialties": [
+          "Wiener Schnitzel",
+          "Veal schnitzel",
+          "Chicken cordon bleu",
+          "Spinach dumplings"
+        ],
         "notes": "Established 1905, THE place for schnitzel in Vienna. Reservation recommended due to popularity."
       },
       {
@@ -642,7 +713,11 @@
         "cuisine": "Grocery/deli",
         "priceRange": "€",
         "typical_cost_per_person": "5-8 EUR",
-        "specialties": ["Hot schnitzel sandwiches", "Sandwiches", "Desserts (vegan-tagged options available)"],
+        "specialties": [
+          "Hot schnitzel sandwiches",
+          "Sandwiches",
+          "Desserts (vegan-tagged options available)"
+        ],
         "notes": "Not a joke - genuinely great for cheap, convenient on-the-go lunches between attractions. Self-checkout, cash and card."
       },
       {
@@ -652,7 +727,10 @@
         "cuisine": "German/Patisserie",
         "priceRange": "€€",
         "typical_cost_per_person": "8-12 EUR (cake + coffee)",
-        "specialties": ["Eduard-Sacher-Torte (their version of Sachertorte)", "Pastries"],
+        "specialties": [
+          "Eduard-Sacher-Torte (their version of Sachertorte)",
+          "Pastries"
+        ],
         "notes": "Founded 1786, former court confectioner. Watch pastry chefs through a glass window. Recommended over the touristy Café Sacher queue."
       },
       {
@@ -662,7 +740,10 @@
         "cuisine": "Austrian/Patisserie",
         "priceRange": "€€",
         "typical_cost_per_person": "8-12 EUR (cake + coffee)",
-        "specialties": ["Sisi Cake", "House coffee"],
+        "specialties": [
+          "Sisi Cake",
+          "House coffee"
+        ],
         "notes": "Open since 1847, one of the city's oldest patisseries, served Emperor Franz Joseph I."
       },
       {
@@ -672,7 +753,10 @@
         "cuisine": "Italian/International",
         "priceRange": "€€",
         "typical_cost_per_person": "18-28 EUR (10-14 EUR with The Fork app discount)",
-        "specialties": ["International menu", "Vegetarian/vegan options"],
+        "specialties": [
+          "International menu",
+          "Vegetarian/vegan options"
+        ],
         "notes": "High quality in a great location. Book through The Fork app for discounts (up to 50% seen)."
       },
       {
@@ -682,7 +766,11 @@
         "cuisine": "Italian/Neapolitan pizza",
         "priceRange": "€€",
         "typical_cost_per_person": "12-18 EUR",
-        "specialties": ["Margherita", "Marinara", "Torta Caprese"],
+        "specialties": [
+          "Margherita",
+          "Marinara",
+          "Torta Caprese"
+        ],
         "notes": "Imports ingredients directly from Naples. Indoor or outdoor Schanigarten seating in warmer months."
       },
       {
@@ -692,7 +780,11 @@
         "cuisine": "French/Bakery",
         "priceRange": "€",
         "typical_cost_per_person": "4-8 EUR",
-        "specialties": ["Croissants", "Cookie-croissant", "Coffee"],
+        "specialties": [
+          "Croissants",
+          "Cookie-croissant",
+          "Coffee"
+        ],
         "notes": "Cozy French-inspired bakery cafe, good for breakfast/snack. Outdoor seating for people-watching."
       },
       {
@@ -702,7 +794,10 @@
         "cuisine": "European/Brunch",
         "priceRange": "€€",
         "typical_cost_per_person": "14-20 EUR",
-        "specialties": ["Eggs Benedict", "Brunch dishes"],
+        "specialties": [
+          "Eggs Benedict",
+          "Brunch dishes"
+        ],
         "notes": "Local favorite for breakfast/brunch, laid-back vibe, outdoor seating."
       },
       {
@@ -712,7 +807,10 @@
         "cuisine": "Cafe/Seasonal",
         "priceRange": "€€",
         "typical_cost_per_person": "14-20 EUR",
-        "specialties": ["Shakshuka", "Seasonal menu (meat and vegetarian)"],
+        "specialties": [
+          "Shakshuka",
+          "Seasonal menu (meat and vegetarian)"
+        ],
         "notes": "Stylish, minimalist interior, menu changes with the seasons."
       },
       {
@@ -722,7 +820,10 @@
         "cuisine": "Bakery",
         "priceRange": "€",
         "typical_cost_per_person": "3-6 EUR",
-        "specialties": ["Seasonal pastries (e.g., pumpkin in fall)", "Croissants"],
+        "specialties": [
+          "Seasonal pastries (e.g., pumpkin in fall)",
+          "Croissants"
+        ],
         "notes": "Modern bakery, Scandinavian-inspired minimalist design, elevated Viennese pastry-making."
       }
     ],

@@ -76,7 +76,7 @@
           "start_time": "11:25",
           "end_time": "15:00",
           "duration": "~3.5 hours",
-          "description": "Arrival from Berlin via RJ 171 at Praha hl.n. (11:25). Head to Onefam Home (Hybernská 1008) to drop off bags before check-in time (15:00), or explore the nearby Old Town.",
+          "description": "Arrival from Berlin via RJ 171 at Praha hl.n. (11:25). Drop bags at Onefam Home, then free walk through the city center before the CONFIRMED 15:00 Klementinum tour (hostel check-in happens later, after the tour).",
           "activities": [
             {
               "order": 1,
@@ -96,9 +96,33 @@
               "cost": "Already paid (CZK 2,440)",
               "optional": false,
               "secondaryPlaces": []
+            },
+            {
+              "order": 2,
+              "name": "Free Walk Toward Klementinum",
+              "link": "https://www.google.com/maps/search/Klementinum+Prague",
+              "duration": 120,
+              "suggestedTime": "12:30",
+              "timeRestriction": null,
+              "priority": "high",
+              "priceRange": "🆓",
+              "tags": [
+                "🆓",
+                "👀",
+                "⭐",
+                "📸"
+              ],
+              "type": "walking tour",
+              "notes": "Casual stroll through the historic heart of Prague while waiting for the confirmed 15:00 Klementinum tour - taking in the gothic and baroque architecture.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "free",
+              "optional": false,
+              "secondaryPlaces": []
             }
           ],
-          "budget": "0"
+          "budget": "0 (free)"
         },
         {
           "name": "evening",
@@ -106,46 +130,48 @@
           "start_time": "15:00",
           "end_time": "20:00",
           "duration": "~5 hours",
-          "description": "Check-in at Onefam Home, then free walk through the city center, Klementinum guided tour, Old Town Square and surroundings.",
+          "description": "CONFIRMED Klementinum tour at 15:00, then hostel check-in, Old Town Square and surroundings.",
           "activities": [
             {
               "order": 1,
-              "name": "Free Walk through Prague City Center",
-              "link": "https://www.google.com/maps/search/Old+Town+Square+Prague",
-              "duration": 90,
-              "suggestedTime": "15:15",
-              "timeRestriction": null,
-              "priority": "high",
-              "priceRange": "🆓",
-              "tags": ["🆓", "👀", "⭐", "📸"],
-              "type": "walking tour",
-              "notes": "Casual stroll through the historic heart of Prague, taking in the gothic and baroque architecture.",
+              "name": "Klementinum - Guided Tour",
+              "link": "https://www.google.com/maps/search/Klementinum+Prague",
+              "duration": 60,
+              "suggestedTime": "15:00",
+              "timeRestriction": "CONFIRMED timed entry 15:00 (30/10/2026). E-ticket valid ONLY for this exact time - late arrival = no entry.",
+              "priority": "mandatory",
+              "priceRange": "€",
+              "tags": [
+                "🎟️",
+                "📅",
+                "⏳",
+                "⭐"
+              ],
+              "type": "guided tour",
+              "notes": "✅ CONFIRMED - e-ticket #10580578576, 1x youth (16-26 yrs), 300 CZK (~€12). Tour starts in front of the entrance to the Astronomical Tower. QR code ticket - no refunds, arrive on time. Famous Baroque library, astronomical tower, and Meridian hall.",
               "bookingRequired": false,
               "bookingDetails": null,
-              "opening_hours": null,
-              "cost": "free",
+              "opening_hours": "Check official site",
+              "cost": "300 CZK (~€12) - already paid, ticket #10580578576",
               "optional": false,
               "secondaryPlaces": []
             },
             {
               "order": 2,
-              "name": "Klementinum - Guided Tour",
-              "link": "https://www.google.com/maps/search/Klementinum+Prague",
-              "duration": 60,
-              "suggestedTime": "16:45",
-              "timeRestriction": "Guided tour required - book in advance",
+              "name": "Hostel Check-in at Onefam Home",
+              "link": "https://www.google.com/maps/search/Onefam+Home+Hybernska+1008+Prague",
+              "duration": 15,
+              "suggestedTime": "16:00",
+              "timeRestriction": "Official check-in from 15:00 - bags already dropped earlier, so this can happen any time after the tour",
               "priority": "mandatory",
-              "priceRange": "€€",
-              "tags": ["🎟️", "📅", "⏳", "⭐"],
-              "type": "guided tour",
-              "notes": "Famous Baroque library, astronomical tower, and Meridian hall. Must book guide in advance.",
-              "bookingRequired": true,
-              "bookingDetails": {
-                "url": "https://www.klementinum.com",
-                "advanceTimeNeeded": "Book online ahead"
-              },
-              "opening_hours": "Check official site",
-              "cost": "~15-20 EUR",
+              "priceRange": null,
+              "tags": [],
+              "type": "accommodation",
+              "notes": "Formal check-in, now done after the Klementinum tour since bags were already dropped off earlier in the day.",
+              "bookingRequired": false,
+              "bookingDetails": null,
+              "opening_hours": null,
+              "cost": "Already paid (CZK 2,440)",
               "optional": false,
               "secondaryPlaces": []
             },
@@ -158,7 +184,12 @@
               "timeRestriction": null,
               "priority": "high",
               "priceRange": "🆓",
-              "tags": ["🆓", "👀", "⭐", "📸"],
+              "tags": [
+                "🆓",
+                "👀",
+                "⭐",
+                "📸"
+              ],
               "type": "landmark",
               "notes": "Astronomical Clock (Orloj), Church of Our Lady before Týn, and vibrant square atmosphere.",
               "bookingRequired": false,
@@ -169,14 +200,14 @@
               "secondaryPlaces": []
             }
           ],
-          "budget": "~15-20 EUR (Klementinum tour)"
+          "budget": "0 (Klementinum already paid)"
         }
       ],
       "map_url": "https://www.google.com/maps/dir/Praha+hl.n./Onefam+Home+Prague/Klementinum+Prague/Old+Town+Square+Prague",
       "research_notes": {
         "alternatives": [],
         "sources": [],
-        "notes": "Day 1 focused on hostel check-in, city center walk, Klementinum tour, and Old Town Square."
+        "notes": "Day 1 resequenced: Klementinum tour is CONFIRMED for exactly 15:00 (e-ticket #10580578576, 300 CZK) - this now drives the schedule. Bags dropped early at the hostel, free walk fills the waiting time, formal check-in happens after the tour (official check-in window is from 15:00 anyway), then Old Town Square in the evening."
       }
     },
     {
@@ -205,7 +236,11 @@
               "timeRestriction": "Best on Saturday mornings",
               "priority": "high",
               "priceRange": "€",
-              "tags": ["⭐", "🍽️", "📸"],
+              "tags": [
+                "⭐",
+                "🍽️",
+                "📸"
+              ],
               "type": "market",
               "notes": "Vibrant Saturday farmers market along the Vltava river embankment. Great local snacks, coffee, pastries, and atmosphere.",
               "bookingRequired": false,
@@ -224,7 +259,12 @@
               "timeRestriction": null,
               "priority": "mandatory",
               "priceRange": "🆓",
-              "tags": ["🆓", "👀", "⭐", "📸"],
+              "tags": [
+                "🆓",
+                "👀",
+                "⭐",
+                "📸"
+              ],
               "type": "landmark",
               "notes": "Historic Gothic bridge lined with Baroque statues, street musicians, and artists.",
               "bookingRequired": false,
@@ -254,7 +294,11 @@
               "timeRestriction": null,
               "priority": "high",
               "priceRange": "🆓",
-              "tags": ["🆓", "👀", "📸"],
+              "tags": [
+                "🆓",
+                "👀",
+                "📸"
+              ],
               "type": "landmark",
               "notes": "John Lennon-inspired graffiti wall filled with Beatles lyrics and peace art in Malá Strana.",
               "bookingRequired": false,
@@ -273,7 +317,12 @@
               "timeRestriction": null,
               "priority": "mandatory",
               "priceRange": "€-€€",
-              "tags": ["🎟️", "👀", "⭐", "📸"],
+              "tags": [
+                "🎟️",
+                "👀",
+                "⭐",
+                "📸"
+              ],
               "type": "castle",
               "notes": "Massive ancient castle complex, St. Vitus Cathedral, Golden Lane. Exterior grounds free; interior tickets optional.",
               "bookingRequired": false,
@@ -292,7 +341,10 @@
               "timeRestriction": null,
               "priority": "medium",
               "priceRange": "€€",
-              "tags": ["🍽️", "⭐"],
+              "tags": [
+                "🍽️",
+                "⭐"
+              ],
               "type": "meal",
               "notes": "Cozy cafe located right near Prague Castle (Šternberg Palace) for coffee, pastries, or a light lunch break.",
               "bookingRequired": false,
@@ -322,7 +374,12 @@
               "timeRestriction": null,
               "priority": "high",
               "priceRange": "🆓",
-              "tags": ["🆓", "👀", "📸", "⭐"],
+              "tags": [
+                "🆓",
+                "👀",
+                "📸",
+                "⭐"
+              ],
               "type": "park / recreation",
               "notes": "Free roaming, cycling along the Vltava river trail or relaxing in Letná Park with panoramic city views at night.",
               "bookingRequired": false,
@@ -388,7 +445,9 @@
               "timeRestriction": null,
               "priority": "mandatory",
               "priceRange": "€",
-              "tags": ["🎟️"],
+              "tags": [
+                "🎟️"
+              ],
               "type": "transport",
               "notes": "Onefam Home is ~10 min walk or short tram/metro ride from Praha hl.n. Pack the night before since the train departs before the normal 11:00 checkout deadline.",
               "bookingRequired": false,
@@ -465,7 +524,11 @@
         "cuisine": "Cafe / Bakery / Light meals",
         "priceRange": "€€",
         "typical_cost_per_person": "10-20 EUR",
-        "specialties": ["Coffee", "Pastries", "Light lunch"],
+        "specialties": [
+          "Coffee",
+          "Pastries",
+          "Light lunch"
+        ],
         "notes": "Cozy cafe located right near the Prague Castle area (Šternberg Palace), perfect for a coffee or lunch break."
       },
       {
@@ -475,7 +538,11 @@
         "cuisine": "Traditional Czech",
         "priceRange": "€€",
         "typical_cost_per_person": "15-25 EUR",
-        "specialties": ["Czech goulash", "Roasted duck", "Traditional soups"],
+        "specialties": [
+          "Czech goulash",
+          "Roasted duck",
+          "Traditional soups"
+        ],
         "notes": "Charming restaurant serving authentic Czech cuisine in a historic setting."
       }
     ],
